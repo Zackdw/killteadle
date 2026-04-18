@@ -629,6 +629,27 @@
     .popup-box { padding: 16px 18px; }
     .popup-val { font-size: 11px; padding: 4px 8px; }
   }
+
+  .site-logo {
+    position: fixed;
+    bottom: 12px;
+    right: 12px;
+    width: 48px;
+    height: 48px;
+    opacity: 0.7;
+    transition: opacity 0.2s;
+    z-index: 100;
+    pointer-events: auto;
+  }
+  .site-logo:hover {
+    opacity: 1;
+  }
+  .site-logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 50%;
+  }
 </style>
 </head>
 <body>
@@ -4250,5 +4271,8 @@ function showToast(msg) {
 
 loadData();
 </script>
+<a class="site-logo" href="https://disregardingdice.com" target="_blank" rel="noopener" title="Disregarding Dice">
+  <img src="ChannelLogo.webp" alt="Disregarding Dice">
+</a>
 </body>
 </html>
