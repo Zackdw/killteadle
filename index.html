@@ -396,7 +396,7 @@
   }
 
   .cell.anim-pop {
-    animation: cellPop 0.25s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+    animation: cellPop 0.5s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
   }
 
   @keyframes cellPop {
@@ -416,8 +416,8 @@
 
   /* Shake for wrong cells */
   .cell.anim-shake {
-    animation: cellPop 0.25s cubic-bezier(0.34, 1.56, 0.64, 1) forwards,
-               cellShake 0.3s 0.2s ease-out;
+    animation: cellPop 0.5s cubic-bezier(0.34, 1.56, 0.64, 1) forwards,
+               cellShake 0.6s 0.4s ease-out;
   }
 
   @keyframes cellShake {
@@ -430,8 +430,8 @@
 
   /* Glow pulse for correct cells */
   .cell.anim-glow {
-    animation: cellPop 0.25s cubic-bezier(0.34, 1.56, 0.64, 1) forwards,
-               cellGlow 0.3s 0.2s ease-out;
+    animation: cellPop 0.5s cubic-bezier(0.34, 1.56, 0.64, 1) forwards,
+               cellGlow 0.6s 0.4s ease-out;
   }
 
   @keyframes cellGlow {
@@ -457,7 +457,7 @@
     height: 4px;
     border-radius: 50%;
     background: var(--kt-orange);
-    animation: particleBurst 0.4s ease-out forwards;
+    animation: particleBurst 0.8s ease-out forwards;
   }
 
   .particle.green {
@@ -477,7 +477,7 @@
 
   /* Status animation */
   .status.anim-in {
-    animation: statusPop 0.3s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+    animation: statusPop 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
   }
 
   @keyframes statusPop {
@@ -487,7 +487,7 @@
 
   /* End buttons animation */
   .end-buttons.anim-in {
-    animation: fadeUp 0.25s ease-out forwards;
+    animation: fadeUp 0.5s ease-out forwards;
   }
 
   @keyframes fadeUp {
@@ -3950,7 +3950,7 @@ function submitGuess(op) {
   document.getElementById('guessCount').textContent = guesses.length;
 
   // Calculate delay for status/buttons to appear after cell animations
-  const animDelay = 5 * 60 + 300;
+  const animDelay = 5 * 120 + 600;
 
   if (op.name === target.name) {
     gameOver = true;
@@ -3996,7 +3996,7 @@ function spawnParticles(cell, isCorrect) {
     container.appendChild(p);
   }
   cell.appendChild(container);
-  setTimeout(() => container.remove(), 500);
+  setTimeout(() => container.remove(), 1000);
 }
 
 function renderGuessRow(op) {
@@ -4030,11 +4030,11 @@ function renderGuessRow(op) {
       cell.classList.remove('anim-pending');
       cell.classList.add(cell._isCorrect ? 'anim-glow' : 'anim-shake');
       spawnParticles(cell, cell._isCorrect);
-    }, i * 60);
+    }, i * 120);
   });
 
   // Return total animation time for sequencing status/buttons
-  return cells.length * 60 + 250;
+  return cells.length * 120 + 500;
 }
 
 document.getElementById('playAgain').addEventListener('click', () => {
@@ -4154,12 +4154,14 @@ function buildShareCanvas() {
         ctx.fillRect(x, y, colWidths[i], rowH);
         ctx.fillStyle = '#ffffff';
         ctx.textAlign = 'center';
-        // Truncate text if needed
-        let text = vals[i];
-        while (ctx.measureText(text).width > colWidths[i] - 8 && text.length > 3) {
-          text = text.slice(0, -1);
+        // In daily mode, hide text to avoid spoilers
+        if (!isDaily) {
+          let text = vals[i];
+          while (ctx.measureText(text).width > colWidths[i] - 8 && text.length > 3) {
+            text = text.slice(0, -1);
+          }
+          ctx.fillText(text, x + colWidths[i] / 2, y + rowH / 2 + 4);
         }
-        ctx.fillText(text, x + colWidths[i] / 2, y + rowH / 2 + 4);
         x += colWidths[i] + 4;
       }
       y += rowH + 4;
