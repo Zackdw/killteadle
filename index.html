@@ -523,7 +523,7 @@
 <div class="end-buttons" id="endButtons">
   <button class="play-again" id="playAgain" style="display:inline-block">Play Again</button>
   <button class="share-btn" id="shareBtn">Share</button>
-  <button class="share-btn" id="saveImgBtn">Save Image</button>
+  <button class="share-btn" id="copyLinkBtn" style="font-size:12px;padding:10px 16px;letter-spacing:1px">Copy Link</button>
 </div>
 <div class="share-toast" id="shareToast">Copied to clipboard!</div>
 
@@ -3849,21 +3849,6 @@ document.getElementById('popupDismiss').addEventListener('click', (e) => {
 document.querySelector('.popup-box').addEventListener('click', (e) => e.stopPropagation());
 
 // Share functionality
-function buildShareText() {
-  const won = guesses.length > 0 && guesses[guesses.length - 1].name === target.name;
-  const emoji = guesses.map(g => {
-    const m = [
-      g.team === target.team,
-      g.apl === target.apl,
-      g.faction === target.faction,
-      g.base_size === target.base_size,
-      g.name === target.name
-    ];
-    return m.map(v => v ? '\uD83D\uDFE9' : '\uD83D\uDFE5').join('');
-  }).join('\n');
-  return `Killteamadle ${won ? guesses.length : 'X'}/${maxGuesses}\n${emoji}\nhttps://zackdw.github.io/killteamadle/`;
-}
-
 function buildShareCanvas() {
   const won = guesses.length > 0 && guesses[guesses.length - 1].name === target.name;
   const canvas = document.createElement('canvas');
@@ -3876,7 +3861,7 @@ function buildShareCanvas() {
     const totalW = colWidths.reduce((a,b) => a+b, 0) + (cols.length - 1) * 4 + pad * 2;
     const titleH = 50;
     const statusH = 36;
-    const urlBarH = 24;
+    const urlBarH = 32;
     const totalH = titleH + headerH + 4 + guesses.length * (rowH + 4) + statusH + urlBarH + pad * 2;
 
     canvas.width = totalW;
@@ -3949,11 +3934,11 @@ function buildShareCanvas() {
       : `Answer: ${target.name}`;
     ctx.fillText(statusText, totalW / 2, y + 20);
 
-    // URL line
-    ctx.font = '11px Barlow Condensed, Arial Narrow, sans-serif';
-    ctx.fillStyle = '#888';
+    // URL line - prominent
+    ctx.font = 'bold 13px Barlow Condensed, Arial Narrow, sans-serif';
+    ctx.fillStyle = '#f15c22';
     ctx.textAlign = 'center';
-    ctx.fillText('zackdw.github.io/killteamadle', totalW / 2, y + 40);
+    ctx.fillText('\u25B6  zackdw.github.io/killteamadle  \u25C0', totalW / 2, y + 44);
 
     // Orange bottom bar
     ctx.fillStyle = '#f15c22';
@@ -3962,33 +3947,55 @@ function buildShareCanvas() {
     return canvas;
 }
 
-// Share button: copy emoji text + link (works in Discord, iMessage, etc.)
+// Share: copy image to clipboard (image has URL baked in)
 document.getElementById('shareBtn').addEventListener('click', async () => {
-  try {
-    const text = buildShareText();
-    await navigator.clipboard.writeText(text);
-    showToast('Copied!');
-  } catch (err) {
-    console.error('Share failed:', err);
-  }
-});
-
-// Save Image button: download the PNG
-document.getElementById('saveImgBtn').addEventListener('click', async () => {
   try {
     const canvas = buildShareCanvas();
     const blob = await new Promise(r => canvas.toBlob(r, 'image/png'));
-    const url = URL.createObjectURL(blob);
-    const a = document.createElement('a');
-    a.href = url;
-    a.download = 'killteamadle.png';
-    document.body.appendChild(a);
-    a.click();
-    document.body.removeChild(a);
-    URL.revokeObjectURL(url);
-    showToast('Saved!');
+
+    // Try writing both image + text to clipboard
+    try {
+      const textBlob = new Blob(['https://zackdw.github.io/killteamadle/'], { type: 'text/plain' });
+      await navigator.clipboard.write([
+        new ClipboardItem({
+          'image/png': blob,
+          'text/plain': textBlob
+        })
+      ]);
+    } catch {
+      // Fallback: image only
+      await navigator.clipboard.write([
+        new ClipboardItem({ 'image/png': blob })
+      ]);
+    }
+    showToast('Image copied! Paste in Discord');
   } catch (err) {
-    console.error('Save failed:', err);
+    // Final fallback: download the file
+    try {
+      const canvas = buildShareCanvas();
+      const blob = await new Promise(r => canvas.toBlob(r, 'image/png'));
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = 'killteamadle.png';
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+      URL.revokeObjectURL(url);
+      showToast('Image saved!');
+    } catch (e2) {
+      console.error('Share failed:', e2);
+    }
+  }
+});
+
+// Copy Link: quick copy the URL
+document.getElementById('copyLinkBtn').addEventListener('click', async () => {
+  try {
+    await navigator.clipboard.writeText('https://zackdw.github.io/killteamadle/');
+    showToast('Link copied!');
+  } catch (err) {
+    console.error('Copy link failed:', err);
   }
 });
 
