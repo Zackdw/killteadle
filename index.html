@@ -232,81 +232,112 @@
     position: relative;
   }
 
-  .guess-header .cell.has-tooltip {
-    cursor: help;
+  .guess-header .cell.has-popup {
+    cursor: pointer;
+    user-select: none;
   }
 
-  .guess-header .cell.has-tooltip::after {
-    content: 'ⓘ';
-    font-size: 10px;
-    margin-left: 4px;
-    opacity: 0.6;
-  }
-
-  /* Tooltip */
-  .tooltip {
-    visibility: hidden;
-    opacity: 0;
-    position: absolute;
-    bottom: calc(100% + 8px);
-    left: 50%;
-    transform: translateX(-50%);
-    background: var(--kt-dark);
-    border: 1px solid var(--kt-orange);
-    border-radius: 4px;
-    padding: 10px 14px;
-    font-family: var(--font-body);
-    font-size: 11px;
-    font-weight: 400;
-    letter-spacing: 0;
-    text-transform: none;
-    color: var(--kt-light);
-    white-space: nowrap;
-    z-index: 20;
-    transition: opacity 0.2s, visibility 0.2s;
-    pointer-events: none;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.5);
-  }
-
-  .tooltip::after {
-    content: '';
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    transform: translateX(-50%);
-    border: 6px solid transparent;
-    border-top-color: var(--kt-orange);
-  }
-
-  .guess-header .cell.has-tooltip:hover .tooltip {
-    visibility: visible;
-    opacity: 1;
-  }
-
-  .tooltip .tip-label {
-    color: var(--kt-orange);
+  .guess-header .cell.has-popup::after {
+    content: '?';
+    font-size: 9px;
     font-weight: 700;
-    font-family: var(--font-condensed);
-    text-transform: uppercase;
-    font-size: 10px;
-    letter-spacing: 1px;
-    margin-bottom: 4px;
+    margin-left: 4px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background: rgba(241,92,34,0.3);
+    color: var(--kt-orange);
+    vertical-align: middle;
   }
 
-  .tooltip .tip-values {
+  /* Popup overlay */
+  .popup-backdrop {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6);
+    z-index: 100;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .popup-backdrop.visible {
+    display: flex;
+  }
+
+  .popup-box {
+    background: var(--kt-dark);
+    border: 2px solid var(--kt-orange);
+    border-radius: 6px;
+    padding: 20px 24px;
+    max-width: 360px;
+    width: 90vw;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.7), 0 0 20px rgba(241,92,34,0.2);
+    animation: popupIn 0.15s ease-out;
+  }
+
+  @keyframes popupIn {
+    from { transform: scale(0.9); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+  }
+
+  .popup-title {
+    color: var(--kt-orange);
+    font-family: var(--font-heading);
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 12px;
+    border-bottom: 1px solid rgba(241,92,34,0.3);
+    padding-bottom: 8px;
+  }
+
+  .popup-values {
     display: flex;
     flex-wrap: wrap;
-    gap: 4px;
+    gap: 6px;
+    margin-bottom: 16px;
   }
 
-  .tooltip .tip-val {
+  .popup-val {
+    background: rgba(241,92,34,0.12);
+    border: 1px solid rgba(241,92,34,0.35);
+    border-radius: 4px;
+    padding: 5px 10px;
+    font-family: var(--font-condensed);
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--kt-light);
+    letter-spacing: 0.5px;
+  }
+
+  .popup-dismiss {
+    display: block;
+    width: 100%;
+    padding: 8px;
     background: rgba(241,92,34,0.15);
     border: 1px solid rgba(241,92,34,0.3);
-    border-radius: 3px;
-    padding: 2px 6px;
-    font-size: 10px;
+    border-radius: 4px;
+    color: #999;
     font-family: var(--font-condensed);
-    font-weight: 600;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+    text-align: center;
+    transition: all 0.15s;
+  }
+
+  .popup-dismiss:hover {
+    background: var(--kt-orange);
+    color: #fff;
   }
 
   /* Guess cells */
@@ -399,7 +430,8 @@
       gap: 3px;
     }
     .cell { font-size: 11px; padding: 8px 4px; }
-    .tooltip { font-size: 10px; padding: 8px 10px; }
+    .popup-box { padding: 16px 18px; }
+    .popup-val { font-size: 11px; padding: 4px 8px; }
   }
 </style>
 </head>
@@ -423,45 +455,9 @@
 <div class="guesses">
   <div class="guess-row guess-header">
     <div class="cell">Team</div>
-    <div class="cell has-tooltip">APL
-      <div class="tooltip">
-        <div class="tip-label">Possible Values</div>
-        <div class="tip-values">
-          <span class="tip-val">1</span>
-          <span class="tip-val">2</span>
-          <span class="tip-val">3</span>
-          <span class="tip-val">4</span>
-        </div>
-      </div>
-    </div>
-    <div class="cell has-tooltip">Faction
-      <div class="tooltip">
-        <div class="tip-label">Possible Values</div>
-        <div class="tip-values">
-          <span class="tip-val">IMPERIUM</span>
-          <span class="tip-val">CHAOS</span>
-          <span class="tip-val">TYRANID</span>
-          <span class="tip-val">T'AU EMPIRE</span>
-          <span class="tip-val">AELDARI</span>
-          <span class="tip-val">LEAGUES OF VOTANN</span>
-          <span class="tip-val">ORK</span>
-          <span class="tip-val">NECRON</span>
-        </div>
-      </div>
-    </div>
-    <div class="cell has-tooltip">Base
-      <div class="tooltip">
-        <div class="tip-label">Possible Values (mm)</div>
-        <div class="tip-values">
-          <span class="tip-val">25</span>
-          <span class="tip-val">28</span>
-          <span class="tip-val">32</span>
-          <span class="tip-val">40</span>
-          <span class="tip-val">50</span>
-          <span class="tip-val">60x35</span>
-        </div>
-      </div>
-    </div>
+    <div class="cell has-popup" data-popup="apl">APL</div>
+    <div class="cell has-popup" data-popup="faction">Faction</div>
+    <div class="cell has-popup" data-popup="base">Base</div>
     <div class="cell">Operative</div>
   </div>
   <div id="guessRows"></div>
@@ -469,6 +465,14 @@
 
 <div class="status" id="status"></div>
 <button class="play-again" id="playAgain">Play Again</button>
+
+<div class="popup-backdrop" id="popupBackdrop">
+  <div class="popup-box">
+    <div class="popup-title" id="popupTitle"></div>
+    <div class="popup-values" id="popupValues"></div>
+    <button class="popup-dismiss" id="popupDismiss">Got it</button>
+  </div>
+</div>
 
 <div class="footer-bar"></div>
 
@@ -3746,6 +3750,41 @@ document.getElementById('guessBtn').addEventListener('click', () => {
     trySubmit(input.value.trim());
   }
 });
+
+// Popup data
+const popupData = {
+  apl: { title: 'APL — Possible Values', values: ['1', '2', '3', '4'] },
+  faction: { title: 'Faction — Possible Values', values: ['IMPERIUM', 'CHAOS', 'TYRANID', 'T\u2019AU EMPIRE', 'AELDARI', 'LEAGUES OF VOTANN', 'ORK', 'NECRON'] },
+  base: { title: 'Base Size — Possible Values (mm)', values: ['25', '28', '32', '40', '50', '60x35'] }
+};
+
+const popupBackdrop = document.getElementById('popupBackdrop');
+const popupTitle = document.getElementById('popupTitle');
+const popupValues = document.getElementById('popupValues');
+
+document.querySelectorAll('.has-popup').forEach(cell => {
+  cell.addEventListener('click', (e) => {
+    e.stopPropagation();
+    const key = cell.dataset.popup;
+    const data = popupData[key];
+    if (!data) return;
+    popupTitle.textContent = data.title;
+    popupValues.innerHTML = data.values.map(v => `<span class="popup-val">${v}</span>`).join('');
+    popupBackdrop.classList.add('visible');
+  });
+});
+
+function dismissPopup() {
+  popupBackdrop.classList.remove('visible');
+}
+
+popupBackdrop.addEventListener('click', dismissPopup);
+document.getElementById('popupDismiss').addEventListener('click', (e) => {
+  e.stopPropagation();
+  dismissPopup();
+});
+// Stop clicks inside the box from closing it
+document.querySelector('.popup-box').addEventListener('click', (e) => e.stopPropagation());
 
 loadData();
 </script>
