@@ -4210,15 +4210,27 @@ function buildShareCanvas() {
     return canvas;
 }
 
-// Share: copy image to clipboard (image has URL baked in)
+// Share: use native share sheet on mobile, clipboard on desktop
 document.getElementById('shareBtn').addEventListener('click', async () => {
   try {
     const canvas = buildShareCanvas();
     const blob = await new Promise(r => canvas.toBlob(r, 'image/png'));
+    const file = new File([blob], 'killteadle.png', { type: 'image/png' });
 
-    // Try writing both image + text to clipboard
+    // Try native share sheet first (works great on iOS/Android, opens share sheet)
+    if (navigator.share && navigator.canShare && navigator.canShare({ files: [file] })) {
+      await navigator.share({
+        files: [file],
+        title: 'KillTeadle',
+        url: 'https://killteadle.disregardingdice.com/'
+      });
+      showToast('Shared!');
+      return;
+    }
+
+    // Desktop fallback: copy image to clipboard
     try {
-      const textBlob = new Blob(['https://zackdw.github.io/killteadle/'], { type: 'text/plain' });
+      const textBlob = new Blob(['https://killteadle.disregardingdice.com/'], { type: 'text/plain' });
       await navigator.clipboard.write([
         new ClipboardItem({
           'image/png': blob,
@@ -4226,7 +4238,6 @@ document.getElementById('shareBtn').addEventListener('click', async () => {
         })
       ]);
     } catch {
-      // Fallback: image only
       await navigator.clipboard.write([
         new ClipboardItem({ 'image/png': blob })
       ]);
@@ -4255,7 +4266,7 @@ document.getElementById('shareBtn').addEventListener('click', async () => {
 // Copy Link: quick copy the URL
 document.getElementById('copyLinkBtn').addEventListener('click', async () => {
   try {
-    await navigator.clipboard.writeText('https://zackdw.github.io/killteadle/');
+    await navigator.clipboard.writeText('https://killteadle.disregardingdice.com/');
     showToast('Link copied!');
   } catch (err) {
     console.error('Copy link failed:', err);
