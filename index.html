@@ -3861,7 +3861,8 @@ document.getElementById('shareBtn').addEventListener('click', async () => {
     const totalW = colWidths.reduce((a,b) => a+b, 0) + (cols.length - 1) * 4 + pad * 2;
     const titleH = 50;
     const statusH = 36;
-    const totalH = titleH + headerH + 4 + guesses.length * (rowH + 4) + statusH + pad * 2;
+    const urlBarH = 24;
+    const totalH = titleH + headerH + 4 + guesses.length * (rowH + 4) + statusH + urlBarH + pad * 2;
 
     canvas.width = totalW;
     canvas.height = totalH;
@@ -3934,6 +3935,12 @@ document.getElementById('shareBtn').addEventListener('click', async () => {
       : `Answer: ${target.name}`;
     ctx.fillText(statusText, totalW / 2, y + 20);
 
+    // URL line
+    ctx.font = '11px Barlow Condensed, Arial Narrow, sans-serif';
+    ctx.fillStyle = '#888';
+    ctx.textAlign = 'center';
+    ctx.fillText('zackdw.github.io/killteamadle', totalW / 2, y + 40);
+
     // Orange bottom bar
     ctx.fillStyle = '#f15c22';
     ctx.fillRect(0, totalH - 3, totalW, 3);
@@ -3952,25 +3959,26 @@ document.getElementById('shareBtn').addEventListener('click', async () => {
         text: shareText
       });
     } else {
-      // Desktop: copy image + text link to clipboard together
+      // Desktop: copy image + link text to clipboard
       try {
         const textBlob = new Blob([shareText], { type: 'text/plain' });
+        // Write image and text as separate ClipboardItems so apps can pick what they support
         await navigator.clipboard.write([
           new ClipboardItem({
             'image/png': blob,
             'text/plain': textBlob
           })
         ]);
-        showToast('Image + link copied to clipboard! Paste in Discord or iMessage');
+        showToast('Copied!');
       } catch {
         // Fallback: try image only
         try {
           await navigator.clipboard.write([
             new ClipboardItem({ 'image/png': blob })
           ]);
-          showToast('Image copied! Link: ' + url);
+          showToast('Copied!');
         } catch {
-          // Final fallback: copy emoji text grid
+          // Final fallback: copy text result
           const emoji = guesses.map(g => {
             const m = [
               g.team === target.team,
@@ -3983,7 +3991,7 @@ document.getElementById('shareBtn').addEventListener('click', async () => {
           }).join('\n');
           const text = `Killteamadle ${won ? guesses.length : 'X'}/${maxGuesses}\n${emoji}\n${url}`;
           await navigator.clipboard.writeText(text);
-          showToast('Results copied to clipboard!');
+          showToast('Copied!');
         }
       }
     }
