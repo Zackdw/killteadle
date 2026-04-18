@@ -4,3065 +4,5354 @@
     "team": "Angels of Death",
     "apl": 3,
     "faction": "IMPERIUM",
-    "base_size": "40"
+    "base_size": "40",
+    "weapon_rules": [
+      "Brutal",
+      "Hot",
+      "Lethal",
+      "Piercing",
+      "Range"
+    ]
   },
   {
     "name": "ASSAULT INTERCESSOR SERGEANT",
     "team": "Angels of Death",
     "apl": 3,
     "faction": "IMPERIUM",
-    "base_size": "32"
+    "base_size": "32",
+    "weapon_rules": [
+      "Brutal",
+      "Heavy",
+      "Hot",
+      "Lethal",
+      "Piercing",
+      "Range",
+      "Saturate",
+      "Shock",
+      "Stun",
+      "Torrent"
+    ]
   },
   {
     "name": "INTERCESSOR SERGEANT",
     "team": "Angels of Death",
     "apl": 3,
     "faction": "IMPERIUM",
-    "base_size": "32"
+    "base_size": "32",
+    "weapon_rules": [
+      "Brutal",
+      "Heavy",
+      "Lethal",
+      "Piercing",
+      "Shock",
+      "Stun",
+      "Torrent"
+    ]
   },
   {
     "name": "ASSAULT INTERCESSOR GRENADIER",
     "team": "Angels of Death",
     "apl": 3,
     "faction": "IMPERIUM",
-    "base_size": "32"
+    "base_size": "32",
+    "weapon_rules": [
+      "Heavy",
+      "Limited",
+      "Piercing",
+      "Range"
+    ]
   },
   {
     "name": "ASSAULT INTERCESSOR WARRIOR",
     "team": "Angels of Death",
     "apl": 3,
     "faction": "IMPERIUM",
-    "base_size": "32"
+    "base_size": "32",
+    "weapon_rules": [
+      "Heavy",
+      "Piercing",
+      "Range"
+    ]
   },
   {
     "name": "HEAVY INTERCESSOR GUNNER",
     "team": "Angels of Death",
     "apl": 3,
     "faction": "IMPERIUM",
-    "base_size": "40"
+    "base_size": "40",
+    "weapon_rules": [
+      "Heavy",
+      "Piercing",
+      "Range",
+      "Torrent"
+    ]
   },
   {
     "name": "INTERCESSOR GUNNER",
     "team": "Angels of Death",
     "apl": 3,
     "faction": "IMPERIUM",
-    "base_size": "32"
+    "base_size": "32",
+    "weapon_rules": [
+      "Heavy",
+      "Lethal",
+      "Piercing",
+      "Torrent"
+    ]
   },
   {
     "name": "INTERCESSOR WARRIOR",
     "team": "Angels of Death",
     "apl": 3,
     "faction": "IMPERIUM",
-    "base_size": "32"
+    "base_size": "32",
+    "weapon_rules": [
+      "Heavy",
+      "Lethal",
+      "Piercing",
+      "Torrent"
+    ]
   },
   {
     "name": "ELIMINATOR SNIPER",
     "team": "Angels of Death",
     "apl": 3,
     "faction": "IMPERIUM",
-    "base_size": "40"
+    "base_size": "40",
+    "weapon_rules": [
+      "Devastating",
+      "Heavy",
+      "Piercing",
+      "Range",
+      "Saturate",
+      "Seek",
+      "Silent"
+    ]
   },
   {
     "name": "BATTLECLADE TECHNOARCHEOLOGIST",
     "team": "Battleclade",
     "apl": 3,
     "faction": "IMPERIUM",
-    "base_size": "32"
+    "base_size": "32",
+    "weapon_rules": [
+      "Ceaseless",
+      "Devastating",
+      "Lethal",
+      "Range",
+      "Severe",
+      "Shock"
+    ]
   },
   {
     "name": "BATTLECLADE AUTO-PROXY SERVITOR",
     "team": "Battleclade",
     "apl": 2,
     "faction": "IMPERIUM",
-    "base_size": "25"
+    "base_size": "25",
+    "weapon_rules": [
+      "Lethal",
+      "Range",
+      "Saturate",
+      "Seek",
+      "Shock"
+    ]
   },
   {
     "name": "BATTLECLADE BREACHER SERVITOR",
     "team": "Battleclade",
     "apl": 2,
     "faction": "IMPERIUM",
-    "base_size": "25"
+    "base_size": "25",
+    "weapon_rules": [
+      "Lethal",
+      "Piercing",
+      "Range"
+    ]
   },
   {
     "name": "BATTLECLADE COMBAT SERVITOR",
     "team": "Battleclade",
     "apl": 2,
     "faction": "IMPERIUM",
-    "base_size": "25"
+    "base_size": "25",
+    "weapon_rules": [
+      "Devastating",
+      "Piercing",
+      "Range",
+      "Saturate",
+      "Severe",
+      "Torrent"
+    ]
   },
   {
     "name": "BATTLECLADE GUN SERVITOR",
     "team": "Battleclade",
     "apl": 2,
     "faction": "IMPERIUM",
-    "base_size": "32"
+    "base_size": "32",
+    "weapon_rules": [
+      "Brutal",
+      "Heavy",
+      "Piercing",
+      "Stun",
+      "Torrent"
+    ]
   },
   {
     "name": "BATTLECLADE SERVITOR UNDERSEER",
     "team": "Battleclade",
     "apl": 3,
     "faction": "IMPERIUM",
-    "base_size": "32"
+    "base_size": "32",
+    "weapon_rules": [
+      "Balanced",
+      "Range",
+      "Rending"
+    ]
   },
   {
     "name": "BATTLECLADE TECHNOMEDIC SERVITOR",
     "team": "Battleclade",
     "apl": 2,
     "faction": "IMPERIUM",
-    "base_size": "25"
+    "base_size": "25",
+    "weapon_rules": [
+      "Range",
+      "Rending"
+    ]
   },
   {
     "name": "DIRE AVENGER EXARCH",
     "team": "Blades of Khaine",
     "apl": 3,
     "faction": "AELDARI",
-    "base_size": "28"
+    "base_size": "28",
+    "weapon_rules": [
+      "Ceaseless",
+      "Lethal",
+      "Range",
+      "Rending"
+    ]
   },
   {
     "name": "DIRE AVENGER WARRIOR",
     "team": "Blades of Khaine",
     "apl": 3,
     "faction": "AELDARI",
-    "base_size": "28"
+    "base_size": "28",
+    "weapon_rules": [
+      "Balanced",
+      "Rending"
+    ]
   },
   {
     "name": "HOWLING BANSHEE EXARCH",
     "team": "Blades of Khaine",
     "apl": 3,
     "faction": "AELDARI",
-    "base_size": "28"
+    "base_size": "28",
+    "weapon_rules": [
+      "Ceaseless",
+      "Lethal",
+      "Range",
+      "Rending",
+      "Torrent"
+    ]
   },
   {
     "name": "HOWLING BANSHEE WARRIOR",
     "team": "Blades of Khaine",
     "apl": 3,
     "faction": "AELDARI",
-    "base_size": "28"
+    "base_size": "28",
+    "weapon_rules": [
+      "Lethal",
+      "Range",
+      "Rending"
+    ]
   },
   {
     "name": "STRIKING SCORPION EXARCH",
     "team": "Blades of Khaine",
     "apl": 3,
     "faction": "AELDARI",
-    "base_size": "28"
+    "base_size": "28",
+    "weapon_rules": [
+      "Brutal",
+      "Ceaseless",
+      "Lethal",
+      "Range",
+      "Rending"
+    ]
   },
   {
     "name": "STRIKING SCORPION WARRIOR",
     "team": "Blades of Khaine",
     "apl": 3,
     "faction": "AELDARI",
-    "base_size": "28"
+    "base_size": "28",
+    "weapon_rules": [
+      "Range",
+      "Rending"
+    ]
   },
   {
     "name": "TRAITOR CHIEFTAIN",
     "team": "Blooded",
     "apl": 2,
     "faction": "CHAOS",
-    "base_size": "25"
+    "base_size": "25",
+    "weapon_rules": [
+      "Hot",
+      "Lethal",
+      "Piercing",
+      "Range"
+    ]
   },
   {
     "name": "TRAITOR BRIMSTONE GRENADIER",
     "team": "Blooded",
     "apl": 2,
     "faction": "CHAOS",
-    "base_size": "25"
+    "base_size": "25",
+    "weapon_rules": [
+      "Devastating",
+      "Heavy",
+      "Limited",
+      "Piercing",
+      "Range",
+      "Saturate"
+    ]
   },
   {
     "name": "TRAITOR BUTCHER",
     "team": "Blooded",
     "apl": 2,
     "faction": "CHAOS",
-    "base_size": "25"
+    "base_size": "25",
+    "weapon_rules": [
+      "Ceaseless",
+      "Lethal"
+    ]
   },
   {
     "name": "TRAITOR CORPSEMAN",
     "team": "Blooded",
     "apl": 2,
     "faction": "CHAOS",
-    "base_size": "25"
+    "base_size": "25",
+    "weapon_rules": [
+      "Lethal",
+      "Relentless"
+    ]
   },
   {
     "name": "TRAITOR COMMSMAN",
     "team": "Blooded",
     "apl": 2,
     "faction": "CHAOS",
-    "base_size": "25"
+    "base_size": "25",
+    "weapon_rules": [
+      "Range"
+    ]
   },
   {
     "name": "TRAITOR ENFORCER",
     "team": "Blooded",
     "apl": 2,
     "faction": "CHAOS",
-    "base_size": "32"
+    "base_size": "32",
+    "weapon_rules": [
+      "Brutal",
+      "Range"
+    ]
   },
   {
     "name": "TRAITOR FLENSER",
     "team": "Blooded",
     "apl": 2,
     "faction": "CHAOS",
-    "base_size": "25"
+    "base_size": "25",
+    "weapon_rules": [
+      "Ceaseless",
+      "Heavy",
+      "Lethal",
+      "Range"
+    ]
   },
   {
     "name": "TRAITOR GUNNER",
     "team": "Blooded",
     "apl": 2,
     "faction": "CHAOS",
-    "base_size": "25"
+    "base_size": "25",
+    "weapon_rules": [
+      "Devastating",
+      "Hot",
+      "Lethal",
+      "Piercing",
+      "Range",
+      "Saturate",
+      "Torrent"
+    ]
   },
   {
     "name": "TRAITOR OGRYN",
     "team": "Blooded",
     "apl": 2,
     "faction": "CHAOS",
-    "base_size": "40"
+    "base_size": "40",
+    "weapon_rules": [
+      "Range",
+      "Rending",
+      "Shock",
+      "Stun"
+    ]
   },
   {
     "name": "TRAITOR SHARPSHOOTER",
     "team": "Blooded",
     "apl": 2,
     "faction": "CHAOS",
-    "base_size": "25"
+    "base_size": "25",
+    "weapon_rules": [
+      "Devastating",
+      "Heavy",
+      "Silent"
+    ]
   },
   {
     "name": "TRAITOR THUG",
     "team": "Blooded",
     "apl": 2,
     "faction": "CHAOS",
-    "base_size": "25"
+    "base_size": "25",
+    "weapon_rules": [
+      "Brutal",
+      "Heavy"
+    ]
   },
   {
     "name": "TRAITOR TRENCH SWEEPER",
     "team": "Blooded",
     "apl": 2,
     "faction": "CHAOS",
-    "base_size": "25"
+    "base_size": "25",
+    "weapon_rules": [
+      "Range"
+    ]
   },
   {
     "name": "TRAITOR TROOPER",
     "team": "Blooded",
     "apl": 2,
     "faction": "CHAOS",
-    "base_size": "25"
+    "base_size": "25",
+    "weapon_rules": []
   },
   {
     "name": "BROOD BROTHER COMMANDER",
     "team": "Brood Brothers",
     "apl": 2,
     "faction": "TYRANID",
-    "base_size": "25"
+    "base_size": "25",
+    "weapon_rules": [
+      "Balanced",
+      "Ceaseless",
+      "Lethal",
+      "Range",
+      "Rending"
+    ]
   },
   {
     "name": "BROOD BROTHER AGITATOR",
     "team": "Brood Brothers",
     "apl": 2,
     "faction": "TYRANID",
-    "base_size": "25"
+    "base_size": "25",
+    "weapon_rules": [
+      "Shock"
+    ]
   },
   {
     "name": "BROOD BROTHER GUNNER",
     "team": "Brood Brothers",
     "apl": 2,
     "faction": "TYRANID",
-    "base_size": "25"
+    "base_size": "25",
+    "weapon_rules": [
+      "Devastating",
+      "Hot",
+      "Lethal",
+      "Piercing",
+      "Range",
+      "Saturate",
+      "Torrent"
+    ]
   },
   {
     "name": "BROOD BROTHER ICONWARD",
     "team": "Brood Brothers",
     "apl": 2,
     "faction": "TYRANID",
-    "base_size": "25"
+    "base_size": "25",
+    "weapon_rules": []
   },
   {
     "name": "BROOD BROTHER KNIFE FIGHTER",
     "team": "Brood Brothers",
     "apl": 2,
     "faction": "TYRANID",
-    "base_size": "25"
+    "base_size": "25",
+    "weapon_rules": [
+      "Ceaseless",
+      "Lethal"
+    ]
   },
   {
     "name": "BROOD BROTHER MEDIC",
     "team": "Brood Brothers",
     "apl": 2,
     "faction": "TYRANID",
-    "base_size": "25"
+    "base_size": "25",
+    "weapon_rules": [
+      "Lethal",
+      "Limited",
+      "Range"
+    ]
   },
   {
     "name": "BROOD BROTHER SAPPER",
     "team": "Brood Brothers",
     "apl": 2,
     "faction": "TYRANID",
-    "base_size": "25"
+    "base_size": "25",
+    "weapon_rules": [
+      "Heavy",
+      "Limited",
+      "Piercing",
+      "Range",
+      "Saturate"
+    ]
   },
   {
     "name": "BROOD BROTHER SNIPER",
     "team": "Brood Brothers",
     "apl": 2,
     "faction": "TYRANID",
-    "base_size": "25"
+    "base_size": "25",
+    "weapon_rules": [
+      "Devastating",
+      "Heavy",
+      "Silent"
+    ]
   },
   {
     "name": "BROOD BROTHER TROOPER",
     "team": "Brood Brothers",
     "apl": 2,
     "faction": "TYRANID",
-    "base_size": "25"
+    "base_size": "25",
+    "weapon_rules": []
   },
   {
     "name": "BROOD BROTHER VETERAN",
     "team": "Brood Brothers",
     "apl": 2,
     "faction": "TYRANID",
-    "base_size": "25"
+    "base_size": "25",
+    "weapon_rules": [
+      "Balanced",
+      "Range"
+    ]
   },
   {
     "name": "BROOD BROTHER VOX-OPERATOR",
     "team": "Brood Brothers",
     "apl": 2,
     "faction": "TYRANID",
-    "base_size": "25"
+    "base_size": "25",
+    "weapon_rules": [
+      "Range"
+    ]
   },
   {
     "name": "MAGUS",
     "team": "Brood Brothers",
     "apl": 3,
     "faction": "TYRANID",
-    "base_size": "32"
+    "base_size": "32",
+    "weapon_rules": [
+      "Lethal",
+      "Piercing",
+      "Range",
+      "Shock"
+    ]
   },
   {
     "name": "PATRIARCH",
     "team": "Brood Brothers",
     "apl": 4,
     "faction": "TYRANID",
-    "base_size": "50"
+    "base_size": "50",
+    "weapon_rules": [
+      "Piercing",
+      "Range",
+      "Relentless",
+      "Rending"
+    ]
   },
   {
     "name": "PSYCHIC FAMILIAR",
     "team": "Brood Brothers",
     "apl": 2,
     "faction": "TYRANID",
-    "base_size": "25"
+    "base_size": "25",
+    "weapon_rules": [
+      "Range",
+      "Rending",
+      "Seek"
+    ]
   },
   {
     "name": "PRIMUS",
     "team": "Brood Brothers",
     "apl": 3,
     "faction": "TYRANID",
-    "base_size": "32"
+    "base_size": "32",
+    "weapon_rules": [
+      "Lethal",
+      "Range",
+      "Rending",
+      "Silent"
+    ]
   },
   {
     "name": "GEOMANCER",
     "team": "Canoptek Circle",
     "apl": 3,
     "faction": "NECRON",
-    "base_size": "50"
+    "base_size": "50",
+    "weapon_rules": [
+      "Piercing",
+      "Seek",
+      "Severe",
+      "Shock",
+      "Stun"
+    ]
   },
   {
     "name": "CANOPTEK MACROCYTE ACCELERATOR",
     "team": "Canoptek Circle",
     "apl": 2,
     "faction": "NECRON",
-    "base_size": "28"
+    "base_size": "28",
+    "weapon_rules": [
+      "Lethal",
+      "Piercing",
+      "Range",
+      "Stun"
+    ]
   },
   {
     "name": "CANOPTEK MACROCYTE REANIMATOR",
     "team": "Canoptek Circle",
     "apl": 2,
     "faction": "NECRON",
-    "base_size": "28"
+    "base_size": "28",
+    "weapon_rules": [
+      "Lethal",
+      "Range"
+    ]
   },
   {
     "name": "CANOPTEK MACROCYTE WARRIOR",
     "team": "Canoptek Circle",
     "apl": 2,
     "faction": "NECRON",
-    "base_size": "28"
+    "base_size": "28",
+    "weapon_rules": [
+      "Piercing"
+    ]
   },
   {
     "name": "CANOPTEK TOMB CRAWLER",
     "team": "Canoptek Circle",
     "apl": 2,
     "faction": "NECRON",
-    "base_size": "50"
+    "base_size": "50",
+    "weapon_rules": [
+      "Piercing",
+      "Severe",
+      "Torrent"
+    ]
   },
   {
     "name": "INSIDIANT SUPERIOR",
     "team": "Celestian Insidiants",
     "apl": 3,
     "faction": "IMPERIUM",
-    "base_size": "32"
+    "base_size": "32",
+    "weapon_rules": [
+      "Devastating",
+      "Lethal",
+      "Piercing",
+      "Range",
+      "Shock",
+      "Silent"
+    ]
   },
   {
     "name": "INSIDIANT ABJUROR",
     "team": "Celestian Insidiants",
     "apl": 2,
     "faction": "IMPERIUM",
-    "base_size": "32"
+    "base_size": "32",
+    "weapon_rules": [
+      "Lethal"
+    ]
   },
   {
     "name": "INSIDIANT CENSOR",
     "team": "Celestian Insidiants",
     "apl": 2,
     "faction": "IMPERIUM",
-    "base_size": "32"
+    "base_size": "32",
+    "weapon_rules": [
+      "Brutal",
+      "Range",
+      "Shock"
+    ]
   },
   {
     "name": "INSIDIANT CREMATOR",
     "team": "Celestian Insidiants",
     "apl": 2,
     "faction": "IMPERIUM",
-    "base_size": "32"
+    "base_size": "32",
+    "weapon_rules": [
+      "Range",
+      "Saturate",
+      "Seek",
+      "Shock",
+      "Torrent"
+    ]
   },
   {
     "name": "INSIDIANT DENUNCIA",
     "team": "Celestian Insidiants",
     "apl": 2,
     "faction": "IMPERIUM",
-    "base_size": "32"
+    "base_size": "32",
+    "weapon_rules": [
+      "Range",
+      "Seek",
+      "Shock",
+      "Stun"
+    ]
   },
   {
     "name": "INSIDIANT MORTISANCTUS",
     "team": "Celestian Insidiants",
     "apl": 2,
     "faction": "IMPERIUM",
-    "base_size": "32"
+    "base_size": "32",
+    "weapon_rules": [
+      "Brutal",
+      "Lethal"
+    ]
   },
   {
     "name": "INSIDIANT RELIQUARIUS",
     "team": "Celestian Insidiants",
     "apl": 2,
     "faction": "IMPERIUM",
-    "base_size": "32"
+    "base_size": "32",
+    "weapon_rules": [
+      "Devastating",
+      "Piercing",
+      "Range",
+      "Silent"
+    ]
   },
   {
     "name": "INSIDIANT WARRIOR",
     "team": "Celestian Insidiants",
     "apl": 2,
     "faction": "IMPERIUM",
-    "base_size": "32"
+    "base_size": "32",
+    "weapon_rules": [
+      "Devastating",
+      "Piercing",
+      "Range",
+      "Shock",
+      "Silent"
+    ]
   },
   {
     "name": "CULT DEMAGOGUE",
     "team": "Chaos Cult",
     "apl": 2,
     "faction": "CHAOS",
-    "base_size": "32"
+    "base_size": "32",
+    "weapon_rules": [
+      "Range",
+      "Shock",
+      "Stun"
+    ]
   },
   {
     "name": "BLESSED BLADE",
     "team": "Chaos Cult",
     "apl": 2,
     "faction": "CHAOS",
-    "base_size": "28"
+    "base_size": "28",
+    "weapon_rules": [
+      "Lethal",
+      "Range"
+    ]
   },
   {
     "name": "ICONARCH",
     "team": "Chaos Cult",
     "apl": 2,
     "faction": "CHAOS",
-    "base_size": "32"
+    "base_size": "32",
+    "weapon_rules": [
+      "Range",
+      "Saturate",
+      "Torrent"
+    ]
   },
   {
     "name": "MINDWITCH",
     "team": "Chaos Cult",
     "apl": 2,
     "faction": "CHAOS",
-    "base_size": "32"
+    "base_size": "32",
+    "weapon_rules": [
+      "Devastating",
+      "Lethal",
+      "Range"
+    ]
   },
   {
     "name": "CHAOS DEVOTEE",
     "team": "Chaos Cult",
     "apl": 2,
     "faction": "CHAOS",
-    "base_size": "25"
+    "base_size": "25",
+    "weapon_rules": [
+      "Range"
+    ]
   },
   {
     "name": "CHAOS MUTANT",
     "team": "Chaos Cult",
     "apl": 2,
     "faction": "CHAOS",
-    "base_size": "25"
+    "base_size": "25",
+    "weapon_rules": [
+      "Ceaseless",
+      "Rending"
+    ]
   },
   {
     "name": "CHAOS TORMENT",
     "team": "Chaos Cult",
     "apl": 2,
     "faction": "CHAOS",
-    "base_size": "40"
+    "base_size": "40",
+    "weapon_rules": [
+      "Ceaseless",
+      "Rending"
+    ]
   },
   {
     "name": "VOIDSCARRED FELARCH",
     "team": "Corsair Voidscarred",
     "apl": 2,
     "faction": "AELDARI",
-    "base_size": "28"
+    "base_size": "28",
+    "weapon_rules": [
+      "Lethal",
+      "Piercing",
+      "Range",
+      "Rending",
+      "Stun"
+    ]
   },
   {
     "name": "VOIDSCARRED FATE DEALER",
     "team": "Corsair Voidscarred",
     "apl": 2,
     "faction": "AELDARI",
-    "base_size": "28"
+    "base_size": "28",
+    "weapon_rules": [
+      "Devastating",
+      "Heavy",
+      "Range",
+      "Rending",
+      "Saturate",
+      "Silent"
+    ]
   },
   {
     "name": "VOIDSCARRED GUNNER",
     "team": "Corsair Voidscarred",
     "apl": 2,
     "faction": "AELDARI",
-    "base_size": "28"
+    "base_size": "28",
+    "weapon_rules": [
+      "Piercing",
+      "Range",
+      "Rending",
+      "Torrent"
+    ]
   },
   {
     "name": "VOIDSCARRED HEAVY GUNNER",
     "team": "Corsair Voidscarred",
     "apl": 2,
     "faction": "AELDARI",
-    "base_size": "28"
+    "base_size": "28",
+    "weapon_rules": [
+      "Devastating",
+      "Heavy",
+      "Piercing",
+      "Range",
+      "Rending",
+      "Torrent"
+    ]
   },
   {
     "name": "VOIDSCARRED KURNATHI",
     "team": "Corsair Voidscarred",
     "apl": 2,
     "faction": "AELDARI",
-    "base_size": "28"
+    "base_size": "28",
+    "weapon_rules": [
+      "Ceaseless",
+      "Lethal",
+      "Range",
+      "Rending"
+    ]
   },
   {
     "name": "VOIDSCARRED KURNITE HUNTER",
     "team": "Corsair Voidscarred",
     "apl": 2,
     "faction": "AELDARI",
-    "base_size": "28"
+    "base_size": "28",
+    "weapon_rules": [
+      "Lethal",
+      "Range",
+      "Rending",
+      "Saturate",
+      "Seek",
+      "Silent"
+    ]
   },
   {
     "name": "VOIDSCARRED SHADE RUNNER",
     "team": "Corsair Voidscarred",
     "apl": 2,
     "faction": "AELDARI",
-    "base_size": "28"
+    "base_size": "28",
+    "weapon_rules": [
+      "Ceaseless",
+      "Lethal",
+      "Range",
+      "Rending",
+      "Silent"
+    ]
   },
   {
     "name": "VOIDSCARRED SOUL WEAVER",
     "team": "Corsair Voidscarred",
     "apl": 2,
     "faction": "AELDARI",
-    "base_size": "28"
+    "base_size": "28",
+    "weapon_rules": [
+      "Lethal",
+      "Range",
+      "Rending"
+    ]
   },
   {
     "name": "VOIDSCARRED STARSTORM DUELLIST",
     "team": "Corsair Voidscarred",
     "apl": 2,
     "faction": "AELDARI",
-    "base_size": "28"
+    "base_size": "28",
+    "weapon_rules": [
+      "Devastating",
+      "Piercing",
+      "Range",
+      "Rending"
+    ]
   },
   {
     "name": "VOIDSCARRED WARRIOR",
     "team": "Corsair Voidscarred",
     "apl": 2,
     "faction": "AELDARI",
-    "base_size": "28"
+    "base_size": "28",
+    "weapon_rules": [
+      "Lethal",
+      "Range",
+      "Rending"
+    ]
   },
   {
     "name": "VOIDSCARRED WAY SEEKER",
     "team": "Corsair Voidscarred",
     "apl": 2,
     "faction": "AELDARI",
-    "base_size": "28"
+    "base_size": "28",
+    "weapon_rules": [
+      "Devastating",
+      "Range",
+      "Rending",
+      "Severe",
+      "Shock",
+      "Silent",
+      "Stun"
+    ]
   },
   {
     "name": "DEATH KORPS WATCHMASTER",
     "team": "Death Korps",
     "apl": 2,
     "faction": "IMPERIUM",
-    "base_size": "25"
+    "base_size": "25",
+    "weapon_rules": [
+      "Hot",
+      "Lethal",
+      "Piercing",
+      "Range"
+    ]
   },
   {
     "name": "DEATH KORPS BRUISER",
     "team": "Death Korps",
     "apl": 2,
     "faction": "IMPERIUM",
-    "base_size": "25"
+    "base_size": "25",
+    "weapon_rules": [
+      "Shock"
+    ]
   },
   {
     "name": "DEATH KORPS CONFIDANT",
     "team": "Death Korps",
     "apl": 2,
     "faction": "IMPERIUM",
-    "base_size": "25"
+    "base_size": "25",
+    "weapon_rules": [
+      "Lethal",
+      "Range"
+    ]
   },
   {
     "name": "DEATH KORPS GUNNER",
     "team": "Death Korps",
     "apl": 2,
     "faction": "IMPERIUM",
-    "base_size": "25"
+    "base_size": "25",
+    "weapon_rules": [
+      "Devastating",
+      "Hot",
+      "Lethal",
+      "Piercing",
+      "Range",
+      "Saturate",
+      "Torrent"
+    ]
   },
   {
     "name": "DEATH KORPS MEDIC",
     "team": "Death Korps",
     "apl": 2,
     "faction": "IMPERIUM",
-    "base_size": "25"
+    "base_size": "25",
+    "weapon_rules": [
+      "Range"
+    ]
   },
   {
     "name": "DEATH KORPS SAPPER",
     "team": "Death Korps",
     "apl": 2,
     "faction": "IMPERIUM",
-    "base_size": "25"
+    "base_size": "25",
+    "weapon_rules": [
+      "Heavy",
+      "Lethal",
+      "Limited",
+      "Piercing",
+      "Silent"
+    ]
   },
   {
     "name": "DEATH KORPS SNIPER",
     "team": "Death Korps",
     "apl": 2,
     "faction": "IMPERIUM",
-    "base_size": "25"
+    "base_size": "25",
+    "weapon_rules": [
+      "Devastating",
+      "Heavy",
+      "Silent"
+    ]
   },
   {
     "name": "DEATH KORPS SPOTTER",
     "team": "Death Korps",
     "apl": 2,
     "faction": "IMPERIUM",
-    "base_size": "25"
+    "base_size": "25",
+    "weapon_rules": [
+      "Heavy",
+      "Range",
+      "Seek",
+      "Silent"
+    ]
   },
   {
     "name": "DEATH KORPS TROOPER",
     "team": "Death Korps",
     "apl": 2,
     "faction": "IMPERIUM",
-    "base_size": "25"
+    "base_size": "25",
+    "weapon_rules": []
   },
   {
     "name": "DEATH KORPS VETERAN",
     "team": "Death Korps",
     "apl": 2,
     "faction": "IMPERIUM",
-    "base_size": "25"
+    "base_size": "25",
+    "weapon_rules": []
   },
   {
     "name": "DEATH KORPS VOX-OPERATOR",
     "team": "Death Korps",
     "apl": 2,
     "faction": "IMPERIUM",
-    "base_size": "25"
+    "base_size": "25",
+    "weapon_rules": [
+      "Range"
+    ]
   },
   {
     "name": "DEATH KORPS ZEALOT",
     "team": "Death Korps",
     "apl": 2,
     "faction": "IMPERIUM",
-    "base_size": "25"
+    "base_size": "25",
+    "weapon_rules": [
+      "Severe"
+    ]
   },
   {
     "name": "DEATHWATCH WATCH SERGEANT",
     "team": "Deathwatch",
     "apl": 3,
     "faction": "IMPERIUM",
-    "base_size": "32"
+    "base_size": "32",
+    "weapon_rules": [
+      "Hot",
+      "Lethal",
+      "Piercing",
+      "Range"
+    ]
   },
   {
     "name": "DEATHWATCH AEGIS VETERAN",
     "team": "Deathwatch",
     "apl": 3,
     "faction": "IMPERIUM",
-    "base_size": "32"
+    "base_size": "32",
+    "weapon_rules": [
+      "Piercing",
+      "Range",
+      "Shock"
+    ]
   },
   {
     "name": "DEATHWATCH BLADEMASTER VETERAN",
     "team": "Deathwatch",
     "apl": 3,
     "faction": "IMPERIUM",
-    "base_size": "32"
+    "base_size": "32",
+    "weapon_rules": [
+      "Brutal",
+      "Lethal",
+      "Piercing",
+      "Range"
+    ]
   },
   {
     "name": "DEATHWATCH BOMBARD VETERAN",
     "team": "Deathwatch",
     "apl": 3,
     "faction": "IMPERIUM",
-    "base_size": "40"
+    "base_size": "40",
+    "weapon_rules": [
+      "Piercing",
+      "Range",
+      "Torrent"
+    ]
   },
   {
     "name": "DEATHWATCH BREACHER VETERAN",
     "team": "Deathwatch",
     "apl": 3,
     "faction": "IMPERIUM",
-    "base_size": "40"
+    "base_size": "40",
+    "weapon_rules": [
+      "Devastating",
+      "Heavy",
+      "Limited",
+      "Piercing",
+      "Range",
+      "Torrent"
+    ]
   },
   {
     "name": "DEATHWATCH DEMOLISHER VETERAN",
     "team": "Deathwatch",
     "apl": 3,
     "faction": "IMPERIUM",
-    "base_size": "32"
+    "base_size": "32",
+    "weapon_rules": [
+      "Brutal",
+      "Ceaseless",
+      "Heavy",
+      "Range",
+      "Shock",
+      "Stun"
+    ]
   },
   {
     "name": "DEATHWATCH DISRUPTOR VETERAN",
     "team": "Deathwatch",
     "apl": 3,
     "faction": "IMPERIUM",
-    "base_size": "32"
+    "base_size": "32",
+    "weapon_rules": [
+      "Lethal",
+      "Range"
+    ]
   },
   {
     "name": "DEATHWATCH GUNNER VETERAN",
     "team": "Deathwatch",
     "apl": 3,
     "faction": "IMPERIUM",
-    "base_size": "32"
+    "base_size": "32",
+    "weapon_rules": [
+      "Heavy",
+      "Hot",
+      "Lethal",
+      "Piercing",
+      "Range"
+    ]
   },
   {
     "name": "DEATHWATCH HEADTAKER VETERAN",
     "team": "Deathwatch",
     "apl": 3,
     "faction": "IMPERIUM",
-    "base_size": "32"
+    "base_size": "32",
+    "weapon_rules": [
+      "Piercing",
+      "Range"
+    ]
   },
   {
     "name": "DEATHWATCH HORDE-SLAYER VETERAN",
     "team": "Deathwatch",
     "apl": 3,
     "faction": "IMPERIUM",
-    "base_size": "40"
+    "base_size": "40",
+    "weapon_rules": [
+      "Heavy",
+      "Piercing",
+      "Range",
+      "Saturate",
+      "Torrent"
+    ]
   },
   {
     "name": "DEATHWATCH MARKSMAN VETERAN",
     "team": "Deathwatch",
     "apl": 3,
     "faction": "IMPERIUM",
-    "base_size": "32"
+    "base_size": "32",
+    "weapon_rules": [
+      "Heavy",
+      "Lethal",
+      "Piercing"
+    ]
   },
   {
     "name": "ELUCIA VHANE",
     "team": "Elucidian Starstriders",
     "apl": 3,
     "faction": "IMPERIUM",
-    "base_size": "25"
+    "base_size": "25",
+    "weapon_rules": [
+      "Balanced",
+      "Ceaseless",
+      "Lethal",
+      "Piercing",
+      "Range",
+      "Seek"
+    ]
   },
   {
     "name": "CANID",
     "team": "Elucidian Starstriders",
     "apl": 2,
     "faction": "IMPERIUM",
-    "base_size": "25"
+    "base_size": "25",
+    "weapon_rules": [
+      "Range",
+      "Rending"
+    ]
   },
   {
     "name": "DEATH CULT EXECUTIONER",
     "team": "Elucidian Starstriders",
     "apl": 3,
     "faction": "IMPERIUM",
-    "base_size": "25"
+    "base_size": "25",
+    "weapon_rules": [
+      "Lethal",
+      "Piercing",
+      "Range",
+      "Silent",
+      "Stun"
+    ]
   },
   {
     "name": "LECTRO-MAESTER",
     "team": "Elucidian Starstriders",
     "apl": 2,
     "faction": "IMPERIUM",
-    "base_size": "25"
+    "base_size": "25",
+    "weapon_rules": [
+      "Devastating",
+      "Range",
+      "Rending"
+    ]
   },
   {
     "name": "REJUVENAT ADEPT",
     "team": "Elucidian Starstriders",
     "apl": 2,
     "faction": "IMPERIUM",
-    "base_size": "25"
+    "base_size": "25",
+    "weapon_rules": [
+      "Range",
+      "Rending"
+    ]
   },
   {
     "name": "VOIDMASTER",
     "team": "Elucidian Starstriders",
     "apl": 2,
     "faction": "IMPERIUM",
-    "base_size": "25"
+    "base_size": "25",
+    "weapon_rules": [
+      "Balanced",
+      "Ceaseless",
+      "Lethal",
+      "Range"
+    ]
   },
   {
     "name": "VOIDSMAN",
     "team": "Elucidian Starstriders",
     "apl": 2,
     "faction": "IMPERIUM",
-    "base_size": "25"
+    "base_size": "25",
+    "weapon_rules": [
+      "Heavy",
+      "Rending",
+      "Torrent"
+    ]
   },
   {
     "name": "ARBITES PROCTOR-EXACTANT",
     "team": "Exaction Squad",
     "apl": 2,
     "faction": "IMPERIUM",
-    "base_size": "28"
+    "base_size": "28",
+    "weapon_rules": [
+      "Lethal",
+      "Range",
+      "Shock"
+    ]
   },
   {
     "name": "ARBITES CHIRURGANT",
     "team": "Exaction Squad",
     "apl": 2,
     "faction": "IMPERIUM",
-    "base_size": "28"
+    "base_size": "28",
+    "weapon_rules": [
+      "Range"
+    ]
   },
   {
     "name": "ARBITES LEASHMASTER",
     "team": "Exaction Squad",
     "apl": 2,
     "faction": "IMPERIUM",
-    "base_size": "28"
+    "base_size": "28",
+    "weapon_rules": [
+      "Range",
+      "Relentless"
+    ]
   },
   {
     "name": "R-VR CYBER-MASTIFF",
     "team": "Exaction Squad",
     "apl": 2,
     "faction": "IMPERIUM",
-    "base_size": "25"
+    "base_size": "25",
+    "weapon_rules": [
+      "Lethal",
+      "Range"
+    ]
   },
   {
     "name": "ARBITES CASTIGATOR",
     "team": "Exaction Squad",
     "apl": 2,
     "faction": "IMPERIUM",
-    "base_size": "28"
+    "base_size": "28",
+    "weapon_rules": [
+      "Range",
+      "Rending",
+      "Shock"
+    ]
   },
   {
     "name": "ARBITES GUNNER",
     "team": "Exaction Squad",
     "apl": 2,
     "faction": "IMPERIUM",
-    "base_size": "28"
+    "base_size": "28",
+    "weapon_rules": [
+      "Heavy",
+      "Piercing",
+      "Range",
+      "Severe",
+      "Stun",
+      "Torrent"
+    ]
   },
   {
     "name": "ARBITES MALOCATOR",
     "team": "Exaction Squad",
     "apl": 2,
     "faction": "IMPERIUM",
-    "base_size": "28"
+    "base_size": "28",
+    "weapon_rules": [
+      "Lethal",
+      "Range",
+      "Severe"
+    ]
   },
   {
     "name": "ARBITES MARKSMAN",
     "team": "Exaction Squad",
     "apl": 2,
     "faction": "IMPERIUM",
-    "base_size": "28"
+    "base_size": "28",
+    "weapon_rules": [
+      "Devastating",
+      "Heavy",
+      "Lethal",
+      "Range",
+      "Silent"
+    ]
   },
   {
     "name": "ARBITES REVELATUM",
     "team": "Exaction Squad",
     "apl": 2,
     "faction": "IMPERIUM",
-    "base_size": "28"
+    "base_size": "28",
+    "weapon_rules": [
+      "Lethal",
+      "Range",
+      "Seek"
+    ]
   },
   {
     "name": "ARBITES SUBDUCTOR",
     "team": "Exaction Squad",
     "apl": 2,
     "faction": "IMPERIUM",
-    "base_size": "28"
+    "base_size": "28",
+    "weapon_rules": [
+      "Range",
+      "Shock"
+    ]
   },
   {
     "name": "ARBITES VIGILANT",
     "team": "Exaction Squad",
     "apl": 2,
     "faction": "IMPERIUM",
-    "base_size": "28"
+    "base_size": "28",
+    "weapon_rules": [
+      "Range"
+    ]
   },
   {
     "name": "ARBITES VOX-SIGNIFIER",
     "team": "Exaction Squad",
     "apl": 2,
     "faction": "IMPERIUM",
-    "base_size": "28"
+    "base_size": "28",
+    "weapon_rules": [
+      "Range"
+    ]
   },
   {
     "name": "KROOT KILL-BROKER",
     "team": "Farstalker Kinband",
     "apl": 2,
     "faction": "T'AU EMPIRE",
-    "base_size": "32"
+    "base_size": "32",
+    "weapon_rules": [
+      "Balanced"
+    ]
   },
   {
     "name": "KROOT BOW-HUNTER",
     "team": "Farstalker Kinband",
     "apl": 2,
     "faction": "T'AU EMPIRE",
-    "base_size": "28"
+    "base_size": "28",
+    "weapon_rules": [
+      "Lethal",
+      "Piercing",
+      "Range",
+      "Silent"
+    ]
   },
   {
     "name": "KROOT COLD-BLOOD",
     "team": "Farstalker Kinband",
     "apl": 2,
     "faction": "T'AU EMPIRE",
-    "base_size": "28"
+    "base_size": "28",
+    "weapon_rules": [
+      "Lethal",
+      "Rending"
+    ]
   },
   {
     "name": "KROOT CUT-SKIN",
     "team": "Farstalker Kinband",
     "apl": 2,
     "faction": "T'AU EMPIRE",
-    "base_size": "28"
+    "base_size": "28",
+    "weapon_rules": [
+      "Ceaseless",
+      "Lethal"
+    ]
   },
   {
     "name": "KROOT HEAVY GUNNER",
     "team": "Farstalker Kinband",
     "apl": 2,
     "faction": "T'AU EMPIRE",
-    "base_size": "28"
+    "base_size": "28",
+    "weapon_rules": [
+      "Heavy",
+      "Piercing",
+      "Range",
+      "Rending",
+      "Torrent"
+    ]
   },
   {
     "name": "KROOT HOUND",
     "team": "Farstalker Kinband",
     "apl": 2,
     "faction": "T'AU EMPIRE",
-    "base_size": "28"
+    "base_size": "28",
+    "weapon_rules": [
+      "Range",
+      "Rending"
+    ]
   },
   {
     "name": "KROOT LONG-SIGHT",
     "team": "Farstalker Kinband",
     "apl": 2,
     "faction": "T'AU EMPIRE",
-    "base_size": "28"
+    "base_size": "28",
+    "weapon_rules": [
+      "Devastating",
+      "Heavy",
+      "Silent"
+    ]
   },
   {
     "name": "KROOT PISTOLIER",
     "team": "Farstalker Kinband",
     "apl": 2,
     "faction": "T'AU EMPIRE",
-    "base_size": "28"
+    "base_size": "28",
+    "weapon_rules": [
+      "Ceaseless",
+      "Lethal",
+      "Range"
+    ]
   },
   {
     "name": "KROOT STALKER",
     "team": "Farstalker Kinband",
     "apl": 2,
     "faction": "T'AU EMPIRE",
-    "base_size": "28"
+    "base_size": "28",
+    "weapon_rules": [
+      "Balanced",
+      "Heavy",
+      "Range",
+      "Rending"
+    ]
   },
   {
     "name": "KROOT TRACKER",
     "team": "Farstalker Kinband",
     "apl": 2,
     "faction": "T'AU EMPIRE",
-    "base_size": "28"
+    "base_size": "28",
+    "weapon_rules": [
+      "Range",
+      "Seek"
+    ]
   },
   {
     "name": "KROOT WARRIOR",
     "team": "Farstalker Kinband",
     "apl": 2,
     "faction": "T'AU EMPIRE",
-    "base_size": "28"
+    "base_size": "28",
+    "weapon_rules": [
+      "Piercing",
+      "Range"
+    ]
   },
   {
     "name": "FELLGOR IRONHORN",
     "team": "Fellgor Ravagers",
     "apl": 2,
     "faction": "CHAOS",
-    "base_size": "32"
+    "base_size": "32",
+    "weapon_rules": [
+      "Brutal",
+      "Hot",
+      "Lethal",
+      "Piercing",
+      "Range",
+      "Rending"
+    ]
   },
   {
     "name": "FELLGOR DEATHKNELL",
     "team": "Fellgor Ravagers",
     "apl": 2,
     "faction": "CHAOS",
-    "base_size": "32"
+    "base_size": "32",
+    "weapon_rules": [
+      "Brutal",
+      "Piercing",
+      "Range"
+    ]
   },
   {
     "name": "FELLGOR FLUXBRAY",
     "team": "Fellgor Ravagers",
     "apl": 2,
     "faction": "CHAOS",
-    "base_size": "32"
+    "base_size": "32",
+    "weapon_rules": [
+      "Ceaseless",
+      "Range"
+    ]
   },
   {
     "name": "FELLGOR GNARLSCAR",
     "team": "Fellgor Ravagers",
     "apl": 2,
     "faction": "CHAOS",
-    "base_size": "32"
+    "base_size": "32",
+    "weapon_rules": [
+      "Brutal",
+      "Range"
+    ]
   },
   {
     "name": "FELLGOR GOREHORN",
     "team": "Fellgor Ravagers",
     "apl": 2,
     "faction": "CHAOS",
-    "base_size": "32"
+    "base_size": "32",
+    "weapon_rules": [
+      "Lethal",
+      "Range"
+    ]
   },
   {
     "name": "FELLGOR HERD-GOAD",
     "team": "Fellgor Ravagers",
     "apl": 2,
     "faction": "CHAOS",
-    "base_size": "32"
+    "base_size": "32",
+    "weapon_rules": [
+      "Lethal",
+      "Range",
+      "Shock",
+      "Stun"
+    ]
   },
   {
     "name": "FELLGOR MANGLER",
     "team": "Fellgor Ravagers",
     "apl": 2,
     "faction": "CHAOS",
-    "base_size": "32"
+    "base_size": "32",
+    "weapon_rules": [
+      "Ceaseless"
+    ]
   },
   {
     "name": "FELLGOR SHAMAN",
     "team": "Fellgor Ravagers",
     "apl": 2,
     "faction": "CHAOS",
-    "base_size": "32"
+    "base_size": "32",
+    "weapon_rules": [
+      "Range",
+      "Rending",
+      "Saturate",
+      "Seek",
+      "Shock"
+    ]
   },
   {
     "name": "FELLGOR TOXHORN",
     "team": "Fellgor Ravagers",
     "apl": 2,
     "faction": "CHAOS",
-    "base_size": "32"
+    "base_size": "32",
+    "weapon_rules": [
+      "Limited",
+      "Range",
+      "Shock",
+      "Stun"
+    ]
   },
   {
     "name": "FELLGOR VANDAL",
     "team": "Fellgor Ravagers",
     "apl": 2,
     "faction": "CHAOS",
-    "base_size": "32"
+    "base_size": "32",
+    "weapon_rules": [
+      "Brutal",
+      "Ceaseless"
+    ]
   },
   {
     "name": "FELLGOR WARRIOR",
     "team": "Fellgor Ravagers",
     "apl": 2,
     "faction": "CHAOS",
-    "base_size": "32"
+    "base_size": "32",
+    "weapon_rules": [
+      "Brutal",
+      "Range"
+    ]
   },
   {
     "name": "VULGRAR THRICE-CURSED",
     "team": "Gellerpox Infected",
     "apl": 2,
     "faction": "CHAOS",
-    "base_size": "40"
+    "base_size": "40",
+    "weapon_rules": [
+      "Range",
+      "Saturate",
+      "Seek",
+      "Torrent"
+    ]
   },
   {
     "name": "BLOATSPAWN",
     "team": "Gellerpox Infected",
     "apl": 2,
     "faction": "CHAOS",
-    "base_size": "40"
+    "base_size": "40",
+    "weapon_rules": [
+      "Range",
+      "Torrent"
+    ]
   },
   {
     "name": "FLESHSCREAMER",
     "team": "Gellerpox Infected",
     "apl": 2,
     "faction": "CHAOS",
-    "base_size": "40"
+    "base_size": "40",
+    "weapon_rules": [
+      "Lethal"
+    ]
   },
   {
     "name": "LUMBERGHAST",
     "team": "Gellerpox Infected",
     "apl": 2,
     "faction": "CHAOS",
-    "base_size": "40"
+    "base_size": "40",
+    "weapon_rules": [
+      "Brutal",
+      "Range"
+    ]
   },
   {
     "name": "MUTANT",
     "team": "Gellerpox Infected",
     "apl": 2,
     "faction": "CHAOS",
-    "base_size": "25"
+    "base_size": "25",
+    "weapon_rules": [
+      "Brutal",
+      "Ceaseless",
+      "Heavy",
+      "Limited",
+      "Range",
+      "Saturate"
+    ]
   },
   {
     "name": "GLITCHLING",
     "team": "Gellerpox Infected",
     "apl": 2,
     "faction": "CHAOS",
-    "base_size": "25"
+    "base_size": "25",
+    "weapon_rules": [
+      "Piercing",
+      "Range",
+      "Seek"
+    ]
   },
   {
     "name": "CURSEMITE",
     "team": "Gellerpox Infected",
     "apl": 2,
     "faction": "CHAOS",
-    "base_size": "25"
+    "base_size": "25",
+    "weapon_rules": [
+      "Lethal",
+      "Rending"
+    ]
   },
   {
     "name": "EYESTINGER SWARM",
     "team": "Gellerpox Infected",
     "apl": 2,
     "faction": "CHAOS",
-    "base_size": "25"
+    "base_size": "25",
+    "weapon_rules": [
+      "Range",
+      "Shock",
+      "Stun"
+    ]
   },
   {
     "name": "SLUDGE-GRUB",
     "team": "Gellerpox Infected",
     "apl": 2,
     "faction": "CHAOS",
-    "base_size": "25"
+    "base_size": "25",
+    "weapon_rules": [
+      "Devastating",
+      "Piercing",
+      "Range"
+    ]
   },
   {
     "name": "GOREMONGER BLOOD HERALD",
     "team": "Goremongers",
     "apl": 2,
     "faction": "CHAOS",
-    "base_size": "32"
+    "base_size": "32",
+    "weapon_rules": [
+      "Range",
+      "Rending",
+      "Saturate"
+    ]
   },
   {
     "name": "GOREMONGER ASPIRANT",
     "team": "Goremongers",
     "apl": 2,
     "faction": "CHAOS",
-    "base_size": "32"
+    "base_size": "32",
+    "weapon_rules": [
+      "Range",
+      "Rending"
+    ]
   },
   {
     "name": "GOREMONGER BLOODTAKER",
     "team": "Goremongers",
     "apl": 2,
     "faction": "CHAOS",
-    "base_size": "32"
+    "base_size": "32",
+    "weapon_rules": [
+      "Range"
+    ]
   },
   {
     "name": "GOREMONGER IMPALER",
     "team": "Goremongers",
     "apl": 2,
     "faction": "CHAOS",
-    "base_size": "32"
+    "base_size": "32",
+    "weapon_rules": [
+      "Range",
+      "Stun"
+    ]
   },
   {
     "name": "GOREMONGER INCITER",
     "team": "Goremongers",
     "apl": 2,
     "faction": "CHAOS",
-    "base_size": "32"
+    "base_size": "32",
+    "weapon_rules": [
+      "Ceaseless",
+      "Devastating",
+      "Range",
+      "Rending"
+    ]
   },
   {
     "name": "GOREMONGER SKULLCLAIMER",
     "team": "Goremongers",
     "apl": 2,
     "faction": "CHAOS",
-    "base_size": "32"
+    "base_size": "32",
+    "weapon_rules": [
+      "Brutal",
+      "Range"
+    ]
   },
   {
     "name": "GOREMONGER STALKER",
     "team": "Goremongers",
     "apl": 2,
     "faction": "CHAOS",
-    "base_size": "32"
+    "base_size": "32",
+    "weapon_rules": [
+      "Range",
+      "Relentless",
+      "Rending"
+    ]
   },
   {
     "name": "KABALITE ARCHSYBARITE",
     "team": "Hand of the Archon",
     "apl": 2,
     "faction": "AELDARI",
-    "base_size": "25"
+    "base_size": "25",
+    "weapon_rules": [
+      "Brutal",
+      "Lethal",
+      "Piercing",
+      "Range",
+      "Shock"
+    ]
   },
   {
     "name": "KABALITE AGENT",
     "team": "Hand of the Archon",
     "apl": 2,
     "faction": "AELDARI",
-    "base_size": "25"
+    "base_size": "25",
+    "weapon_rules": [
+      "Lethal"
+    ]
   },
   {
     "name": "KABALITE CRIMSON DUELLIST",
     "team": "Hand of the Archon",
     "apl": 2,
     "faction": "AELDARI",
-    "base_size": "25"
+    "base_size": "25",
+    "weapon_rules": [
+      "Brutal",
+      "Lethal",
+      "Range"
+    ]
   },
   {
     "name": "KABALITE DISCIPLE OF YAELINDRA",
     "team": "Hand of the Archon",
     "apl": 2,
     "faction": "AELDARI",
-    "base_size": "25"
+    "base_size": "25",
+    "weapon_rules": [
+      "Lethal",
+      "Range"
+    ]
   },
   {
     "name": "KABALITE ELIXICANT",
     "team": "Hand of the Archon",
     "apl": 2,
     "faction": "AELDARI",
-    "base_size": "25"
+    "base_size": "25",
+    "weapon_rules": [
+      "Lethal",
+      "Range",
+      "Stun"
+    ]
   },
   {
     "name": "KABALITE FLAYER",
     "team": "Hand of the Archon",
     "apl": 2,
     "faction": "AELDARI",
-    "base_size": "25"
+    "base_size": "25",
+    "weapon_rules": [
+      "Ceaseless"
+    ]
   },
   {
     "name": "KABALITE GUNNER",
     "team": "Hand of the Archon",
     "apl": 2,
     "faction": "AELDARI",
-    "base_size": "25"
+    "base_size": "25",
+    "weapon_rules": [
+      "Piercing",
+      "Rending",
+      "Torrent"
+    ]
   },
   {
     "name": "KABALITE HEAVY GUNNER",
     "team": "Hand of the Archon",
     "apl": 2,
     "faction": "AELDARI",
-    "base_size": "25"
+    "base_size": "25",
+    "weapon_rules": [
+      "Heavy",
+      "Lethal",
+      "Piercing",
+      "Torrent"
+    ]
   },
   {
     "name": "KABALITE SKYSPLINTER ASSASSIN",
     "team": "Hand of the Archon",
     "apl": 2,
     "faction": "AELDARI",
-    "base_size": "25"
+    "base_size": "25",
+    "weapon_rules": [
+      "Devastating",
+      "Lethal",
+      "Saturate",
+      "Seek",
+      "Silent"
+    ]
   },
   {
     "name": "HEARTHKYN THEYN",
     "team": "Hearthkyn Salvagers",
     "apl": 2,
     "faction": "LEAGUES OF VOTANN",
-    "base_size": "28"
+    "base_size": "28",
+    "weapon_rules": [
+      "Accurate",
+      "Brutal",
+      "Lethal",
+      "Piercing",
+      "Range",
+      "Shock"
+    ]
   },
   {
     "name": "HEARTHKYN DÔZR",
     "team": "Hearthkyn Salvagers",
     "apl": 2,
     "faction": "LEAGUES OF VOTANN",
-    "base_size": "28"
+    "base_size": "28",
+    "weapon_rules": [
+      "Accurate",
+      "Ceaseless",
+      "Lethal",
+      "Range",
+      "Shock"
+    ]
   },
   {
     "name": "HEARTHKYN FIELD MEDIC",
     "team": "Hearthkyn Salvagers",
     "apl": 2,
     "faction": "LEAGUES OF VOTANN",
-    "base_size": "28"
+    "base_size": "28",
+    "weapon_rules": [
+      "Lethal",
+      "Range"
+    ]
   },
   {
     "name": "HEARTHKYN GRENADIER",
     "team": "Hearthkyn Salvagers",
     "apl": 2,
     "faction": "LEAGUES OF VOTANN",
-    "base_size": "28"
+    "base_size": "28",
+    "weapon_rules": [
+      "Accurate",
+      "Heavy",
+      "Limited",
+      "Piercing",
+      "Range",
+      "Saturate",
+      "Stun"
+    ]
   },
   {
     "name": "HEARTHKYN GUNNER",
     "team": "Hearthkyn Salvagers",
     "apl": 2,
     "faction": "LEAGUES OF VOTANN",
-    "base_size": "28"
+    "base_size": "28",
+    "weapon_rules": [
+      "Ceaseless",
+      "Devastating",
+      "Heavy",
+      "Piercing",
+      "Rending",
+      "Saturate",
+      "Torrent"
+    ]
   },
   {
     "name": "HEARTHKYN JUMP PACK WARRIOR",
     "team": "Hearthkyn Salvagers",
     "apl": 2,
     "faction": "LEAGUES OF VOTANN",
-    "base_size": "28"
+    "base_size": "28",
+    "weapon_rules": [
+      "Accurate",
+      "Brutal",
+      "Lethal",
+      "Range"
+    ]
   },
   {
     "name": "HEARTHKYN KINLYNK",
     "team": "Hearthkyn Salvagers",
     "apl": 2,
     "faction": "LEAGUES OF VOTANN",
-    "base_size": "28"
+    "base_size": "28",
+    "weapon_rules": [
+      "Accurate",
+      "Piercing",
+      "Range"
+    ]
   },
   {
     "name": "HEARTHKYN KOGNITÂAR",
     "team": "Hearthkyn Salvagers",
     "apl": 2,
     "faction": "LEAGUES OF VOTANN",
-    "base_size": "28"
+    "base_size": "28",
+    "weapon_rules": [
+      "Accurate",
+      "Balanced",
+      "Piercing"
+    ]
   },
   {
     "name": "HEARTHKYN LOKÂTR",
     "team": "Hearthkyn Salvagers",
     "apl": 2,
     "faction": "LEAGUES OF VOTANN",
-    "base_size": "28"
+    "base_size": "28",
+    "weapon_rules": [
+      "Accurate",
+      "Piercing"
+    ]
   },
   {
     "name": "HEARTHKYN LUGGER",
     "team": "Hearthkyn Salvagers",
     "apl": 2,
     "faction": "LEAGUES OF VOTANN",
-    "base_size": "28"
+    "base_size": "28",
+    "weapon_rules": [
+      "Accurate",
+      "Piercing"
+    ]
   },
   {
     "name": "HEARTHKYN WARRIOR",
     "team": "Hearthkyn Salvagers",
     "apl": 2,
     "faction": "LEAGUES OF VOTANN",
-    "base_size": "28"
+    "base_size": "28",
+    "weapon_rules": [
+      "Accurate",
+      "Piercing"
+    ]
   },
   {
     "name": "YAEGIR THEYN",
     "team": "Hernkyn Yaegirs",
     "apl": 2,
     "faction": "LEAGUES OF VOTANN",
-    "base_size": "28"
+    "base_size": "28",
+    "weapon_rules": [
+      "Lethal",
+      "Range"
+    ]
   },
   {
     "name": "YAEGIR BLADEKYN",
     "team": "Hernkyn Yaegirs",
     "apl": 2,
     "faction": "LEAGUES OF VOTANN",
-    "base_size": "28"
+    "base_size": "28",
+    "weapon_rules": [
+      "Ceaseless",
+      "Lethal",
+      "Limited",
+      "Range",
+      "Silent"
+    ]
   },
   {
     "name": "YAEGIR BOMBAST",
     "team": "Hernkyn Yaegirs",
     "apl": 2,
     "faction": "LEAGUES OF VOTANN",
-    "base_size": "28"
+    "base_size": "28",
+    "weapon_rules": [
+      "Ceaseless",
+      "Lethal",
+      "Range"
+    ]
   },
   {
     "name": "YAEGIR GUNNER",
     "team": "Hernkyn Yaegirs",
     "apl": 2,
     "faction": "LEAGUES OF VOTANN",
-    "base_size": "28"
+    "base_size": "28",
+    "weapon_rules": [
+      "Ceaseless",
+      "Heavy",
+      "Piercing"
+    ]
   },
   {
     "name": "YAEGIR IRONBRAEK",
     "team": "Hernkyn Yaegirs",
     "apl": 2,
     "faction": "LEAGUES OF VOTANN",
-    "base_size": "28"
+    "base_size": "28",
+    "weapon_rules": [
+      "Range"
+    ]
   },
   {
     "name": "YAEGIR RIFLEKYN",
     "team": "Hernkyn Yaegirs",
     "apl": 2,
     "faction": "LEAGUES OF VOTANN",
-    "base_size": "28"
+    "base_size": "28",
+    "weapon_rules": [
+      "Devastating",
+      "Heavy",
+      "Piercing",
+      "Saturate",
+      "Silent"
+    ]
   },
   {
     "name": "YAEGIR TRACKER",
     "team": "Hernkyn Yaegirs",
     "apl": 2,
     "faction": "LEAGUES OF VOTANN",
-    "base_size": "28"
+    "base_size": "28",
+    "weapon_rules": [
+      "Limited",
+      "Punishing",
+      "Range",
+      "Rending",
+      "Seek",
+      "Silent"
+    ]
   },
   {
     "name": "YAEGIR WARRIOR",
     "team": "Hernkyn Yaegirs",
     "apl": 2,
     "faction": "LEAGUES OF VOTANN",
-    "base_size": "28"
+    "base_size": "28",
+    "weapon_rules": [
+      "Lethal",
+      "Range"
+    ]
   },
   {
     "name": "CHRONOMANCER",
     "team": "Hierotek Circle",
     "apl": 3,
     "faction": "NECRON",
-    "base_size": "40"
+    "base_size": "40",
+    "weapon_rules": [
+      "Devastating",
+      "Lethal",
+      "Piercing",
+      "Shock",
+      "Stun"
+    ]
   },
   {
     "name": "PSYCHOMANCER",
     "team": "Hierotek Circle",
     "apl": 3,
     "faction": "NECRON",
-    "base_size": "40"
+    "base_size": "40",
+    "weapon_rules": [
+      "Devastating",
+      "Piercing"
+    ]
   },
   {
     "name": "TECHNOMANCER",
     "team": "Hierotek Circle",
     "apl": 3,
     "faction": "NECRON",
-    "base_size": "50"
+    "base_size": "50",
+    "weapon_rules": [
+      "Rending"
+    ]
   },
   {
     "name": "PLASMACYTE ACCELERATOR",
     "team": "Hierotek Circle",
     "apl": 2,
     "faction": "NECRON",
-    "base_size": "25"
+    "base_size": "25",
+    "weapon_rules": [
+      "Piercing",
+      "Range",
+      "Seek"
+    ]
   },
   {
     "name": "PLASMACYTE REANIMATOR",
     "team": "Hierotek Circle",
     "apl": 2,
     "faction": "NECRON",
-    "base_size": "25"
+    "base_size": "25",
+    "weapon_rules": [
+      "Lethal",
+      "Range",
+      "Seek"
+    ]
   },
   {
     "name": "APPRENTEK",
     "team": "Hierotek Circle",
     "apl": 3,
     "faction": "NECRON",
-    "base_size": "32"
+    "base_size": "32",
+    "weapon_rules": [
+      "Piercing"
+    ]
   },
   {
     "name": "DEATHMARK",
     "team": "Hierotek Circle",
     "apl": 2,
     "faction": "NECRON",
-    "base_size": "32"
+    "base_size": "32",
+    "weapon_rules": [
+      "Devastating",
+      "Heavy",
+      "Piercing",
+      "Range",
+      "Seek",
+      "Severe"
+    ]
   },
   {
     "name": "IMMORTAL DESPOTEK",
     "team": "Hierotek Circle",
     "apl": 2,
     "faction": "NECRON",
-    "base_size": "32"
+    "base_size": "32",
+    "weapon_rules": [
+      "Devastating",
+      "Piercing"
+    ]
   },
   {
     "name": "IMMORTAL GUARDIAN",
     "team": "Hierotek Circle",
     "apl": 2,
     "faction": "NECRON",
-    "base_size": "32"
+    "base_size": "32",
+    "weapon_rules": [
+      "Devastating",
+      "Piercing"
+    ]
   },
   {
     "name": "SICARIAN RUSTSTALKER PRINCEPS",
     "team": "Hunter Clade",
     "apl": 2,
     "faction": "IMPERIUM",
-    "base_size": "40"
+    "base_size": "40",
+    "weapon_rules": [
+      "Balanced",
+      "Rending"
+    ]
   },
   {
     "name": "SICARIAN INFILTRATOR PRINCEPS",
     "team": "Hunter Clade",
     "apl": 2,
     "faction": "IMPERIUM",
-    "base_size": "40"
+    "base_size": "40",
+    "weapon_rules": [
+      "Ceaseless",
+      "Lethal",
+      "Range",
+      "Saturate",
+      "Seek",
+      "Shock",
+      "Silent"
+    ]
   },
   {
     "name": "SKITARII RANGER ALPHA",
     "team": "Hunter Clade",
     "apl": 2,
     "faction": "IMPERIUM",
-    "base_size": "25"
+    "base_size": "25",
+    "weapon_rules": [
+      "Balanced",
+      "Heavy",
+      "Lethal",
+      "Piercing",
+      "Range",
+      "Rending",
+      "Severe",
+      "Shock",
+      "Stun"
+    ]
   },
   {
     "name": "SKITARII VANGUARD ALPHA",
     "team": "Hunter Clade",
     "apl": 2,
     "faction": "IMPERIUM",
-    "base_size": "25"
+    "base_size": "25",
+    "weapon_rules": [
+      "Balanced",
+      "Lethal",
+      "Piercing",
+      "Range",
+      "Rending",
+      "Severe",
+      "Shock",
+      "Stun"
+    ]
   },
   {
     "name": "SICARIAN INFILTRATOR WARRIOR",
     "team": "Hunter Clade",
     "apl": 2,
     "faction": "IMPERIUM",
-    "base_size": "40"
+    "base_size": "40",
+    "weapon_rules": [
+      "Ceaseless",
+      "Lethal",
+      "Range",
+      "Saturate",
+      "Shock",
+      "Silent"
+    ]
   },
   {
     "name": "SICARIAN RUSTSTALKER WARRIOR",
     "team": "Hunter Clade",
     "apl": 2,
     "faction": "IMPERIUM",
-    "base_size": "40"
+    "base_size": "40",
+    "weapon_rules": [
+      "Balanced",
+      "Rending"
+    ]
   },
   {
     "name": "SKITARII RANGER DIKTAT",
     "team": "Hunter Clade",
     "apl": 2,
     "faction": "IMPERIUM",
-    "base_size": "25"
+    "base_size": "25",
+    "weapon_rules": [
+      "Heavy",
+      "Lethal",
+      "Piercing",
+      "Range"
+    ]
   },
   {
     "name": "SKITARII RANGER GUNNER",
     "team": "Hunter Clade",
     "apl": 2,
     "faction": "IMPERIUM",
-    "base_size": "2"
+    "base_size": "2",
+    "weapon_rules": [
+      "Devastating",
+      "Heavy",
+      "Hot",
+      "Lethal",
+      "Piercing",
+      "Severe",
+      "Stun"
+    ]
   },
   {
     "name": "SKITARII RANGER SURVEYOR",
     "team": "Hunter Clade",
     "apl": 2,
     "faction": "IMPERIUM",
-    "base_size": "25"
+    "base_size": "25",
+    "weapon_rules": [
+      "Heavy",
+      "Lethal",
+      "Piercing",
+      "Range",
+      "Seek"
+    ]
   },
   {
     "name": "SKITARII RANGER WARRIOR",
     "team": "Hunter Clade",
     "apl": 2,
     "faction": "IMPERIUM",
-    "base_size": "25"
+    "base_size": "25",
+    "weapon_rules": [
+      "Heavy",
+      "Lethal",
+      "Piercing"
+    ]
   },
   {
     "name": "SKITARII VANGUARD DIKTAT",
     "team": "Hunter Clade",
     "apl": 2,
     "faction": "IMPERIUM",
-    "base_size": "25"
+    "base_size": "25",
+    "weapon_rules": [
+      "Range",
+      "Rending"
+    ]
   },
   {
     "name": "SKITARII VANGUARD GUNNER",
     "team": "Hunter Clade",
     "apl": 2,
     "faction": "IMPERIUM",
-    "base_size": "2"
+    "base_size": "2",
+    "weapon_rules": [
+      "Devastating",
+      "Heavy",
+      "Hot",
+      "Lethal",
+      "Piercing",
+      "Severe",
+      "Stun"
+    ]
   },
   {
     "name": "SKITARII VANGUARD SURVEYOR",
     "team": "Hunter Clade",
     "apl": 2,
     "faction": "IMPERIUM",
-    "base_size": "25"
+    "base_size": "25",
+    "weapon_rules": [
+      "Range",
+      "Rending",
+      "Seek"
+    ]
   },
   {
     "name": "SKITARII VANGUARD WARRIOR",
     "team": "Hunter Clade",
     "apl": 2,
     "faction": "IMPERIUM",
-    "base_size": "25"
+    "base_size": "25",
+    "weapon_rules": [
+      "Rending"
+    ]
   },
   {
     "name": "NAVIS SERGEANT-AT-ARMS",
     "team": "Imperial Navy Breachers",
     "apl": 2,
     "faction": "IMPERIUM",
-    "base_size": "25"
+    "base_size": "25",
+    "weapon_rules": [
+      "Lethal",
+      "Range"
+    ]
   },
   {
     "name": "NAVIS ARMSMAN",
     "team": "Imperial Navy Breachers",
     "apl": 2,
     "faction": "IMPERIUM",
-    "base_size": "25"
+    "base_size": "25",
+    "weapon_rules": [
+      "Range"
+    ]
   },
   {
     "name": "NAVIS AXEJACK",
     "team": "Imperial Navy Breachers",
     "apl": 2,
     "faction": "IMPERIUM",
-    "base_size": "25"
+    "base_size": "25",
+    "weapon_rules": [
+      "Lethal",
+      "Range"
+    ]
   },
   {
     "name": "NAVIS C.A.T. UNIT",
     "team": "Imperial Navy Breachers",
     "apl": 2,
     "faction": "IMPERIUM",
-    "base_size": "25"
+    "base_size": "25",
+    "weapon_rules": []
   },
   {
     "name": "NAVIS ENDURANT",
     "team": "Imperial Navy Breachers",
     "apl": 2,
     "faction": "IMPERIUM",
-    "base_size": "28"
+    "base_size": "28",
+    "weapon_rules": [
+      "Brutal",
+      "Heavy",
+      "Range",
+      "Relentless"
+    ]
   },
   {
     "name": "NAVIS GHEISTSKULL",
     "team": "Imperial Navy Breachers",
     "apl": 2,
     "faction": "IMPERIUM",
-    "base_size": "25"
+    "base_size": "25",
+    "weapon_rules": []
   },
   {
     "name": "NAVIS GRENADIER",
     "team": "Imperial Navy Breachers",
     "apl": 2,
     "faction": "IMPERIUM",
-    "base_size": "25"
+    "base_size": "25",
+    "weapon_rules": [
+      "Heavy",
+      "Limited",
+      "Piercing",
+      "Range",
+      "Saturate",
+      "Stun"
+    ]
   },
   {
     "name": "NAVIS GUNNER",
     "team": "Imperial Navy Breachers",
     "apl": 2,
     "faction": "IMPERIUM",
-    "base_size": "28"
+    "base_size": "28",
+    "weapon_rules": [
+      "Devastating",
+      "Heavy",
+      "Hot",
+      "Lethal",
+      "Piercing",
+      "Range",
+      "Rending",
+      "Torrent"
+    ]
   },
   {
     "name": "NAVIS HATCHCUTTER",
     "team": "Imperial Navy Breachers",
     "apl": 2,
     "faction": "IMPERIUM",
-    "base_size": "25"
+    "base_size": "25",
+    "weapon_rules": [
+      "Brutal",
+      "Range",
+      "Rending"
+    ]
   },
   {
     "name": "NAVIS SURVEYOR",
     "team": "Imperial Navy Breachers",
     "apl": 2,
     "faction": "IMPERIUM",
-    "base_size": "25"
+    "base_size": "25",
+    "weapon_rules": [
+      "Range"
+    ]
   },
   {
     "name": "NAVIS VOID-JAMMER",
     "team": "Imperial Navy Breachers",
     "apl": 2,
     "faction": "IMPERIUM",
-    "base_size": "25"
+    "base_size": "25",
+    "weapon_rules": [
+      "Lethal",
+      "Limited",
+      "Range",
+      "Silent",
+      "Stun"
+    ]
   },
   {
     "name": "INTERROGATOR AGENT",
     "team": "Inquisitorial Agents",
     "apl": 2,
     "faction": "IMPERIUM",
-    "base_size": "25"
+    "base_size": "25",
+    "weapon_rules": [
+      "Lethal",
+      "Range"
+    ]
   },
   {
     "name": "TOME-SKULL",
     "team": "Inquisitorial Agents",
     "apl": 2,
     "faction": "IMPERIUM",
-    "base_size": "25"
+    "base_size": "25",
+    "weapon_rules": []
   },
   {
     "name": "AUTOSAVANT AGENT",
     "team": "Inquisitorial Agents",
     "apl": 2,
     "faction": "IMPERIUM",
-    "base_size": "25"
+    "base_size": "25",
+    "weapon_rules": []
   },
   {
     "name": "DEATH WORLD VETERAN AGENT",
     "team": "Inquisitorial Agents",
     "apl": 2,
     "faction": "IMPERIUM",
-    "base_size": "25"
+    "base_size": "25",
+    "weapon_rules": [
+      "Lethal",
+      "Range"
+    ]
   },
   {
     "name": "ENLIGHTENER AGENT",
     "team": "Inquisitorial Agents",
     "apl": 2,
     "faction": "IMPERIUM",
-    "base_size": "25"
+    "base_size": "25",
+    "weapon_rules": [
+      "Balanced",
+      "Range",
+      "Rending"
+    ]
   },
   {
     "name": "HEXORCIST AGENT",
     "team": "Inquisitorial Agents",
     "apl": 2,
     "faction": "IMPERIUM",
-    "base_size": "25"
+    "base_size": "25",
+    "weapon_rules": [
+      "Range"
+    ]
   },
   {
     "name": "MYSTIC AGENT",
     "team": "Inquisitorial Agents",
     "apl": 2,
     "faction": "IMPERIUM",
-    "base_size": "25"
+    "base_size": "25",
+    "weapon_rules": [
+      "Range",
+      "Seek"
+    ]
   },
   {
     "name": "PENAL LEGIONNAIRE AGENT",
     "team": "Inquisitorial Agents",
     "apl": 2,
     "faction": "IMPERIUM",
-    "base_size": "25"
+    "base_size": "25",
+    "weapon_rules": [
+      "Range",
+      "Relentless",
+      "Saturate",
+      "Shock",
+      "Stun",
+      "Torrent"
+    ]
   },
   {
     "name": "PISTOLIER AGENT",
     "team": "Inquisitorial Agents",
     "apl": 2,
     "faction": "IMPERIUM",
-    "base_size": "25"
+    "base_size": "25",
+    "weapon_rules": [
+      "Hot",
+      "Lethal",
+      "Piercing",
+      "Range",
+      "Silent"
+    ]
   },
   {
     "name": "QUESTKEEPER AGENT",
     "team": "Inquisitorial Agents",
     "apl": 2,
     "faction": "IMPERIUM",
-    "base_size": "25"
+    "base_size": "25",
+    "weapon_rules": [
+      "Brutal",
+      "Range"
+    ]
   },
   {
     "name": "REQUISITIONED GUN SERVITOR",
     "team": "Inquisitorial Agents",
     "apl": 1,
     "faction": "IMPERIUM",
-    "base_size": "32"
+    "base_size": "32",
+    "weapon_rules": [
+      "Devastating",
+      "Heavy",
+      "Hot",
+      "Lethal",
+      "Piercing",
+      "Torrent"
+    ]
   },
   {
     "name": "SISTER OF SILENCE PROSECUTOR",
     "team": "Inquisitorial Agents",
     "apl": 2,
     "faction": "IMPERIUM",
-    "base_size": "32"
+    "base_size": "32",
+    "weapon_rules": []
   },
   {
     "name": "SISTER OF SILENCE VIGILATOR",
     "team": "Inquisitorial Agents",
     "apl": 2,
     "faction": "IMPERIUM",
-    "base_size": "32"
+    "base_size": "32",
+    "weapon_rules": [
+      "Lethal"
+    ]
   },
   {
     "name": "SISTER OF SILENCE WITCHSEEKER",
     "team": "Inquisitorial Agents",
     "apl": 2,
     "faction": "IMPERIUM",
-    "base_size": "32"
+    "base_size": "32",
+    "weapon_rules": [
+      "Range",
+      "Saturate",
+      "Torrent"
+    ]
   },
   {
     "name": "TEMPESTUS SCION GUNNER",
     "team": "Inquisitorial Agents",
     "apl": 2,
     "faction": "IMPERIUM",
-    "base_size": "25"
+    "base_size": "25",
+    "weapon_rules": [
+      "Devastating",
+      "Hot",
+      "Lethal",
+      "Piercing",
+      "Range",
+      "Saturate",
+      "Torrent"
+    ]
   },
   {
     "name": "TEMPESTUS SCION MEDIC",
     "team": "Inquisitorial Agents",
     "apl": 2,
     "faction": "IMPERIUM",
-    "base_size": "25"
+    "base_size": "25",
+    "weapon_rules": [
+      "Hot",
+      "Range"
+    ]
   },
   {
     "name": "TEMPESTUS SCION TROOPER",
     "team": "Inquisitorial Agents",
     "apl": 2,
     "faction": "IMPERIUM",
-    "base_size": "25"
+    "base_size": "25",
+    "weapon_rules": [
+      "Hot",
+      "Stun"
+    ]
   },
   {
     "name": "TEMPESTUS SCION VOX-OPERATOR",
     "team": "Inquisitorial Agents",
     "apl": 2,
     "faction": "IMPERIUM",
-    "base_size": "25"
+    "base_size": "25",
+    "weapon_rules": [
+      "Hot",
+      "Range"
+    ]
   },
   {
     "name": "KASRKIN SERGEANT",
     "team": "Kasrkin",
     "apl": 3,
     "faction": "IMPERIUM",
-    "base_size": "28"
+    "base_size": "28",
+    "weapon_rules": [
+      "Hot",
+      "Lethal",
+      "Piercing",
+      "Range"
+    ]
   },
   {
     "name": "KASRKIN COMBAT MEDIC",
     "team": "Kasrkin",
     "apl": 2,
     "faction": "IMPERIUM",
-    "base_size": "28"
+    "base_size": "28",
+    "weapon_rules": [
+      "Hot",
+      "Range"
+    ]
   },
   {
     "name": "KASRKIN DEMO-TROOPER",
     "team": "Kasrkin",
     "apl": 2,
     "faction": "IMPERIUM",
-    "base_size": "28"
+    "base_size": "28",
+    "weapon_rules": [
+      "Hot",
+      "Range"
+    ]
   },
   {
     "name": "KASRKIN GUNNER",
     "team": "Kasrkin",
     "apl": 2,
     "faction": "IMPERIUM",
-    "base_size": "28"
+    "base_size": "28",
+    "weapon_rules": [
+      "Devastating",
+      "Hot",
+      "Lethal",
+      "Piercing",
+      "Range",
+      "Saturate",
+      "Torrent"
+    ]
   },
   {
     "name": "KASRKIN RECON-TROOPER",
     "team": "Kasrkin",
     "apl": 2,
     "faction": "IMPERIUM",
-    "base_size": "28"
+    "base_size": "28",
+    "weapon_rules": [
+      "Hot",
+      "Range"
+    ]
   },
   {
     "name": "KASRKIN SHARPSHOOTER",
     "team": "Kasrkin",
     "apl": 2,
     "faction": "IMPERIUM",
-    "base_size": "28"
+    "base_size": "28",
+    "weapon_rules": []
   },
   {
     "name": "KASRKIN TROOPER",
     "team": "Kasrkin",
     "apl": 2,
     "faction": "IMPERIUM",
-    "base_size": "28"
+    "base_size": "28",
+    "weapon_rules": [
+      "Hot",
+      "Stun"
+    ]
   },
   {
     "name": "KASRKIN VOX-TROOPER",
     "team": "Kasrkin",
     "apl": 2,
     "faction": "IMPERIUM",
-    "base_size": "28"
+    "base_size": "28",
+    "weapon_rules": [
+      "Hot",
+      "Range"
+    ]
   },
   {
     "name": "KOMMANDO BOSS NOB",
     "team": "Kommandos",
     "apl": 3,
     "faction": "ORK",
-    "base_size": "32"
+    "base_size": "32",
+    "weapon_rules": [
+      "Brutal",
+      "Range",
+      "Shock"
+    ]
   },
   {
     "name": "KOMMANDO BOMB SQUIG",
     "team": "Kommandos",
     "apl": 2,
     "faction": "ORK",
-    "base_size": "25"
+    "base_size": "25",
+    "weapon_rules": [
+      "Limited",
+      "Range"
+    ]
   },
   {
     "name": "KOMMANDO BOY",
     "team": "Kommandos",
     "apl": 2,
     "faction": "ORK",
-    "base_size": "32"
+    "base_size": "32",
+    "weapon_rules": [
+      "Range",
+      "Stun"
+    ]
   },
   {
     "name": "KOMMANDO BREACHA BOY",
     "team": "Kommandos",
     "apl": 2,
     "faction": "ORK",
-    "base_size": "32"
+    "base_size": "32",
+    "weapon_rules": [
+      "Brutal",
+      "Range",
+      "Severe",
+      "Shock"
+    ]
   },
   {
     "name": "KOMMANDO BURNA BOY",
     "team": "Kommandos",
     "apl": 2,
     "faction": "ORK",
-    "base_size": "32"
+    "base_size": "32",
+    "weapon_rules": [
+      "Range",
+      "Saturate",
+      "Seek",
+      "Torrent"
+    ]
   },
   {
     "name": "KOMMANDO COMMS BOY",
     "team": "Kommandos",
     "apl": 2,
     "faction": "ORK",
-    "base_size": "32"
+    "base_size": "32",
+    "weapon_rules": [
+      "Devastating",
+      "Range",
+      "Severe",
+      "Stun"
+    ]
   },
   {
     "name": "KOMMANDO DAKKA BOY",
     "team": "Kommandos",
     "apl": 2,
     "faction": "ORK",
-    "base_size": "32"
+    "base_size": "32",
+    "weapon_rules": [
+      "Ceaseless",
+      "Range"
+    ]
   },
   {
     "name": "KOMMANDO GROT",
     "team": "Kommandos",
     "apl": 2,
     "faction": "ORK",
-    "base_size": "25"
+    "base_size": "25",
+    "weapon_rules": [
+      "Range",
+      "Seek"
+    ]
   },
   {
     "name": "KOMMANDO ROKKIT BOY",
     "team": "Kommandos",
     "apl": 2,
     "faction": "ORK",
-    "base_size": "32"
+    "base_size": "32",
+    "weapon_rules": [
+      "Ceaseless",
+      "Heavy"
+    ]
   },
   {
     "name": "KOMMANDO SLASHA BOY",
     "team": "Kommandos",
     "apl": 2,
     "faction": "ORK",
-    "base_size": "32"
+    "base_size": "32",
+    "weapon_rules": [
+      "Ceaseless",
+      "Lethal",
+      "Range",
+      "Silent"
+    ]
   },
   {
     "name": "KOMMANDO SNIPA BOY",
     "team": "Kommandos",
     "apl": 2,
     "faction": "ORK",
-    "base_size": "32"
+    "base_size": "32",
+    "weapon_rules": [
+      "Devastating",
+      "Heavy",
+      "Silent",
+      "Torrent"
+    ]
   },
   {
     "name": "LEGIONARY ASPIRING CHAMPION",
     "team": "Legionaries",
     "apl": 3,
     "faction": "CHAOS",
-    "base_size": "32"
+    "base_size": "32",
+    "weapon_rules": [
+      "Brutal",
+      "Hot",
+      "Lethal",
+      "Piercing",
+      "Range",
+      "Rending",
+      "Shock"
+    ]
   },
   {
     "name": "LEGIONARY CHOSEN",
     "team": "Legionaries",
     "apl": 3,
     "faction": "CHAOS",
-    "base_size": "32"
+    "base_size": "32",
+    "weapon_rules": [
+      "Hot",
+      "Lethal",
+      "Piercing",
+      "Range",
+      "Rending"
+    ]
   },
   {
     "name": "LEGIONARY ANOINTED",
     "team": "Legionaries",
     "apl": 3,
     "faction": "CHAOS",
-    "base_size": "32"
+    "base_size": "32",
+    "weapon_rules": [
+      "Ceaseless",
+      "Lethal",
+      "Range",
+      "Rending"
+    ]
   },
   {
     "name": "LEGIONARY BALEFIRE ACOLYTE",
     "team": "Legionaries",
     "apl": 3,
     "faction": "CHAOS",
-    "base_size": "32"
+    "base_size": "32",
+    "weapon_rules": [
+      "Devastating",
+      "Range",
+      "Rending",
+      "Saturate"
+    ]
   },
   {
     "name": "LEGIONARY BUTCHER",
     "team": "Legionaries",
     "apl": 3,
     "faction": "CHAOS",
-    "base_size": "32"
+    "base_size": "32",
+    "weapon_rules": [
+      "Brutal",
+      "Devastating",
+      "Range"
+    ]
   },
   {
     "name": "LEGIONARY GUNNER",
     "team": "Legionaries",
     "apl": 3,
     "faction": "CHAOS",
-    "base_size": "32"
+    "base_size": "32",
+    "weapon_rules": [
+      "Devastating",
+      "Hot",
+      "Lethal",
+      "Piercing",
+      "Range",
+      "Saturate",
+      "Torrent"
+    ]
   },
   {
     "name": "LEGIONARY HEAVY GUNNER",
     "team": "Legionaries",
     "apl": 3,
     "faction": "CHAOS",
-    "base_size": "32"
+    "base_size": "32",
+    "weapon_rules": [
+      "Ceaseless",
+      "Heavy",
+      "Piercing",
+      "Punishing",
+      "Range",
+      "Torrent"
+    ]
   },
   {
     "name": "LEGIONARY ICON BEARER",
     "team": "Legionaries",
     "apl": 3,
     "faction": "CHAOS",
-    "base_size": "32"
+    "base_size": "32",
+    "weapon_rules": [
+      "Range"
+    ]
   },
   {
     "name": "LEGIONARY SHRIVETALON",
     "team": "Legionaries",
     "apl": 3,
     "faction": "CHAOS",
-    "base_size": "32"
+    "base_size": "32",
+    "weapon_rules": [
+      "Lethal",
+      "Range"
+    ]
   },
   {
     "name": "LEGIONARY WARRIOR",
     "team": "Legionaries",
     "apl": 3,
     "faction": "CHAOS",
-    "base_size": "32"
+    "base_size": "32",
+    "weapon_rules": [
+      "Range"
+    ]
   },
   {
     "name": "MANDRAKE NIGHTFIEND",
     "team": "Mandrakes",
     "apl": 2,
     "faction": "AELDARI",
-    "base_size": "28"
+    "base_size": "28",
+    "weapon_rules": [
+      "Lethal",
+      "Shock"
+    ]
   },
   {
     "name": "MANDRAKE ABYSSAL",
     "team": "Mandrakes",
     "apl": 2,
     "faction": "AELDARI",
-    "base_size": "28"
+    "base_size": "28",
+    "weapon_rules": [
+      "Lethal",
+      "Saturate"
+    ]
   },
   {
     "name": "MANDRAKE CHOOSER OF THE FLESH",
     "team": "Mandrakes",
     "apl": 2,
     "faction": "AELDARI",
-    "base_size": "28"
+    "base_size": "28",
+    "weapon_rules": [
+      "Brutal",
+      "Lethal",
+      "Range"
+    ]
   },
   {
     "name": "MANDRAKE DIRGEMAW",
     "team": "Mandrakes",
     "apl": 2,
     "faction": "AELDARI",
-    "base_size": "28"
+    "base_size": "28",
+    "weapon_rules": [
+      "Devastating",
+      "Lethal",
+      "Range",
+      "Seek",
+      "Stun"
+    ]
   },
   {
     "name": "MANDRAKE SHADEWEAVER",
     "team": "Mandrakes",
     "apl": 2,
     "faction": "AELDARI",
-    "base_size": "28"
+    "base_size": "28",
+    "weapon_rules": [
+      "Lethal",
+      "Range"
+    ]
   },
   {
     "name": "MANDRAKE WARRIOR",
     "team": "Mandrakes",
     "apl": 2,
     "faction": "AELDARI",
-    "base_size": "28"
+    "base_size": "28",
+    "weapon_rules": [
+      "Lethal"
+    ]
   },
   {
     "name": "MURDERWING CHAOS LORD",
     "team": "Murderwing",
     "apl": 3,
     "faction": "CHAOS",
-    "base_size": "40"
+    "base_size": "40",
+    "weapon_rules": [
+      "Brutal",
+      "Ceaseless",
+      "Hot",
+      "Lethal",
+      "Piercing",
+      "Range",
+      "Rending",
+      "Shock"
+    ]
   },
   {
     "name": "MURDERWING CHAMPION",
     "team": "Murderwing",
     "apl": 3,
     "faction": "CHAOS",
-    "base_size": "32"
+    "base_size": "32",
+    "weapon_rules": [
+      "Balanced",
+      "Brutal",
+      "Hot",
+      "Lethal",
+      "Piercing",
+      "Punishing",
+      "Range",
+      "Severe",
+      "Shock"
+    ]
   },
   {
     "name": "MURDERWING CURSECLAW",
     "team": "Murderwing",
     "apl": 3,
     "faction": "CHAOS",
-    "base_size": "32"
+    "base_size": "32",
+    "weapon_rules": [
+      "Range",
+      "Rending"
+    ]
   },
   {
     "name": "MURDERWING DEPREDATOR",
     "team": "Murderwing",
     "apl": 3,
     "faction": "CHAOS",
-    "base_size": "32"
+    "base_size": "32",
+    "weapon_rules": [
+      "Brutal",
+      "Range"
+    ]
   },
   {
     "name": "MURDERWING HUNTMASTER",
     "team": "Murderwing",
     "apl": 3,
     "faction": "CHAOS",
-    "base_size": "32"
+    "base_size": "32",
+    "weapon_rules": [
+      "Lethal",
+      "Range"
+    ]
   },
   {
     "name": "MURDERWING RAPTOR",
     "team": "Murderwing",
     "apl": 3,
     "faction": "CHAOS",
-    "base_size": "32"
+    "base_size": "32",
+    "weapon_rules": [
+      "Hot",
+      "Lethal",
+      "Piercing",
+      "Range"
+    ]
   },
   {
     "name": "MURDERWING SHRIEKER",
     "team": "Murderwing",
     "apl": 3,
     "faction": "CHAOS",
-    "base_size": "32"
+    "base_size": "32",
+    "weapon_rules": [
+      "Range"
+    ]
   },
   {
     "name": "MURDERWING SKYSEAR",
     "team": "Murderwing",
     "apl": 3,
     "faction": "CHAOS",
-    "base_size": "32"
+    "base_size": "32",
+    "weapon_rules": [
+      "Devastating",
+      "Hot",
+      "Lethal",
+      "Piercing",
+      "Range",
+      "Saturate",
+      "Torrent"
+    ]
   },
   {
     "name": "MURDERWING WARP TALON",
     "team": "Murderwing",
     "apl": 3,
     "faction": "CHAOS",
-    "base_size": "32"
+    "base_size": "32",
+    "weapon_rules": [
+      "Ceaseless",
+      "Lethal",
+      "Rending"
+    ]
   },
   {
     "name": "NIGHT LORD VISIONARY",
     "team": "Nemesis Claw",
     "apl": 3,
     "faction": "CHAOS",
-    "base_size": "32"
+    "base_size": "32",
+    "weapon_rules": [
+      "Brutal",
+      "Hot",
+      "Lethal",
+      "Piercing",
+      "Range",
+      "Rending",
+      "Shock"
+    ]
   },
   {
     "name": "NIGHT LORD FEARMONGER",
     "team": "Nemesis Claw",
     "apl": 3,
     "faction": "CHAOS",
-    "base_size": "32"
+    "base_size": "32",
+    "weapon_rules": [
+      "Devastating",
+      "Lethal",
+      "Limited",
+      "Range",
+      "Saturate"
+    ]
   },
   {
     "name": "NIGHT LORD GUNNER",
     "team": "Nemesis Claw",
     "apl": 3,
     "faction": "CHAOS",
-    "base_size": "32"
+    "base_size": "32",
+    "weapon_rules": [
+      "Devastating",
+      "Hot",
+      "Lethal",
+      "Piercing",
+      "Range",
+      "Saturate",
+      "Torrent"
+    ]
   },
   {
     "name": "NIGHT LORD HEAVY GUNNER",
     "team": "Nemesis Claw",
     "apl": 3,
     "faction": "CHAOS",
-    "base_size": "32"
+    "base_size": "32",
+    "weapon_rules": [
+      "Heavy",
+      "Piercing",
+      "Range",
+      "Torrent"
+    ]
   },
   {
     "name": "NIGHT LORD SCREECHER",
     "team": "Nemesis Claw",
     "apl": 3,
     "faction": "CHAOS",
-    "base_size": "32"
+    "base_size": "32",
+    "weapon_rules": [
+      "Ceaseless",
+      "Lethal"
+    ]
   },
   {
     "name": "NIGHT LORD SKINTHIEF",
     "team": "Nemesis Claw",
     "apl": 3,
     "faction": "CHAOS",
-    "base_size": "32"
+    "base_size": "32",
+    "weapon_rules": [
+      "Range",
+      "Rending"
+    ]
   },
   {
     "name": "NIGHT LORD VENTRILOKAR",
     "team": "Nemesis Claw",
     "apl": 3,
     "faction": "CHAOS",
-    "base_size": "32"
+    "base_size": "32",
+    "weapon_rules": [
+      "Range"
+    ]
   },
   {
     "name": "NIGHT LORD WARRIOR",
     "team": "Nemesis Claw",
     "apl": 3,
     "faction": "CHAOS",
-    "base_size": "32"
+    "base_size": "32",
+    "weapon_rules": [
+      "Lethal",
+      "Range"
+    ]
   },
   {
     "name": "NOVITIATE SUPERIOR",
     "team": "Novitiates",
     "apl": 3,
     "faction": "IMPERIUM",
-    "base_size": "32"
+    "base_size": "32",
+    "weapon_rules": [
+      "Hot",
+      "Lethal",
+      "Piercing",
+      "Range"
+    ]
   },
   {
     "name": "NOVITIATE CONDEMNOR",
     "team": "Novitiates",
     "apl": 2,
     "faction": "IMPERIUM",
-    "base_size": "28"
+    "base_size": "28",
+    "weapon_rules": [
+      "Devastating",
+      "Lethal",
+      "Piercing",
+      "Shock",
+      "Silent"
+    ]
   },
   {
     "name": "NOVITIATE DIALOGUS",
     "team": "Novitiates",
     "apl": 2,
     "faction": "IMPERIUM",
-    "base_size": "28"
+    "base_size": "28",
+    "weapon_rules": [
+      "Range",
+      "Shock"
+    ]
   },
   {
     "name": "NOVITIATE DUELLIST",
     "team": "Novitiates",
     "apl": 2,
     "faction": "IMPERIUM",
-    "base_size": "28"
+    "base_size": "28",
+    "weapon_rules": [
+      "Ceaseless",
+      "Range"
+    ]
   },
   {
     "name": "NOVITIATE EXACTOR",
     "team": "Novitiates",
     "apl": 2,
     "faction": "IMPERIUM",
-    "base_size": "28"
+    "base_size": "28",
+    "weapon_rules": [
+      "Lethal",
+      "Range",
+      "Shock",
+      "Stun"
+    ]
   },
   {
     "name": "NOVITIATE HOSPITALLER",
     "team": "Novitiates",
     "apl": 2,
     "faction": "IMPERIUM",
-    "base_size": "28"
+    "base_size": "28",
+    "weapon_rules": [
+      "Lethal",
+      "Range",
+      "Rending"
+    ]
   },
   {
     "name": "NOVITIATE MILITANT",
     "team": "Novitiates",
     "apl": 2,
     "faction": "IMPERIUM",
-    "base_size": "28"
+    "base_size": "28",
+    "weapon_rules": [
+      "Range"
+    ]
   },
   {
     "name": "NOVITIATE PENITENT",
     "team": "Novitiates",
     "apl": 2,
     "faction": "IMPERIUM",
-    "base_size": "28"
+    "base_size": "28",
+    "weapon_rules": [
+      "Brutal",
+      "Ceaseless",
+      "Range"
+    ]
   },
   {
     "name": "NOVITIATE PRECEPTOR",
     "team": "Novitiates",
     "apl": 2,
     "faction": "IMPERIUM",
-    "base_size": "28"
+    "base_size": "28",
+    "weapon_rules": [
+      "Brutal",
+      "Range",
+      "Severe"
+    ]
   },
   {
     "name": "NOVITIATE PRONATUS",
     "team": "Novitiates",
     "apl": 2,
     "faction": "IMPERIUM",
-    "base_size": "28"
+    "base_size": "28",
+    "weapon_rules": [
+      "Range"
+    ]
   },
   {
     "name": "NOVITIATE PURGATUS",
     "team": "Novitiates",
     "apl": 2,
     "faction": "IMPERIUM",
-    "base_size": "28"
+    "base_size": "28",
+    "weapon_rules": [
+      "Range",
+      "Saturate",
+      "Torrent"
+    ]
   },
   {
     "name": "NOVITIATE RELIQUARIUS",
     "team": "Novitiates",
     "apl": 2,
     "faction": "IMPERIUM",
-    "base_size": "28"
+    "base_size": "28",
+    "weapon_rules": [
+      "Range"
+    ]
   },
   {
     "name": "SHAS’UI PATHFINDER",
     "team": "Pathfinders",
     "apl": 2,
     "faction": "T'AU EMPIRE",
-    "base_size": "25"
+    "base_size": "25",
+    "weapon_rules": []
   },
   {
     "name": "ASSAULT GRENADIER PATHFINDER",
     "team": "Pathfinders",
     "apl": 2,
     "faction": "T'AU EMPIRE",
-    "base_size": "25"
+    "base_size": "25",
+    "weapon_rules": [
+      "Devastating",
+      "Limited",
+      "Piercing",
+      "Range",
+      "Saturate"
+    ]
   },
   {
     "name": "BLOODED PATHFINDER",
     "team": "Pathfinders",
     "apl": 2,
     "faction": "T'AU EMPIRE",
-    "base_size": "25"
+    "base_size": "25",
+    "weapon_rules": [
+      "Silent"
+    ]
   },
   {
     "name": "COMMS SPECIALIST PATHFINDER",
     "team": "Pathfinders",
     "apl": 2,
     "faction": "T'AU EMPIRE",
-    "base_size": "25"
+    "base_size": "25",
+    "weapon_rules": [
+      "Range"
+    ]
   },
   {
     "name": "DRONE CONTROLLER PATHFINDER",
     "team": "Pathfinders",
     "apl": 2,
     "faction": "T'AU EMPIRE",
-    "base_size": "25"
+    "base_size": "25",
+    "weapon_rules": []
   },
   {
     "name": "MARKSMAN PATHFINDER",
     "team": "Pathfinders",
     "apl": 2,
     "faction": "T'AU EMPIRE",
-    "base_size": "25"
+    "base_size": "25",
+    "weapon_rules": [
+      "Devastating",
+      "Lethal",
+      "Piercing",
+      "Silent"
+    ]
   },
   {
     "name": "MEDICAL TECHNICIAN PATHFINDER",
     "team": "Pathfinders",
     "apl": 2,
     "faction": "T'AU EMPIRE",
-    "base_size": "25"
+    "base_size": "25",
+    "weapon_rules": [
+      "Range"
+    ]
   },
   {
     "name": "SHAS’LA PATHFINDER",
     "team": "Pathfinders",
     "apl": 2,
     "faction": "T'AU EMPIRE",
-    "base_size": "25"
+    "base_size": "25",
+    "weapon_rules": [
+      "Range"
+    ]
   },
   {
     "name": "TRANSPECTRAL INTERFERENCE PATHFINDER",
     "team": "Pathfinders",
     "apl": 2,
     "faction": "T'AU EMPIRE",
-    "base_size": "25"
+    "base_size": "25",
+    "weapon_rules": [
+      "Range"
+    ]
   },
   {
     "name": "WEAPONS EXPERT PATHFINDER",
     "team": "Pathfinders",
     "apl": 2,
     "faction": "T'AU EMPIRE",
-    "base_size": "25"
+    "base_size": "25",
+    "weapon_rules": [
+      "Devastating",
+      "Hot",
+      "Lethal",
+      "Piercing"
+    ]
   },
   {
     "name": "MB3 RECON DRONE",
     "team": "Pathfinders",
     "apl": 3,
     "faction": "T'AU EMPIRE",
-    "base_size": "32"
+    "base_size": "32",
+    "weapon_rules": [
+      "Ceaseless",
+      "Heavy",
+      "Punishing",
+      "Torrent"
+    ]
   },
   {
     "name": "MV1 GUN DRONE",
     "team": "Pathfinders",
     "apl": 2,
     "faction": "T'AU EMPIRE",
-    "base_size": "32"
+    "base_size": "32",
+    "weapon_rules": [
+      "Ceaseless"
+    ]
   },
   {
     "name": "MV4 SHIELD DRONE",
     "team": "Pathfinders",
     "apl": 2,
     "faction": "T'AU EMPIRE",
-    "base_size": "32"
+    "base_size": "32",
+    "weapon_rules": [
+      "Piercing"
+    ]
   },
   {
     "name": "MV7 MARKER DRONE",
     "team": "Pathfinders",
     "apl": 2,
     "faction": "T'AU EMPIRE",
-    "base_size": "32"
+    "base_size": "32",
+    "weapon_rules": []
   },
   {
     "name": "MV31 PULSE ACCELERATOR DRONE",
     "team": "Pathfinders",
     "apl": 2,
     "faction": "T'AU EMPIRE",
-    "base_size": "32"
+    "base_size": "32",
+    "weapon_rules": [
+      "Lethal",
+      "Severe"
+    ]
   },
   {
     "name": "MV33 GRAV-INHIBITOR DRONE",
     "team": "Pathfinders",
     "apl": 2,
     "faction": "T'AU EMPIRE",
-    "base_size": "32"
+    "base_size": "32",
+    "weapon_rules": []
   },
   {
     "name": "INFILTRATOR SERGEANT",
     "team": "Phobos Strike Team",
     "apl": 3,
     "faction": "IMPERIUM",
-    "base_size": "32"
+    "base_size": "32",
+    "weapon_rules": [
+      "Lethal",
+      "Range"
+    ]
   },
   {
     "name": "INFILTRATOR COMMSMAN",
     "team": "Phobos Strike Team",
     "apl": 3,
     "faction": "IMPERIUM",
-    "base_size": "32"
+    "base_size": "32",
+    "weapon_rules": [
+      "Lethal",
+      "Range"
+    ]
   },
   {
     "name": "INFILTRATOR HELIX ADEPT",
     "team": "Phobos Strike Team",
     "apl": 3,
     "faction": "IMPERIUM",
-    "base_size": "32"
+    "base_size": "32",
+    "weapon_rules": [
+      "Lethal",
+      "Range"
+    ]
   },
   {
     "name": "INFILTRATOR SABOTEUR",
     "team": "Phobos Strike Team",
     "apl": 3,
     "faction": "IMPERIUM",
-    "base_size": "32"
+    "base_size": "32",
+    "weapon_rules": [
+      "Heavy",
+      "Lethal",
+      "Limited",
+      "Piercing",
+      "Silent"
+    ]
   },
   {
     "name": "INFILTRATOR VETERAN",
     "team": "Phobos Strike Team",
     "apl": 3,
     "faction": "IMPERIUM",
-    "base_size": "32"
+    "base_size": "32",
+    "weapon_rules": [
+      "Balanced",
+      "Lethal",
+      "Piercing",
+      "Rending",
+      "Saturate"
+    ]
   },
   {
     "name": "INFILTRATOR VOXBREAKER",
     "team": "Phobos Strike Team",
     "apl": 3,
     "faction": "IMPERIUM",
-    "base_size": "32"
+    "base_size": "32",
+    "weapon_rules": [
+      "Lethal",
+      "Range",
+      "Seek"
+    ]
   },
   {
     "name": "INFILTRATOR WARRIOR",
     "team": "Phobos Strike Team",
     "apl": 3,
     "faction": "IMPERIUM",
-    "base_size": "32"
+    "base_size": "32",
+    "weapon_rules": [
+      "Lethal"
+    ]
   },
   {
     "name": "INCURSOR SERGEANT",
     "team": "Phobos Strike Team",
     "apl": 3,
     "faction": "IMPERIUM",
-    "base_size": "32"
+    "base_size": "32",
+    "weapon_rules": [
+      "Range",
+      "Saturate"
+    ]
   },
   {
     "name": "INCURSOR MARKSMAN",
     "team": "Phobos Strike Team",
     "apl": 3,
     "faction": "IMPERIUM",
-    "base_size": "32"
+    "base_size": "32",
+    "weapon_rules": [
+      "Lethal",
+      "Piercing"
+    ]
   },
   {
     "name": "INCURSOR MINELAYER",
     "team": "Phobos Strike Team",
     "apl": 3,
     "faction": "IMPERIUM",
-    "base_size": "32"
+    "base_size": "32",
+    "weapon_rules": [
+      "Range",
+      "Saturate"
+    ]
   },
   {
     "name": "INCURSOR WARRIOR",
     "team": "Phobos Strike Team",
     "apl": 3,
     "faction": "IMPERIUM",
-    "base_size": "32"
+    "base_size": "32",
+    "weapon_rules": [
+      "Saturate"
+    ]
   },
   {
     "name": "REIVER SERGEANT",
     "team": "Phobos Strike Team",
     "apl": 3,
     "faction": "IMPERIUM",
-    "base_size": "32"
+    "base_size": "32",
+    "weapon_rules": [
+      "Accurate",
+      "Piercing",
+      "Range"
+    ]
   },
   {
     "name": "REIVER WARRIOR",
     "team": "Phobos Strike Team",
     "apl": 3,
     "faction": "IMPERIUM",
-    "base_size": "32"
+    "base_size": "32",
+    "weapon_rules": [
+      "Accurate",
+      "Piercing",
+      "Range"
+    ]
   },
   {
     "name": "PLAGUE MARINE CHAMPION",
     "team": "Plague Marines",
     "apl": 3,
     "faction": "CHAOS",
-    "base_size": "32"
+    "base_size": "32",
+    "weapon_rules": [
+      "Hot",
+      "Lethal",
+      "Piercing",
+      "Range",
+      "Severe"
+    ]
   },
   {
     "name": "PLAGUE MARINE BOMBARDIER",
     "team": "Plague Marines",
     "apl": 3,
     "faction": "CHAOS",
-    "base_size": "32"
+    "base_size": "32",
+    "weapon_rules": [
+      "Limited"
+    ]
   },
   {
     "name": "PLAGUE MARINE FIGHTER",
     "team": "Plague Marines",
     "apl": 3,
     "faction": "CHAOS",
-    "base_size": "32"
+    "base_size": "32",
+    "weapon_rules": [
+      "Brutal",
+      "Severe",
+      "Shock"
+    ]
   },
   {
     "name": "PLAGUE MARINE HEAVY GUNNER",
     "team": "Plague Marines",
     "apl": 3,
     "faction": "CHAOS",
-    "base_size": "32"
+    "base_size": "32",
+    "weapon_rules": [
+      "Heavy",
+      "Range",
+      "Saturate",
+      "Severe",
+      "Torrent"
+    ]
   },
   {
     "name": "PLAGUE MARINE ICON BEARER",
     "team": "Plague Marines",
     "apl": 3,
     "faction": "CHAOS",
-    "base_size": "32"
+    "base_size": "32",
+    "weapon_rules": [
+      "Range",
+      "Severe"
+    ]
   },
   {
     "name": "MALIGNANT PLAGUECASTER",
     "team": "Plague Marines",
     "apl": 3,
     "faction": "CHAOS",
-    "base_size": "32"
+    "base_size": "32",
+    "weapon_rules": [
+      "Range",
+      "Saturate",
+      "Severe",
+      "Shock",
+      "Stun",
+      "Torrent"
+    ]
   },
   {
     "name": "PLAGUE MARINE WARRIOR",
     "team": "Plague Marines",
     "apl": 3,
     "faction": "CHAOS",
-    "base_size": "32"
+    "base_size": "32",
+    "weapon_rules": [
+      "Severe"
+    ]
   },
   {
     "name": "RATLING FIXER",
     "team": "Ratlings",
     "apl": 2,
     "faction": "IMPERIUM",
-    "base_size": "25"
+    "base_size": "25",
+    "weapon_rules": [
+      "Devastating",
+      "Heavy",
+      "Lethal"
+    ]
   },
   {
     "name": "RATLING BATTLEMUTT",
     "team": "Ratlings",
     "apl": 2,
     "faction": "IMPERIUM",
-    "base_size": "25"
+    "base_size": "25",
+    "weapon_rules": []
   },
   {
     "name": "BULLGRYN",
     "team": "Ratlings",
     "apl": 2,
     "faction": "IMPERIUM",
-    "base_size": "40"
+    "base_size": "40",
+    "weapon_rules": [
+      "Shock"
+    ]
   },
   {
     "name": "OGRYN",
     "team": "Ratlings",
     "apl": 2,
     "faction": "IMPERIUM",
-    "base_size": "40"
+    "base_size": "40",
+    "weapon_rules": [
+      "Punishing",
+      "Range"
+    ]
   },
   {
     "name": "RATLING BIG SHOT",
     "team": "Ratlings",
     "apl": 2,
     "faction": "IMPERIUM",
-    "base_size": "28"
+    "base_size": "28",
+    "weapon_rules": [
+      "Devastating",
+      "Heavy",
+      "Piercing",
+      "Severe"
+    ]
   },
   {
     "name": "RATLING BOMBER",
     "team": "Ratlings",
     "apl": 2,
     "faction": "IMPERIUM",
-    "base_size": "25"
+    "base_size": "25",
+    "weapon_rules": [
+      "Devastating",
+      "Heavy",
+      "Limited",
+      "Piercing",
+      "Range",
+      "Saturate"
+    ]
   },
   {
     "name": "RATLING HARDBIT",
     "team": "Ratlings",
     "apl": 2,
     "faction": "IMPERIUM",
-    "base_size": "25"
+    "base_size": "25",
+    "weapon_rules": [
+      "Balanced",
+      "Brutal",
+      "Heavy",
+      "Range"
+    ]
   },
   {
     "name": "RATLING RAIDER",
     "team": "Ratlings",
     "apl": 2,
     "faction": "IMPERIUM",
-    "base_size": "25"
+    "base_size": "25",
+    "weapon_rules": [
+      "Devastating",
+      "Heavy",
+      "Silent"
+    ]
   },
   {
     "name": "RATLING SNEAK",
     "team": "Ratlings",
     "apl": 2,
     "faction": "IMPERIUM",
-    "base_size": "25"
+    "base_size": "25",
+    "weapon_rules": [
+      "Devastating",
+      "Heavy",
+      "Lethal",
+      "Range",
+      "Silent"
+    ]
   },
   {
     "name": "RATLING SNIPER",
     "team": "Ratlings",
     "apl": 2,
     "faction": "IMPERIUM",
-    "base_size": "25"
+    "base_size": "25",
+    "weapon_rules": [
+      "Devastating",
+      "Heavy"
+    ]
   },
   {
     "name": "RATLING SPOTTER",
     "team": "Ratlings",
     "apl": 2,
     "faction": "IMPERIUM",
-    "base_size": "25"
+    "base_size": "25",
+    "weapon_rules": [
+      "Devastating",
+      "Heavy",
+      "Range",
+      "Seek"
+    ]
   },
   {
     "name": "RATLING STASHMASTER",
     "team": "Ratlings",
     "apl": 2,
     "faction": "IMPERIUM",
-    "base_size": "25"
+    "base_size": "25",
+    "weapon_rules": [
+      "Devastating",
+      "Heavy"
+    ]
   },
   {
     "name": "RATLING VOX-THIEF",
     "team": "Ratlings",
     "apl": 2,
     "faction": "IMPERIUM",
-    "base_size": "25"
+    "base_size": "25",
+    "weapon_rules": [
+      "Devastating",
+      "Heavy",
+      "Range"
+    ]
   },
   {
     "name": "RAVENER PRIME",
     "team": "Raveners",
     "apl": 3,
     "faction": "TYRANID",
-    "base_size": "40"
+    "base_size": "40",
+    "weapon_rules": [
+      "Range",
+      "Rending",
+      "Silent"
+    ]
   },
   {
     "name": "RAVENER FELLTALON",
     "team": "Raveners",
     "apl": 3,
     "faction": "TYRANID",
-    "base_size": "40"
+    "base_size": "40",
+    "weapon_rules": [
+      "Lethal",
+      "Range",
+      "Shock",
+      "Silent"
+    ]
   },
   {
     "name": "RAVENER TREMORSCYTHE",
     "team": "Raveners",
     "apl": 3,
     "faction": "TYRANID",
-    "base_size": "40"
+    "base_size": "40",
+    "weapon_rules": [
+      "Range",
+      "Rending",
+      "Silent"
+    ]
   },
   {
     "name": "RAVENER VENOMSPITTER",
     "team": "Raveners",
     "apl": 3,
     "faction": "TYRANID",
-    "base_size": "40"
+    "base_size": "40",
+    "weapon_rules": [
+      "Lethal",
+      "Piercing",
+      "Range",
+      "Silent"
+    ]
   },
   {
     "name": "RAVENER WARRIOR",
     "team": "Raveners",
     "apl": 3,
     "faction": "TYRANID",
-    "base_size": "40"
+    "base_size": "40",
+    "weapon_rules": [
+      "Lethal",
+      "Range",
+      "Silent"
+    ]
   },
   {
     "name": "RAVENER WRECKER",
     "team": "Raveners",
     "apl": 3,
     "faction": "TYRANID",
-    "base_size": "40"
+    "base_size": "40",
+    "weapon_rules": [
+      "Piercing",
+      "Range",
+      "Silent"
+    ]
   },
   {
     "name": "SANCTIFIER CONFESSOR",
     "team": "Sanctifiers",
     "apl": 2,
     "faction": "IMPERIUM",
-    "base_size": "32"
+    "base_size": "32",
+    "weapon_rules": [
+      "Brutal",
+      "Shock"
+    ]
   },
   {
     "name": "SANCTIFIER CHERUB",
     "team": "Sanctifiers",
     "apl": 2,
     "faction": "IMPERIUM",
-    "base_size": "25"
+    "base_size": "25",
+    "weapon_rules": [
+      "Seek",
+      "Shock"
+    ]
   },
   {
     "name": "SANCTIFIER CONFLAGRATOR",
     "team": "Sanctifiers",
     "apl": 2,
     "faction": "IMPERIUM",
-    "base_size": "25"
+    "base_size": "25",
+    "weapon_rules": [
+      "Range",
+      "Saturate",
+      "Torrent"
+    ]
   },
   {
     "name": "SANCTIFIER DEATH CULT ASSASSIN",
     "team": "Sanctifiers",
     "apl": 3,
     "faction": "IMPERIUM",
-    "base_size": "25"
+    "base_size": "25",
+    "weapon_rules": [
+      "Range",
+      "Silent"
+    ]
   },
   {
     "name": "SANCTIFIER DRILL ABBOT",
     "team": "Sanctifiers",
     "apl": 2,
     "faction": "IMPERIUM",
-    "base_size": "25"
+    "base_size": "25",
+    "weapon_rules": [
+      "Brutal",
+      "Shock"
+    ]
   },
   {
     "name": "SANCTIFIER PERSECUTOR",
     "team": "Sanctifiers",
     "apl": 2,
     "faction": "IMPERIUM",
-    "base_size": "25"
+    "base_size": "25",
+    "weapon_rules": [
+      "Brutal",
+      "Range",
+      "Saturate",
+      "Torrent"
+    ]
   },
   {
     "name": "SANCTIFIER MIRACULIST",
     "team": "Sanctifiers",
     "apl": 2,
     "faction": "IMPERIUM",
-    "base_size": "25"
+    "base_size": "25",
+    "weapon_rules": [
+      "Brutal",
+      "Devastating",
+      "Limited",
+      "Piercing",
+      "Range",
+      "Saturate"
+    ]
   },
   {
     "name": "SANCTIFIER MISSIONARY",
     "team": "Sanctifiers",
     "apl": 2,
     "faction": "IMPERIUM",
-    "base_size": "25"
+    "base_size": "25",
+    "weapon_rules": [
+      "Devastating",
+      "Hot",
+      "Lethal",
+      "Piercing",
+      "Range",
+      "Saturate",
+      "Shock",
+      "Torrent"
+    ]
   },
   {
     "name": "SANCTIFIER PREACHER",
     "team": "Sanctifiers",
     "apl": 2,
     "faction": "IMPERIUM",
-    "base_size": "25"
+    "base_size": "25",
+    "weapon_rules": [
+      "Range",
+      "Saturate",
+      "Torrent"
+    ]
   },
   {
     "name": "SANCTIFIER RELIQUANT",
     "team": "Sanctifiers",
     "apl": 2,
     "faction": "IMPERIUM",
-    "base_size": "25"
+    "base_size": "25",
+    "weapon_rules": [
+      "Range",
+      "Saturate",
+      "Torrent"
+    ]
   },
   {
     "name": "SANCTIFIER SALVATIONIST",
     "team": "Sanctifiers",
     "apl": 2,
     "faction": "IMPERIUM",
-    "base_size": "25"
+    "base_size": "25",
+    "weapon_rules": [
+      "Range"
+    ]
   },
   {
     "name": "SCOUT SERGEANT",
     "team": "Scout Squad",
     "apl": 3,
     "faction": "IMPERIUM",
-    "base_size": "28"
+    "base_size": "28",
+    "weapon_rules": [
+      "Range"
+    ]
   },
   {
     "name": "SCOUT HEAVY GUNNER",
     "team": "Scout Squad",
     "apl": 2,
     "faction": "IMPERIUM",
-    "base_size": "28"
+    "base_size": "28",
+    "weapon_rules": [
+      "Heavy",
+      "Piercing",
+      "Range",
+      "Torrent"
+    ]
   },
   {
     "name": "SCOUT HUNTER",
     "team": "Scout Squad",
     "apl": 2,
     "faction": "IMPERIUM",
-    "base_size": "28"
+    "base_size": "28",
+    "weapon_rules": [
+      "Lethal",
+      "Range"
+    ]
   },
   {
     "name": "SCOUT SNIPER",
     "team": "Scout Squad",
     "apl": 2,
     "faction": "IMPERIUM",
-    "base_size": "28"
+    "base_size": "28",
+    "weapon_rules": [
+      "Devastating",
+      "Heavy",
+      "Range",
+      "Saturate",
+      "Silent"
+    ]
   },
   {
     "name": "SCOUT TRACKER",
     "team": "Scout Squad",
     "apl": 2,
     "faction": "IMPERIUM",
-    "base_size": "28"
+    "base_size": "28",
+    "weapon_rules": [
+      "Range",
+      "Seek"
+    ]
   },
   {
     "name": "SCOUT WARRIOR",
     "team": "Scout Squad",
     "apl": 2,
     "faction": "IMPERIUM",
-    "base_size": "28"
+    "base_size": "28",
+    "weapon_rules": [
+      "Range",
+      "Stun"
+    ]
   },
   {
     "name": "AQUILON TEMPESTOR",
     "team": "Tempestus Aquilons",
     "apl": 3,
     "faction": "IMPERIUM",
-    "base_size": "28"
+    "base_size": "28",
+    "weapon_rules": [
+      "Hot",
+      "Lethal",
+      "Range"
+    ]
   },
   {
     "name": "AQUILON GRENADIER",
     "team": "Tempestus Aquilons",
     "apl": 2,
     "faction": "IMPERIUM",
-    "base_size": "28"
+    "base_size": "28",
+    "weapon_rules": [
+      "Devastating",
+      "Heavy",
+      "Hot",
+      "Limited",
+      "Piercing",
+      "Range",
+      "Stun"
+    ]
   },
   {
     "name": "AQUILON GUNFIGHTER",
     "team": "Tempestus Aquilons",
     "apl": 2,
     "faction": "IMPERIUM",
-    "base_size": "28"
+    "base_size": "28",
+    "weapon_rules": [
+      "Ceaseless",
+      "Hot",
+      "Range",
+      "Rending"
+    ]
   },
   {
     "name": "AQUILON GUNNER",
     "team": "Tempestus Aquilons",
     "apl": 2,
     "faction": "IMPERIUM",
-    "base_size": "28"
+    "base_size": "28",
+    "weapon_rules": [
+      "Devastating",
+      "Hot",
+      "Lethal",
+      "Piercing",
+      "Range"
+    ]
   },
   {
     "name": "AQUILON MARKSMAN",
     "team": "Tempestus Aquilons",
     "apl": 2,
     "faction": "IMPERIUM",
-    "base_size": "28"
+    "base_size": "28",
+    "weapon_rules": [
+      "Devastating",
+      "Heavy",
+      "Hot",
+      "Severe",
+      "Silent"
+    ]
   },
   {
     "name": "AQUILON PRECURSOR",
     "team": "Tempestus Aquilons",
     "apl": 2,
     "faction": "IMPERIUM",
-    "base_size": "28"
+    "base_size": "28",
+    "weapon_rules": [
+      "Ceaseless",
+      "Hot",
+      "Lethal",
+      "Range"
+    ]
   },
   {
     "name": "AQUILON SERVO‑SENTRY",
     "team": "Tempestus Aquilons",
     "apl": 2,
     "faction": "IMPERIUM",
-    "base_size": "40"
+    "base_size": "40",
+    "weapon_rules": [
+      "Hot",
+      "Piercing",
+      "Range",
+      "Saturate",
+      "Torrent"
+    ]
   },
   {
     "name": "AQUILON TROOPER",
     "team": "Tempestus Aquilons",
     "apl": 2,
     "faction": "IMPERIUM",
-    "base_size": "28"
+    "base_size": "28",
+    "weapon_rules": [
+      "Hot"
+    ]
   },
   {
     "name": "VESPID STRAIN LEADER",
     "team": "Vespid Stingwings",
     "apl": 2,
     "faction": "T'AU EMPIRE",
-    "base_size": "28"
+    "base_size": "28",
+    "weapon_rules": [
+      "Devastating",
+      "Range"
+    ]
   },
   {
     "name": "OVERSIGHT DRONE",
     "team": "Vespid Stingwings",
     "apl": 2,
     "faction": "T'AU EMPIRE",
-    "base_size": "25"
+    "base_size": "25",
+    "weapon_rules": []
   },
   {
     "name": "VESPID LONGSTING",
     "team": "Vespid Stingwings",
     "apl": 2,
     "faction": "T'AU EMPIRE",
-    "base_size": "28"
+    "base_size": "28",
+    "weapon_rules": [
+      "Devastating",
+      "Heavy",
+      "Lethal"
+    ]
   },
   {
     "name": "VESPID SHADESTRAIN",
     "team": "Vespid Stingwings",
     "apl": 2,
     "faction": "T'AU EMPIRE",
-    "base_size": "28"
+    "base_size": "28",
+    "weapon_rules": [
+      "Devastating",
+      "Limited",
+      "Piercing",
+      "Range",
+      "Saturate"
+    ]
   },
   {
     "name": "VESPID SKYBLAST",
     "team": "Vespid Stingwings",
     "apl": 2,
     "faction": "T'AU EMPIRE",
-    "base_size": "28"
+    "base_size": "28",
+    "weapon_rules": [
+      "Devastating",
+      "Range"
+    ]
   },
   {
     "name": "VESPID SWARMGUARD",
     "team": "Vespid Stingwings",
     "apl": 2,
     "faction": "T'AU EMPIRE",
-    "base_size": "28"
+    "base_size": "28",
+    "weapon_rules": [
+      "Range",
+      "Saturate",
+      "Torrent"
+    ]
   },
   {
     "name": "VESPID WARRIOR",
     "team": "Vespid Stingwings",
     "apl": 2,
     "faction": "T'AU EMPIRE",
-    "base_size": "28"
+    "base_size": "28",
+    "weapon_rules": [
+      "Accurate",
+      "Devastating"
+    ]
   },
   {
     "name": "LEAD PLAYER",
     "team": "Void-Dancer Troupe",
     "apl": 3,
     "faction": "AELDARI",
-    "base_size": "25"
+    "base_size": "25",
+    "weapon_rules": [
+      "Brutal",
+      "Devastating",
+      "Lethal",
+      "Piercing",
+      "Range",
+      "Rending",
+      "Stun"
+    ]
   },
   {
     "name": "DEATH JESTER",
     "team": "Void-Dancer Troupe",
     "apl": 3,
     "faction": "AELDARI",
-    "base_size": "25"
+    "base_size": "25",
+    "weapon_rules": [
+      "Heavy",
+      "Rending",
+      "Torrent"
+    ]
   },
   {
     "name": "PLAYER",
     "team": "Void-Dancer Troupe",
     "apl": 3,
     "faction": "AELDARI",
-    "base_size": "25"
+    "base_size": "25",
+    "weapon_rules": [
+      "Brutal",
+      "Devastating",
+      "Piercing",
+      "Range",
+      "Rending",
+      "Stun"
+    ]
   },
   {
     "name": "SHADOWSEER",
     "team": "Void-Dancer Troupe",
     "apl": 3,
     "faction": "AELDARI",
-    "base_size": "25"
+    "base_size": "25",
+    "weapon_rules": [
+      "Lethal",
+      "Piercing",
+      "Range",
+      "Rending",
+      "Seek",
+      "Shock",
+      "Silent",
+      "Stun"
+    ]
   },
   {
     "name": "SORCERER OF DESTINY",
     "team": "Warpcoven",
     "apl": 3,
     "faction": "CHAOS",
-    "base_size": "32"
+    "base_size": "32",
+    "weapon_rules": [
+      "Devastating",
+      "Lethal",
+      "Piercing",
+      "Range",
+      "Shock",
+      "Torrent"
+    ]
   },
   {
     "name": "SORCERER OF TEMPYRION",
     "team": "Warpcoven",
     "apl": 3,
     "faction": "CHAOS",
-    "base_size": "32"
+    "base_size": "32",
+    "weapon_rules": [
+      "Lethal",
+      "Piercing",
+      "Range",
+      "Rending",
+      "Shock",
+      "Torrent"
+    ]
   },
   {
     "name": "SORCERER OF WARPFIRE",
     "team": "Warpcoven",
     "apl": 3,
     "faction": "CHAOS",
-    "base_size": "32"
+    "base_size": "32",
+    "weapon_rules": [
+      "Lethal",
+      "Piercing",
+      "Range",
+      "Saturate",
+      "Seek",
+      "Shock",
+      "Torrent"
+    ]
   },
   {
     "name": "RUBRIC MARINE GUNNER",
     "team": "Warpcoven",
     "apl": 3,
     "faction": "CHAOS",
-    "base_size": "32"
+    "base_size": "32",
+    "weapon_rules": [
+      "Piercing",
+      "Range",
+      "Saturate",
+      "Torrent"
+    ]
   },
   {
     "name": "RUBRIC MARINE ICON BEARER",
     "team": "Warpcoven",
     "apl": 3,
     "faction": "CHAOS",
-    "base_size": "32"
+    "base_size": "32",
+    "weapon_rules": [
+      "Piercing"
+    ]
   },
   {
     "name": "RUBRIC MARINE WARRIOR",
     "team": "Warpcoven",
     "apl": 3,
     "faction": "CHAOS",
-    "base_size": "32"
+    "base_size": "32",
+    "weapon_rules": [
+      "Ceaseless",
+      "Piercing"
+    ]
   },
   {
     "name": "TZAANGOR CHAMPION",
     "team": "Warpcoven",
     "apl": 2,
     "faction": "CHAOS",
-    "base_size": "32"
+    "base_size": "32",
+    "weapon_rules": [
+      "Brutal",
+      "Lethal",
+      "Rending"
+    ]
   },
   {
     "name": "TZAANGOR HORN BEARER",
     "team": "Warpcoven",
     "apl": 2,
     "faction": "CHAOS",
-    "base_size": "32"
+    "base_size": "32",
+    "weapon_rules": [
+      "Range"
+    ]
   },
   {
     "name": "TZAANGOR ICON BEARER",
     "team": "Warpcoven",
     "apl": 2,
     "faction": "CHAOS",
-    "base_size": "32"
+    "base_size": "32",
+    "weapon_rules": []
   },
   {
     "name": "TZAANGOR WARRIOR",
     "team": "Warpcoven",
     "apl": 2,
     "faction": "CHAOS",
-    "base_size": "32"
+    "base_size": "32",
+    "weapon_rules": [
+      "Balanced",
+      "Range"
+    ]
   },
   {
     "name": "WOLF SCOUT PACK LEADER",
     "team": "Wolf Scouts",
     "apl": 3,
     "faction": "IMPERIUM",
-    "base_size": "32"
+    "base_size": "32",
+    "weapon_rules": [
+      "Hot",
+      "Lethal",
+      "Piercing",
+      "Range"
+    ]
   },
   {
     "name": "WOLF SCOUT FANGBEARER",
     "team": "Wolf Scouts",
     "apl": 3,
     "faction": "IMPERIUM",
-    "base_size": "32"
+    "base_size": "32",
+    "weapon_rules": [
+      "Piercing",
+      "Range",
+      "Shock",
+      "Stun"
+    ]
   },
   {
     "name": "WOLF SCOUT FROSTEYE",
     "team": "Wolf Scouts",
     "apl": 3,
     "faction": "IMPERIUM",
-    "base_size": "32"
+    "base_size": "32",
+    "weapon_rules": [
+      "Heavy",
+      "Piercing",
+      "Silent"
+    ]
   },
   {
     "name": "WOLF SCOUT GUNNER",
     "team": "Wolf Scouts",
     "apl": 3,
     "faction": "IMPERIUM",
-    "base_size": "32"
+    "base_size": "32",
+    "weapon_rules": [
+      "Hot",
+      "Lethal",
+      "Piercing",
+      "Punishing"
+    ]
   },
   {
     "name": "WOLF SCOUT HUNTER",
     "team": "Wolf Scouts",
     "apl": 3,
     "faction": "IMPERIUM",
-    "base_size": "32"
+    "base_size": "32",
+    "weapon_rules": [
+      "Hot",
+      "Lethal",
+      "Piercing",
+      "Range",
+      "Severe"
+    ]
   },
   {
     "name": "WOLF SCOUT RUNE PRIEST SKJALD",
     "team": "Wolf Scouts",
     "apl": 3,
     "faction": "IMPERIUM",
-    "base_size": "32"
+    "base_size": "32",
+    "weapon_rules": [
+      "Range",
+      "Saturate",
+      "Seek",
+      "Severe",
+      "Shock",
+      "Stun",
+      "Torrent"
+    ]
   },
   {
     "name": "WOLF SCOUT TRAPMASTER",
     "team": "Wolf Scouts",
     "apl": 3,
     "faction": "IMPERIUM",
-    "base_size": "32"
+    "base_size": "32",
+    "weapon_rules": [
+      "Hot",
+      "Lethal",
+      "Piercing",
+      "Range"
+    ]
   },
   {
     "name": "WOLF SCOUT FENRISIAN WOLF",
     "team": "Wolf Scouts",
     "apl": 2,
     "faction": "IMPERIUM",
-    "base_size": "60x35"
+    "base_size": "60x35",
+    "weapon_rules": [
+      "Rending"
+    ]
   },
   {
     "name": "WRECKA BOSS NOB",
     "team": "Wrecka Krew",
     "apl": 2,
     "faction": "ORK",
-    "base_size": "40"
+    "base_size": "40",
+    "weapon_rules": [
+      "Brutal",
+      "Ceaseless",
+      "Range"
+    ]
   },
   {
     "name": "WRECKA BOMB SQUIG",
     "team": "Wrecka Krew",
     "apl": 2,
     "faction": "ORK",
-    "base_size": "25"
+    "base_size": "25",
+    "weapon_rules": [
+      "Limited",
+      "Range"
+    ]
   },
   {
     "name": "BREAKA BOY DEMOLISHA",
     "team": "Wrecka Krew",
     "apl": 2,
     "faction": "ORK",
-    "base_size": "32"
+    "base_size": "32",
+    "weapon_rules": [
+      "Lethal",
+      "Limited",
+      "Range"
+    ]
   },
   {
     "name": "BREAKA BOY FIGHTER",
     "team": "Wrecka Krew",
     "apl": 2,
     "faction": "ORK",
-    "base_size": "32"
+    "base_size": "32",
+    "weapon_rules": [
+      "Brutal",
+      "Range"
+    ]
   },
   {
     "name": "BREAKA BOY KRUSHA",
     "team": "Wrecka Krew",
     "apl": 2,
     "faction": "ORK",
-    "base_size": "32"
+    "base_size": "32",
+    "weapon_rules": [
+      "Brutal",
+      "Lethal",
+      "Range",
+      "Rending",
+      "Severe",
+      "Shock"
+    ]
   },
   {
     "name": "TANKBUSTA GUNNER",
     "team": "Wrecka Krew",
     "apl": 2,
     "faction": "ORK",
-    "base_size": "32"
+    "base_size": "32",
+    "weapon_rules": [
+      "Heavy"
+    ]
   },
   {
     "name": "TANKBUSTA ROKKITEER",
     "team": "Wrecka Krew",
     "apl": 2,
     "faction": "ORK",
-    "base_size": "32"
+    "base_size": "32",
+    "weapon_rules": [
+      "Heavy",
+      "Limited",
+      "Relentless"
+    ]
   },
   {
     "name": "NEOPHYTE LEADER",
     "team": "Wyrmblade",
     "apl": 2,
     "faction": "TYRANID",
-    "base_size": "25"
+    "base_size": "25",
+    "weapon_rules": [
+      "Lethal",
+      "Range",
+      "Rending",
+      "Severe",
+      "Shock",
+      "Stun"
+    ]
   },
   {
     "name": "KELERMORPH",
     "team": "Wyrmblade",
     "apl": 3,
     "faction": "TYRANID",
-    "base_size": "32"
+    "base_size": "32",
+    "weapon_rules": [
+      "Piercing",
+      "Range",
+      "Rending",
+      "Saturate",
+      "Seek",
+      "Severe"
+    ]
   },
   {
     "name": "LOCUS",
     "team": "Wyrmblade",
     "apl": 3,
     "faction": "TYRANID",
-    "base_size": "32"
+    "base_size": "32",
+    "weapon_rules": [
+      "Lethal",
+      "Range",
+      "Silent"
+    ]
   },
   {
     "name": "NEOPHYTE GUNNER",
     "team": "Wyrmblade",
     "apl": 2,
     "faction": "TYRANID",
-    "base_size": "25"
+    "base_size": "25",
+    "weapon_rules": [
+      "Piercing",
+      "Range",
+      "Saturate",
+      "Severe",
+      "Stun",
+      "Torrent"
+    ]
   },
   {
     "name": "NEOPHYTE HEAVY GUNNER",
     "team": "Wyrmblade",
     "apl": 2,
     "faction": "TYRANID",
-    "base_size": "32"
+    "base_size": "32",
+    "weapon_rules": [
+      "Heavy",
+      "Piercing",
+      "Range",
+      "Stun",
+      "Torrent"
+    ]
   },
   {
     "name": "NEOPHYTE ICON BEARER",
     "team": "Wyrmblade",
     "apl": 2,
     "faction": "TYRANID",
-    "base_size": "25"
+    "base_size": "25",
+    "weapon_rules": [
+      "Range"
+    ]
   },
   {
     "name": "SANCTUS SNIPER",
     "team": "Wyrmblade",
     "apl": 3,
     "faction": "TYRANID",
-    "base_size": "32"
+    "base_size": "32",
+    "weapon_rules": [
+      "Devastating",
+      "Heavy",
+      "Lethal",
+      "Range",
+      "Silent"
+    ]
   },
   {
     "name": "SANCTUS TALON",
     "team": "Wyrmblade",
     "apl": 3,
     "faction": "TYRANID",
-    "base_size": "32"
+    "base_size": "32",
+    "weapon_rules": [
+      "Lethal",
+      "Shock"
+    ]
   },
   {
     "name": "NEOPHYTE WARRIOR",
     "team": "Wyrmblade",
     "apl": 2,
     "faction": "TYRANID",
-    "base_size": "25"
+    "base_size": "25",
+    "weapon_rules": [
+      "Range"
+    ]
   },
   {
     "name": "XV26 SHAS’VRE",
     "team": "XV26 Stealth Battlesuits",
     "apl": 3,
     "faction": "T'AU EMPIRE",
-    "base_size": "32"
+    "base_size": "32",
+    "weapon_rules": [
+      "Accurate",
+      "Ceaseless",
+      "Devastating",
+      "Piercing",
+      "Range",
+      "Torrent"
+    ]
   },
   {
     "name": "XV26 DESIGNATOR",
     "team": "XV26 Stealth Battlesuits",
     "apl": 3,
     "faction": "T'AU EMPIRE",
-    "base_size": "32"
+    "base_size": "32",
+    "weapon_rules": [
+      "Ceaseless",
+      "Devastating",
+      "Piercing",
+      "Range",
+      "Severe",
+      "Torrent"
+    ]
   },
   {
     "name": "XV26 INFILTRATOR",
     "team": "XV26 Stealth Battlesuits",
     "apl": 3,
     "faction": "T'AU EMPIRE",
-    "base_size": "32"
+    "base_size": "32",
+    "weapon_rules": [
+      "Ceaseless",
+      "Devastating",
+      "Piercing",
+      "Range",
+      "Torrent"
+    ]
   },
   {
     "name": "XV26 LIBERATOR",
     "team": "XV26 Stealth Battlesuits",
     "apl": 3,
     "faction": "T'AU EMPIRE",
-    "base_size": "32"
+    "base_size": "32",
+    "weapon_rules": [
+      "Ceaseless",
+      "Devastating",
+      "Heavy",
+      "Lethal",
+      "Limited",
+      "Piercing",
+      "Range",
+      "Saturate",
+      "Stun",
+      "Torrent"
+    ]
   },
   {
     "name": "XV26 LODESTAR",
     "team": "XV26 Stealth Battlesuits",
     "apl": 3,
     "faction": "T'AU EMPIRE",
-    "base_size": "32"
+    "base_size": "32",
+    "weapon_rules": [
+      "Ceaseless",
+      "Devastating",
+      "Piercing",
+      "Range",
+      "Torrent"
+    ]
   },
   {
     "name": "XV26 NEUTRALISER",
     "team": "XV26 Stealth Battlesuits",
     "apl": 3,
     "faction": "T'AU EMPIRE",
-    "base_size": "32"
+    "base_size": "32",
+    "weapon_rules": [
+      "Ceaseless",
+      "Devastating",
+      "Piercing",
+      "Range",
+      "Torrent"
+    ]
   },
   {
     "name": "MV15 GUN DRONE",
     "team": "XV26 Stealth Battlesuits",
     "apl": 2,
     "faction": "T'AU EMPIRE",
-    "base_size": "28"
+    "base_size": "28",
+    "weapon_rules": [
+      "Ceaseless"
+    ]
   },
   {
     "name": "MV75 MARKER DRONE",
     "team": "XV26 Stealth Battlesuits",
     "apl": 2,
     "faction": "T'AU EMPIRE",
-    "base_size": "28"
+    "base_size": "28",
+    "weapon_rules": [
+      "Severe"
+    ]
   }
 ]
