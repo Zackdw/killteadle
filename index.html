@@ -3941,36 +3941,50 @@ document.getElementById('shareBtn').addEventListener('click', async () => {
     // Convert to blob
     const blob = await new Promise(r => canvas.toBlob(r, 'image/png'));
     const url = 'https://zackdw.github.io/killteamadle/';
+    const shareText = `${won ? `I got it in ${guesses.length}!` : 'I couldn\'t get it!'} Play Killteamadle: ${url}`;
+    const isMobile = /Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
 
-    // Try native share with image if available (mobile)
-    if (navigator.canShare && navigator.canShare({ files: [new File([blob], 'killteamadle.png', { type: 'image/png' })] })) {
+    if (isMobile && navigator.canShare && navigator.canShare({ files: [new File([blob], 'killteamadle.png', { type: 'image/png' })] })) {
+      // Mobile: native share sheet (iOS/Android)
       await navigator.share({
         files: [new File([blob], 'killteamadle.png', { type: 'image/png' })],
         title: 'Killteamadle',
-        text: `${won ? `I got it in ${guesses.length}!` : 'I couldn\'t get it!'} Play Killteamadle: ${url}`
+        text: shareText
       });
     } else {
-      // Desktop fallback: copy image to clipboard + show toast
+      // Desktop: copy image + text link to clipboard together
       try {
+        const textBlob = new Blob([shareText], { type: 'text/plain' });
         await navigator.clipboard.write([
-          new ClipboardItem({ 'image/png': blob })
+          new ClipboardItem({
+            'image/png': blob,
+            'text/plain': textBlob
+          })
         ]);
-        showToast('Image copied! Paste in Discord/iMessage. Link: ' + url);
+        showToast('Image + link copied to clipboard! Paste in Discord or iMessage');
       } catch {
-        // Final fallback: copy text result
-        const emoji = guesses.map(g => {
-          const m = [
-            g.team === target.team,
-            g.apl === target.apl,
-            g.faction === target.faction,
-            g.base_size === target.base_size,
-            g.name === target.name
-          ];
-          return m.map(v => v ? '\uD83D\uDFE9' : '\uD83D\uDFE5').join('');
-        }).join('\n');
-        const text = `Killteamadle ${won ? guesses.length : 'X'}/${maxGuesses}\n${emoji}\n${url}`;
-        await navigator.clipboard.writeText(text);
-        showToast('Results copied to clipboard!');
+        // Fallback: try image only
+        try {
+          await navigator.clipboard.write([
+            new ClipboardItem({ 'image/png': blob })
+          ]);
+          showToast('Image copied! Link: ' + url);
+        } catch {
+          // Final fallback: copy emoji text grid
+          const emoji = guesses.map(g => {
+            const m = [
+              g.team === target.team,
+              g.apl === target.apl,
+              g.faction === target.faction,
+              g.base_size === target.base_size,
+              g.name === target.name
+            ];
+            return m.map(v => v ? '\uD83D\uDFE9' : '\uD83D\uDFE5').join('');
+          }).join('\n');
+          const text = `Killteamadle ${won ? guesses.length : 'X'}/${maxGuesses}\n${emoji}\n${url}`;
+          await navigator.clipboard.writeText(text);
+          showToast('Results copied to clipboard!');
+        }
       }
     }
   } catch (err) {
