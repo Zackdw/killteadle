@@ -1,0 +1,3529 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Killtaamdle</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+    background: #1a1a2e;
+    color: #eee;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  h1 {
+    margin: 24px 0 4px;
+    font-size: 28px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #e94560;
+  }
+
+  .subtitle {
+    color: #888;
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+
+  /* Input area */
+  .input-area {
+    position: relative;
+    width: 400px;
+    max-width: 90vw;
+    margin-bottom: 24px;
+  }
+
+  .input-row {
+    display: flex;
+    gap: 8px;
+  }
+
+  .input-area input {
+    flex: 1;
+    padding: 12px 16px;
+    font-size: 16px;
+    border: 2px solid #333;
+    border-radius: 8px;
+    background: #16213e;
+    color: #eee;
+    outline: none;
+    transition: border-color 0.2s;
+  }
+
+  .input-area input:focus {
+    border-color: #e94560;
+  }
+
+  .input-area input:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+
+  .guess-btn {
+    padding: 12px 20px;
+    font-size: 16px;
+    font-weight: 700;
+    background: #e94560;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    white-space: nowrap;
+    transition: background 0.2s;
+  }
+
+  .guess-btn:hover { background: #c73e54; }
+  .guess-btn:disabled { opacity: 0.5; cursor: not-allowed; }
+
+  .dropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    max-height: 240px;
+    overflow-y: auto;
+    background: #16213e;
+    border: 1px solid #333;
+    border-radius: 0 0 8px 8px;
+    z-index: 10;
+    display: none;
+  }
+
+  .dropdown.visible { display: block; }
+
+  .dropdown-item {
+    padding: 10px 16px;
+    cursor: pointer;
+    font-size: 14px;
+    border-bottom: 1px solid #1a1a2e;
+  }
+
+  .dropdown-item:hover,
+  .dropdown-item.selected {
+    background: #e94560;
+    color: #fff;
+  }
+
+  .dropdown-item .team-hint {
+    color: #999;
+    font-size: 12px;
+    margin-left: 8px;
+  }
+
+  .dropdown-item:hover .team-hint,
+  .dropdown-item.selected .team-hint {
+    color: #ddd;
+  }
+
+  /* Guess table */
+  .guesses {
+    width: 700px;
+    max-width: 95vw;
+  }
+
+  .guess-row {
+    display: grid;
+    grid-template-columns: 1.5fr 0.6fr 1.2fr 0.8fr 1.8fr;
+    gap: 6px;
+    margin-bottom: 6px;
+  }
+
+  .guess-header {
+    margin-bottom: 8px;
+  }
+
+  .guess-header .cell {
+    background: #0f3460 !important;
+    color: #ccc;
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+
+  .cell {
+    padding: 10px 8px;
+    border-radius: 6px;
+    text-align: center;
+    font-size: 13px;
+    font-weight: 600;
+    transition: all 0.3s;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .cell.correct {
+    background: #2d6a4f;
+    color: #fff;
+  }
+
+  .cell.wrong {
+    background: #922;
+    color: #fff;
+  }
+
+  /* Status messages */
+  .status {
+    margin: 16px 0;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+    min-height: 28px;
+  }
+
+  .status.win { color: #2d6a4f; }
+  .status.lose { color: #e94560; }
+
+  .guess-count {
+    color: #888;
+    font-size: 13px;
+    margin-bottom: 12px;
+  }
+
+  /* Play again */
+  .play-again {
+    margin-top: 16px;
+    padding: 12px 32px;
+    font-size: 16px;
+    background: #e94560;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    display: none;
+  }
+
+  .play-again:hover { background: #c73e54; }
+
+  /* Responsive */
+  @media (max-width: 600px) {
+    .guess-row {
+      grid-template-columns: 1fr 0.5fr 1fr 0.7fr 1.4fr;
+      gap: 3px;
+    }
+    .cell { font-size: 11px; padding: 8px 4px; }
+  }
+</style>
+</head>
+<body>
+
+<h1>Killtaamdle</h1>
+<p class="subtitle">Guess the operative in 8 tries</p>
+
+<p class="guess-count">Guesses: <span id="guessCount">0</span> / 8</p>
+
+<div class="input-area">
+  <div class="input-row">
+    <input type="text" id="guessInput" placeholder="Type an operative name..." autocomplete="off">
+    <button class="guess-btn" id="guessBtn">Guess</button>
+  </div>
+  <div class="dropdown" id="dropdown"></div>
+</div>
+
+<div class="guesses">
+  <div class="guess-row guess-header">
+    <div class="cell">Team</div>
+    <div class="cell">APL</div>
+    <div class="cell">Faction</div>
+    <div class="cell">Base</div>
+    <div class="cell">Operative</div>
+  </div>
+  <div id="guessRows"></div>
+</div>
+
+<div class="status" id="status"></div>
+<button class="play-again" id="playAgain">Play Again</button>
+
+<script>var EMBEDDED_DATA = [
+  {
+    "name": "SPACE MARINE CAPTAIN",
+    "team": "Angels of Death",
+    "apl": 3,
+    "faction": "IMPERIUM",
+    "base_size": "40"
+  },
+  {
+    "name": "ASSAULT INTERCESSOR SERGEANT",
+    "team": "Angels of Death",
+    "apl": 3,
+    "faction": "IMPERIUM",
+    "base_size": "32"
+  },
+  {
+    "name": "INTERCESSOR SERGEANT",
+    "team": "Angels of Death",
+    "apl": 3,
+    "faction": "IMPERIUM",
+    "base_size": "32"
+  },
+  {
+    "name": "ASSAULT INTERCESSOR GRENADIER",
+    "team": "Angels of Death",
+    "apl": 3,
+    "faction": "IMPERIUM",
+    "base_size": "32"
+  },
+  {
+    "name": "ASSAULT INTERCESSOR WARRIOR",
+    "team": "Angels of Death",
+    "apl": 3,
+    "faction": "IMPERIUM",
+    "base_size": "32"
+  },
+  {
+    "name": "HEAVY INTERCESSOR GUNNER",
+    "team": "Angels of Death",
+    "apl": 3,
+    "faction": "IMPERIUM",
+    "base_size": "40"
+  },
+  {
+    "name": "INTERCESSOR GUNNER",
+    "team": "Angels of Death",
+    "apl": 3,
+    "faction": "IMPERIUM",
+    "base_size": "32"
+  },
+  {
+    "name": "INTERCESSOR WARRIOR",
+    "team": "Angels of Death",
+    "apl": 3,
+    "faction": "IMPERIUM",
+    "base_size": "32"
+  },
+  {
+    "name": "ELIMINATOR SNIPER",
+    "team": "Angels of Death",
+    "apl": 3,
+    "faction": "IMPERIUM",
+    "base_size": "40"
+  },
+  {
+    "name": "BATTLECLADE TECHNOARCHEOLOGIST",
+    "team": "Battleclade",
+    "apl": 3,
+    "faction": "IMPERIUM",
+    "base_size": "32"
+  },
+  {
+    "name": "BATTLECLADE AUTO-PROXY SERVITOR",
+    "team": "Battleclade",
+    "apl": 2,
+    "faction": "IMPERIUM",
+    "base_size": "25"
+  },
+  {
+    "name": "BATTLECLADE BREACHER SERVITOR",
+    "team": "Battleclade",
+    "apl": 2,
+    "faction": "IMPERIUM",
+    "base_size": "25"
+  },
+  {
+    "name": "BATTLECLADE COMBAT SERVITOR",
+    "team": "Battleclade",
+    "apl": 2,
+    "faction": "IMPERIUM",
+    "base_size": "25"
+  },
+  {
+    "name": "BATTLECLADE GUN SERVITOR",
+    "team": "Battleclade",
+    "apl": 2,
+    "faction": "IMPERIUM",
+    "base_size": "32"
+  },
+  {
+    "name": "BATTLECLADE SERVITOR UNDERSEER",
+    "team": "Battleclade",
+    "apl": 3,
+    "faction": "IMPERIUM",
+    "base_size": "32"
+  },
+  {
+    "name": "BATTLECLADE TECHNOMEDIC SERVITOR",
+    "team": "Battleclade",
+    "apl": 2,
+    "faction": "IMPERIUM",
+    "base_size": "25"
+  },
+  {
+    "name": "DIRE AVENGER EXARCH",
+    "team": "Blades of Khaine",
+    "apl": 3,
+    "faction": "AELDARI",
+    "base_size": "28"
+  },
+  {
+    "name": "DIRE AVENGER WARRIOR",
+    "team": "Blades of Khaine",
+    "apl": 3,
+    "faction": "AELDARI",
+    "base_size": "28"
+  },
+  {
+    "name": "HOWLING BANSHEE EXARCH",
+    "team": "Blades of Khaine",
+    "apl": 3,
+    "faction": "AELDARI",
+    "base_size": "28"
+  },
+  {
+    "name": "HOWLING BANSHEE WARRIOR",
+    "team": "Blades of Khaine",
+    "apl": 3,
+    "faction": "AELDARI",
+    "base_size": "28"
+  },
+  {
+    "name": "STRIKING SCORPION EXARCH",
+    "team": "Blades of Khaine",
+    "apl": 3,
+    "faction": "AELDARI",
+    "base_size": "28"
+  },
+  {
+    "name": "STRIKING SCORPION WARRIOR",
+    "team": "Blades of Khaine",
+    "apl": 3,
+    "faction": "AELDARI",
+    "base_size": "28"
+  },
+  {
+    "name": "TRAITOR CHIEFTAIN",
+    "team": "Blooded",
+    "apl": 2,
+    "faction": "CHAOS",
+    "base_size": "25"
+  },
+  {
+    "name": "TRAITOR BRIMSTONE GRENADIER",
+    "team": "Blooded",
+    "apl": 2,
+    "faction": "CHAOS",
+    "base_size": "25"
+  },
+  {
+    "name": "TRAITOR BUTCHER",
+    "team": "Blooded",
+    "apl": 2,
+    "faction": "CHAOS",
+    "base_size": "25"
+  },
+  {
+    "name": "TRAITOR CORPSEMAN",
+    "team": "Blooded",
+    "apl": 2,
+    "faction": "CHAOS",
+    "base_size": "25"
+  },
+  {
+    "name": "TRAITOR COMMSMAN",
+    "team": "Blooded",
+    "apl": 2,
+    "faction": "CHAOS",
+    "base_size": "25"
+  },
+  {
+    "name": "TRAITOR ENFORCER",
+    "team": "Blooded",
+    "apl": 2,
+    "faction": "CHAOS",
+    "base_size": "32"
+  },
+  {
+    "name": "TRAITOR FLENSER",
+    "team": "Blooded",
+    "apl": 2,
+    "faction": "CHAOS",
+    "base_size": "25"
+  },
+  {
+    "name": "TRAITOR GUNNER",
+    "team": "Blooded",
+    "apl": 2,
+    "faction": "CHAOS",
+    "base_size": "25"
+  },
+  {
+    "name": "TRAITOR OGRYN",
+    "team": "Blooded",
+    "apl": 2,
+    "faction": "CHAOS",
+    "base_size": "40"
+  },
+  {
+    "name": "TRAITOR SHARPSHOOTER",
+    "team": "Blooded",
+    "apl": 2,
+    "faction": "CHAOS",
+    "base_size": "25"
+  },
+  {
+    "name": "TRAITOR THUG",
+    "team": "Blooded",
+    "apl": 2,
+    "faction": "CHAOS",
+    "base_size": "25"
+  },
+  {
+    "name": "TRAITOR TRENCH SWEEPER",
+    "team": "Blooded",
+    "apl": 2,
+    "faction": "CHAOS",
+    "base_size": "25"
+  },
+  {
+    "name": "TRAITOR TROOPER",
+    "team": "Blooded",
+    "apl": 2,
+    "faction": "CHAOS",
+    "base_size": "25"
+  },
+  {
+    "name": "BROOD BROTHER COMMANDER",
+    "team": "Brood Brothers",
+    "apl": 2,
+    "faction": "TYRANID",
+    "base_size": "25"
+  },
+  {
+    "name": "BROOD BROTHER AGITATOR",
+    "team": "Brood Brothers",
+    "apl": 2,
+    "faction": "TYRANID",
+    "base_size": "25"
+  },
+  {
+    "name": "BROOD BROTHER GUNNER",
+    "team": "Brood Brothers",
+    "apl": 2,
+    "faction": "TYRANID",
+    "base_size": "25"
+  },
+  {
+    "name": "BROOD BROTHER ICONWARD",
+    "team": "Brood Brothers",
+    "apl": 2,
+    "faction": "TYRANID",
+    "base_size": "25"
+  },
+  {
+    "name": "BROOD BROTHER KNIFE FIGHTER",
+    "team": "Brood Brothers",
+    "apl": 2,
+    "faction": "TYRANID",
+    "base_size": "25"
+  },
+  {
+    "name": "BROOD BROTHER MEDIC",
+    "team": "Brood Brothers",
+    "apl": 2,
+    "faction": "TYRANID",
+    "base_size": "25"
+  },
+  {
+    "name": "BROOD BROTHER SAPPER",
+    "team": "Brood Brothers",
+    "apl": 2,
+    "faction": "TYRANID",
+    "base_size": "25"
+  },
+  {
+    "name": "BROOD BROTHER SNIPER",
+    "team": "Brood Brothers",
+    "apl": 2,
+    "faction": "TYRANID",
+    "base_size": "25"
+  },
+  {
+    "name": "BROOD BROTHER TROOPER",
+    "team": "Brood Brothers",
+    "apl": 2,
+    "faction": "TYRANID",
+    "base_size": "25"
+  },
+  {
+    "name": "BROOD BROTHER VETERAN",
+    "team": "Brood Brothers",
+    "apl": 2,
+    "faction": "TYRANID",
+    "base_size": "25"
+  },
+  {
+    "name": "BROOD BROTHER VOX-OPERATOR",
+    "team": "Brood Brothers",
+    "apl": 2,
+    "faction": "TYRANID",
+    "base_size": "25"
+  },
+  {
+    "name": "MAGUS",
+    "team": "Brood Brothers",
+    "apl": 3,
+    "faction": "TYRANID",
+    "base_size": "32"
+  },
+  {
+    "name": "PATRIARCH",
+    "team": "Brood Brothers",
+    "apl": 4,
+    "faction": "TYRANID",
+    "base_size": "50"
+  },
+  {
+    "name": "PSYCHIC FAMILIAR",
+    "team": "Brood Brothers",
+    "apl": 2,
+    "faction": "TYRANID",
+    "base_size": "25"
+  },
+  {
+    "name": "PRIMUS",
+    "team": "Brood Brothers",
+    "apl": 3,
+    "faction": "TYRANID",
+    "base_size": "32"
+  },
+  {
+    "name": "GEOMANCER",
+    "team": "Canoptek Circle",
+    "apl": 3,
+    "faction": "NECRON",
+    "base_size": "50"
+  },
+  {
+    "name": "CANOPTEK MACROCYTE ACCELERATOR",
+    "team": "Canoptek Circle",
+    "apl": 2,
+    "faction": "NECRON",
+    "base_size": "28"
+  },
+  {
+    "name": "CANOPTEK MACROCYTE REANIMATOR",
+    "team": "Canoptek Circle",
+    "apl": 2,
+    "faction": "NECRON",
+    "base_size": "28"
+  },
+  {
+    "name": "CANOPTEK MACROCYTE WARRIOR",
+    "team": "Canoptek Circle",
+    "apl": 2,
+    "faction": "NECRON",
+    "base_size": "28"
+  },
+  {
+    "name": "CANOPTEK TOMB CRAWLER",
+    "team": "Canoptek Circle",
+    "apl": 2,
+    "faction": "NECRON",
+    "base_size": "50"
+  },
+  {
+    "name": "INSIDIANT SUPERIOR",
+    "team": "Celestian Insidiants",
+    "apl": 3,
+    "faction": "IMPERIUM",
+    "base_size": "32"
+  },
+  {
+    "name": "INSIDIANT ABJUROR",
+    "team": "Celestian Insidiants",
+    "apl": 2,
+    "faction": "IMPERIUM",
+    "base_size": "32"
+  },
+  {
+    "name": "INSIDIANT CENSOR",
+    "team": "Celestian Insidiants",
+    "apl": 2,
+    "faction": "IMPERIUM",
+    "base_size": "32"
+  },
+  {
+    "name": "INSIDIANT CREMATOR",
+    "team": "Celestian Insidiants",
+    "apl": 2,
+    "faction": "IMPERIUM",
+    "base_size": "32"
+  },
+  {
+    "name": "INSIDIANT DENUNCIA",
+    "team": "Celestian Insidiants",
+    "apl": 2,
+    "faction": "IMPERIUM",
+    "base_size": "32"
+  },
+  {
+    "name": "INSIDIANT MORTISANCTUS",
+    "team": "Celestian Insidiants",
+    "apl": 2,
+    "faction": "IMPERIUM",
+    "base_size": "32"
+  },
+  {
+    "name": "INSIDIANT RELIQUARIUS",
+    "team": "Celestian Insidiants",
+    "apl": 2,
+    "faction": "IMPERIUM",
+    "base_size": "32"
+  },
+  {
+    "name": "INSIDIANT WARRIOR",
+    "team": "Celestian Insidiants",
+    "apl": 2,
+    "faction": "IMPERIUM",
+    "base_size": "32"
+  },
+  {
+    "name": "CULT DEMAGOGUE",
+    "team": "Chaos Cult",
+    "apl": 2,
+    "faction": "CHAOS",
+    "base_size": "32"
+  },
+  {
+    "name": "BLESSED BLADE",
+    "team": "Chaos Cult",
+    "apl": 2,
+    "faction": "CHAOS",
+    "base_size": "28"
+  },
+  {
+    "name": "ICONARCH",
+    "team": "Chaos Cult",
+    "apl": 2,
+    "faction": "CHAOS",
+    "base_size": "32"
+  },
+  {
+    "name": "MINDWITCH",
+    "team": "Chaos Cult",
+    "apl": 2,
+    "faction": "CHAOS",
+    "base_size": "32"
+  },
+  {
+    "name": "CHAOS DEVOTEE",
+    "team": "Chaos Cult",
+    "apl": 2,
+    "faction": "CHAOS",
+    "base_size": "25"
+  },
+  {
+    "name": "CHAOS MUTANT",
+    "team": "Chaos Cult",
+    "apl": 2,
+    "faction": "CHAOS",
+    "base_size": "25"
+  },
+  {
+    "name": "CHAOS TORMENT",
+    "team": "Chaos Cult",
+    "apl": 2,
+    "faction": "CHAOS",
+    "base_size": "40"
+  },
+  {
+    "name": "VOIDSCARRED FELARCH",
+    "team": "Corsair Voidscarred",
+    "apl": 2,
+    "faction": "AELDARI",
+    "base_size": "28"
+  },
+  {
+    "name": "VOIDSCARRED FATE DEALER",
+    "team": "Corsair Voidscarred",
+    "apl": 2,
+    "faction": "AELDARI",
+    "base_size": "28"
+  },
+  {
+    "name": "VOIDSCARRED GUNNER",
+    "team": "Corsair Voidscarred",
+    "apl": 2,
+    "faction": "AELDARI",
+    "base_size": "28"
+  },
+  {
+    "name": "VOIDSCARRED HEAVY GUNNER",
+    "team": "Corsair Voidscarred",
+    "apl": 2,
+    "faction": "AELDARI",
+    "base_size": "28"
+  },
+  {
+    "name": "VOIDSCARRED KURNATHI",
+    "team": "Corsair Voidscarred",
+    "apl": 2,
+    "faction": "AELDARI",
+    "base_size": "28"
+  },
+  {
+    "name": "VOIDSCARRED KURNITE HUNTER",
+    "team": "Corsair Voidscarred",
+    "apl": 2,
+    "faction": "AELDARI",
+    "base_size": "28"
+  },
+  {
+    "name": "VOIDSCARRED SHADE RUNNER",
+    "team": "Corsair Voidscarred",
+    "apl": 2,
+    "faction": "AELDARI",
+    "base_size": "28"
+  },
+  {
+    "name": "VOIDSCARRED SOUL WEAVER",
+    "team": "Corsair Voidscarred",
+    "apl": 2,
+    "faction": "AELDARI",
+    "base_size": "28"
+  },
+  {
+    "name": "VOIDSCARRED STARSTORM DUELLIST",
+    "team": "Corsair Voidscarred",
+    "apl": 2,
+    "faction": "AELDARI",
+    "base_size": "28"
+  },
+  {
+    "name": "VOIDSCARRED WARRIOR",
+    "team": "Corsair Voidscarred",
+    "apl": 2,
+    "faction": "AELDARI",
+    "base_size": "28"
+  },
+  {
+    "name": "VOIDSCARRED WAY SEEKER",
+    "team": "Corsair Voidscarred",
+    "apl": 2,
+    "faction": "AELDARI",
+    "base_size": "28"
+  },
+  {
+    "name": "DEATH KORPS WATCHMASTER",
+    "team": "Death Korps",
+    "apl": 2,
+    "faction": "IMPERIUM",
+    "base_size": "25"
+  },
+  {
+    "name": "DEATH KORPS BRUISER",
+    "team": "Death Korps",
+    "apl": 2,
+    "faction": "IMPERIUM",
+    "base_size": "25"
+  },
+  {
+    "name": "DEATH KORPS CONFIDANT",
+    "team": "Death Korps",
+    "apl": 2,
+    "faction": "IMPERIUM",
+    "base_size": "25"
+  },
+  {
+    "name": "DEATH KORPS GUNNER",
+    "team": "Death Korps",
+    "apl": 2,
+    "faction": "IMPERIUM",
+    "base_size": "25"
+  },
+  {
+    "name": "DEATH KORPS MEDIC",
+    "team": "Death Korps",
+    "apl": 2,
+    "faction": "IMPERIUM",
+    "base_size": "25"
+  },
+  {
+    "name": "DEATH KORPS SAPPER",
+    "team": "Death Korps",
+    "apl": 2,
+    "faction": "IMPERIUM",
+    "base_size": "25"
+  },
+  {
+    "name": "DEATH KORPS SNIPER",
+    "team": "Death Korps",
+    "apl": 2,
+    "faction": "IMPERIUM",
+    "base_size": "25"
+  },
+  {
+    "name": "DEATH KORPS SPOTTER",
+    "team": "Death Korps",
+    "apl": 2,
+    "faction": "IMPERIUM",
+    "base_size": "25"
+  },
+  {
+    "name": "DEATH KORPS TROOPER",
+    "team": "Death Korps",
+    "apl": 2,
+    "faction": "IMPERIUM",
+    "base_size": "25"
+  },
+  {
+    "name": "DEATH KORPS VETERAN",
+    "team": "Death Korps",
+    "apl": 2,
+    "faction": "IMPERIUM",
+    "base_size": "25"
+  },
+  {
+    "name": "DEATH KORPS VOX-OPERATOR",
+    "team": "Death Korps",
+    "apl": 2,
+    "faction": "IMPERIUM",
+    "base_size": "25"
+  },
+  {
+    "name": "DEATH KORPS ZEALOT",
+    "team": "Death Korps",
+    "apl": 2,
+    "faction": "IMPERIUM",
+    "base_size": "25"
+  },
+  {
+    "name": "DEATHWATCH WATCH SERGEANT",
+    "team": "Deathwatch",
+    "apl": 3,
+    "faction": "IMPERIUM",
+    "base_size": "32"
+  },
+  {
+    "name": "DEATHWATCH AEGIS VETERAN",
+    "team": "Deathwatch",
+    "apl": 3,
+    "faction": "IMPERIUM",
+    "base_size": "32"
+  },
+  {
+    "name": "DEATHWATCH BLADEMASTER VETERAN",
+    "team": "Deathwatch",
+    "apl": 3,
+    "faction": "IMPERIUM",
+    "base_size": "32"
+  },
+  {
+    "name": "DEATHWATCH BOMBARD VETERAN",
+    "team": "Deathwatch",
+    "apl": 3,
+    "faction": "IMPERIUM",
+    "base_size": "40"
+  },
+  {
+    "name": "DEATHWATCH BREACHER VETERAN",
+    "team": "Deathwatch",
+    "apl": 3,
+    "faction": "IMPERIUM",
+    "base_size": "40"
+  },
+  {
+    "name": "DEATHWATCH DEMOLISHER VETERAN",
+    "team": "Deathwatch",
+    "apl": 3,
+    "faction": "IMPERIUM",
+    "base_size": "32"
+  },
+  {
+    "name": "DEATHWATCH DISRUPTOR VETERAN",
+    "team": "Deathwatch",
+    "apl": 3,
+    "faction": "IMPERIUM",
+    "base_size": "32"
+  },
+  {
+    "name": "DEATHWATCH GUNNER VETERAN",
+    "team": "Deathwatch",
+    "apl": 3,
+    "faction": "IMPERIUM",
+    "base_size": "32"
+  },
+  {
+    "name": "DEATHWATCH HEADTAKER VETERAN",
+    "team": "Deathwatch",
+    "apl": 3,
+    "faction": "IMPERIUM",
+    "base_size": "32"
+  },
+  {
+    "name": "DEATHWATCH HORDE-SLAYER VETERAN",
+    "team": "Deathwatch",
+    "apl": 3,
+    "faction": "IMPERIUM",
+    "base_size": "40"
+  },
+  {
+    "name": "DEATHWATCH MARKSMAN VETERAN",
+    "team": "Deathwatch",
+    "apl": 3,
+    "faction": "IMPERIUM",
+    "base_size": "32"
+  },
+  {
+    "name": "ELUCIA VHANE",
+    "team": "Elucidian Starstriders",
+    "apl": 3,
+    "faction": "IMPERIUM",
+    "base_size": "25"
+  },
+  {
+    "name": "CANID",
+    "team": "Elucidian Starstriders",
+    "apl": 2,
+    "faction": "IMPERIUM",
+    "base_size": "25"
+  },
+  {
+    "name": "DEATH CULT EXECUTIONER",
+    "team": "Elucidian Starstriders",
+    "apl": 3,
+    "faction": "IMPERIUM",
+    "base_size": "25"
+  },
+  {
+    "name": "LECTRO-MAESTER",
+    "team": "Elucidian Starstriders",
+    "apl": 2,
+    "faction": "IMPERIUM",
+    "base_size": "25"
+  },
+  {
+    "name": "REJUVENAT ADEPT",
+    "team": "Elucidian Starstriders",
+    "apl": 2,
+    "faction": "IMPERIUM",
+    "base_size": "25"
+  },
+  {
+    "name": "VOIDMASTER",
+    "team": "Elucidian Starstriders",
+    "apl": 2,
+    "faction": "IMPERIUM",
+    "base_size": "25"
+  },
+  {
+    "name": "VOIDSMAN",
+    "team": "Elucidian Starstriders",
+    "apl": 2,
+    "faction": "IMPERIUM",
+    "base_size": "25"
+  },
+  {
+    "name": "ARBITES PROCTOR-EXACTANT",
+    "team": "Exaction Squad",
+    "apl": 2,
+    "faction": "IMPERIUM",
+    "base_size": "28"
+  },
+  {
+    "name": "ARBITES CHIRURGANT",
+    "team": "Exaction Squad",
+    "apl": 2,
+    "faction": "IMPERIUM",
+    "base_size": "28"
+  },
+  {
+    "name": "ARBITES LEASHMASTER",
+    "team": "Exaction Squad",
+    "apl": 2,
+    "faction": "IMPERIUM",
+    "base_size": "28"
+  },
+  {
+    "name": "R-VR CYBER-MASTIFF",
+    "team": "Exaction Squad",
+    "apl": 2,
+    "faction": "IMPERIUM",
+    "base_size": "25"
+  },
+  {
+    "name": "ARBITES CASTIGATOR",
+    "team": "Exaction Squad",
+    "apl": 2,
+    "faction": "IMPERIUM",
+    "base_size": "28"
+  },
+  {
+    "name": "ARBITES GUNNER",
+    "team": "Exaction Squad",
+    "apl": 2,
+    "faction": "IMPERIUM",
+    "base_size": "28"
+  },
+  {
+    "name": "ARBITES MALOCATOR",
+    "team": "Exaction Squad",
+    "apl": 2,
+    "faction": "IMPERIUM",
+    "base_size": "28"
+  },
+  {
+    "name": "ARBITES MARKSMAN",
+    "team": "Exaction Squad",
+    "apl": 2,
+    "faction": "IMPERIUM",
+    "base_size": "28"
+  },
+  {
+    "name": "ARBITES REVELATUM",
+    "team": "Exaction Squad",
+    "apl": 2,
+    "faction": "IMPERIUM",
+    "base_size": "28"
+  },
+  {
+    "name": "ARBITES SUBDUCTOR",
+    "team": "Exaction Squad",
+    "apl": 2,
+    "faction": "IMPERIUM",
+    "base_size": "28"
+  },
+  {
+    "name": "ARBITES VIGILANT",
+    "team": "Exaction Squad",
+    "apl": 2,
+    "faction": "IMPERIUM",
+    "base_size": "28"
+  },
+  {
+    "name": "ARBITES VOX-SIGNIFIER",
+    "team": "Exaction Squad",
+    "apl": 2,
+    "faction": "IMPERIUM",
+    "base_size": "28"
+  },
+  {
+    "name": "KROOT KILL-BROKER",
+    "team": "Farstalker Kinband",
+    "apl": 2,
+    "faction": "T'AU EMPIRE",
+    "base_size": "32"
+  },
+  {
+    "name": "KROOT BOW-HUNTER",
+    "team": "Farstalker Kinband",
+    "apl": 2,
+    "faction": "T'AU EMPIRE",
+    "base_size": "28"
+  },
+  {
+    "name": "KROOT COLD-BLOOD",
+    "team": "Farstalker Kinband",
+    "apl": 2,
+    "faction": "T'AU EMPIRE",
+    "base_size": "28"
+  },
+  {
+    "name": "KROOT CUT-SKIN",
+    "team": "Farstalker Kinband",
+    "apl": 2,
+    "faction": "T'AU EMPIRE",
+    "base_size": "28"
+  },
+  {
+    "name": "KROOT HEAVY GUNNER",
+    "team": "Farstalker Kinband",
+    "apl": 2,
+    "faction": "T'AU EMPIRE",
+    "base_size": "28"
+  },
+  {
+    "name": "KROOT HOUND",
+    "team": "Farstalker Kinband",
+    "apl": 2,
+    "faction": "T'AU EMPIRE",
+    "base_size": "28"
+  },
+  {
+    "name": "KROOT LONG-SIGHT",
+    "team": "Farstalker Kinband",
+    "apl": 2,
+    "faction": "T'AU EMPIRE",
+    "base_size": "28"
+  },
+  {
+    "name": "KROOT PISTOLIER",
+    "team": "Farstalker Kinband",
+    "apl": 2,
+    "faction": "T'AU EMPIRE",
+    "base_size": "28"
+  },
+  {
+    "name": "KROOT STALKER",
+    "team": "Farstalker Kinband",
+    "apl": 2,
+    "faction": "T'AU EMPIRE",
+    "base_size": "28"
+  },
+  {
+    "name": "KROOT TRACKER",
+    "team": "Farstalker Kinband",
+    "apl": 2,
+    "faction": "T'AU EMPIRE",
+    "base_size": "28"
+  },
+  {
+    "name": "KROOT WARRIOR",
+    "team": "Farstalker Kinband",
+    "apl": 2,
+    "faction": "T'AU EMPIRE",
+    "base_size": "28"
+  },
+  {
+    "name": "FELLGOR IRONHORN",
+    "team": "Fellgor Ravagers",
+    "apl": 2,
+    "faction": "CHAOS",
+    "base_size": "32"
+  },
+  {
+    "name": "FELLGOR DEATHKNELL",
+    "team": "Fellgor Ravagers",
+    "apl": 2,
+    "faction": "CHAOS",
+    "base_size": "32"
+  },
+  {
+    "name": "FELLGOR FLUXBRAY",
+    "team": "Fellgor Ravagers",
+    "apl": 2,
+    "faction": "CHAOS",
+    "base_size": "32"
+  },
+  {
+    "name": "FELLGOR GNARLSCAR",
+    "team": "Fellgor Ravagers",
+    "apl": 2,
+    "faction": "CHAOS",
+    "base_size": "32"
+  },
+  {
+    "name": "FELLGOR GOREHORN",
+    "team": "Fellgor Ravagers",
+    "apl": 2,
+    "faction": "CHAOS",
+    "base_size": "32"
+  },
+  {
+    "name": "FELLGOR HERD-GOAD",
+    "team": "Fellgor Ravagers",
+    "apl": 2,
+    "faction": "CHAOS",
+    "base_size": "32"
+  },
+  {
+    "name": "FELLGOR MANGLER",
+    "team": "Fellgor Ravagers",
+    "apl": 2,
+    "faction": "CHAOS",
+    "base_size": "32"
+  },
+  {
+    "name": "FELLGOR SHAMAN",
+    "team": "Fellgor Ravagers",
+    "apl": 2,
+    "faction": "CHAOS",
+    "base_size": "32"
+  },
+  {
+    "name": "FELLGOR TOXHORN",
+    "team": "Fellgor Ravagers",
+    "apl": 2,
+    "faction": "CHAOS",
+    "base_size": "32"
+  },
+  {
+    "name": "FELLGOR VANDAL",
+    "team": "Fellgor Ravagers",
+    "apl": 2,
+    "faction": "CHAOS",
+    "base_size": "32"
+  },
+  {
+    "name": "FELLGOR WARRIOR",
+    "team": "Fellgor Ravagers",
+    "apl": 2,
+    "faction": "CHAOS",
+    "base_size": "32"
+  },
+  {
+    "name": "VULGRAR THRICE-CURSED",
+    "team": "Gellerpox Infected",
+    "apl": 2,
+    "faction": "CHAOS",
+    "base_size": "40"
+  },
+  {
+    "name": "BLOATSPAWN",
+    "team": "Gellerpox Infected",
+    "apl": 2,
+    "faction": "CHAOS",
+    "base_size": "40"
+  },
+  {
+    "name": "FLESHSCREAMER",
+    "team": "Gellerpox Infected",
+    "apl": 2,
+    "faction": "CHAOS",
+    "base_size": "40"
+  },
+  {
+    "name": "LUMBERGHAST",
+    "team": "Gellerpox Infected",
+    "apl": 2,
+    "faction": "CHAOS",
+    "base_size": "40"
+  },
+  {
+    "name": "MUTANT",
+    "team": "Gellerpox Infected",
+    "apl": 2,
+    "faction": "CHAOS",
+    "base_size": "25"
+  },
+  {
+    "name": "GLITCHLING",
+    "team": "Gellerpox Infected",
+    "apl": 2,
+    "faction": "CHAOS",
+    "base_size": "25"
+  },
+  {
+    "name": "CURSEMITE",
+    "team": "Gellerpox Infected",
+    "apl": 2,
+    "faction": "CHAOS",
+    "base_size": "25"
+  },
+  {
+    "name": "EYESTINGER SWARM",
+    "team": "Gellerpox Infected",
+    "apl": 2,
+    "faction": "CHAOS",
+    "base_size": "25"
+  },
+  {
+    "name": "SLUDGE-GRUB",
+    "team": "Gellerpox Infected",
+    "apl": 2,
+    "faction": "CHAOS",
+    "base_size": "25"
+  },
+  {
+    "name": "GOREMONGER BLOOD HERALD",
+    "team": "Goremongers",
+    "apl": 2,
+    "faction": "CHAOS",
+    "base_size": "32"
+  },
+  {
+    "name": "GOREMONGER ASPIRANT",
+    "team": "Goremongers",
+    "apl": 2,
+    "faction": "CHAOS",
+    "base_size": "32"
+  },
+  {
+    "name": "GOREMONGER BLOODTAKER",
+    "team": "Goremongers",
+    "apl": 2,
+    "faction": "CHAOS",
+    "base_size": "32"
+  },
+  {
+    "name": "GOREMONGER IMPALER",
+    "team": "Goremongers",
+    "apl": 2,
+    "faction": "CHAOS",
+    "base_size": "32"
+  },
+  {
+    "name": "GOREMONGER INCITER",
+    "team": "Goremongers",
+    "apl": 2,
+    "faction": "CHAOS",
+    "base_size": "32"
+  },
+  {
+    "name": "GOREMONGER SKULLCLAIMER",
+    "team": "Goremongers",
+    "apl": 2,
+    "faction": "CHAOS",
+    "base_size": "32"
+  },
+  {
+    "name": "GOREMONGER STALKER",
+    "team": "Goremongers",
+    "apl": 2,
+    "faction": "CHAOS",
+    "base_size": "32"
+  },
+  {
+    "name": "KABALITE ARCHSYBARITE",
+    "team": "Hand of the Archon",
+    "apl": 2,
+    "faction": "AELDARI",
+    "base_size": "25"
+  },
+  {
+    "name": "KABALITE AGENT",
+    "team": "Hand of the Archon",
+    "apl": 2,
+    "faction": "AELDARI",
+    "base_size": "25"
+  },
+  {
+    "name": "KABALITE CRIMSON DUELLIST",
+    "team": "Hand of the Archon",
+    "apl": 2,
+    "faction": "AELDARI",
+    "base_size": "25"
+  },
+  {
+    "name": "KABALITE DISCIPLE OF YAELINDRA",
+    "team": "Hand of the Archon",
+    "apl": 2,
+    "faction": "AELDARI",
+    "base_size": "25"
+  },
+  {
+    "name": "KABALITE ELIXICANT",
+    "team": "Hand of the Archon",
+    "apl": 2,
+    "faction": "AELDARI",
+    "base_size": "25"
+  },
+  {
+    "name": "KABALITE FLAYER",
+    "team": "Hand of the Archon",
+    "apl": 2,
+    "faction": "AELDARI",
+    "base_size": "25"
+  },
+  {
+    "name": "KABALITE GUNNER",
+    "team": "Hand of the Archon",
+    "apl": 2,
+    "faction": "AELDARI",
+    "base_size": "25"
+  },
+  {
+    "name": "KABALITE HEAVY GUNNER",
+    "team": "Hand of the Archon",
+    "apl": 2,
+    "faction": "AELDARI",
+    "base_size": "25"
+  },
+  {
+    "name": "KABALITE SKYSPLINTER ASSASSIN",
+    "team": "Hand of the Archon",
+    "apl": 2,
+    "faction": "AELDARI",
+    "base_size": "25"
+  },
+  {
+    "name": "HEARTHKYN THEYN",
+    "team": "Hearthkyn Salvagers",
+    "apl": 2,
+    "faction": "LEAGUES OF VOTANN",
+    "base_size": "28"
+  },
+  {
+    "name": "HEARTHKYN DÔZR",
+    "team": "Hearthkyn Salvagers",
+    "apl": 2,
+    "faction": "LEAGUES OF VOTANN",
+    "base_size": "28"
+  },
+  {
+    "name": "HEARTHKYN FIELD MEDIC",
+    "team": "Hearthkyn Salvagers",
+    "apl": 2,
+    "faction": "LEAGUES OF VOTANN",
+    "base_size": "28"
+  },
+  {
+    "name": "HEARTHKYN GRENADIER",
+    "team": "Hearthkyn Salvagers",
+    "apl": 2,
+    "faction": "LEAGUES OF VOTANN",
+    "base_size": "28"
+  },
+  {
+    "name": "HEARTHKYN GUNNER",
+    "team": "Hearthkyn Salvagers",
+    "apl": 2,
+    "faction": "LEAGUES OF VOTANN",
+    "base_size": "28"
+  },
+  {
+    "name": "HEARTHKYN JUMP PACK WARRIOR",
+    "team": "Hearthkyn Salvagers",
+    "apl": 2,
+    "faction": "LEAGUES OF VOTANN",
+    "base_size": "28"
+  },
+  {
+    "name": "HEARTHKYN KINLYNK",
+    "team": "Hearthkyn Salvagers",
+    "apl": 2,
+    "faction": "LEAGUES OF VOTANN",
+    "base_size": "28"
+  },
+  {
+    "name": "HEARTHKYN KOGNITÂAR",
+    "team": "Hearthkyn Salvagers",
+    "apl": 2,
+    "faction": "LEAGUES OF VOTANN",
+    "base_size": "28"
+  },
+  {
+    "name": "HEARTHKYN LOKÂTR",
+    "team": "Hearthkyn Salvagers",
+    "apl": 2,
+    "faction": "LEAGUES OF VOTANN",
+    "base_size": "28"
+  },
+  {
+    "name": "HEARTHKYN LUGGER",
+    "team": "Hearthkyn Salvagers",
+    "apl": 2,
+    "faction": "LEAGUES OF VOTANN",
+    "base_size": "28"
+  },
+  {
+    "name": "HEARTHKYN WARRIOR",
+    "team": "Hearthkyn Salvagers",
+    "apl": 2,
+    "faction": "LEAGUES OF VOTANN",
+    "base_size": "28"
+  },
+  {
+    "name": "YAEGIR THEYN",
+    "team": "Hernkyn Yaegirs",
+    "apl": 2,
+    "faction": "LEAGUES OF VOTANN",
+    "base_size": "28"
+  },
+  {
+    "name": "YAEGIR BLADEKYN",
+    "team": "Hernkyn Yaegirs",
+    "apl": 2,
+    "faction": "LEAGUES OF VOTANN",
+    "base_size": "28"
+  },
+  {
+    "name": "YAEGIR BOMBAST",
+    "team": "Hernkyn Yaegirs",
+    "apl": 2,
+    "faction": "LEAGUES OF VOTANN",
+    "base_size": "28"
+  },
+  {
+    "name": "YAEGIR GUNNER",
+    "team": "Hernkyn Yaegirs",
+    "apl": 2,
+    "faction": "LEAGUES OF VOTANN",
+    "base_size": "28"
+  },
+  {
+    "name": "YAEGIR IRONBRAEK",
+    "team": "Hernkyn Yaegirs",
+    "apl": 2,
+    "faction": "LEAGUES OF VOTANN",
+    "base_size": "28"
+  },
+  {
+    "name": "YAEGIR RIFLEKYN",
+    "team": "Hernkyn Yaegirs",
+    "apl": 2,
+    "faction": "LEAGUES OF VOTANN",
+    "base_size": "28"
+  },
+  {
+    "name": "YAEGIR TRACKER",
+    "team": "Hernkyn Yaegirs",
+    "apl": 2,
+    "faction": "LEAGUES OF VOTANN",
+    "base_size": "28"
+  },
+  {
+    "name": "YAEGIR WARRIOR",
+    "team": "Hernkyn Yaegirs",
+    "apl": 2,
+    "faction": "LEAGUES OF VOTANN",
+    "base_size": "28"
+  },
+  {
+    "name": "CHRONOMANCER",
+    "team": "Hierotek Circle",
+    "apl": 3,
+    "faction": "NECRON",
+    "base_size": "40"
+  },
+  {
+    "name": "PSYCHOMANCER",
+    "team": "Hierotek Circle",
+    "apl": 3,
+    "faction": "NECRON",
+    "base_size": "40"
+  },
+  {
+    "name": "TECHNOMANCER",
+    "team": "Hierotek Circle",
+    "apl": 3,
+    "faction": "NECRON",
+    "base_size": "50"
+  },
+  {
+    "name": "PLASMACYTE ACCELERATOR",
+    "team": "Hierotek Circle",
+    "apl": 2,
+    "faction": "NECRON",
+    "base_size": "25"
+  },
+  {
+    "name": "PLASMACYTE REANIMATOR",
+    "team": "Hierotek Circle",
+    "apl": 2,
+    "faction": "NECRON",
+    "base_size": "25"
+  },
+  {
+    "name": "APPRENTEK",
+    "team": "Hierotek Circle",
+    "apl": 3,
+    "faction": "NECRON",
+    "base_size": "32"
+  },
+  {
+    "name": "DEATHMARK",
+    "team": "Hierotek Circle",
+    "apl": 2,
+    "faction": "NECRON",
+    "base_size": "32"
+  },
+  {
+    "name": "IMMORTAL DESPOTEK",
+    "team": "Hierotek Circle",
+    "apl": 2,
+    "faction": "NECRON",
+    "base_size": "32"
+  },
+  {
+    "name": "IMMORTAL GUARDIAN",
+    "team": "Hierotek Circle",
+    "apl": 2,
+    "faction": "NECRON",
+    "base_size": "32"
+  },
+  {
+    "name": "SICARIAN RUSTSTALKER PRINCEPS",
+    "team": "Hunter Clade",
+    "apl": 2,
+    "faction": "IMPERIUM",
+    "base_size": "40"
+  },
+  {
+    "name": "SICARIAN INFILTRATOR PRINCEPS",
+    "team": "Hunter Clade",
+    "apl": 2,
+    "faction": "IMPERIUM",
+    "base_size": "40"
+  },
+  {
+    "name": "SKITARII RANGER ALPHA",
+    "team": "Hunter Clade",
+    "apl": 2,
+    "faction": "IMPERIUM",
+    "base_size": "25"
+  },
+  {
+    "name": "SKITARII VANGUARD ALPHA",
+    "team": "Hunter Clade",
+    "apl": 2,
+    "faction": "IMPERIUM",
+    "base_size": "25"
+  },
+  {
+    "name": "SICARIAN INFILTRATOR WARRIOR",
+    "team": "Hunter Clade",
+    "apl": 2,
+    "faction": "IMPERIUM",
+    "base_size": "40"
+  },
+  {
+    "name": "SICARIAN RUSTSTALKER WARRIOR",
+    "team": "Hunter Clade",
+    "apl": 2,
+    "faction": "IMPERIUM",
+    "base_size": "40"
+  },
+  {
+    "name": "SKITARII RANGER DIKTAT",
+    "team": "Hunter Clade",
+    "apl": 2,
+    "faction": "IMPERIUM",
+    "base_size": "25"
+  },
+  {
+    "name": "SKITARII RANGER GUNNER",
+    "team": "Hunter Clade",
+    "apl": 2,
+    "faction": "IMPERIUM",
+    "base_size": "2"
+  },
+  {
+    "name": "SKITARII RANGER SURVEYOR",
+    "team": "Hunter Clade",
+    "apl": 2,
+    "faction": "IMPERIUM",
+    "base_size": "25"
+  },
+  {
+    "name": "SKITARII RANGER WARRIOR",
+    "team": "Hunter Clade",
+    "apl": 2,
+    "faction": "IMPERIUM",
+    "base_size": "25"
+  },
+  {
+    "name": "SKITARII VANGUARD DIKTAT",
+    "team": "Hunter Clade",
+    "apl": 2,
+    "faction": "IMPERIUM",
+    "base_size": "25"
+  },
+  {
+    "name": "SKITARII VANGUARD GUNNER",
+    "team": "Hunter Clade",
+    "apl": 2,
+    "faction": "IMPERIUM",
+    "base_size": "2"
+  },
+  {
+    "name": "SKITARII VANGUARD SURVEYOR",
+    "team": "Hunter Clade",
+    "apl": 2,
+    "faction": "IMPERIUM",
+    "base_size": "25"
+  },
+  {
+    "name": "SKITARII VANGUARD WARRIOR",
+    "team": "Hunter Clade",
+    "apl": 2,
+    "faction": "IMPERIUM",
+    "base_size": "25"
+  },
+  {
+    "name": "NAVIS SERGEANT-AT-ARMS",
+    "team": "Imperial Navy Breachers",
+    "apl": 2,
+    "faction": "IMPERIUM",
+    "base_size": "25"
+  },
+  {
+    "name": "NAVIS ARMSMAN",
+    "team": "Imperial Navy Breachers",
+    "apl": 2,
+    "faction": "IMPERIUM",
+    "base_size": "25"
+  },
+  {
+    "name": "NAVIS AXEJACK",
+    "team": "Imperial Navy Breachers",
+    "apl": 2,
+    "faction": "IMPERIUM",
+    "base_size": "25"
+  },
+  {
+    "name": "NAVIS C.A.T. UNIT",
+    "team": "Imperial Navy Breachers",
+    "apl": 2,
+    "faction": "IMPERIUM",
+    "base_size": "25"
+  },
+  {
+    "name": "NAVIS ENDURANT",
+    "team": "Imperial Navy Breachers",
+    "apl": 2,
+    "faction": "IMPERIUM",
+    "base_size": "28"
+  },
+  {
+    "name": "NAVIS GHEISTSKULL",
+    "team": "Imperial Navy Breachers",
+    "apl": 2,
+    "faction": "IMPERIUM",
+    "base_size": "25"
+  },
+  {
+    "name": "NAVIS GRENADIER",
+    "team": "Imperial Navy Breachers",
+    "apl": 2,
+    "faction": "IMPERIUM",
+    "base_size": "25"
+  },
+  {
+    "name": "NAVIS GUNNER",
+    "team": "Imperial Navy Breachers",
+    "apl": 2,
+    "faction": "IMPERIUM",
+    "base_size": "28"
+  },
+  {
+    "name": "NAVIS HATCHCUTTER",
+    "team": "Imperial Navy Breachers",
+    "apl": 2,
+    "faction": "IMPERIUM",
+    "base_size": "25"
+  },
+  {
+    "name": "NAVIS SURVEYOR",
+    "team": "Imperial Navy Breachers",
+    "apl": 2,
+    "faction": "IMPERIUM",
+    "base_size": "25"
+  },
+  {
+    "name": "NAVIS VOID-JAMMER",
+    "team": "Imperial Navy Breachers",
+    "apl": 2,
+    "faction": "IMPERIUM",
+    "base_size": "25"
+  },
+  {
+    "name": "INTERROGATOR AGENT",
+    "team": "Inquisitorial Agents",
+    "apl": 2,
+    "faction": "IMPERIUM",
+    "base_size": "25"
+  },
+  {
+    "name": "TOME-SKULL",
+    "team": "Inquisitorial Agents",
+    "apl": 2,
+    "faction": "IMPERIUM",
+    "base_size": "25"
+  },
+  {
+    "name": "AUTOSAVANT AGENT",
+    "team": "Inquisitorial Agents",
+    "apl": 2,
+    "faction": "IMPERIUM",
+    "base_size": "25"
+  },
+  {
+    "name": "DEATH WORLD VETERAN AGENT",
+    "team": "Inquisitorial Agents",
+    "apl": 2,
+    "faction": "IMPERIUM",
+    "base_size": "25"
+  },
+  {
+    "name": "ENLIGHTENER AGENT",
+    "team": "Inquisitorial Agents",
+    "apl": 2,
+    "faction": "IMPERIUM",
+    "base_size": "25"
+  },
+  {
+    "name": "HEXORCIST AGENT",
+    "team": "Inquisitorial Agents",
+    "apl": 2,
+    "faction": "IMPERIUM",
+    "base_size": "25"
+  },
+  {
+    "name": "MYSTIC AGENT",
+    "team": "Inquisitorial Agents",
+    "apl": 2,
+    "faction": "IMPERIUM",
+    "base_size": "25"
+  },
+  {
+    "name": "PENAL LEGIONNAIRE AGENT",
+    "team": "Inquisitorial Agents",
+    "apl": 2,
+    "faction": "IMPERIUM",
+    "base_size": "25"
+  },
+  {
+    "name": "PISTOLIER AGENT",
+    "team": "Inquisitorial Agents",
+    "apl": 2,
+    "faction": "IMPERIUM",
+    "base_size": "25"
+  },
+  {
+    "name": "QUESTKEEPER AGENT",
+    "team": "Inquisitorial Agents",
+    "apl": 2,
+    "faction": "IMPERIUM",
+    "base_size": "25"
+  },
+  {
+    "name": "REQUISITIONED GUN SERVITOR",
+    "team": "Inquisitorial Agents",
+    "apl": 1,
+    "faction": "IMPERIUM",
+    "base_size": "32"
+  },
+  {
+    "name": "SISTER OF SILENCE PROSECUTOR",
+    "team": "Inquisitorial Agents",
+    "apl": 2,
+    "faction": "IMPERIUM",
+    "base_size": "32"
+  },
+  {
+    "name": "SISTER OF SILENCE VIGILATOR",
+    "team": "Inquisitorial Agents",
+    "apl": 2,
+    "faction": "IMPERIUM",
+    "base_size": "32"
+  },
+  {
+    "name": "SISTER OF SILENCE WITCHSEEKER",
+    "team": "Inquisitorial Agents",
+    "apl": 2,
+    "faction": "IMPERIUM",
+    "base_size": "32"
+  },
+  {
+    "name": "TEMPESTUS SCION GUNNER",
+    "team": "Inquisitorial Agents",
+    "apl": 2,
+    "faction": "IMPERIUM",
+    "base_size": "25"
+  },
+  {
+    "name": "TEMPESTUS SCION MEDIC",
+    "team": "Inquisitorial Agents",
+    "apl": 2,
+    "faction": "IMPERIUM",
+    "base_size": "25"
+  },
+  {
+    "name": "TEMPESTUS SCION TROOPER",
+    "team": "Inquisitorial Agents",
+    "apl": 2,
+    "faction": "IMPERIUM",
+    "base_size": "25"
+  },
+  {
+    "name": "TEMPESTUS SCION VOX-OPERATOR",
+    "team": "Inquisitorial Agents",
+    "apl": 2,
+    "faction": "IMPERIUM",
+    "base_size": "25"
+  },
+  {
+    "name": "KASRKIN SERGEANT",
+    "team": "Kasrkin",
+    "apl": 3,
+    "faction": "IMPERIUM",
+    "base_size": "28"
+  },
+  {
+    "name": "KASRKIN COMBAT MEDIC",
+    "team": "Kasrkin",
+    "apl": 2,
+    "faction": "IMPERIUM",
+    "base_size": "28"
+  },
+  {
+    "name": "KASRKIN DEMO-TROOPER",
+    "team": "Kasrkin",
+    "apl": 2,
+    "faction": "IMPERIUM",
+    "base_size": "28"
+  },
+  {
+    "name": "KASRKIN GUNNER",
+    "team": "Kasrkin",
+    "apl": 2,
+    "faction": "IMPERIUM",
+    "base_size": "28"
+  },
+  {
+    "name": "KASRKIN RECON-TROOPER",
+    "team": "Kasrkin",
+    "apl": 2,
+    "faction": "IMPERIUM",
+    "base_size": "28"
+  },
+  {
+    "name": "KASRKIN SHARPSHOOTER",
+    "team": "Kasrkin",
+    "apl": 2,
+    "faction": "IMPERIUM",
+    "base_size": "28"
+  },
+  {
+    "name": "KASRKIN TROOPER",
+    "team": "Kasrkin",
+    "apl": 2,
+    "faction": "IMPERIUM",
+    "base_size": "28"
+  },
+  {
+    "name": "KASRKIN VOX-TROOPER",
+    "team": "Kasrkin",
+    "apl": 2,
+    "faction": "IMPERIUM",
+    "base_size": "28"
+  },
+  {
+    "name": "KOMMANDO BOSS NOB",
+    "team": "Kommandos",
+    "apl": 3,
+    "faction": "ORK",
+    "base_size": "32"
+  },
+  {
+    "name": "KOMMANDO BOMB SQUIG",
+    "team": "Kommandos",
+    "apl": 2,
+    "faction": "ORK",
+    "base_size": "25"
+  },
+  {
+    "name": "KOMMANDO BOY",
+    "team": "Kommandos",
+    "apl": 2,
+    "faction": "ORK",
+    "base_size": "32"
+  },
+  {
+    "name": "KOMMANDO BREACHA BOY",
+    "team": "Kommandos",
+    "apl": 2,
+    "faction": "ORK",
+    "base_size": "32"
+  },
+  {
+    "name": "KOMMANDO BURNA BOY",
+    "team": "Kommandos",
+    "apl": 2,
+    "faction": "ORK",
+    "base_size": "32"
+  },
+  {
+    "name": "KOMMANDO COMMS BOY",
+    "team": "Kommandos",
+    "apl": 2,
+    "faction": "ORK",
+    "base_size": "32"
+  },
+  {
+    "name": "KOMMANDO DAKKA BOY",
+    "team": "Kommandos",
+    "apl": 2,
+    "faction": "ORK",
+    "base_size": "32"
+  },
+  {
+    "name": "KOMMANDO GROT",
+    "team": "Kommandos",
+    "apl": 2,
+    "faction": "ORK",
+    "base_size": "25"
+  },
+  {
+    "name": "KOMMANDO ROKKIT BOY",
+    "team": "Kommandos",
+    "apl": 2,
+    "faction": "ORK",
+    "base_size": "32"
+  },
+  {
+    "name": "KOMMANDO SLASHA BOY",
+    "team": "Kommandos",
+    "apl": 2,
+    "faction": "ORK",
+    "base_size": "32"
+  },
+  {
+    "name": "KOMMANDO SNIPA BOY",
+    "team": "Kommandos",
+    "apl": 2,
+    "faction": "ORK",
+    "base_size": "32"
+  },
+  {
+    "name": "LEGIONARY ASPIRING CHAMPION",
+    "team": "Legionaries",
+    "apl": 3,
+    "faction": "CHAOS",
+    "base_size": "32"
+  },
+  {
+    "name": "LEGIONARY CHOSEN",
+    "team": "Legionaries",
+    "apl": 3,
+    "faction": "CHAOS",
+    "base_size": "32"
+  },
+  {
+    "name": "LEGIONARY ANOINTED",
+    "team": "Legionaries",
+    "apl": 3,
+    "faction": "CHAOS",
+    "base_size": "32"
+  },
+  {
+    "name": "LEGIONARY BALEFIRE ACOLYTE",
+    "team": "Legionaries",
+    "apl": 3,
+    "faction": "CHAOS",
+    "base_size": "32"
+  },
+  {
+    "name": "LEGIONARY BUTCHER",
+    "team": "Legionaries",
+    "apl": 3,
+    "faction": "CHAOS",
+    "base_size": "32"
+  },
+  {
+    "name": "LEGIONARY GUNNER",
+    "team": "Legionaries",
+    "apl": 3,
+    "faction": "CHAOS",
+    "base_size": "32"
+  },
+  {
+    "name": "LEGIONARY HEAVY GUNNER",
+    "team": "Legionaries",
+    "apl": 3,
+    "faction": "CHAOS",
+    "base_size": "32"
+  },
+  {
+    "name": "LEGIONARY ICON BEARER",
+    "team": "Legionaries",
+    "apl": 3,
+    "faction": "CHAOS",
+    "base_size": "32"
+  },
+  {
+    "name": "LEGIONARY SHRIVETALON",
+    "team": "Legionaries",
+    "apl": 3,
+    "faction": "CHAOS",
+    "base_size": "32"
+  },
+  {
+    "name": "LEGIONARY WARRIOR",
+    "team": "Legionaries",
+    "apl": 3,
+    "faction": "CHAOS",
+    "base_size": "32"
+  },
+  {
+    "name": "MANDRAKE NIGHTFIEND",
+    "team": "Mandrakes",
+    "apl": 2,
+    "faction": "AELDARI",
+    "base_size": "28"
+  },
+  {
+    "name": "MANDRAKE ABYSSAL",
+    "team": "Mandrakes",
+    "apl": 2,
+    "faction": "AELDARI",
+    "base_size": "28"
+  },
+  {
+    "name": "MANDRAKE CHOOSER OF THE FLESH",
+    "team": "Mandrakes",
+    "apl": 2,
+    "faction": "AELDARI",
+    "base_size": "28"
+  },
+  {
+    "name": "MANDRAKE DIRGEMAW",
+    "team": "Mandrakes",
+    "apl": 2,
+    "faction": "AELDARI",
+    "base_size": "28"
+  },
+  {
+    "name": "MANDRAKE SHADEWEAVER",
+    "team": "Mandrakes",
+    "apl": 2,
+    "faction": "AELDARI",
+    "base_size": "28"
+  },
+  {
+    "name": "MANDRAKE WARRIOR",
+    "team": "Mandrakes",
+    "apl": 2,
+    "faction": "AELDARI",
+    "base_size": "28"
+  },
+  {
+    "name": "MURDERWING CHAOS LORD",
+    "team": "Murderwing",
+    "apl": 3,
+    "faction": "CHAOS",
+    "base_size": "40"
+  },
+  {
+    "name": "MURDERWING CHAMPION",
+    "team": "Murderwing",
+    "apl": 3,
+    "faction": "CHAOS",
+    "base_size": "32"
+  },
+  {
+    "name": "MURDERWING CURSECLAW",
+    "team": "Murderwing",
+    "apl": 3,
+    "faction": "CHAOS",
+    "base_size": "32"
+  },
+  {
+    "name": "MURDERWING DEPREDATOR",
+    "team": "Murderwing",
+    "apl": 3,
+    "faction": "CHAOS",
+    "base_size": "32"
+  },
+  {
+    "name": "MURDERWING HUNTMASTER",
+    "team": "Murderwing",
+    "apl": 3,
+    "faction": "CHAOS",
+    "base_size": "32"
+  },
+  {
+    "name": "MURDERWING RAPTOR",
+    "team": "Murderwing",
+    "apl": 3,
+    "faction": "CHAOS",
+    "base_size": "32"
+  },
+  {
+    "name": "MURDERWING SHRIEKER",
+    "team": "Murderwing",
+    "apl": 3,
+    "faction": "CHAOS",
+    "base_size": "32"
+  },
+  {
+    "name": "MURDERWING SKYSEAR",
+    "team": "Murderwing",
+    "apl": 3,
+    "faction": "CHAOS",
+    "base_size": "32"
+  },
+  {
+    "name": "MURDERWING WARP TALON",
+    "team": "Murderwing",
+    "apl": 3,
+    "faction": "CHAOS",
+    "base_size": "32"
+  },
+  {
+    "name": "NIGHT LORD VISIONARY",
+    "team": "Nemesis Claw",
+    "apl": 3,
+    "faction": "CHAOS",
+    "base_size": "32"
+  },
+  {
+    "name": "NIGHT LORD FEARMONGER",
+    "team": "Nemesis Claw",
+    "apl": 3,
+    "faction": "CHAOS",
+    "base_size": "32"
+  },
+  {
+    "name": "NIGHT LORD GUNNER",
+    "team": "Nemesis Claw",
+    "apl": 3,
+    "faction": "CHAOS",
+    "base_size": "32"
+  },
+  {
+    "name": "NIGHT LORD HEAVY GUNNER",
+    "team": "Nemesis Claw",
+    "apl": 3,
+    "faction": "CHAOS",
+    "base_size": "32"
+  },
+  {
+    "name": "NIGHT LORD SCREECHER",
+    "team": "Nemesis Claw",
+    "apl": 3,
+    "faction": "CHAOS",
+    "base_size": "32"
+  },
+  {
+    "name": "NIGHT LORD SKINTHIEF",
+    "team": "Nemesis Claw",
+    "apl": 3,
+    "faction": "CHAOS",
+    "base_size": "32"
+  },
+  {
+    "name": "NIGHT LORD VENTRILOKAR",
+    "team": "Nemesis Claw",
+    "apl": 3,
+    "faction": "CHAOS",
+    "base_size": "32"
+  },
+  {
+    "name": "NIGHT LORD WARRIOR",
+    "team": "Nemesis Claw",
+    "apl": 3,
+    "faction": "CHAOS",
+    "base_size": "32"
+  },
+  {
+    "name": "NOVITIATE SUPERIOR",
+    "team": "Novitiates",
+    "apl": 3,
+    "faction": "IMPERIUM",
+    "base_size": "32"
+  },
+  {
+    "name": "NOVITIATE CONDEMNOR",
+    "team": "Novitiates",
+    "apl": 2,
+    "faction": "IMPERIUM",
+    "base_size": "28"
+  },
+  {
+    "name": "NOVITIATE DIALOGUS",
+    "team": "Novitiates",
+    "apl": 2,
+    "faction": "IMPERIUM",
+    "base_size": "28"
+  },
+  {
+    "name": "NOVITIATE DUELLIST",
+    "team": "Novitiates",
+    "apl": 2,
+    "faction": "IMPERIUM",
+    "base_size": "28"
+  },
+  {
+    "name": "NOVITIATE EXACTOR",
+    "team": "Novitiates",
+    "apl": 2,
+    "faction": "IMPERIUM",
+    "base_size": "28"
+  },
+  {
+    "name": "NOVITIATE HOSPITALLER",
+    "team": "Novitiates",
+    "apl": 2,
+    "faction": "IMPERIUM",
+    "base_size": "28"
+  },
+  {
+    "name": "NOVITIATE MILITANT",
+    "team": "Novitiates",
+    "apl": 2,
+    "faction": "IMPERIUM",
+    "base_size": "28"
+  },
+  {
+    "name": "NOVITIATE PENITENT",
+    "team": "Novitiates",
+    "apl": 2,
+    "faction": "IMPERIUM",
+    "base_size": "28"
+  },
+  {
+    "name": "NOVITIATE PRECEPTOR",
+    "team": "Novitiates",
+    "apl": 2,
+    "faction": "IMPERIUM",
+    "base_size": "28"
+  },
+  {
+    "name": "NOVITIATE PRONATUS",
+    "team": "Novitiates",
+    "apl": 2,
+    "faction": "IMPERIUM",
+    "base_size": "28"
+  },
+  {
+    "name": "NOVITIATE PURGATUS",
+    "team": "Novitiates",
+    "apl": 2,
+    "faction": "IMPERIUM",
+    "base_size": "28"
+  },
+  {
+    "name": "NOVITIATE RELIQUARIUS",
+    "team": "Novitiates",
+    "apl": 2,
+    "faction": "IMPERIUM",
+    "base_size": "28"
+  },
+  {
+    "name": "SHAS’UI PATHFINDER",
+    "team": "Pathfinders",
+    "apl": 2,
+    "faction": "T'AU EMPIRE",
+    "base_size": "25"
+  },
+  {
+    "name": "ASSAULT GRENADIER PATHFINDER",
+    "team": "Pathfinders",
+    "apl": 2,
+    "faction": "T'AU EMPIRE",
+    "base_size": "25"
+  },
+  {
+    "name": "BLOODED PATHFINDER",
+    "team": "Pathfinders",
+    "apl": 2,
+    "faction": "T'AU EMPIRE",
+    "base_size": "25"
+  },
+  {
+    "name": "COMMS SPECIALIST PATHFINDER",
+    "team": "Pathfinders",
+    "apl": 2,
+    "faction": "T'AU EMPIRE",
+    "base_size": "25"
+  },
+  {
+    "name": "DRONE CONTROLLER PATHFINDER",
+    "team": "Pathfinders",
+    "apl": 2,
+    "faction": "T'AU EMPIRE",
+    "base_size": "25"
+  },
+  {
+    "name": "MARKSMAN PATHFINDER",
+    "team": "Pathfinders",
+    "apl": 2,
+    "faction": "T'AU EMPIRE",
+    "base_size": "25"
+  },
+  {
+    "name": "MEDICAL TECHNICIAN PATHFINDER",
+    "team": "Pathfinders",
+    "apl": 2,
+    "faction": "T'AU EMPIRE",
+    "base_size": "25"
+  },
+  {
+    "name": "SHAS’LA PATHFINDER",
+    "team": "Pathfinders",
+    "apl": 2,
+    "faction": "T'AU EMPIRE",
+    "base_size": "25"
+  },
+  {
+    "name": "TRANSPECTRAL INTERFERENCE PATHFINDER",
+    "team": "Pathfinders",
+    "apl": 2,
+    "faction": "T'AU EMPIRE",
+    "base_size": "25"
+  },
+  {
+    "name": "WEAPONS EXPERT PATHFINDER",
+    "team": "Pathfinders",
+    "apl": 2,
+    "faction": "T'AU EMPIRE",
+    "base_size": "25"
+  },
+  {
+    "name": "MB3 RECON DRONE",
+    "team": "Pathfinders",
+    "apl": 3,
+    "faction": "T'AU EMPIRE",
+    "base_size": "32"
+  },
+  {
+    "name": "MV1 GUN DRONE",
+    "team": "Pathfinders",
+    "apl": 2,
+    "faction": "T'AU EMPIRE",
+    "base_size": "32"
+  },
+  {
+    "name": "MV4 SHIELD DRONE",
+    "team": "Pathfinders",
+    "apl": 2,
+    "faction": "T'AU EMPIRE",
+    "base_size": "32"
+  },
+  {
+    "name": "MV7 MARKER DRONE",
+    "team": "Pathfinders",
+    "apl": 2,
+    "faction": "T'AU EMPIRE",
+    "base_size": "32"
+  },
+  {
+    "name": "MV31 PULSE ACCELERATOR DRONE",
+    "team": "Pathfinders",
+    "apl": 2,
+    "faction": "T'AU EMPIRE",
+    "base_size": "32"
+  },
+  {
+    "name": "MV33 GRAV-INHIBITOR DRONE",
+    "team": "Pathfinders",
+    "apl": 2,
+    "faction": "T'AU EMPIRE",
+    "base_size": "32"
+  },
+  {
+    "name": "INFILTRATOR SERGEANT",
+    "team": "Phobos Strike Team",
+    "apl": 3,
+    "faction": "IMPERIUM",
+    "base_size": "32"
+  },
+  {
+    "name": "INFILTRATOR COMMSMAN",
+    "team": "Phobos Strike Team",
+    "apl": 3,
+    "faction": "IMPERIUM",
+    "base_size": "32"
+  },
+  {
+    "name": "INFILTRATOR HELIX ADEPT",
+    "team": "Phobos Strike Team",
+    "apl": 3,
+    "faction": "IMPERIUM",
+    "base_size": "32"
+  },
+  {
+    "name": "INFILTRATOR SABOTEUR",
+    "team": "Phobos Strike Team",
+    "apl": 3,
+    "faction": "IMPERIUM",
+    "base_size": "32"
+  },
+  {
+    "name": "INFILTRATOR VETERAN",
+    "team": "Phobos Strike Team",
+    "apl": 3,
+    "faction": "IMPERIUM",
+    "base_size": "32"
+  },
+  {
+    "name": "INFILTRATOR VOXBREAKER",
+    "team": "Phobos Strike Team",
+    "apl": 3,
+    "faction": "IMPERIUM",
+    "base_size": "32"
+  },
+  {
+    "name": "INFILTRATOR WARRIOR",
+    "team": "Phobos Strike Team",
+    "apl": 3,
+    "faction": "IMPERIUM",
+    "base_size": "32"
+  },
+  {
+    "name": "INCURSOR SERGEANT",
+    "team": "Phobos Strike Team",
+    "apl": 3,
+    "faction": "IMPERIUM",
+    "base_size": "32"
+  },
+  {
+    "name": "INCURSOR MARKSMAN",
+    "team": "Phobos Strike Team",
+    "apl": 3,
+    "faction": "IMPERIUM",
+    "base_size": "32"
+  },
+  {
+    "name": "INCURSOR MINELAYER",
+    "team": "Phobos Strike Team",
+    "apl": 3,
+    "faction": "IMPERIUM",
+    "base_size": "32"
+  },
+  {
+    "name": "INCURSOR WARRIOR",
+    "team": "Phobos Strike Team",
+    "apl": 3,
+    "faction": "IMPERIUM",
+    "base_size": "32"
+  },
+  {
+    "name": "REIVER SERGEANT",
+    "team": "Phobos Strike Team",
+    "apl": 3,
+    "faction": "IMPERIUM",
+    "base_size": "32"
+  },
+  {
+    "name": "REIVER WARRIOR",
+    "team": "Phobos Strike Team",
+    "apl": 3,
+    "faction": "IMPERIUM",
+    "base_size": "32"
+  },
+  {
+    "name": "PLAGUE MARINE CHAMPION",
+    "team": "Plague Marines",
+    "apl": 3,
+    "faction": "CHAOS",
+    "base_size": "32"
+  },
+  {
+    "name": "PLAGUE MARINE BOMBARDIER",
+    "team": "Plague Marines",
+    "apl": 3,
+    "faction": "CHAOS",
+    "base_size": "32"
+  },
+  {
+    "name": "PLAGUE MARINE FIGHTER",
+    "team": "Plague Marines",
+    "apl": 3,
+    "faction": "CHAOS",
+    "base_size": "32"
+  },
+  {
+    "name": "PLAGUE MARINE HEAVY GUNNER",
+    "team": "Plague Marines",
+    "apl": 3,
+    "faction": "CHAOS",
+    "base_size": "32"
+  },
+  {
+    "name": "PLAGUE MARINE ICON BEARER",
+    "team": "Plague Marines",
+    "apl": 3,
+    "faction": "CHAOS",
+    "base_size": "32"
+  },
+  {
+    "name": "MALIGNANT PLAGUECASTER",
+    "team": "Plague Marines",
+    "apl": 3,
+    "faction": "CHAOS",
+    "base_size": "32"
+  },
+  {
+    "name": "PLAGUE MARINE WARRIOR",
+    "team": "Plague Marines",
+    "apl": 3,
+    "faction": "CHAOS",
+    "base_size": "32"
+  },
+  {
+    "name": "RATLING FIXER",
+    "team": "Ratlings",
+    "apl": 2,
+    "faction": "IMPERIUM",
+    "base_size": "25"
+  },
+  {
+    "name": "RATLING BATTLEMUTT",
+    "team": "Ratlings",
+    "apl": 2,
+    "faction": "IMPERIUM",
+    "base_size": "25"
+  },
+  {
+    "name": "BULLGRYN",
+    "team": "Ratlings",
+    "apl": 2,
+    "faction": "IMPERIUM",
+    "base_size": "40"
+  },
+  {
+    "name": "OGRYN",
+    "team": "Ratlings",
+    "apl": 2,
+    "faction": "IMPERIUM",
+    "base_size": "40"
+  },
+  {
+    "name": "RATLING BIG SHOT",
+    "team": "Ratlings",
+    "apl": 2,
+    "faction": "IMPERIUM",
+    "base_size": "28"
+  },
+  {
+    "name": "RATLING BOMBER",
+    "team": "Ratlings",
+    "apl": 2,
+    "faction": "IMPERIUM",
+    "base_size": "25"
+  },
+  {
+    "name": "RATLING HARDBIT",
+    "team": "Ratlings",
+    "apl": 2,
+    "faction": "IMPERIUM",
+    "base_size": "25"
+  },
+  {
+    "name": "RATLING RAIDER",
+    "team": "Ratlings",
+    "apl": 2,
+    "faction": "IMPERIUM",
+    "base_size": "25"
+  },
+  {
+    "name": "RATLING SNEAK",
+    "team": "Ratlings",
+    "apl": 2,
+    "faction": "IMPERIUM",
+    "base_size": "25"
+  },
+  {
+    "name": "RATLING SNIPER",
+    "team": "Ratlings",
+    "apl": 2,
+    "faction": "IMPERIUM",
+    "base_size": "25"
+  },
+  {
+    "name": "RATLING SPOTTER",
+    "team": "Ratlings",
+    "apl": 2,
+    "faction": "IMPERIUM",
+    "base_size": "25"
+  },
+  {
+    "name": "RATLING STASHMASTER",
+    "team": "Ratlings",
+    "apl": 2,
+    "faction": "IMPERIUM",
+    "base_size": "25"
+  },
+  {
+    "name": "RATLING VOX-THIEF",
+    "team": "Ratlings",
+    "apl": 2,
+    "faction": "IMPERIUM",
+    "base_size": "25"
+  },
+  {
+    "name": "RAVENER PRIME",
+    "team": "Raveners",
+    "apl": 3,
+    "faction": "TYRANID",
+    "base_size": "40"
+  },
+  {
+    "name": "RAVENER FELLTALON",
+    "team": "Raveners",
+    "apl": 3,
+    "faction": "TYRANID",
+    "base_size": "40"
+  },
+  {
+    "name": "RAVENER TREMORSCYTHE",
+    "team": "Raveners",
+    "apl": 3,
+    "faction": "TYRANID",
+    "base_size": "40"
+  },
+  {
+    "name": "RAVENER VENOMSPITTER",
+    "team": "Raveners",
+    "apl": 3,
+    "faction": "TYRANID",
+    "base_size": "40"
+  },
+  {
+    "name": "RAVENER WARRIOR",
+    "team": "Raveners",
+    "apl": 3,
+    "faction": "TYRANID",
+    "base_size": "40"
+  },
+  {
+    "name": "RAVENER WRECKER",
+    "team": "Raveners",
+    "apl": 3,
+    "faction": "TYRANID",
+    "base_size": "40"
+  },
+  {
+    "name": "SANCTIFIER CONFESSOR",
+    "team": "Sanctifiers",
+    "apl": 2,
+    "faction": "IMPERIUM",
+    "base_size": "32"
+  },
+  {
+    "name": "SANCTIFIER CHERUB",
+    "team": "Sanctifiers",
+    "apl": 2,
+    "faction": "IMPERIUM",
+    "base_size": "25"
+  },
+  {
+    "name": "SANCTIFIER CONFLAGRATOR",
+    "team": "Sanctifiers",
+    "apl": 2,
+    "faction": "IMPERIUM",
+    "base_size": "25"
+  },
+  {
+    "name": "SANCTIFIER DEATH CULT ASSASSIN",
+    "team": "Sanctifiers",
+    "apl": 3,
+    "faction": "IMPERIUM",
+    "base_size": "25"
+  },
+  {
+    "name": "SANCTIFIER DRILL ABBOT",
+    "team": "Sanctifiers",
+    "apl": 2,
+    "faction": "IMPERIUM",
+    "base_size": "25"
+  },
+  {
+    "name": "SANCTIFIER PERSECUTOR",
+    "team": "Sanctifiers",
+    "apl": 2,
+    "faction": "IMPERIUM",
+    "base_size": "25"
+  },
+  {
+    "name": "SANCTIFIER MIRACULIST",
+    "team": "Sanctifiers",
+    "apl": 2,
+    "faction": "IMPERIUM",
+    "base_size": "25"
+  },
+  {
+    "name": "SANCTIFIER MISSIONARY",
+    "team": "Sanctifiers",
+    "apl": 2,
+    "faction": "IMPERIUM",
+    "base_size": "25"
+  },
+  {
+    "name": "SANCTIFIER PREACHER",
+    "team": "Sanctifiers",
+    "apl": 2,
+    "faction": "IMPERIUM",
+    "base_size": "25"
+  },
+  {
+    "name": "SANCTIFIER RELIQUANT",
+    "team": "Sanctifiers",
+    "apl": 2,
+    "faction": "IMPERIUM",
+    "base_size": "25"
+  },
+  {
+    "name": "SANCTIFIER SALVATIONIST",
+    "team": "Sanctifiers",
+    "apl": 2,
+    "faction": "IMPERIUM",
+    "base_size": "25"
+  },
+  {
+    "name": "SCOUT SERGEANT",
+    "team": "Scout Squad",
+    "apl": 3,
+    "faction": "IMPERIUM",
+    "base_size": "28"
+  },
+  {
+    "name": "SCOUT HEAVY GUNNER",
+    "team": "Scout Squad",
+    "apl": 2,
+    "faction": "IMPERIUM",
+    "base_size": "28"
+  },
+  {
+    "name": "SCOUT HUNTER",
+    "team": "Scout Squad",
+    "apl": 2,
+    "faction": "IMPERIUM",
+    "base_size": "28"
+  },
+  {
+    "name": "SCOUT SNIPER",
+    "team": "Scout Squad",
+    "apl": 2,
+    "faction": "IMPERIUM",
+    "base_size": "28"
+  },
+  {
+    "name": "SCOUT TRACKER",
+    "team": "Scout Squad",
+    "apl": 2,
+    "faction": "IMPERIUM",
+    "base_size": "28"
+  },
+  {
+    "name": "SCOUT WARRIOR",
+    "team": "Scout Squad",
+    "apl": 2,
+    "faction": "IMPERIUM",
+    "base_size": "28"
+  },
+  {
+    "name": "AQUILON TEMPESTOR",
+    "team": "Tempestus Aquilons",
+    "apl": 3,
+    "faction": "IMPERIUM",
+    "base_size": "28"
+  },
+  {
+    "name": "AQUILON GRENADIER",
+    "team": "Tempestus Aquilons",
+    "apl": 2,
+    "faction": "IMPERIUM",
+    "base_size": "28"
+  },
+  {
+    "name": "AQUILON GUNFIGHTER",
+    "team": "Tempestus Aquilons",
+    "apl": 2,
+    "faction": "IMPERIUM",
+    "base_size": "28"
+  },
+  {
+    "name": "AQUILON GUNNER",
+    "team": "Tempestus Aquilons",
+    "apl": 2,
+    "faction": "IMPERIUM",
+    "base_size": "28"
+  },
+  {
+    "name": "AQUILON MARKSMAN",
+    "team": "Tempestus Aquilons",
+    "apl": 2,
+    "faction": "IMPERIUM",
+    "base_size": "28"
+  },
+  {
+    "name": "AQUILON PRECURSOR",
+    "team": "Tempestus Aquilons",
+    "apl": 2,
+    "faction": "IMPERIUM",
+    "base_size": "28"
+  },
+  {
+    "name": "AQUILON SERVO‑SENTRY",
+    "team": "Tempestus Aquilons",
+    "apl": 2,
+    "faction": "IMPERIUM",
+    "base_size": "40"
+  },
+  {
+    "name": "AQUILON TROOPER",
+    "team": "Tempestus Aquilons",
+    "apl": 2,
+    "faction": "IMPERIUM",
+    "base_size": "28"
+  },
+  {
+    "name": "VESPID STRAIN LEADER",
+    "team": "Vespid Stingwings",
+    "apl": 2,
+    "faction": "T'AU EMPIRE",
+    "base_size": "28"
+  },
+  {
+    "name": "OVERSIGHT DRONE",
+    "team": "Vespid Stingwings",
+    "apl": 2,
+    "faction": "T'AU EMPIRE",
+    "base_size": "25"
+  },
+  {
+    "name": "VESPID LONGSTING",
+    "team": "Vespid Stingwings",
+    "apl": 2,
+    "faction": "T'AU EMPIRE",
+    "base_size": "28"
+  },
+  {
+    "name": "VESPID SHADESTRAIN",
+    "team": "Vespid Stingwings",
+    "apl": 2,
+    "faction": "T'AU EMPIRE",
+    "base_size": "28"
+  },
+  {
+    "name": "VESPID SKYBLAST",
+    "team": "Vespid Stingwings",
+    "apl": 2,
+    "faction": "T'AU EMPIRE",
+    "base_size": "28"
+  },
+  {
+    "name": "VESPID SWARMGUARD",
+    "team": "Vespid Stingwings",
+    "apl": 2,
+    "faction": "T'AU EMPIRE",
+    "base_size": "28"
+  },
+  {
+    "name": "VESPID WARRIOR",
+    "team": "Vespid Stingwings",
+    "apl": 2,
+    "faction": "T'AU EMPIRE",
+    "base_size": "28"
+  },
+  {
+    "name": "LEAD PLAYER",
+    "team": "Void-Dancer Troupe",
+    "apl": 3,
+    "faction": "AELDARI",
+    "base_size": "25"
+  },
+  {
+    "name": "DEATH JESTER",
+    "team": "Void-Dancer Troupe",
+    "apl": 3,
+    "faction": "AELDARI",
+    "base_size": "25"
+  },
+  {
+    "name": "PLAYER",
+    "team": "Void-Dancer Troupe",
+    "apl": 3,
+    "faction": "AELDARI",
+    "base_size": "25"
+  },
+  {
+    "name": "SHADOWSEER",
+    "team": "Void-Dancer Troupe",
+    "apl": 3,
+    "faction": "AELDARI",
+    "base_size": "25"
+  },
+  {
+    "name": "SORCERER OF DESTINY",
+    "team": "Warpcoven",
+    "apl": 3,
+    "faction": "CHAOS",
+    "base_size": "32"
+  },
+  {
+    "name": "SORCERER OF TEMPYRION",
+    "team": "Warpcoven",
+    "apl": 3,
+    "faction": "CHAOS",
+    "base_size": "32"
+  },
+  {
+    "name": "SORCERER OF WARPFIRE",
+    "team": "Warpcoven",
+    "apl": 3,
+    "faction": "CHAOS",
+    "base_size": "32"
+  },
+  {
+    "name": "RUBRIC MARINE GUNNER",
+    "team": "Warpcoven",
+    "apl": 3,
+    "faction": "CHAOS",
+    "base_size": "32"
+  },
+  {
+    "name": "RUBRIC MARINE ICON BEARER",
+    "team": "Warpcoven",
+    "apl": 3,
+    "faction": "CHAOS",
+    "base_size": "32"
+  },
+  {
+    "name": "RUBRIC MARINE WARRIOR",
+    "team": "Warpcoven",
+    "apl": 3,
+    "faction": "CHAOS",
+    "base_size": "32"
+  },
+  {
+    "name": "TZAANGOR CHAMPION",
+    "team": "Warpcoven",
+    "apl": 2,
+    "faction": "CHAOS",
+    "base_size": "32"
+  },
+  {
+    "name": "TZAANGOR HORN BEARER",
+    "team": "Warpcoven",
+    "apl": 2,
+    "faction": "CHAOS",
+    "base_size": "32"
+  },
+  {
+    "name": "TZAANGOR ICON BEARER",
+    "team": "Warpcoven",
+    "apl": 2,
+    "faction": "CHAOS",
+    "base_size": "32"
+  },
+  {
+    "name": "TZAANGOR WARRIOR",
+    "team": "Warpcoven",
+    "apl": 2,
+    "faction": "CHAOS",
+    "base_size": "32"
+  },
+  {
+    "name": "WOLF SCOUT PACK LEADER",
+    "team": "Wolf Scouts",
+    "apl": 3,
+    "faction": "IMPERIUM",
+    "base_size": "32"
+  },
+  {
+    "name": "WOLF SCOUT FANGBEARER",
+    "team": "Wolf Scouts",
+    "apl": 3,
+    "faction": "IMPERIUM",
+    "base_size": "32"
+  },
+  {
+    "name": "WOLF SCOUT FROSTEYE",
+    "team": "Wolf Scouts",
+    "apl": 3,
+    "faction": "IMPERIUM",
+    "base_size": "32"
+  },
+  {
+    "name": "WOLF SCOUT GUNNER",
+    "team": "Wolf Scouts",
+    "apl": 3,
+    "faction": "IMPERIUM",
+    "base_size": "32"
+  },
+  {
+    "name": "WOLF SCOUT HUNTER",
+    "team": "Wolf Scouts",
+    "apl": 3,
+    "faction": "IMPERIUM",
+    "base_size": "32"
+  },
+  {
+    "name": "WOLF SCOUT RUNE PRIEST SKJALD",
+    "team": "Wolf Scouts",
+    "apl": 3,
+    "faction": "IMPERIUM",
+    "base_size": "32"
+  },
+  {
+    "name": "WOLF SCOUT TRAPMASTER",
+    "team": "Wolf Scouts",
+    "apl": 3,
+    "faction": "IMPERIUM",
+    "base_size": "32"
+  },
+  {
+    "name": "WOLF SCOUT FENRISIAN WOLF",
+    "team": "Wolf Scouts",
+    "apl": 2,
+    "faction": "IMPERIUM",
+    "base_size": "60x35"
+  },
+  {
+    "name": "WRECKA BOSS NOB",
+    "team": "Wrecka Krew",
+    "apl": 2,
+    "faction": "ORK",
+    "base_size": "40"
+  },
+  {
+    "name": "WRECKA BOMB SQUIG",
+    "team": "Wrecka Krew",
+    "apl": 2,
+    "faction": "ORK",
+    "base_size": "25"
+  },
+  {
+    "name": "BREAKA BOY DEMOLISHA",
+    "team": "Wrecka Krew",
+    "apl": 2,
+    "faction": "ORK",
+    "base_size": "32"
+  },
+  {
+    "name": "BREAKA BOY FIGHTER",
+    "team": "Wrecka Krew",
+    "apl": 2,
+    "faction": "ORK",
+    "base_size": "32"
+  },
+  {
+    "name": "BREAKA BOY KRUSHA",
+    "team": "Wrecka Krew",
+    "apl": 2,
+    "faction": "ORK",
+    "base_size": "32"
+  },
+  {
+    "name": "TANKBUSTA GUNNER",
+    "team": "Wrecka Krew",
+    "apl": 2,
+    "faction": "ORK",
+    "base_size": "32"
+  },
+  {
+    "name": "TANKBUSTA ROKKITEER",
+    "team": "Wrecka Krew",
+    "apl": 2,
+    "faction": "ORK",
+    "base_size": "32"
+  },
+  {
+    "name": "NEOPHYTE LEADER",
+    "team": "Wyrmblade",
+    "apl": 2,
+    "faction": "TYRANID",
+    "base_size": "25"
+  },
+  {
+    "name": "KELERMORPH",
+    "team": "Wyrmblade",
+    "apl": 3,
+    "faction": "TYRANID",
+    "base_size": "32"
+  },
+  {
+    "name": "LOCUS",
+    "team": "Wyrmblade",
+    "apl": 3,
+    "faction": "TYRANID",
+    "base_size": "32"
+  },
+  {
+    "name": "NEOPHYTE GUNNER",
+    "team": "Wyrmblade",
+    "apl": 2,
+    "faction": "TYRANID",
+    "base_size": "25"
+  },
+  {
+    "name": "NEOPHYTE HEAVY GUNNER",
+    "team": "Wyrmblade",
+    "apl": 2,
+    "faction": "TYRANID",
+    "base_size": "32"
+  },
+  {
+    "name": "NEOPHYTE ICON BEARER",
+    "team": "Wyrmblade",
+    "apl": 2,
+    "faction": "TYRANID",
+    "base_size": "25"
+  },
+  {
+    "name": "SANCTUS SNIPER",
+    "team": "Wyrmblade",
+    "apl": 3,
+    "faction": "TYRANID",
+    "base_size": "32"
+  },
+  {
+    "name": "SANCTUS TALON",
+    "team": "Wyrmblade",
+    "apl": 3,
+    "faction": "TYRANID",
+    "base_size": "32"
+  },
+  {
+    "name": "NEOPHYTE WARRIOR",
+    "team": "Wyrmblade",
+    "apl": 2,
+    "faction": "TYRANID",
+    "base_size": "25"
+  },
+  {
+    "name": "XV26 SHAS’VRE",
+    "team": "XV26 Stealth Battlesuits",
+    "apl": 3,
+    "faction": "T'AU EMPIRE",
+    "base_size": "32"
+  },
+  {
+    "name": "XV26 DESIGNATOR",
+    "team": "XV26 Stealth Battlesuits",
+    "apl": 3,
+    "faction": "T'AU EMPIRE",
+    "base_size": "32"
+  },
+  {
+    "name": "XV26 INFILTRATOR",
+    "team": "XV26 Stealth Battlesuits",
+    "apl": 3,
+    "faction": "T'AU EMPIRE",
+    "base_size": "32"
+  },
+  {
+    "name": "XV26 LIBERATOR",
+    "team": "XV26 Stealth Battlesuits",
+    "apl": 3,
+    "faction": "T'AU EMPIRE",
+    "base_size": "32"
+  },
+  {
+    "name": "XV26 LODESTAR",
+    "team": "XV26 Stealth Battlesuits",
+    "apl": 3,
+    "faction": "T'AU EMPIRE",
+    "base_size": "32"
+  },
+  {
+    "name": "XV26 NEUTRALISER",
+    "team": "XV26 Stealth Battlesuits",
+    "apl": 3,
+    "faction": "T'AU EMPIRE",
+    "base_size": "32"
+  },
+  {
+    "name": "MV15 GUN DRONE",
+    "team": "XV26 Stealth Battlesuits",
+    "apl": 2,
+    "faction": "T'AU EMPIRE",
+    "base_size": "28"
+  },
+  {
+    "name": "MV75 MARKER DRONE",
+    "team": "XV26 Stealth Battlesuits",
+    "apl": 2,
+    "faction": "T'AU EMPIRE",
+    "base_size": "28"
+  }
+];</script>
+<script>
+let operatives = [];
+let target = null;
+let guesses = [];
+let maxGuesses = 8;
+let gameOver = false;
+
+async function loadData() {
+  if (typeof EMBEDDED_DATA !== 'undefined' && EMBEDDED_DATA.length > 0) {
+    operatives = EMBEDDED_DATA;
+  } else {
+    try {
+      const resp = await fetch('data.json');
+      operatives = await resp.json();
+    } catch (e) {
+      console.error('Failed to load data:', e);
+    }
+  }
+  pickTarget();
+}
+
+function pickTarget() {
+  target = operatives[Math.floor(Math.random() * operatives.length)];
+}
+
+function resetGame() {
+  guesses = [];
+  gameOver = false;
+  pickTarget();
+  document.getElementById('guessRows').innerHTML = '';
+  document.getElementById('status').textContent = '';
+  document.getElementById('status').className = 'status';
+  document.getElementById('guessCount').textContent = '0';
+  document.getElementById('playAgain').style.display = 'none';
+  const input = document.getElementById('guessInput');
+  input.disabled = false;
+  document.getElementById('guessBtn').disabled = false;
+  input.value = '';
+  input.focus();
+}
+
+// Autocomplete
+const input = document.getElementById('guessInput');
+const dropdown = document.getElementById('dropdown');
+let selectedIdx = -1;
+let filteredOps = [];
+
+input.addEventListener('input', () => {
+  const val = input.value.trim().toUpperCase();
+  if (val.length < 1) {
+    dropdown.classList.remove('visible');
+    filteredOps = [];
+    return;
+  }
+
+  // Filter: exclude already guessed
+  const guessedNames = new Set(guesses.map(g => g.name));
+  filteredOps = operatives
+    .filter(o => !guessedNames.has(o.name) && o.name.toUpperCase().includes(val))
+    .slice(0, 15);
+
+  if (filteredOps.length === 0) {
+    dropdown.classList.remove('visible');
+    return;
+  }
+
+  selectedIdx = -1;
+  renderDropdown();
+  dropdown.classList.add('visible');
+});
+
+input.addEventListener('keydown', (e) => {
+  if (!dropdown.classList.contains('visible') || filteredOps.length === 0) {
+    if (e.key === 'Enter') {
+      // Try to submit exact match
+      trySubmit(input.value.trim());
+    }
+    return;
+  }
+
+  if (e.key === 'ArrowDown') {
+    e.preventDefault();
+    selectedIdx = Math.min(selectedIdx + 1, filteredOps.length - 1);
+    renderDropdown();
+  } else if (e.key === 'ArrowUp') {
+    e.preventDefault();
+    selectedIdx = Math.max(selectedIdx - 1, -1);
+    renderDropdown();
+  } else if (e.key === 'Enter') {
+    e.preventDefault();
+    if (selectedIdx >= 0 && selectedIdx < filteredOps.length) {
+      submitGuess(filteredOps[selectedIdx]);
+    } else {
+      trySubmit(input.value.trim());
+    }
+  } else if (e.key === 'Escape') {
+    dropdown.classList.remove('visible');
+  }
+});
+
+function trySubmit(val) {
+  const upper = val.toUpperCase();
+  const match = operatives.find(o => o.name.toUpperCase() === upper);
+  if (match) {
+    submitGuess(match);
+  }
+}
+
+function renderDropdown() {
+  dropdown.innerHTML = filteredOps.map((o, i) =>
+    `<div class="dropdown-item${i === selectedIdx ? ' selected' : ''}"
+          data-idx="${i}">
+      ${o.name}<span class="team-hint">${o.team}</span>
+    </div>`
+  ).join('');
+
+  dropdown.querySelectorAll('.dropdown-item').forEach(el => {
+    el.addEventListener('mousedown', (e) => {
+      e.preventDefault();
+      const idx = parseInt(el.dataset.idx);
+      submitGuess(filteredOps[idx]);
+    });
+  });
+
+  // Scroll selected into view
+  if (selectedIdx >= 0) {
+    const sel = dropdown.querySelector('.selected');
+    if (sel) sel.scrollIntoView({ block: 'nearest' });
+  }
+}
+
+input.addEventListener('blur', () => {
+  setTimeout(() => dropdown.classList.remove('visible'), 150);
+});
+
+input.addEventListener('focus', () => {
+  if (input.value.trim().length > 0 && filteredOps.length > 0) {
+    dropdown.classList.add('visible');
+  }
+});
+
+function submitGuess(op) {
+  if (gameOver) return;
+
+  // Don't allow duplicate guesses
+  if (guesses.find(g => g.name === op.name)) {
+    input.value = '';
+    dropdown.classList.remove('visible');
+    return;
+  }
+
+  guesses.push(op);
+  dropdown.classList.remove('visible');
+  input.value = '';
+  filteredOps = [];
+
+  renderGuessRow(op);
+
+  document.getElementById('guessCount').textContent = guesses.length;
+
+  // Check win/lose
+  if (op.name === target.name) {
+    gameOver = true;
+    document.getElementById('status').textContent = `You got it in ${guesses.length} guess${guesses.length > 1 ? 'es' : ''}!`;
+    document.getElementById('status').className = 'status win';
+    input.disabled = true;
+    document.getElementById('guessBtn').disabled = true;
+    document.getElementById('playAgain').style.display = 'inline-block';
+  } else if (guesses.length >= maxGuesses) {
+    gameOver = true;
+    document.getElementById('status').textContent = `Game over! It was ${target.name} (${target.team})`;
+    document.getElementById('status').className = 'status lose';
+    input.disabled = true;
+    document.getElementById('guessBtn').disabled = true;
+    document.getElementById('playAgain').style.display = 'inline-block';
+  } else {
+    input.focus();
+  }
+}
+
+function renderGuessRow(op) {
+  const row = document.createElement('div');
+  row.className = 'guess-row';
+
+  const fields = [
+    { val: op.team, correct: op.team === target.team },
+    { val: op.apl, correct: op.apl === target.apl },
+    { val: op.faction, correct: op.faction === target.faction },
+    { val: op.base_size, correct: op.base_size === target.base_size },
+    { val: op.name, correct: op.name === target.name },
+  ];
+
+  fields.forEach(f => {
+    const cell = document.createElement('div');
+    cell.className = `cell ${f.correct ? 'correct' : 'wrong'}`;
+    cell.textContent = f.val;
+    cell.title = f.val;
+    row.appendChild(cell);
+  });
+
+  document.getElementById('guessRows').appendChild(row);
+}
+
+document.getElementById('playAgain').addEventListener('click', resetGame);
+
+document.getElementById('guessBtn').addEventListener('click', () => {
+  if (selectedIdx >= 0 && selectedIdx < filteredOps.length) {
+    submitGuess(filteredOps[selectedIdx]);
+  } else {
+    trySubmit(input.value.trim());
+  }
+});
+
+loadData();
+</script>
+</body>
+</html>
