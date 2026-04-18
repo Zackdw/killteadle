@@ -349,10 +349,116 @@
     font-size: 13px;
     font-weight: 600;
     letter-spacing: 0.5px;
-    transition: all 0.3s;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
+    position: relative;
+  }
+
+  /* Animation: cells start hidden, pop in from left */
+  .cell.anim-pending {
+    opacity: 0;
+    transform: translateX(-30px) scale(0.85);
+  }
+
+  .cell.anim-pop {
+    animation: cellPop 0.25s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+  }
+
+  @keyframes cellPop {
+    0% {
+      opacity: 0;
+      transform: translateX(-30px) scale(0.85);
+    }
+    60% {
+      opacity: 1;
+      transform: translateX(4px) scale(1.06);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0) scale(1);
+    }
+  }
+
+  /* Shake for wrong cells */
+  .cell.anim-shake {
+    animation: cellPop 0.25s cubic-bezier(0.34, 1.56, 0.64, 1) forwards,
+               cellShake 0.3s 0.2s ease-out;
+  }
+
+  @keyframes cellShake {
+    0%, 100% { transform: translateX(0); }
+    20% { transform: translateX(-3px); }
+    40% { transform: translateX(3px); }
+    60% { transform: translateX(-2px); }
+    80% { transform: translateX(2px); }
+  }
+
+  /* Glow pulse for correct cells */
+  .cell.anim-glow {
+    animation: cellPop 0.25s cubic-bezier(0.34, 1.56, 0.64, 1) forwards,
+               cellGlow 0.3s 0.2s ease-out;
+  }
+
+  @keyframes cellGlow {
+    0% { box-shadow: 0 0 0 0 rgba(45,106,79,0.6); }
+    50% { box-shadow: 0 0 14px 4px rgba(45,106,79,0.5); }
+    100% { box-shadow: 0 0 4px 1px rgba(45,106,79,0.2); }
+  }
+
+  /* Particle burst container */
+  .cell-particles {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    pointer-events: none;
+    z-index: 5;
+  }
+
+  .particle {
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background: var(--kt-orange);
+    animation: particleBurst 0.4s ease-out forwards;
+  }
+
+  .particle.green {
+    background: #4ade80;
+  }
+
+  @keyframes particleBurst {
+    0% {
+      opacity: 1;
+      transform: translate(0, 0) scale(1);
+    }
+    100% {
+      opacity: 0;
+      transform: translate(var(--px), var(--py)) scale(0);
+    }
+  }
+
+  /* Status animation */
+  .status.anim-in {
+    animation: statusPop 0.3s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+  }
+
+  @keyframes statusPop {
+    0% { opacity: 0; transform: scale(0.8); }
+    100% { opacity: 1; transform: scale(1); }
+  }
+
+  /* End buttons animation */
+  .end-buttons.anim-in {
+    animation: fadeUp 0.25s ease-out forwards;
+  }
+
+  @keyframes fadeUp {
+    0% { opacity: 0; transform: translateY(10px); }
+    100% { opacity: 1; transform: translateY(0); }
   }
 
   .cell.correct {
@@ -3639,6 +3745,7 @@ function resetGame() {
   document.getElementById('status').className = 'status';
   document.getElementById('guessCount').textContent = '0';
   document.getElementById('endButtons').classList.remove('visible');
+  document.getElementById('endButtons').classList.remove('anim-in');
   const input = document.getElementById('guessInput');
   input.disabled = false;
   document.getElementById('guessBtn').disabled = false;
@@ -3761,23 +3868,54 @@ function submitGuess(op) {
 
   document.getElementById('guessCount').textContent = guesses.length;
 
+  // Calculate delay for status/buttons to appear after cell animations
+  const animDelay = 5 * 60 + 300;
+
   if (op.name === target.name) {
     gameOver = true;
-    document.getElementById('status').textContent = `You got it in ${guesses.length} guess${guesses.length > 1 ? 'es' : ''}!`;
-    document.getElementById('status').className = 'status win';
     input.disabled = true;
     document.getElementById('guessBtn').disabled = true;
-    document.getElementById('endButtons').classList.add('visible');
+    setTimeout(() => {
+      const s = document.getElementById('status');
+      s.textContent = `You got it in ${guesses.length} guess${guesses.length > 1 ? 'es' : ''}!`;
+      s.className = 'status win anim-in';
+      const eb = document.getElementById('endButtons');
+      eb.classList.add('visible');
+      eb.classList.add('anim-in');
+    }, animDelay);
   } else if (guesses.length >= maxGuesses) {
     gameOver = true;
-    document.getElementById('status').textContent = `Game over! It was ${target.name} (${target.team})`;
-    document.getElementById('status').className = 'status lose';
     input.disabled = true;
     document.getElementById('guessBtn').disabled = true;
-    document.getElementById('endButtons').classList.add('visible');
+    setTimeout(() => {
+      const s = document.getElementById('status');
+      s.textContent = `Game over! It was ${target.name} (${target.team})`;
+      s.className = 'status lose anim-in';
+      const eb = document.getElementById('endButtons');
+      eb.classList.add('visible');
+      eb.classList.add('anim-in');
+    }, animDelay);
   } else {
     input.focus();
   }
+}
+
+function spawnParticles(cell, isCorrect) {
+  const container = document.createElement('div');
+  container.className = 'cell-particles';
+  const count = isCorrect ? 8 : 4;
+  for (let i = 0; i < count; i++) {
+    const p = document.createElement('div');
+    const angle = (Math.PI * 2 * i) / count + (Math.random() - 0.5) * 0.5;
+    const dist = 14 + Math.random() * 18;
+    p.className = `particle${isCorrect ? ' green' : ''}`;
+    p.style.setProperty('--px', `${Math.cos(angle) * dist}px`);
+    p.style.setProperty('--py', `${Math.sin(angle) * dist}px`);
+    p.style.animationDelay = `${Math.random() * 0.08}s`;
+    container.appendChild(p);
+  }
+  cell.appendChild(container);
+  setTimeout(() => container.remove(), 500);
 }
 
 function renderGuessRow(op) {
@@ -3792,15 +3930,30 @@ function renderGuessRow(op) {
     { val: op.name, correct: op.name === target.name },
   ];
 
+  const cells = [];
   fields.forEach(f => {
     const cell = document.createElement('div');
-    cell.className = `cell ${f.correct ? 'correct' : 'wrong'}`;
+    cell.className = `cell ${f.correct ? 'correct' : 'wrong'} anim-pending`;
     cell.textContent = f.val;
     cell.title = f.val;
+    cell._isCorrect = f.correct;
     row.appendChild(cell);
+    cells.push(cell);
   });
 
   document.getElementById('guessRows').appendChild(row);
+
+  // Stagger reveal left to right
+  cells.forEach((cell, i) => {
+    setTimeout(() => {
+      cell.classList.remove('anim-pending');
+      cell.classList.add(cell._isCorrect ? 'anim-glow' : 'anim-shake');
+      spawnParticles(cell, cell._isCorrect);
+    }, i * 60);
+  });
+
+  // Return total animation time for sequencing status/buttons
+  return cells.length * 60 + 250;
 }
 
 document.getElementById('playAgain').addEventListener('click', resetGame);
