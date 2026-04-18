@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Killteamadle</title>
+<title>KillTeadle</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&family=Barlow+Condensed:wght@400;600;700&family=Barlow:wght@400;600&display=swap" rel="stylesheet">
 <style>
@@ -69,6 +69,40 @@
     letter-spacing: 2px;
     text-transform: uppercase;
     margin-top: 4px;
+  }
+
+  /* Mode toggle */
+  .mode-toggle {
+    display: flex;
+    gap: 0;
+    margin-bottom: 12px;
+    border-radius: 4px;
+    overflow: hidden;
+    border: 1px solid rgba(241,92,34,0.3);
+  }
+
+  .mode-btn {
+    padding: 6px 18px;
+    font-family: var(--font-condensed);
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    background: rgba(35,31,32,0.8);
+    color: #777;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+
+  .mode-btn.active {
+    background: var(--kt-orange);
+    color: #fff;
+  }
+
+  .mode-btn:hover:not(.active) {
+    background: rgba(241,92,34,0.15);
+    color: #bbb;
   }
 
   /* Guess counter */
@@ -600,8 +634,13 @@
 <body>
 
 <div class="title-bar">
-  <h1>Kill<span class="accent">Team</span>adle</h1>
+  <h1>Kill<span class="accent">Tea</span>dle</h1>
   <p class="subtitle">Guess the operative in 8 tries</p>
+</div>
+
+<div class="mode-toggle">
+  <button class="mode-btn active" id="dailyBtn">Daily</button>
+  <button class="mode-btn" id="randomBtn">Random</button>
 </div>
 
 <p class="guess-count">Guesses: <span id="guessCount">0</span> / 8</p>
@@ -3717,6 +3756,31 @@ let target = null;
 let guesses = [];
 let maxGuesses = 8;
 let gameOver = false;
+let isDaily = true;
+
+// Deterministic hash for daily operative
+function hashDate(dateStr) {
+  let h = 0;
+  for (let i = 0; i < dateStr.length; i++) {
+    h = ((h << 5) - h + dateStr.charCodeAt(i)) | 0;
+  }
+  return Math.abs(h);
+}
+
+function getDailyTarget() {
+  const now = new Date();
+  const dateStr = `${now.getFullYear()}-${String(now.getMonth()+1).padStart(2,'0')}-${String(now.getDate()).padStart(2,'0')}`;
+  const idx = hashDate(dateStr) % operatives.length;
+  return operatives[idx];
+}
+
+function getRandomTarget() {
+  return operatives[Math.floor(Math.random() * operatives.length)];
+}
+
+function pickTarget() {
+  target = isDaily ? getDailyTarget() : getRandomTarget();
+}
 
 async function loadData() {
   if (typeof EMBEDDED_DATA !== 'undefined' && EMBEDDED_DATA.length > 0) {
@@ -3732,14 +3796,14 @@ async function loadData() {
   pickTarget();
 }
 
-function pickTarget() {
-  target = operatives[Math.floor(Math.random() * operatives.length)];
-}
-
 function resetGame() {
   guesses = [];
   gameOver = false;
-  pickTarget();
+  if (!isDaily) {
+    target = getRandomTarget();
+  } else {
+    target = getDailyTarget();
+  }
   document.getElementById('guessRows').innerHTML = '';
   document.getElementById('status').textContent = '';
   document.getElementById('status').className = 'status';
@@ -3752,6 +3816,23 @@ function resetGame() {
   input.value = '';
   input.focus();
 }
+
+// Mode toggle
+document.getElementById('dailyBtn').addEventListener('click', () => {
+  if (isDaily) return;
+  isDaily = true;
+  document.getElementById('dailyBtn').classList.add('active');
+  document.getElementById('randomBtn').classList.remove('active');
+  resetGame();
+});
+
+document.getElementById('randomBtn').addEventListener('click', () => {
+  if (!isDaily) return;
+  isDaily = false;
+  document.getElementById('randomBtn').classList.add('active');
+  document.getElementById('dailyBtn').classList.remove('active');
+  resetGame();
+});
 
 // Autocomplete
 const input = document.getElementById('guessInput');
@@ -3956,7 +4037,7 @@ function renderGuessRow(op) {
   return cells.length * 60 + 250;
 }
 
-document.getElementById('playAgain').addEventListener('click', resetGame);
+document.getElementById('playAgain').addEventListener('click', () => {\n  // Play Again always switches to random mode\n  isDaily = false;\n  document.getElementById('randomBtn').classList.add('active');\n  document.getElementById('dailyBtn').classList.remove('active');\n  resetGame();\n});
 
 document.getElementById('guessBtn').addEventListener('click', () => {
   if (selectedIdx >= 0 && selectedIdx < filteredOps.length) {
@@ -4032,7 +4113,7 @@ function buildShareCanvas() {
     ctx.font = 'bold 22px Oswald, Impact, sans-serif';
     ctx.fillStyle = '#ffffff';
     ctx.textAlign = 'center';
-    ctx.fillText('KillTeamadle', totalW / 2, titleH - 12);
+    ctx.fillText('KillTeadle', totalW / 2, titleH - 12);
 
     // Header row
     let y = titleH;
@@ -4091,7 +4172,7 @@ function buildShareCanvas() {
     ctx.font = 'bold 13px Barlow Condensed, Arial Narrow, sans-serif';
     ctx.fillStyle = '#f15c22';
     ctx.textAlign = 'center';
-    ctx.fillText('\u25B6  zackdw.github.io/killteamadle  \u25C0', totalW / 2, y + 44);
+    ctx.fillText('\u25B6  zackdw.github.io/killteadle  \u25C0', totalW / 2, y + 44);
 
     // Orange bottom bar
     ctx.fillStyle = '#f15c22';
@@ -4108,7 +4189,7 @@ document.getElementById('shareBtn').addEventListener('click', async () => {
 
     // Try writing both image + text to clipboard
     try {
-      const textBlob = new Blob(['https://zackdw.github.io/killteamadle/'], { type: 'text/plain' });
+      const textBlob = new Blob(['https://zackdw.github.io/killteadle/'], { type: 'text/plain' });
       await navigator.clipboard.write([
         new ClipboardItem({
           'image/png': blob,
@@ -4130,7 +4211,7 @@ document.getElementById('shareBtn').addEventListener('click', async () => {
       const url = URL.createObjectURL(blob);
       const a = document.createElement('a');
       a.href = url;
-      a.download = 'killteamadle.png';
+      a.download = 'killteadle.png';
       document.body.appendChild(a);
       a.click();
       document.body.removeChild(a);
@@ -4145,7 +4226,7 @@ document.getElementById('shareBtn').addEventListener('click', async () => {
 // Copy Link: quick copy the URL
 document.getElementById('copyLinkBtn').addEventListener('click', async () => {
   try {
-    await navigator.clipboard.writeText('https://zackdw.github.io/killteamadle/');
+    await navigator.clipboard.writeText('https://zackdw.github.io/killteadle/');
     showToast('Link copied!');
   } catch (err) {
     console.error('Copy link failed:', err);
