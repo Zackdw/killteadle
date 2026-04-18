@@ -4037,7 +4037,13 @@ function renderGuessRow(op) {
   return cells.length * 60 + 250;
 }
 
-document.getElementById('playAgain').addEventListener('click', () => {\n  // Play Again always switches to random mode\n  isDaily = false;\n  document.getElementById('randomBtn').classList.add('active');\n  document.getElementById('dailyBtn').classList.remove('active');\n  resetGame();\n});
+document.getElementById('playAgain').addEventListener('click', () => {
+  // Play Again always switches to random mode
+  isDaily = false;
+  document.getElementById('randomBtn').classList.add('active');
+  document.getElementById('dailyBtn').classList.remove('active');
+  resetGame();
+});
 
 document.getElementById('guessBtn').addEventListener('click', () => {
   if (selectedIdx >= 0 && selectedIdx < filteredOps.length) {
