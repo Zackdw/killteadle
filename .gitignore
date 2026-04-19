@@ -1,0 +1,4 @@
+library/
+build_wordle_data.py
+build_killteam_html.py
+check_sweeping.py
