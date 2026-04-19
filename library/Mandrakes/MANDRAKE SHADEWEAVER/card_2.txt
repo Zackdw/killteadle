@@ -1,0 +1,21 @@
+APL
+WOUNDS
+SAVE
+MOVE
+MANDRAKE SHADEWEAVER
+2
+7"
+5+
+8
+WEAVE DARKNESS
+1AP
+Remove your Weave Darkness marker from the killzone (if
+any). Then place your Weave Darkness marker visible to this
+operative, or on Vantage terrain of a terrain feature visible
+to this operative. That marker creates an area of smoke with
+the same size and effects as a smoke grenade (see universal
+equipment), except you don’t remove it during the following
+turning point. If this operative is incapacitated, remove your
+Weave Darkness marker from the killzone.
+This operative cannot perform this action while within control
+range of an enemy operative.

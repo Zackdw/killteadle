@@ -1,0 +1,18 @@
+APL
+WOUNDS
+SAVE
+MOVE
+KROOT LONG-SIGHT
+2
+6"
+5+
+8
+LONG-SIGHT
+1AP
+Until the start of this operative’s next activation:
+•  The concealed and stationary profiles of its Kroot hunting rifle
+have the Lethal 5+ weapon rule.
+•  Whenever it’s shooting with its Kroot hunting rifle, enemy
+operatives cannot be obscured.
+This operative cannot perform this action while within control
+range of an enemy operative.

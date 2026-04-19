@@ -1,0 +1,27 @@
+APL
+WOUNDS
+SAVE
+MOVE
+SANCTUS TALON
+3
+6"
+4+
+9
+NAME
+ATK
+HIT DMG
+WR
+Sanctus bio-dagger
+4
+3+
+3/6
+Lethal 4+, Shock
+Creeping Shadow: This operative can perform the Charge
+action while it has a Conceal order. Whenever this operative
+performs the Fight action, it can immediately perform a free
+Dash or Fall Back action afterwards (for the latter, it cannot
+move more than 3"), even if it’s performed an action that
+prevents it from performing those actions.
+RULES CONTINUE ON OTHER SIDE
+32
+WYRMBLADE , TYRANID, GENESTEALER CULT, CULT AGENT, SANCTUS, TALON

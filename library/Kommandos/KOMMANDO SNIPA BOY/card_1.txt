@@ -1,0 +1,37 @@
+APL
+WOUNDS
+SAVE
+MOVE
+KOMMANDO SNIPA BOY
+2
+6"
+5+
+10
+NAME
+ATK
+HIT DMG
+WR
+Scoped big shoota (concealed)
+5
+3+
+3/3
+Devastating 2, Heavy, Silent, Concealed Position*
+Scoped big shoota (stationary)
+5
+3+
+3/3
+Devastating 2, Heavy
+Scoped big shoota (sweeping)
+5
+3+
+3/4
+Heavy (Dash only), Torrent 1"
+Fists
+3
+3+
+3/4
+-
+*Concealed Position: This operative can only use this weapon
+the first time it’s performing the Shoot action during the battle.
+32
+KOMMANDO , ORK, SNIPA BOY

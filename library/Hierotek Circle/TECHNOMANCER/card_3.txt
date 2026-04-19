@@ -1,0 +1,26 @@
+TECHNOMANCER ACTIONS
+AUGMENT WEAPON
+1AP
+REINFORCE METAL
+1AP
+SUPPORT. Select one friendly HIEROTEK CIRCLE
+operative visible to and within 6" of this operative. Until
+the start of this operative’s next activation, until it’s
+incapacitated or until this action is performed again by a
+friendly operative (whichever comes first), select two of the
+following weapon rules for one weapon from that selected
+operative’s datacard to have: Lethal 5+, Rending, Saturate,
+Severe. Note that if you select a staff of light or arcane
+conduit, you only select the additional weapon rules for
+either the ranged or melee profile of that weapon.
+SUPPORT. Select one friendly HIEROTEK CIRCLE
+operative visible to and within 6" of this operative. Until
+the start of this operative’s next activation, until it’s
+incapacitated or until this action is performed again by a
+friendly operative (whichever comes first), whenever an
+attack dice inflicts damage of 3 or more on that operative,
+subtract 1 from that inflicted damage.
+This operative cannot perform this action while within control
+range of an enemy operative.
+This operative cannot perform this action while within control
+range of an enemy operative.

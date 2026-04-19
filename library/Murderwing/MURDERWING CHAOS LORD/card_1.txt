@@ -1,0 +1,51 @@
+APL
+WOUNDS
+SAVE
+MOVE
+MURDERWING CHAOS LORD
+3
+6"
+3+
+15
+NAME
+ATK
+HIT DMG
+WR
+Bolt pistol
+4
+3+
+3/4
+Range 8"
+Plasma pistol (standard)
+4
+3+
+3/5
+Range 8", Piercing 1
+Plasma pistol (supercharge)
+4
+3+
+4/5
+Range 8", Hot, Lethal 5+, Piercing 1
+Lightning claw
+5
+3+
+4/5
+Lethal 5+, Rending
+Power fist
+4
+3+
+5/7
+Brutal, Shock
+Power weapon
+5
+3+
+4/6
+Lethal 5+
+Relic lightning claws
+5
+3+
+4/6
+Ceaseless, Lethal 5+, Rending
+RULES CONTINUE ON OTHER SIDE
+40
+MURDERWING , CHAOS, HERETIC ASTARTES, LEADER, LORD

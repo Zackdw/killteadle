@@ -1,0 +1,38 @@
+APL
+WOUNDS
+SAVE
+MOVE
+NAVIS ARMSMAN
+2
+6"
+4+
+8
+NAME
+ATK
+HIT DMG
+WR
+Navis shotgun (close range)
+4
+3+
+3/3
+Range 6"
+Navis shotgun (long range)
+4
+5+
+1/2
+-
+Navis hatchet
+3
+4+
+3/4
+-
+Group Activation: Whenever this operative is expended, you
+must then activate one other ready friendly IMPERIAL NAVY
+BREACHER  ARMSMAN operative (if able) before your
+opponent activates. When that other operative is expended,
+your opponent then activates as normal (in other words, you
+cannot activate more than two operatives in succession with this
+rule). Ignore this rule when you are using the Breach and Clear
+faction rule.
+25
+IMPERIAL NAVY BREACHER , IMPERIUM, ARMSMAN

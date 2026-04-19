@@ -1,0 +1,40 @@
+APL
+WOUNDS
+SAVE
+MOVE
+KROOT TRACKER
+2
+6"
+5+
+8
+NAME
+ATK
+HIT DMG
+WR
+Kroot rifle
+4
+4+
+3/4
+-
+Blade
+3
+3+
+3/5
+-
+MARKED FOR THE HUNT
+1AP
+Remove your Pech’ra marker from the killzone (if any).
+Then place your Pech’ra marker visible to this operative, or
+on Vantage terrain of a terrain feature that’s visible to this
+operative. Whenever a friendly FARSTALKER KINBAND
+operative is shooting an enemy operative that has that marker
+within its control range, that friendly operative’s ranged
+weapons have the Seek Light weapon rule.
+At the start of this operative’s next activation or if it’s
+removed from the killzone (whichever comes first), remove
+your Pech’ra marker from the killzone.
+This operative cannot perform this action while within control
+range of an enemy operative.
+RULES CONTINUE ON OTHER SIDE
+28
+FARSTALKER KINBAND , T’AU EMPIRE, KROOT, TRACKER

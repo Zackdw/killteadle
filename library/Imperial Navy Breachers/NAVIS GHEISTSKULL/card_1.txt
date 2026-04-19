@@ -1,0 +1,35 @@
+APL
+WOUNDS
+SAVE
+MOVE
+NAVIS GHEISTSKULL
+2
+8"
+5+
+5
+Machine:
+Expendable: This operative is ignored for your opponent’s kill/elimination
+op (when it’s incapacitated, and when determining your starting number
+of operatives). It’s also ignored for victory conditions and scoring VPs if
+either require operatives to ‘escape’, ‘survive’ or be incapacitated by enemy
+operatives (if it escapes/survives/is incapacitated, determining how many
+operatives must escape/survive/be incapacitated, etc.).
+•  This operative cannot perform any actions other
+than Boost, Charge, Dash, Fall Back
+and Reposition.
+•  It cannot retaliate or assist in a fight.
+•  Whenever determining control of a marker, treat
+this operative’s APL stat as 1 lower. Note this
+isn’t a change to its APL stat, so any changes are
+cumulative with this.
+•  Whenever this operative has a Conceal order and
+is in cover, it cannot be selected as a valid target,
+taking precedence over all other rules (e.g. Seek,
+Vantage terrain) except being within 2".
+BOOST
+1AP
+Until the end of the activation, add 6" to this operative’s Move stat.
+This operative cannot perform this action more than once per battle, and
+cannot perform it during the first turning point.
+25
+IMPERIAL NAVY BREACHER , IMPERIUM, GHEISTSKULL

@@ -1,0 +1,38 @@
+APL
+WOUNDS
+SAVE
+MOVE
+KABALITE ELIXICANT
+2
+7"
+4+
+8
+NAME
+ATK
+HIT DMG
+WR
+Splinter rifle
+4
+3+
+2/4
+Lethal 5+
+Stim-needler
+4
+3+
+0/0
+Range 3", Lethal 3+, Stun
+Array of blades
+3
+3+
+3/4
+-
+Combat Drugs: At the end of the Select Operatives step, if this operative is selected for deployment, select one of the following
+COMBAT DRUG rules for friendly HAND OF THE ARCHON  operatives to have for the battle:
+•  Painbringer: Whenever an attack dice inflicts damage of 3 or more on this operative, roll one D6: on a 6, subtract 1 from that
+inflicted damage.
+•  Adrenalight: In the Ready step of each Strategy phase, you can select one friendly operative that has this COMBAT DRUG to gain
+one of your Pain tokens.
+•  Hypex: You can ignore any changes to this operative’s Move stat from being injured.
+RULES CONTINUE ON OTHER SIDE
+25
+HAND OF THE ARCHON , AELDARI, DRUKHARI, ELIXICANT

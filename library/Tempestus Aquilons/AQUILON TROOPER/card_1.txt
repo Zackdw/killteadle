@@ -1,0 +1,33 @@
+APL
+WOUNDS
+SAVE
+MOVE
+AQUILON TROOPER
+2
+6"
+4+
+8
+NAME
+ATK
+HIT DMG
+WR
+Hot‑shot lascarbine
+4
+3+
+3/4
+‑
+Fists
+3
+4+
+2/3
+‑
+Rapid Insertion: STRATEGIC GAMBIT in the first turning
+point. Each friendly TEMPESTUS AQUILON  TROOPER
+operative wholly within your drop zone can immediately perform
+a free Reposition action, but must end that move wholly within
+3" of your drop zone.
+Swift Landing: When this operative lands, you can set it up
+within 4" horizontally of one of your Drop markers, taking
+precedence over the normal distance requirement.
+28
+TEMPESTUS AQUILON , IMPERIUM, TROOPER

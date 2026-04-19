@@ -1,0 +1,34 @@
+APL
+WOUNDS
+SAVE
+MOVE
+WOLF SCOUT FROSTEYE
+3
+7"
+3+
+13
+NAME
+ATK
+HIT DMG
+WR
+Instigator bolt carbine (heavy)
+4
+2+
+3/4
+Heavy (Dash only), Piercing Crits 1, Silent
+Instigator bolt carbine (mobile)
+4
+3+
+3/4
+Piercing Crits 1, Silent
+Combat blade
+4
+3+
+4/5
+-
+Storm-veiled Execution: Whenever this operative is within your STORM:
+•  It can perform the Guard action regardless of the killzone (see close quarters rules, Kill Team Core Book).
+•  It can perform the Guard action while it has a Conceal order.
+RULES CONTINUE ON OTHER SIDE
+32
+WOLF SCOUT , IMPERIUM, ADEPTUS ASTARTES, SPACE WOLVES, FROSTEYE

@@ -1,0 +1,38 @@
+APL
+WOUNDS
+SAVE
+MOVE
+TRANSPECTRAL INTERFERENCE PATHFINDER
+2
+6"
+5+
+7
+NAME
+ATK
+HIT DMG
+WR
+Pulse carbine
+4
+4+
+4/5
+-
+Gun butt
+3
+5+
+2/3
+-
+Multi-Dimensional Vision: Whenever this operative
+is shooting, enemy operatives cannot be obscured.
+MARKERLIGHT 1AP
+SYSTEM JAM
+1AP
+See the Markerlights
+faction rule.
+Select one enemy operative visible to this
+operative. Until the end of that operative’s next
+activation, subtract 1 from its APL stat.
+This operative cannot perform this action while
+it has a Conceal order, or while within control
+range of an enemy operative.
+25
+PATHFINDER , T'AU EMPIRE, TRANSPECTRAL INTERFERENCE

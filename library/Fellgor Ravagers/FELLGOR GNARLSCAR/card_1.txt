@@ -1,0 +1,35 @@
+APL
+WOUNDS
+SAVE
+MOVE
+FELLGOR GNARLSCAR
+2
+6"
+5+
+10
+NAME
+ATK
+HIT DMG
+WR
+Autopistol
+4
+4+
+2/3
+Range 8"
+Bionic fist
+4
+3+
+4/5
+Brutal
+Sagacious: At the end of this operative’s
+activation, you can change its order.
+UNCOMPROMISING ATTACK
+1AP
+Perform a free Fight action with this operative, then perform a free Shoot action
+with this operative (or vice versa). This operative can perform that Shoot action
+while within control range of an enemy operative, but if it does, it can and must
+target an enemy operative within its control range (even if other friendly operatives
+are within that enemy operative’s control range). You can only select an autopistol
+for that Shoot action.
+32
+FELLGOR RAVAGER , CHAOS, GNARLSCAR

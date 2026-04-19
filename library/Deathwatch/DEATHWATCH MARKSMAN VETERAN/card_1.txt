@@ -1,0 +1,38 @@
+APL
+WOUNDS
+SAVE
+MOVE
+DEATHWATCH MARKSMAN VETERAN
+3
+6"
+3+
+15
+NAME
+ATK
+HIT DMG
+WR
+Stalker bolt rifle (mobile)
+4
+3+
+3/4
+-
+Stalker bolt rifle (heavy)
+4
+2+
+3/5
+Heavy (Dash only), Lethal 5+, Piercing Crits 1
+Fists
+4
+3+
+3/4
+-
+Vigilant Marksman: This operative can perform the Guard
+action during its activation regardless of the killzone (see close
+quarters rules, Kill Team: Tomb World).
+When using the close quarters rules, once per turning point, after
+this operative performs a free Shoot action on guard, it can
+immediately perform a free Guard action. However, if it does, it
+cannot counteract during that turning point (nor Guard twice if
+it’s counteracted).
+32
+DEATHWATCH , IMPERIUM, ADEPTUS ASTARTES, MARKSMAN

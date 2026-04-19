@@ -1,0 +1,14 @@
+APL
+WOUNDS
+SAVE
+MOVE
+ARBITES LEASHMASTER
+2
+6"
+4+
+8
+R-VR COMMAND
+0AP
+Select one friendly EXACTION SQUAD  R-VR
+CYBER-MASTIFF operative and change one of its
+attack patterns.

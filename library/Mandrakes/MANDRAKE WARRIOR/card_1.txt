@@ -1,0 +1,28 @@
+APL
+WOUNDS
+SAVE
+MOVE
+MANDRAKE WARRIOR
+2
+7"
+5+
+8
+NAME
+ATK
+HIT DMG
+WR
+Baleblast
+4
+3+
+3/4
+Soulstrike*
+Glimmersteel blade
+4
+3+
+4/5
+Lethal 5+
+Shadow Warrior: Whenever this operative is WITHIN
+SHADOW, add 1 to the Critical Dmg stat of its
+glimmersteel blade.
+28
+MANDRAKE , AELDARI, DRUKHARI, WARRIOR

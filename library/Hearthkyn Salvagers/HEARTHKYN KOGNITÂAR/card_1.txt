@@ -1,0 +1,36 @@
+APL
+WOUNDS
+SAVE
+MOVE
+HEARTHKYN KOGNITÂAR
+2
+5"
+3+
+8
+NAME
+ATK
+HIT DMG
+WR
+Autoch-pattern bolter
+4
+4+
+3/4
+Accurate 1
+Ion blaster
+4
+4+
+3/4
+Piercing Crits 1
+Fists
+3
+4+
+2/3
+-
+Tactician: STRATEGIC GAMBIT if this operative is in the killzone. Place either your Attack or Defence marker in the killzone.
+Whenever a friendly HEARTHKYN SALVAGER  operative is shooting against, fighting against or retaliating against an enemy
+operative that’s within 3" of your Attack marker, that friendly operative’s weapons have the Balanced weapon rule. Whenever an
+enemy operative is shooting a friendly HEARTHKYN SALVAGER  operative that’s within 3" of your Defence marker, you can
+re-roll one of your defence dice. In the Ready step of the next Strategy phase, remove that marker.
+RULES CONTINUE ON OTHER SIDE
+28
+HEARTHKYN SALVAGER , LEAGUES OF VOTANN, KOGNITÂAR

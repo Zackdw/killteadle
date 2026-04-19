@@ -1,0 +1,34 @@
+APL
+WOUNDS
+SAVE
+MOVE
+LEGIONARY SHRIVETALON
+3
+6"
+3+
+14
+NAME
+ATK
+HIT DMG
+WR
+Bolt pistol
+4
+3+
+3/4
+Range 8"
+Flensing blades
+5
+3+
+3/5
+Lethal 5+
+Vicious Reflexes: Whenever this operative is retaliating, you
+resolve the first attack dice (i.e. defender instead of attacker).
+Horrifying Dismemberment: Whenever this operative
+incapacitates an enemy operative while fighting or retaliating,
+select one other enemy operative visible to and within 3" of
+either this operative or the incapacitated enemy operative.
+Subtract 1 from that enemy operative’s APL stat until the end of
+its next activation.
+RULES CONTINUE ON OTHER SIDE
+32
+LEGIONARY , CHAOS, HERETIC ASTARTES, SHRIVETALON

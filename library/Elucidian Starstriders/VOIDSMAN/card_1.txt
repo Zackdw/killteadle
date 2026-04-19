@@ -1,0 +1,39 @@
+APL
+WOUNDS
+SAVE
+MOVE
+VOIDSMAN
+2
+6"
+5+
+7
+NAME
+ATK
+HIT DMG
+WR
+Lasgun
+4
+4+
+2/3
+-
+Rotor cannon (focused)
+5
+4+
+4/5
+Heavy (Dash only), Rending
+Rotor cannon (sweeping)
+4
+4+
+4/5
+Heavy (Dash only), Rending, Torrent 1"
+Gun butt
+3
+4+
+2/3
+-
+Crewmen: Once per turning point, whenever you would counteract, if you haven't used a PRIVATEER SUPPORT ASSET
+during this turning point, you can use this rule. If you do, you can counteract with one friendly ELUCIDIAN STARSTRIDER
+VOIDSMAN operative that has a Conceal order, but during that counteraction you cannot perform any actions other than Shoot,
+and you must use a PRIVATEER SUPPORT ASSET to do so.
+25
+ELUCIDIAN STARSTRIDER , IMPERIUM, NAVIS, VOIDSMAN

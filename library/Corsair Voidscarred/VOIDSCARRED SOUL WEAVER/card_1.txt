@@ -1,0 +1,40 @@
+APL
+WOUNDS
+SAVE
+MOVE
+VOIDSCARRED SOUL WEAVER
+2
+7"
+4+
+8
+NAME
+ATK
+HIT DMG
+WR
+Shuriken pistol
+4
+3+
+3/4
+Range 8", Rending
+Power weapon
+4
+3+
+4/6
+Lethal 5+
+SOUL CHANNEL
+1AP
+SOUL HEAL
+1AP
+PSYCHIC. Select one other friendly CORSAIR
+VOIDSCARRED  operative visible to and within 6" of this
+operative. Until the end of that operative’s next activation,
+add 1 to its APL stat.
+PSYCHIC. Select one friendly CORSAIR
+VOIDSCARRED  operative visible to and within 6" of this
+operative. That operative regains up to 2D3 lost wounds.
+This operative cannot perform this action while within control
+range of an enemy operative.
+This operative cannot perform this action while within control
+range of an enemy operative.
+28
+CORSAIR VOIDSCARRED , AELDARI, ANHRATHE, PSYKER, MEDIC, SOUL WEAVER

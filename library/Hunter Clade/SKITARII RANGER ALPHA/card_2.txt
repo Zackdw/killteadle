@@ -1,0 +1,20 @@
+APL
+WOUNDS
+SAVE
+MOVE
+SKITARII RANGER ALPHA
+2
+6"
+4+
+8
+Canticle of Elimination: Whenever a friendly
+HUNTER CLADE  RANGER operative is within 3" of this
+operative, that friendly operative's ranged weapons have the
+Punishing weapon rule.
+Control Protocol: You can use the Command Override firefight
+ploy for 0CP if the specified friendly HUNTER CLADE
+operative is visible to this operative.
+Targeting Protocol: Whenever this operative is shooting, if it
+hasn’t moved during the activation, or if it’s a counteraction,
+ranged weapons on its datacard have the Lethal 5+ weapon rule.
+Note this operative isn’t restricted from moving after shooting.

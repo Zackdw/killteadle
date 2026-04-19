@@ -1,0 +1,56 @@
+APL
+WOUNDS
+SAVE
+MOVE
+HEARTHKYN GUNNER
+2
+5"
+3+
+8
+NAME
+ATK
+HIT DMG
+WR
+EtaCarn plasma beamer
+4
+4+
+5/6
+Piercing 1, Beam*
+HYLas auto rifle
+4
+4+
+4/5
+Ceaseless, Rending
+HYLas rotary cannon (focused)
+5
+4+
+4/5
+Ceaseless, Heavy (Reposition only), Saturate
+HYLas rotary cannon (sweeping) 4
+4+
+4/5
+Ceaseless, Heavy (Reposition only), Saturate,
+Torrent 1"
+L7 missile launcher (blast)
+4
+4+
+3/5
+Blast 2"
+L7 missile launcher (focused)
+4
+4+
+5/6
+Piercing 1
+Magna rail rifle
+4
+4+
+4/2
+Devastating 3, Heavy (Dash only), Piercing 2
+Fists
+3
+4+
+2/3
+-
+RULES CONTINUE ON OTHER SIDE
+28
+HEARTHKYN SALVAGER , LEAGUES OF VOTANN, GUNNER

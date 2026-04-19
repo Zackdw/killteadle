@@ -1,0 +1,20 @@
+APL
+WOUNDS
+SAVE
+MOVE
+MYSTIC AGENT
+2
+6"
+5+
+7
+SCRY
+1AP
+PSYCHIC. Select one friendly INQUISITORIAL AGENT  operative within 6" of this operative, then select one of the
+following effects to last until the start of this operative’s next activation, until it’s incapacitated or until it performs this action
+again (whichever comes first):
+•  Guidance: PSYCHIC. Whenever the selected operative is shooting, fighting or retaliating, in the Roll Attack Dice step, you
+can retain one of your fails as a normal success instead of discarding it, or retain one of your normal successes as a critical
+success instead.
+•  Protection: PSYCHIC. Whenever an operative is shooting the selected operative, in the Roll Defence Dice step, you can retain one
+of your fails as a normal success instead of discarding it, or retain one of your normal successes as a critical success instead.
+This operative cannot perform this action while within control range of an enemy operative.

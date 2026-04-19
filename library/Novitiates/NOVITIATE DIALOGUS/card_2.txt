@@ -1,0 +1,17 @@
+APL
+WOUNDS
+SAVE
+MOVE
+NOVITIATE DIALOGUS
+2
+6"
+4+
+7
+AUTO-BROADCASTER
+0AP
+If your Auto-broadcaster marker isn’t in the killzone, place it within 8" horizontally of this operative; otherwise, move your Auto-
+broadcaster marker up to 8" horizontally. If this operative is removed from the killzone, remove your Auto-broadcaster marker
+from the killzone.
+Whenever an enemy operative within 3" of your Auto-broadcaster marker is shooting, fighting or retaliating, your opponent cannot
+re-roll their attack dice.
+This operative cannot perform this action while within control range of an enemy operative.

@@ -1,0 +1,41 @@
+APL
+WOUNDS
+SAVE
+MOVE
+NAVIS ENDURANT
+2
+4"
+2+
+11
+NAME
+ATK
+HIT DMG
+WR
+Navis heavy shotgun (close range)
+4
+3+
+3/3
+Range 6", Relentless
+Navis heavy shotgun (long range)
+4
+5+
+1/2
+Relentless
+Shield bash
+3
+4+
+1/2
+Brutal, Shield*
+Breachwall: Whenever your opponent is selecting a valid
+target, they cannot select another friendly IMPERIAL NAVY
+BREACHER  operative whose base is touching this operative’s
+if this operative has an Engage order and is intervening. This rule
+has no effect if more than one other friendly operative’s base is
+touching this operative’s.
+*Shield: Whenever this operative is fighting or retaliating with
+this weapon, each of your blocks can be allocated to block two
+unresolved successes (instead of one).
+Disengage: This operative can perform the Fall Back action
+for 1 less AP.
+28
+IMPERIAL NAVY BREACHER , IMPERIUM, ENDURANT

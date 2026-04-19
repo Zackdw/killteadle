@@ -1,0 +1,38 @@
+APL
+WOUNDS
+SAVE
+MOVE
+BLOATSPAWN
+2
+5"
+5+
+20
+NAME
+ATK
+HIT DMG
+WR
+Mutant tentacles
+5
+4+
+3/4
+Range 3", Torrent 1"
+Mutant claw & tentacles
+6
+4+
+3/4
+-
+(slashing)
+Mutant claw & tentacles
+4
+4+
+3/4
+Swipe*
+(swiping)
+*Swipe: Whenever this operative performs the Fight action and you select this weapon profile, if it isn't incapacitated, it can
+immediately perform a free Fight action afterwards, but you must select this weapon profile and it can only fight against each enemy
+operative within its control range once per activation or counteraction using this weapon profile. This takes precedence over action
+restrictions, and you can continue to perform free Fight actions until this operative is incapacitated or has fought against every
+enemy operative within its control range.
+RULES CONTINUE ON OTHER SIDE
+40
+GELLERPOX INFECTED , CHAOS, NIGHTMARE HULK, BLOATSPAWN

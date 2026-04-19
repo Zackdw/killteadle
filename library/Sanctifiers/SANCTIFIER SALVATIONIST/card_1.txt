@@ -1,0 +1,31 @@
+APL
+WOUNDS
+SAVE
+MOVE
+SANCTIFIER SALVATIONIST
+2
+6"
+5+
+7
+NAME
+A
+HIT
+D
+WR
+Soulstave
+3
+5+
+2/3
+-
+Conversion Field: Whenever an operative more than 6" from
+this operative is shooting a friendly SANCTIFIER  operative
+within 6" of this operative, improve that friendly operative’s Save
+stat by 1.
+MEDIKIT
+1AP
+Select one friendly SANCTIFIER  operative within this
+operative’s control range to regain up to 2D3 lost wounds.
+This operative cannot perform this action while within control
+range of an enemy operative.
+25
+SANCTIFIER , IMPERIUM, ADEPTUS MINISTORUM, MEDIC, SALVATIONIST

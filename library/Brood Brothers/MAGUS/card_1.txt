@@ -1,0 +1,36 @@
+APL
+WOUNDS
+SAVE
+MOVE
+MAGUS
+3
+6"
+4+
+9
+NAME
+ATK
+HIT DMG
+WR
+Autopistol
+4
+4+
+2/3
+Range 8"
+Bio dagger
+2
+4+
+3/6
+Lethal 4+
+Force stave
+4
+4+
+4/6
+PSYCHIC, Shock
+Spiritual Leader: STRATEGIC GAMBIT if this operative is in the killzone. Select one of the following for friendly BROOD
+BROTHER  operatives to have until the end of the turning point or until this operative is incapacitated (whichever comes first):
+•  Whenever an operative is shooting a friendly BROOD BROTHER  operative, ignore the Piercing weapon rule.
+•  You can ignore any changes to friendly BROOD BROTHER  operatives’ stats from being injured (including their weapons’ stats).
+•  You can ignore any changes to the APL stat of friendly BROOD BROTHER  operatives.
+RULES CONTINUE ON OTHER SIDE
+32
+BROOD BROTHER , TYRANID, GENESTEALER CULT, BROODCOVEN, PSYKER, LEADER, MAGUS

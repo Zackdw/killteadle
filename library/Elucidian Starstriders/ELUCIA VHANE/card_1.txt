@@ -1,0 +1,43 @@
+APL
+WOUNDS
+SAVE
+MOVE
+ELUCIA VHANE
+3
+6"
+4+
+8
+NAME
+ATK
+HIT DMG
+WR
+Heirloom relic pistol
+4
+3+
+4/5
+Range 8", Piercing Crits 1, Seek Light
+Monomolecular cane-rapier
+4
+3+
+3/6
+Lethal 5+
+Digital Lasers: Whenever this operative performs the Fight
+action, at the start of the Roll Attack Dice step, you can use
+this rule. If you do, inflict 1 damage on the enemy operative in
+that sequence.
+Disruption Field: Whenever an operative is shooting this
+operative, ignore the Piercing weapon rule.
+Reputation to Maintain: The first time this operative
+incapacitates an enemy operative during the battle, you can
+either gain 1 additional CP or use an additional WARRANT OF
+TRADE rule (up to five uses per battle, instead of four). Note
+that you still cannot use the same WARRANT OF TRADE rule
+more than once per battle.
+Merciless: Whenever this operative is shooting against, fighting
+against or retaliating against an enemy operative that was
+already wounded when the action started, this operative's
+weapons have the Balanced weapon rule; if the weapon already
+has that weapon rule, it has the Ceaseless weapon rule instead
+of Balanced.
+25
+ELUCIDIAN STARSTRIDER , IMPERIUM, LEADER, ELUCIA VHANE

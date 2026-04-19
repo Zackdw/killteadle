@@ -1,0 +1,16 @@
+APL
+WOUNDS
+SAVE
+MOVE
+BATTLECLADE SERVITOR UNDERSEER
+3
+6"
+3+
+9
+NETWORK OVERRIDE
+1AP
+SUPPORT. Select one friendly BATTLECLADE  SERVITOR operative within 6" of either this operative or a friendly
+BATTLECLADE  AUTO-PROXY operative to immediately NETWORK COUNTERACT (you don’t have to TRANSFER
+POWER to do so). Continue this operative’s activation after doing so. For the purposes of the Comms Device universal
+equipment, the operative the distance is being determined from must control that marker.
+This operative cannot perform this action while within control range of an enemy operative.

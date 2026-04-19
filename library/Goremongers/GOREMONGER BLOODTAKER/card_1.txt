@@ -1,0 +1,40 @@
+APL
+WOUNDS
+SAVE
+MOVE
+GOREMONGER BLOODTAKER
+2
+7"
+5+
+10
+NAME
+A
+HIT
+D
+WR
+Autopistol
+4
+4+
+2/3
+Range 8"
+Ritual blade
+4
+3+
+3/5
+Ritual*
+*Ritual: Whenever this operative is using this weapon, the
+first time you inflict damage on an operative within its control
+range during that sequence, you can increase this operative’s
+GORE TANK. Note this is cumulative with the normal rules for
+increasing its GORE TANK (i.e. if it incapacitates an operative
+within its control range).
+TRANSFUSION RITUAL
+1AP
+Decrease this operative’s GORE TANK. Instead of using a
+SANGUAVITAE rule, you can increase the GORE TANK
+of one other friendly GOREMONGER  operative within 8"
+of this operative.
+This operative cannot perform this action while within control
+range of an enemy operative, or if its GORE TANK is empty.
+32
+GOREMONGER , CHAOS, BLOODTAKER

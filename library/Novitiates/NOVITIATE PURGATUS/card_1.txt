@@ -1,0 +1,28 @@
+APL
+WOUNDS
+SAVE
+MOVE
+NOVITIATE PURGATUS
+2
+6"
+4+
+7
+NAME
+ATK
+HIT DMG
+WR
+Ministorum flamer
+4
+2+
+4/4
+Range 8", Saturate, Torrent 2"
+Gun butt
+3
+4+
+2/3
+-
+Purge with Flame: Once per turning point, you can use the
+Inferno firefight ploy for 0CP if this is the specified friendly
+NOVITIATE  operative.
+28
+NOVITIATE , IMPERIUM, ADEPTA SORORITAS, PURGATUS

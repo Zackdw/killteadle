@@ -1,0 +1,42 @@
+APL
+WOUNDS
+SAVE
+MOVE
+HEARTHKYN DÔZR
+2
+5"
+3+
+8
+NAME
+ATK
+HIT DMG
+WR
+Autoch-pattern bolt pistol
+4
+4+
+3/4
+Range 8", Accurate 1
+Concussion knux
+4
+3+
+4/4
+Ceaseless, Lethal 5+, Shock
+Brawler: Whenever this operative is
+fighting or retaliating:
+KNUX SMASH
+1AP
+Select one enemy operative within this operative’s control range. You can move that
+enemy operative up to 3" to a location it can be placed. Then inflict D3+1 damage on
+it (even if you don’t move it); if the D3 result is a 3, also subtract 1 from that enemy
+operative's APL stat until the end of its next activation. This operative can then
+immediately perform a free Charge action (even if it’s already performed the Charge
+action during that activation), but cannot move more than 3" during that action.
+•  Enemy operatives cannot assist.
+•  If it's incapacitated, you can strike
+the enemy operative in that sequence
+with one of your unresolved successes
+before it’s removed from the killzone.
+This operative cannot perform this action unless an enemy operative is within its
+control range.
+28
+HEARTHKYN SALVAGER , LEAGUES OF VOTANN, DÔZR

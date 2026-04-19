@@ -1,0 +1,43 @@
+APL
+WOUNDS
+SAVE
+MOVE
+LEGIONARY CHOSEN
+3
+6"
+3+
+15
+NAME
+ATK
+HIT DMG
+WR
+Plasma pistol (standard)
+4
+3+
+3/5
+Range 8", Piercing 1
+Plasma pistol (supercharge)
+4
+3+
+4/5
+Range 8", Hot, Lethal 5+, Piercing 1
+Tainted bolt pistol
+4
+3+
+3/5
+Range 8", Rending
+Daemon blade
+5
+3+
+4/7
+Lethal 5+
+Daemonic Aura: Whenever an enemy operative performs the
+Fall Back action while within control range of this operative,
+you can use this rule. If you do, roll one D6: on a 3+, that enemy
+operative cannot perform that action during that activation/
+counteraction (the AP spent on it is refunded).
+Soul Gorge: After this operative fights or retaliates, if it isn’t
+incapacitated, but it incapacitated an enemy operative during
+that sequence, it regains up to D3+1 lost wounds.
+32
+LEGIONARY , CHAOS, HERETIC ASTARTES, LEADER, CHOSEN

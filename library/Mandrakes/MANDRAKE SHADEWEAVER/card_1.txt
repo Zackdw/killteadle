@@ -1,0 +1,33 @@
+APL
+WOUNDS
+SAVE
+MOVE
+MANDRAKE SHADEWEAVER
+2
+7"
+5+
+8
+NAME
+ATK
+HIT DMG
+WR
+Baleblast
+4
+3+
+3/4
+Soulstrike*
+Glimmersteel blade
+4
+3+
+4/5
+Lethal 5+
+Shadow Portal: Whenever this operative performs the Reposition action using a SHADOW PASSAGE, you can use this rule.
+If you do, remove your Shadow Portal markers from the killzone (if any), then place one of your Shadow Portal markers within this
+operative’s control range before it’s removed and one within its control range after it’s set up.
+Each friendly MANDRAKE  operative can use a SHADOW PASSAGE each turning point (this takes precedence over one
+operative once per turning point) if one of your Shadow Portal markers is within that operative’s control range when it’s removed,
+and the other is when it’s set up. Note that friendly operatives can do so even if this operative has been incapacitated, and doing so
+doesn’t prevent one operative from using a SHADOW PASSAGE in the normal manner.
+RULES CONTINUE ON OTHER SIDE
+28
+MANDRAKE , AELDARI, DRUKHARI, SHADEWEAVER

@@ -1,0 +1,36 @@
+APL
+WOUNDS
+SAVE
+MOVE
+TANKBUSTA GUNNER
+2
+6"
+4+
+12
+NAME
+ATK
+HIT DMG
+WR
+’Eavy rokkit launcha
+6
+4+
+4/5
+Blast 1", Heavy (Dash only)
+Rokkit launcha
+6
+5+
+4/5
+Blast 1"
+Fists
+3
+3+
+3/4
+-
+Kompetitive Streak: Once per Shoot action, if this operative
+shoots an enemy operative that another friendly operative has
+already shot during this turning point, you gain 1 Wrecka point.
+Determine this when you select a valid target, but you can
+include any secondary targets when doing so (e.g. from the Blast
+weapon rule).
+32
+WRECKA KREW , ORK, TANKBUSTA, GUNNER

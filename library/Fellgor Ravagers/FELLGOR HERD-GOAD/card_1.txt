@@ -1,0 +1,45 @@
+APL
+WOUNDS
+SAVE
+MOVE
+FELLGOR HERD-GOAD
+2
+6"
+5+
+10
+NAME
+ATK
+HIT DMG
+WR
+Autopistol
+4
+4+
+2/3
+Range 8"
+Crackthorn whip (ranged)
+4
+2+
+2/3
+Range 3", Lethal 4+, Stun
+Crackthorn whip (melee)
+4
+3+
+2/3
+Lethal 4+, Shock
+Whip Control: Whenever an enemy operative is visible to and
+within 3" of this operative, if this operative isn’t within control
+range of any other enemy operatives:
+INCITE FURY
+1AP
+SUPPORT. Select one other friendly FELLGOR
+RAVAGER  operative (excluding SHAMAN or
+IRONHORN) visible to and within 3" of this operative. Until
+the end of that operative’s next activation, add 1 to its APL stat.
+•  Subtract 1 from the Atk stat of that enemy operative’s melee
+weapons (to a minimum of 1).
+•  Your opponent must spend 1 additional AP for that enemy
+operative to perform the Fall Back action.
+This operative cannot perform this action while within control
+range of an enemy operative.
+32
+FELLGOR RAVAGER , CHAOS, HERD-GOAD

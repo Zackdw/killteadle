@@ -1,0 +1,47 @@
+APL
+WOUNDS
+SAVE
+MOVE
+SORCERER OF WARPFIRE
+3
+6"
+3+
+15
+NAME
+ATK
+HIT DMG
+WR
+Firestorm
+5
+4+
+2/3
+PSYCHIC, Saturate, Seek Light, Torrent 2"
+Inferno bolt pistol
+4
+3+
+3/4
+Range 8", Piercing 1
+Mindburn
+5
+4+
+1/1
+PSYCHIC, Lethal 5+, Saturate, Seek Light,
+Mindburn*
+Warpflame pistol
+4
+2+
+3/3
+Range 6", Piercing 1, Torrent 1"
+Force stave
+4
+3+
+4/6
+PSYCHIC, Shock
+Prosperine khopesh
+5
+3+
+4/6
+Lethal 5+
+RULES CONTINUE ON OTHER SIDE
+32
+WARPCOVEN , CHAOS, HERETIC ASTARTES, PSYKER, SORCERER, WARPFIRE

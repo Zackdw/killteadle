@@ -1,0 +1,47 @@
+APL
+WOUNDS
+SAVE
+MOVE
+VOIDSCARRED FELARCH
+2
+7"
+4+
+9
+NAME
+ATK
+HIT DMG
+WR
+Neuro disruptor
+4
+3+
+4/5
+Range 8", Piercing 1, Stun
+Shuriken pistol
+4
+3+
+3/4
+Range 8", Rending
+Shuriken rifle
+4
+3+
+3/4
+Rending
+Power weapon
+4
+3+
+4/6
+Lethal 5+
+Veteran Raider: This operative
+can perform a 1AP action for
+free during their activation
+as a result of the Aeldari
+Raiders rule (instead of the
+Dash action).
+One Step Ahead: Once per battle, after an enemy operative performs an action, if this operative is
+ready, you can use this rule. If you do, roll one D6: if the result is higher than that enemy operative’s
+APL stat, you can interrupt and immediately perform either a free Shoot or a free Fight action with
+this operative, but you cannot select any other enemy operative as a valid target or to fight against
+during that action (note that secondary targets from the Blast weapon rule can still be targeted). After
+you perform that action, subtract 1 from this operative’s APL stat until the end of its next activation.
+28
+CORSAIR VOIDSCARRED , AELDARI, ANHRATHE, LEADER, FELARCH

@@ -1,0 +1,38 @@
+APL
+WOUNDS
+SAVE
+MOVE
+MURDERWING RAPTOR
+3
+6"
+3+
+14
+NAME
+ATK
+HIT DMG
+WR
+Bolt pistol
+4
+3+
+3/4
+Range 8"
+Plasma pistol (standard)
+4
+3+
+3/5
+Range 8", Piercing 1
+Plasma pistol (supercharge)
+4
+3+
+4/5
+Range 8", Hot, Lethal 5+, Piercing 1
+Chainsword
+5
+3+
+4/5
+-
+Thrill of Flight: Whenever this operative does a BOOST during its activation:
+•  You can remove any changes to its APL stat.
+•  You can ignore any changes to its stats from being injured (including its weapons’ stats) until the end of the activation.
+32
+MURDERWING , CHAOS, HERETIC ASTARTES, RAPTOR

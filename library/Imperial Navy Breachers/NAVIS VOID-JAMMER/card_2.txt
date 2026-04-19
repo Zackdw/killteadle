@@ -1,0 +1,20 @@
+APL
+WOUNDS
+SAVE
+MOVE
+NAVIS VOID-JAMMER
+2
+6"
+4+
+8
+INTERFERENCE PULSE
+1AP
+Select one enemy operative visible to and within 8" of a
+friendly GHEISTSKULL operative. Roll one D6, adding
+1 to the result if that enemy operative is a valid target for
+that friendly GHEISTSKULL operative: on a 3+, subtract
+1 from that enemy operative’s APL stat until the end of its
+next activation.
+This operative cannot perform this action while within
+control range of an enemy operative, or if a friendly
+GHEISTSKULL operative isn’t in the killzone.

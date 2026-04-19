@@ -1,0 +1,32 @@
+APL
+WOUNDS
+SAVE
+MOVE
+KASRKIN RECON-TROOPER
+2
+6"
+4+
+8
+NAME
+ATK
+HIT DMG
+WR
+Hot-shot lasgun
+4
+3+
+3/4
+-
+Gun butt
+3
+4+
+2/3
+-
+Reconnoitre Killzone: The Relocate strategy ploy costs you 0CP if this operative is the selected friendly KASRKIN  operative.
+AUSPEX SCAN
+1AP
+Until the start of this operative’s next activation or until it’s incapacitated (whichever comes first), whenever an enemy operative
+is within 8" of this operative, that enemy operative is being scanned. Whenever a friendly KASRKIN  operative is shooting an
+enemy operative that’s being scanned, that enemy operative cannot be obscured
+This operative cannot perform this action while within control range of an enemy operative.
+28
+KASRKIN , IMPERIUM, ASTRA MILITARUM, RECON-TROOPER

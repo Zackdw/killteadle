@@ -1,0 +1,41 @@
+APL
+WOUNDS
+SAVE
+MOVE
+INSIDIANT RELIQUARIUS
+2
+6"
+3+
+9
+NAME
+ATK
+HIT DMG
+WR
+Bolt pistol
+4
+3+
+3/4
+Range 8"
+Condemnor stakethrower
+4
+3+
+2/2
+Devastating 1, Piercing Crits 1, Silent,
+Anti-PSYKER*
+Gun butt
+3
+3+
+2/3
+-
+Simulacrum Nullificatus Icon Bearer: Whenever determining
+control of a marker, treat the total APL stat of enemy operatives
+that contest it as 1 lower if at least one of those enemy
+operatives is within 3" of this operative. Note this isn’t a change
+to the APL stat, so any changes are cumulative with this.
+Devotion: At the end of each of this operative’s activations,
+if it’s INSPIRING and it controls an objective marker or
+one of your mission markers, one friendly CELESTIAN
+INSIDIANT  operative this operative is visible to and within 6"
+of becomes INSPIRING.
+32
+CELESTIAN INSIDIANT , IMPERIUM, ADEPTA SORORITAS, RELIQUARIUS

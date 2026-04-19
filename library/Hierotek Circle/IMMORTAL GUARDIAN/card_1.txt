@@ -1,0 +1,34 @@
+APL
+WOUNDS
+SAVE
+MOVE
+IMMORTAL GUARDIAN
+2
+5"
+3+
+10
+NAME
+ATK
+HIT DMG
+WR
+Gauss blaster
+4
+3+
+4/5
+Piercing 1
+Tesla carbine
+5
+3+
+3/3
+2" Devastating 1
+Bayonet
+4
+3+
+3/4
+-
+Steadfast: Whenever determining control of a marker, you
+can treat this operative’s APL stat as 3. If you do, this takes
+precedence over all other rules, meaning any changes to its APL
+stat are ignored for this.
+32
+HIEROTEK CIRCLE , NECRON, IMMORTAL, GUARDIAN

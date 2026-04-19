@@ -1,0 +1,36 @@
+APL
+WOUNDS
+SAVE
+MOVE
+NOVITIATE RELIQUARIUS
+2
+6"
+4+
+7
+NAME
+ATK
+HIT DMG
+WR
+Autopistol
+4
+4+
+2/3
+Range 8"
+Gun butt
+3
+4+
+2/3
+-
+Icon Bearer: Whenever determining
+control of a marker, treat this operative’s
+APL stat as 1 higher. Note this isn’t a
+change to its APL stat, so any changes are
+cumulative with this.
+RAISE ICON
+1AP
+You gain 1 Faith point. If this operative controls an objective marker, you also gain a
+number of Faith points equal to the turning point number.
+This operative cannot perform this action more than once per turning point, and
+cannot perform it while within control range of an enemy operative.
+28
+NOVITIATE , IMPERIUM, ADEPTA SORORITAS, RELIQUARIUS

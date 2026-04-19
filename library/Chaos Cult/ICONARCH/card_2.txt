@@ -1,0 +1,24 @@
+APL
+WOUNDS
+SAVE
+MOVE
+ICONARCH
+2
+6"
+5+
+8
+RUINOUS ICON
+1AP
+PSYCHIC. Select one of the following effects to last
+until the start of this operative’s next activation, until
+it’s incapacitated or until it performs this action again
+(whichever comes first):
+This operative cannot perform this action while within control
+range of an enemy operative.
+•  Invigoration: PSYCHIC. Whenever a friendly CHAOS
+CULT  operative is within 4" of this operative, Normal
+and Critical Dmg of 4 or more inflicts 1 less damage on
+that operative.
+•  Deterioration: PSYCHIC. Whenever an enemy
+operative is within 4" of this operative, Normal and Critical
+Dmg inflicts 1 more damage on that operative.

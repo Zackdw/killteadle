@@ -1,0 +1,24 @@
+APL
+WOUNDS
+SAVE
+MOVE
+VOIDSCARRED SHADE RUNNER
+2
+7"
+4+
+8
+Slicing Attack: Whenever this operative performs the
+Reposition action with a warp jump (see other side of card),
+you can use this rule. If you do, after it moves, draw an imaginary
+line 1mm in diameter and up to 7" long between it and its
+previous location. Note this doesn’t have to be a straight line.
+Inflict D3+2 damage on one enemy operative that line crosses.
+You cannot inflict damage on an enemy operative that was not
+visible to this operative at the start of that action. A 28mm round
+marker can be temporarily placed underneath this operative
+before it moves to help determine this.
+Enemy operative
+Shade Runner
+previous location
+Up to 7"
+Shade Runner

@@ -1,0 +1,43 @@
+APL
+WOUNDS
+SAVE
+MOVE
+DEATHWATCH BLADEMASTER VETERAN
+3
+6"
+3+
+15
+NAME
+ATK
+HIT DMG
+WR
+Special issue bolt pistol
+4
+3+
+3/4
+Range 8", Piercing 1
+Xenophase blade (duel)
+5
+3+
+4/6
+Brutal, Lethal 5+
+Xenophase blade (phase sweep) 4
+3+
+4/6
+Brutal, Lethal 5+, Phase Sweep*
+*Phase Sweep: Whenever this operative performs the Fight
+action with this weapon profile, if it isn't incapacitated, it can
+immediately perform a free Fight action afterwards, but you
+must select this weapon profile and it can only fight against each
+enemy operative within its control range once per activation or
+counteraction using this weapon profile. This takes precedence
+over action restrictions, and you can continue to perform free
+Fight actions until this operative is incapacitated or has fought
+against every enemy operative within its control range.
+Adaptive Swordsmanship: You can ignore any changes to the Hit
+stat of this operative’s xenophase blade. Whenever this operative
+is fighting or retaliating, you can resolve one of your successes
+before the normal order. If you do, that success must be used
+to block.
+32
+DEATHWATCH , IMPERIUM, ADEPTUS ASTARTES, BLADEMASTER

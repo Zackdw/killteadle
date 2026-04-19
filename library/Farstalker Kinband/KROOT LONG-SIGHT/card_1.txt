@@ -1,0 +1,39 @@
+APL
+WOUNDS
+SAVE
+MOVE
+KROOT LONG-SIGHT
+2
+6"
+5+
+8
+NAME
+ATK
+HIT DMG
+WR
+Kroot hunting rifle (concealed)
+4
+2+
+3/3
+Heavy, Devastating 3, Silent,
+Concealed Position*
+Kroot hunting rifle (mobile)
+4
+3+
+3/4
+-
+Kroot hunting rifle (stationary)
+4
+2+
+3/3
+Heavy, Devastating 3
+Blade
+3
+3+
+3/5
+-
+*Concealed Position: This operative can only use this weapon
+the first time it’s performing the Shoot action during the battle.
+RULES CONTINUE ON OTHER SIDE
+28
+FARSTALKER KINBAND , T’AU EMPIRE, KROOT, LONG-SIGHT

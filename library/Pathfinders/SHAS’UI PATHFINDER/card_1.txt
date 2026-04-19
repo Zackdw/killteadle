@@ -1,0 +1,37 @@
+APL
+WOUNDS
+SAVE
+MOVE
+SHAS’UI PATHFINDER
+2
+6"
+5+
+8
+NAME
+ATK
+HIT DMG
+WR
+Pulse carbine
+4
+3+
+4/5
+-
+Gun butt
+3
+4+
+2/3
+-
+Art of War: STRATEGIC GAMBIT if this operative is in the
+killzone. Select one of the following and apply its rules until the
+end of the turning point. You cannot select each option more
+than once per battle:
+MARKERLIGHT
+1AP
+See the Markerlights faction rule.
+•  Mont’ka: Add 1" to the Move stat of friendly
+PATHFINDER  operatives.
+•  Kauyon: Friendly PATHFINDER  operatives can perform a
+free Markerlight action during their activation if they have
+a Conceal order.
+25
+PATHFINDER , T'AU EMPIRE, LEADER, SHAS’UI

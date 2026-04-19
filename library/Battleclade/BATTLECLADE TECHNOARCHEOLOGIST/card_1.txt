@@ -1,0 +1,44 @@
+APL
+WOUNDS
+SAVE
+MOVE
+BATTLECLADE TECHNOARCHEOLOGIST
+3
+6"
+3+
+9
+NAME
+ATK
+HIT DMG
+WR
+Eradication pistol
+4
+3+
+4/2
+Range 8", 1" Devastating 3, Lethal 5+
+Servo-arc claw
+4
+4+
+3/4
+Severe, Shock
+Seeker of Divine Arcana: STRATEGIC GAMBIT. You
+can immediately change this operative’s order and/or it can
+immediately perform a free Omniscanner, Fall Back, Place
+Marker, Pick Up Marker, Reposition or mission action.
+If it’s the Fall Back or Reposition action and this operative
+isn’t carrying a marker, it must end that move either within your
+drop zone (if this isn’t possible, then as close as possible to it), or
+with an objective marker or one of your mission markers within
+its control range.
+OMNISCANNER
+1AP
+Select one enemy operative visible to or within 8" of this
+operative to gain one of your Omniscanner tokens. Whenever
+a friendly BATTLECLADE  operative is shooting against,
+fighting against or retaliating against an enemy operative that
+has one of your Omniscanner tokens, that friendly operative’s
+weapons have the Ceaseless weapon rule.
+This operative cannot perform this action while within control
+range of an enemy operative.
+32
+BATTLECLADE , IMPERIUM, ADEPTUS MECHANICUS, TECH-PRIEST, LEADER, TECHNOARCHEOLOGIST

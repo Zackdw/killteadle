@@ -1,0 +1,31 @@
+APL
+WOUNDS
+SAVE
+MOVE
+HEARTHKYN LOKÂTR
+2
+5"
+3+
+8
+NAME
+ATK
+HIT DMG
+WR
+Autoch-pattern bolter
+4
+4+
+3/4
+Accurate 1
+Ion blaster
+4
+4+
+3/4
+Piercing Crits 1
+Fists
+3
+4+
+2/3
+-
+RULES CONTINUE ON OTHER SIDE
+28
+HEARTHKYN SALVAGER , LEAGUES OF VOTANN, LOKÂTR

@@ -1,0 +1,30 @@
+APL
+WOUNDS
+SAVE
+MOVE
+RATLING SNIPER
+2
+5"
+5+
+6
+NAME
+ATK
+HIT DMG
+WR
+Sniper rifle (mobile)
+4
+3+
+3/4
+-
+Sniper rifle (stationary)
+4
+2+
+3/3
+Devastating 3, Heavy
+Fists
+3
+5+
+1/2
+-
+25
+RATLING , IMPERIUM, ASTRA MILITARUM, SNIPER

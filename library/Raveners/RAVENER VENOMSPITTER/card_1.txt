@@ -1,0 +1,47 @@
+APL
+WOUNDS
+SAVE
+MOVE
+RAVENER VENOMSPITTER
+3
+7"
+5+
+20
+NAME
+ATK
+HIT DMG
+WR
+Pincer tail
+4
+3+
+3/4
+Range 3", Silent
+Venom bolt (blast)
+4
+3+
+3/5
+Range 8", Blast 2", Poison*
+Venom bolt (focused)
+4
+3+
+4/5
+Range 8", Piercing 1, Poison*
+Scything talons
+5
+3+
+4/5
+-
+*Poison: In the Resolve Attack Dice step, if you
+inflict damage with any critical successes, the
+operative this weapon is being used against gains
+one of your Poison tokens (if it doesn’t already have
+one). Whenever an operative that has one of your
+Poison tokens is activated, inflict D3 damage on it.
+DISTEND DORSAL SAC
+1AP
+Until this operative has shot with its venom bolt, until it performs this
+action again or until it performs the Burrow action (whichever comes
+first), all profiles of its venom bolt have the Lethal 5+ weapon rule, have 1
+added to their Atk stat and the Range 8" weapon rule removed.
+40
+RAVENER , GREAT DEVOURER, TYRANID, VENOMSPITTER

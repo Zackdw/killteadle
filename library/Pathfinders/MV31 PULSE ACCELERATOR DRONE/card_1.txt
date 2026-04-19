@@ -1,0 +1,37 @@
+APL
+WOUNDS
+SAVE
+MOVE
+MV31 PULSE ACCELERATOR DRONE
+2
+6"
+4+
+7
+NAME
+ATK
+HIT DMG
+WR
+Ram
+3
+5+
+2/3
+-
+Drone:
+PULSE ACCELERATOR
+1AP
+Until the start of this operative’s next activation or until it's
+incapacitated (whichever comes first), whenever another
+friendly PATHFINDER  operative is shooting with a pulse
+weapon within 3" of this operative, that weapon has the
+Lethal 5+ and Severe weapon rules.
+•  This operative cannot perform any actions other than
+Charge, Dash, Fall Back, Fight, Pulse Accelerator
+and Reposition. It cannot use any weapons that aren’t on
+its datacard.
+•  When determining control of an objective marker, treat this
+operative’s APL stat as 1 lower. Note this isn’t a change to its
+APL stat, so any changes are cumulative with this.
+•  When determining what’s visible to this operative, the round
+disc at the top of the miniature is its head.
+32
+PATHFINDER , T'AU EMPIRE, MV31 PULSE ACCELERATOR, DRONE

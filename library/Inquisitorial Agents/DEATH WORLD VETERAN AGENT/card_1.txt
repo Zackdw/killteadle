@@ -1,0 +1,35 @@
+APL
+WOUNDS
+SAVE
+MOVE
+DEATH WORLD VETERAN AGENT
+2
+6"
+5+
+7
+NAME
+ATK
+HIT DMG
+WR
+Autopistol
+4
+4+
+2/3
+Range 8"
+Knife
+1
+2+
+5/7
+Lethal 5+
+Polearm
+4
+3+
+4/5
+-
+Hunter: This operative can perform the Charge action while it
+has a Conceal order.
+Weathered: Once per turning point, when this operative is
+fighting or retaliating, in the Resolve Attack Dice step, you can
+ignore the damage inflicted on it from one normal success.
+25
+INQUISITORIAL AGENT , IMPERIUM, INQUISITION, DEATH WORLD VETERAN

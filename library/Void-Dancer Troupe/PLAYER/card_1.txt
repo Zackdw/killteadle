@@ -1,0 +1,53 @@
+APL
+WOUNDS
+SAVE
+MOVE
+PLAYER
+3
+7"
+4+
+8
+NAME
+ATK
+HIT DMG
+WR
+Fusion pistol
+4
+3+
+5/3
+Range 3", Devastating 3, Piercing 2
+Neuro disruptor
+4
+3+
+4/5
+Range 8", Piercing 1, Stun
+Shuriken pistol
+4
+3+
+3/4
+Range 8", Rending
+Blade
+5
+3+
+4/6
+-
+Caress
+5
+3+
+4/5
+Rending
+Embrace
+5
+3+
+4/5
+Brutal
+Kiss
+5
+3+
+3/7
+-
+Luck of the Laughing God: Once per turning point, you can use this rule. If you do, you can use a firefight ploy for 0CP if this is
+the specified VOID-DANCER TROUPE  operative (including Command Re-roll if the attack or defence dice was rolled for this
+operative). You cannot select the same firefight ploy for this rule more than once per battle.
+25
+VOID-DANCER TROUPE , AELDARI, HARLEQUIN, PLAYER

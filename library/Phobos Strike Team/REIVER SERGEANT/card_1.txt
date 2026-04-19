@@ -1,0 +1,42 @@
+APL
+WOUNDS
+SAVE
+MOVE
+REIVER SERGEANT
+3
+7"
+3+
+13
+NAME
+ATK
+HIT DMG
+WR
+Bolt carbine
+4
+3+
+3/4
+Accurate 1
+Special issue bolt pistol
+4
+3+
+3/4
+Range 8", Piercing 1
+Combat knife
+5
+3+
+4/5
+-
+Fists
+4
+3+
+3/4
+-
+Grav-chute and Grapnel Launcher: Whenever this operative is climbing up, you can treat the vertical distance as 2" (regardless of
+how far the operative actually moves vertically). Whenever this operative is dropping, ignore the vertical distance.
+Tactical Advantage: You can do each of the following once per battle:
+• After rolling-off to decide initiative, if this operative is in the killzone, you can re-roll your dice.
+•  You can use a firefight ploy for 0CP if this is the specified PHOBOS STRIKE TEAM  operative (including Command Re-roll if the
+attack or defence dice was rolled for this operative), or the Patient Ambush firefight ploy for 0CP if this operative is ready and not
+within control range of enemy operatives.
+32
+PHOBOS STRIKE TEAM , IMPERIUM, ADEPTUS ASTARTES, LEADER, REIVER, SERGEANT

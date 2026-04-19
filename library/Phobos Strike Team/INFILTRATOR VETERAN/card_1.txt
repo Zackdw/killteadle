@@ -1,0 +1,29 @@
+APL
+WOUNDS
+SAVE
+MOVE
+INFILTRATOR VETERAN
+3
+7"
+3+
+12
+NAME
+ATK
+HIT DMG
+WR
+Custom bolt carbine
+4
+3+
+3/4
+Custom*
+Fists
+4
+3+
+3/4
+-
+*Custom: At the end of the Select Operatives step, if this
+operative is selected for deployment, select up to two of the
+following weapon rules for this weapon to have for the battle:
+Balanced, Lethal 5+, Piercing Crits 1, Rending, Saturate.
+32
+PHOBOS STRIKE TEAM , IMPERIUM, ADEPTUS ASTARTES, INFILTRATOR, VETERAN

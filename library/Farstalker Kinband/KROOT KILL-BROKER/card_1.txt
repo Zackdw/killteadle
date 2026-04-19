@@ -1,0 +1,45 @@
+APL
+WOUNDS
+SAVE
+MOVE
+KROOT KILL-BROKER
+2
+6"
+5+
+9
+NAME
+ATK
+HIT DMG
+WR
+Kroot rifle
+4
+3+
+3/4
+-
+Pulse weapon
+4
+4+
+4/5
+-
+Ritual blade
+4
+3+
+4/5
+-
+Call The Kill: STRATEGIC GAMBIT if this operative is
+in the killzone. Select one enemy operative to be your mark
+for the turning point. Whenever a friendly FARSTALKER
+KINBAND  operative is shooting against, fighting against or
+retaliating against your mark, that friendly operative's weapons
+have the Balanced weapon rule. Whenever your mark is
+incapacitated, you can select a new enemy operative to be your
+mark for the turning point (and can continue to do so during this
+turning point).
+Victory Shriek: Whenever your mark is incapacitated, you can
+select one friendly FARSTALKER KINBAND  operative
+within 6" of this operative. Until the end of the battle, that
+operative’s weapons have the Balanced weapon rule. Each
+friendly operative can only be selected for this rule once
+per battle.
+32
+FARSTALKER KINBAND , T’AU EMPIRE, LEADER, KROOT, KILL-BROKER

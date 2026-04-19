@@ -1,0 +1,32 @@
+APL
+WOUNDS
+SAVE
+MOVE
+BREAKA BOY KRUSHA
+2
+6"
+4+
+12
+NAME
+ATK
+HIT DMG
+WR
+Knucklebustas
+4
+3+
+5/6
+Brutal, Shock, Smash*
+*Smash: Whenever you strike, you can move the enemy
+operative in a straight line increment of up to 1". If you do, it
+must end the move further away from this operative and in a
+location it can be placed. Then move this operative in a straight
+line increment of up to 1", but it must end that move within that
+enemy operative’s control range (if either isn’t possible, you
+cannot move them).
+Armoured Up: Whenever an enemy operative is shooting
+this operative, or this operative is fighting or retaliating, your
+opponent cannot retain attack dice results of less than 6 as
+critical successes (e.g. as a result of the Lethal, Rending or
+Severe weapon rules).
+32
+WRECKA KREW , ORK, BREAKA BOY, KRUSHA

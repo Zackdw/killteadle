@@ -1,0 +1,37 @@
+APL
+WOUNDS
+SAVE
+MOVE
+RATLING SPOTTER
+2
+5"
+5+
+6
+NAME
+ATK
+HIT DMG
+WR
+Sniper rifle (mobile)
+4
+4+
+3/4
+-
+Sniper rifle (stationary)
+4
+3+
+3/3
+Devastating 3, Heavy
+Fists
+3
+5+
+1/2
+-
+SPOT
+1AP
+SUPPORT. Select one enemy operative visible to this operative. Once during this turning point, when a friendly RATLING
+operative within 3" of this operative is shooting that enemy operative, you can use this effect. If you do:
+• That friendly operative’s ranged weapons have the Seek Light weapon rule.
+• That enemy operative cannot be obscured.
+This operative cannot perform this action while within control range of an enemy operative.
+25
+RATLING , IMPERIUM, ASTRA MILITARUM, SPOTTER

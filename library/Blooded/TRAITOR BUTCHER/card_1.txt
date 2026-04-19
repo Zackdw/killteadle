@@ -1,0 +1,27 @@
+APL
+WOUNDS
+SAVE
+MOVE
+TRAITOR BUTCHER
+2
+6"
+5+
+8
+NAME
+ATK
+HIT DMG
+WR
+Power weapon & cleaver
+4
+3+
+4/6
+Ceaseless, Lethal 5+,  Blood Offering*
+Unholy Sustenance: Whenever this operative is fighting or
+retaliating, if it incapacitates the enemy operative in that
+sequence, it regains up to D3 lost wounds. This is cumulative
+with the Symbols of Bloody Worship equipment.
+*Blood Offering: Whenever this operative is fighting or retaliating
+with this weapon, the first time you strike with a critical success
+during that sequence, you gain one Blooded token.
+25
+BLOODED , CHAOS, BUTCHER

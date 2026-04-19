@@ -1,0 +1,61 @@
+APL
+WOUNDS
+SAVE
+MOVE
+NEOPHYTE LEADER
+2
+6"
+5+
+8
+NAME
+ATK
+HIT DMG
+WR
+Autogun
+4
+3+
+2/3
+-
+Bolt pistol
+4
+3+
+3/4
+Range 8"
+Master-crafted autopistol
+4
+3+
+2/4
+Range 8", Lethal 5+
+Shotgun
+4
+2+
+3/3
+Range 6"
+Web pistol
+4
+3+
+3/4
+Range 6", Severe, Stun
+Chainsword
+4
+3+
+4/5
+-
+Gun butt
+3
+4+
+2/3
+-
+Power maul
+4
+3+
+4/6
+Shock
+Power pick
+4
+3+
+4/5
+Rending
+RULES CONTINUE ON OTHER SIDE
+25
+WYRMBLADE , TYRANID, GENESTEALER CULT, NEOPHYTE, LEADER

@@ -1,0 +1,13 @@
+APL
+WOUNDS
+SAVE
+MOVE
+LEAD PLAYER
+3
+7"
+4+
+9
+Lead the Performance: Once per battle STRATEGIC
+GAMBIT. If this operative is in the killzone, change the
+ALLEGORY you selected for your kill team. Note that the
+ACCOLADE rule friendly operatives have will also change.

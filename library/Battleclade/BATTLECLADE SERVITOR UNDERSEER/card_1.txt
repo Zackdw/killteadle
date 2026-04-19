@@ -1,0 +1,34 @@
+APL
+WOUNDS
+SAVE
+MOVE
+BATTLECLADE SERVITOR UNDERSEER
+3
+6"
+3+
+9
+NAME
+ATK
+HIT DMG
+WR
+Master-crafted radium pistol
+4
+3+
+2/4
+Range 8", Balanced, Rending
+Dataspikes
+3
+5+
+2/3
+-
+DATACORONAL ACCUMULATOR
+1AP
+SUPPORT. Determine the friendly BATTLECLADE   operatives within 6" of this operative and/or a friendly
+BATTLECLADE   AUTO-PROXY operative, then roll one D3. If the result is equal to or less than the number of objective
+markers those friendly operatives contest, you gain 1CP. For the purposes of the Comms Device universal equipment, the
+operative the distance is being determined from must control your Comms Device marker to add 3" to its distance requirement
+for this rule.
+This operative cannot perform this action while within control range of an enemy operative.
+RULES CONTINUE ON OTHER SIDE
+32
+BATTLECLADE , IMPERIUM, ADEPTUS MECHANICUS, TECH-PRIEST, SERVITOR UNDERSEER

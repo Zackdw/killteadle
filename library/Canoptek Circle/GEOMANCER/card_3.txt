@@ -1,0 +1,23 @@
+GEOMANCER ACTIONS
+MOLECULAR BREACH
+1AP
+The next time the selected operative performs an action in
+which it moves, don’t move it. Instead, remove it from the
+killzone and set it back up wholly within a distance equal
+to its Move stat (or 3" if it was a Dash) horizontally of its
+original location (in a killzone that uses the close quarters
+rules, e.g. Killzone: Tomb World, this distance can be
+measured over and through Wall terrain and the operative
+can be set up on the other side). Note that it gains no
+additional distance when performing the Charge action. It
+must be set up in a location it can be placed, and unless it’s
+the Charge action, it cannot be set up within control range
+of an enemy operative.
+SUPPORT. Select one friendly CANOPTEK CIRCLE
+operative visible to and within 6" of this operative.
+Alternatively, you can select one friendly CANOPTEK
+CIRCLE  operative visible to this operative and within your
+OBELISK NODE MATRIX (SUPPORT doesn’t apply to
+this selection).
+This operative cannot perform this action while within control
+range of an enemy operative.

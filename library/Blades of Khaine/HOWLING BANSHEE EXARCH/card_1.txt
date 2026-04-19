@@ -1,0 +1,50 @@
+APL
+WOUNDS
+SAVE
+MOVE
+HOWLING BANSHEE EXARCH
+3
+7"
+3+
+9
+NAME
+ATK
+HIT DMG
+WR
+Shuriken pistol
+4
+3+
+3/4
+Range 8", Rending
+Triskele (throw)
+4
+3+
+2/3
+Range 8", Rending, Torrent 2"
+Executioner
+5
+3+
+3/7
+Lethal 5+
+Mirrorswords
+5
+3+
+4/6
+Ceaseless, Lethal 5+
+Power weapon
+5
+3+
+4/6
+Lethal 5+
+Triskele (slice)
+5
+3+
+4/5
+Rending
+Exarch: This operative can perform two Shoot or two Fight
+actions during its activation.
+Banshee Mask: Whenever this operative is fighting, worsen the
+Hit stat of the enemy operative’s melee weapons by 1. This isn’t
+cumulative with being injured.
+28
+BLADES OF KHAINE , AELDARI, ASURYANI, LEADER, HOWLING BANSHEE, EXARCH

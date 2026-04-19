@@ -1,0 +1,42 @@
+APL
+WOUNDS
+SAVE
+MOVE
+TRAITOR CORPSEMAN
+2
+6"
+5+
+7
+NAME
+ATK
+HIT DMG
+WR
+Lasgun
+4
+4+
+2/3
+-
+Bayonet
+3
+4+
+2/3
+-
+Stimm needle
+3
+5+
+1/4
+Lethal 5+
+Regular Dosage: At the end of the Select
+Operatives step, if this operative is
+selected for deployment, you can select
+one other friendly BLOODED  operative
+to gain one STIMM rule for the battle
+(excluding Rejuvenated).
+STIMM Rules:
+• Rejuvenated:  The operative regains up to 2D3 lost wounds.
+•  Enraged: The operative’s melee weapons have the Relentless weapon rule.
+•  Fortified: Whenever an attack dice inflicts damage of 3 or more on the operative, roll
+one D6: on a 5+, subtract 1 from that inflicted damage.
+RULES CONTINUE ON OTHER SIDE
+25
+BLOODED , CHAOS, CORPSEMAN

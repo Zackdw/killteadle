@@ -1,0 +1,30 @@
+APL
+WOUNDS
+SAVE
+MOVE
+BLESSED BLADE
+2
+6"
+5+
+8
+NAME
+ATK
+HIT DMG
+WR
+Commune blade
+4
+4+
+4/6
+Lethal 5+
+Cut Them Down: Whenever an enemy operative performs the
+Fall Back action while within control range of this operative,
+you can use this rule. If you do, inflict D3+1 damage on that
+enemy operative before it moves. If that enemy operative is
+within control range of two of these operatives, inflict 2D3+2
+damage instead.
+Attuned In Purpose: Whenever this operative is activated,
+you can activate another ready friendly BLESSED BLADE
+operative within 6" of it at the same time. Complete their
+activations action by action in any order.
+28
+CHAOS CULT , CHAOS, DARK COMMUNE, BLESSED BLADE

@@ -1,0 +1,35 @@
+APL
+WOUNDS
+SAVE
+MOVE
+YAEGIR IRONBRAEK
+2
+5"
+4+
+8
+NAME
+ATK
+HIT DMG
+WR
+Bolt revolver
+4
+4+
+3/5
+Range 8"
+Entrencher
+3
+4+
+3/4
+-
+Minefield: You have five Minefield markers for the battle. On the reverse side, three of them are HY-Pex mines (see below) and two are
+blank. Set up all your Minefield markers as if they were one item of equipment. Each must be set up reverse-side down (their specifics
+aren’t revealed), more than 2" from other markers, access points and Accessible terrain, and more than 6" from your opponent’s drop
+zone and your other Minefield markers. Whenever this operative is readied, if it’s not within control range of enemy operatives, you can
+reset one of your flipped Minefield markers that’s within its control range (flip the marker back over again).
+HY-Pex Mines: Whenever one of your reverse-side down Minefield markers is both within an enemy operative’s control range and not
+within a friendly HERNKYN YAEGIR  operative’s control range, flip the marker over. If it’s a blank, there’s no effect. If it’s a HY-Pex
+mine, inflict 3 damage on that enemy operative and roll one D6: if the result is less than that enemy operative’s Save stat, inflict additional
+damage on it equal to the dice result; regardless of the result, if it isn’t incapacitated, end its action (if any), even if that action’s effects
+aren’t fulfilled. If it cannot be placed, move it the minimum amount to do so. Regardless, that marker isn’t removed.
+28
+HERNKYN YAEGIR , LEAGUES OF VOTANN, IRONBRAEK

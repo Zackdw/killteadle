@@ -1,0 +1,32 @@
+APL
+WOUNDS
+SAVE
+MOVE
+VOIDSCARRED WAY SEEKER
+2
+7"
+4+
+8
+WARP FOLD
+1AP
+WARDING SHIELD
+1AP
+PSYCHIC. Select two friendly CORSAIR
+VOIDSCARRED  operatives visible to and within 5" of this
+operative. Remove them both from the killzone and set them
+back up in each other’s previous locations (in other words,
+swap their positions). If one of them performed the Charge,
+Fall Back or Reposition action during this turning point
+and the other is ready, the other cannot perform any of those
+actions in its activation during this turning point.
+PSYCHIC. Select one friendly CORSAIR
+VOIDSCARRED  operative visible to and within 6" of this
+operative. Until the start of this operative’s next activation,
+until it’s incapacitated or until it performs this action
+again (whichever comes first), the first time an attack dice
+inflicts Normal Dmg on that friendly operative, ignore that
+inflicted damage.
+This operative cannot perform this action while within control
+range of an enemy operative.
+This operative cannot perform this action while within control
+range of an enemy operative.

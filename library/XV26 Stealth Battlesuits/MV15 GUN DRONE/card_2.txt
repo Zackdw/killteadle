@@ -1,0 +1,16 @@
+APL
+WOUNDS
+SAVE
+MOVE
+MV15 GUN DRONE
+2
+6"
+4+
+7
+PHOTON GRENADE LAUNCHER
+1AP
+Select one enemy operative visible to this operative and
+roll one D6: on a 3+, until the end of that operative’s next
+activation, subtract 2" from its Move stat.
+This operative cannot perform this action while within control
+range of an enemy operative.

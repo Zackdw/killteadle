@@ -1,0 +1,34 @@
+APL
+WOUNDS
+SAVE
+MOVE
+SKITARII RANGER SURVEYOR
+2
+6"
+4+
+7
+NAME
+ATK
+HIT DMG
+WR
+Galvanic rifle
+4
+3+
+3/4
+Heavy (Reposition only), Piercing Crits 1
+Gun butt
+3
+4+
+2/3
+-
+Targeting Protocol: Whenever this operative is shooting, if it hasn’t moved during the activation, or if it’s a counteraction, ranged
+weapons on its datacard have the Lethal 5+ weapon rule. Note this operative isn’t restricted from moving after shooting.
+SPOT
+1AP
+SUPPORT. Select one enemy operative visible to this operative. Until the end of the turning point, whenever a friendly
+HUNTER CLADE  operative within 3" of this operative is shooting that enemy operative, you can use this effect. If you do:
+•  That friendly operative’s ranged weapons have the Seek Light weapon rule.
+•  That enemy operative cannot be obscured.
+This operative cannot perform this action while within control range of an enemy operative.
+25
+HUNTER CLADE , IMPERIUM, ADEPTUS MECHANICUS, SKITARII, RANGER, SURVEYOR

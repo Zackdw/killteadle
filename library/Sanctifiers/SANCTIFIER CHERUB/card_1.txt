@@ -1,0 +1,32 @@
+APL
+WOUNDS
+SAVE
+MOVE
+SANCTIFIER CHERUB
+2
+7"
+5+
+5
+NAME
+A
+HIT
+D
+WR
+Incentiviser
+3
+5+
+1/3
+Shock
+Cherub:
+•  Whenever determining control of an objective marker, treat
+this operative’s APL stat as 1 lower. Note this isn’t a change
+to its APL stat, so any changes are cumulative with this.
+•  Whenever this operative has a Conceal order and is in cover,
+it cannot be selected as a valid target, taking precedence
+over all other rules (e.g. Seek, Vantage terrain) except being
+within 2".
+•  This operative cannot use any weapons that aren’t on its
+datacard, or perform unique actions other than Incentivise.
+RULES CONTINUE ON OTHER SIDE
+25
+SANCTIFIER , IMPERIUM, ADEPTUS MINISTORUM, CHERUB

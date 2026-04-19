@@ -1,0 +1,35 @@
+APL
+WOUNDS
+SAVE
+MOVE
+DEATHWATCH BOMBARD VETERAN
+3
+5"
+3+
+18
+NAME
+ATK
+HIT DMG
+WR
+Bolt pistol
+4
+3+
+3/4
+Range 8"
+Frag cannon (shell)
+4
+3+
+5/7
+Piercing 1
+Frag cannon (shrapnel)
+5
+3+
+4/5
+Torrent 2"
+Fists
+4
+3+
+3/4
+-
+40
+DEATHWATCH , IMPERIUM, ADEPTUS ASTARTES, GRAVIS, BOMBARD

@@ -1,0 +1,38 @@
+APL
+WOUNDS
+SAVE
+MOVE
+SANCTIFIER MIRACULIST
+2
+6"
+4+
+7
+NAME
+A
+HIT
+D
+WR
+Holy light
+4
+2+
+4/3
+Range 8", Devastating 3, Limited 1, Piercing 1,
+Saturate, Blaze*
+Wreathe in fire
+4
+2+
+4/4
+Blast 1", Limited 1, Wreathed¹, Blaze*
+Burning hands
+1
+2+
+7/8
+Brutal, Limited 1, Blaze*
+Fists
+2
+5+
+1/2
+-
+RULES CONTINUE ON OTHER SIDE
+25
+SANCTIFIER , IMPERIUM, ADEPTUS MINISTORUM, MIRACULIST

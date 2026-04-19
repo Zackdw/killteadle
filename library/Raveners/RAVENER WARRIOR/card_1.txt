@@ -1,0 +1,30 @@
+APL
+WOUNDS
+SAVE
+MOVE
+RAVENER WARRIOR
+3
+7"
+5+
+20
+NAME
+ATK
+HIT DMG
+WR
+Pincer tail
+4
+3+
+3/4
+Range 3", Silent
+Scything talons
+5
+3+
+4/5
+-
+Instinctive Behaviour: Whenever this operative is shooting
+against, fighting against or retaliating against a wounded enemy
+operative, or an enemy operative that performed the Fall Back
+action during this turning point, this operative’s weapons have
+the Lethal 5+ weapon rule.
+40
+RAVENER , GREAT DEVOURER, TYRANID, WARRIOR

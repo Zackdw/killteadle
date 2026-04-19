@@ -1,0 +1,39 @@
+APL
+WOUNDS
+SAVE
+MOVE
+PLASMACYTE ACCELERATOR
+2
+7"
+5+
+5
+NAME
+ATK
+HIT DMG
+WR
+Spark
+4
+4+
+2/3
+Range 4",  Piercing 1
+Claws
+3
+5+
+1/2
+-
+Scuttler:
+ACCELERATE
+1AP
+Select one friendly DEATHMARK or IMMORTAL
+operative visible to and within 6" of this operative. Until the
+end of that operative’s next activation, add 1 to its APL stat.
+•  Whenever this operative has a Conceal order and is in cover, it
+cannot be selected as a valid target, taking precedence over all
+other rules (e.g. Seek, Vantage terrain) except being within 2".
+•  This operative can perform the Fall Back action for 1 less AP.
+•  This operative cannot use any weapons that aren’t on its
+datacard, or perform unique actions other than Accelerate.
+This operative cannot perform this action while within control
+range of an enemy operative.
+25
+HIEROTEK CIRCLE , NECRON, PLASMACYTE, ACCELERATOR

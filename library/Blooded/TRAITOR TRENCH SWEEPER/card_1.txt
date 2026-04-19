@@ -1,0 +1,33 @@
+APL
+WOUNDS
+SAVE
+MOVE
+TRAITOR TRENCH SWEEPER
+2
+6"
+4+
+9
+NAME
+ATK
+HIT DMG
+WR
+Shotgun
+4
+3+
+3/3
+Range 6"
+Bayonet & shield
+3
+3+
+2/3
+Shield*
+*Shield: Whenever this operative is fighting or retaliating with
+this weapon, each of your blocks can be allocated to block two
+unresolved successes (instead of one).
+Shielding: Whenever this operative is activated, you can use this
+rule. If you do, until the start of this operative’s next activation:
+•  Subtract 2" from its Move stat.
+•  Whenever an operative is shooting this operative, you can
+re-roll any of your defence dice.
+25
+BLOODED , CHAOS, TRENCH SWEEPER

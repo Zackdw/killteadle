@@ -1,0 +1,37 @@
+APL
+WOUNDS
+SAVE
+MOVE
+DEATH KORPS SNIPER
+2
+6"
+5+
+7
+NAME
+ATK
+HIT DMG
+WR
+Long-las (concealed)
+4
+2+
+3/3
+Devastating 3, Heavy, Silent, Concealed Position*
+Long-las (mobile)
+4
+3+
+3/4
+-
+Long-las (stationary)
+4
+2+
+3/3
+Devastating 3, Heavy
+Bayonet
+3
+4+
+2/3
+-
+*Concealed Position: This operative can only use this weapon
+the first time it’s performing the Shoot action during the battle.
+25
+DEATH KORPS , IMPERIUM, ASTRA MILITARUM, SNIPER

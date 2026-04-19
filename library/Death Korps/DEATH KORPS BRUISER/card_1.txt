@@ -1,0 +1,31 @@
+APL
+WOUNDS
+SAVE
+MOVE
+DEATH KORPS BRUISER
+2
+6"
+5+
+7
+NAME
+ATK
+HIT DMG
+WR
+Lasgun
+4
+4+
+2/3
+-
+Trench club
+4
+3+
+3/3
+Shock
+Bruiser: Once per turning point, when this operative is fighting
+or retaliating, in the Resolve Attack Dice step, you can ignore the
+damage inflicted on it from one normal success. If this operative
+is incapacitated during the Fight action, you can strike the
+enemy operative in that sequence with one of your unresolved
+successes before this operative is removed from the killzone.
+25
+DEATH KORPS , IMPERIUM, ASTRA MILITARUM, BRUISER

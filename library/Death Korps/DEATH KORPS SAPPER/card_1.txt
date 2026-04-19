@@ -1,0 +1,38 @@
+APL
+WOUNDS
+SAVE
+MOVE
+DEATH KORPS SAPPER
+2
+6"
+5+
+7
+NAME
+ATK
+HIT DMG
+WR
+Lasgun
+4
+4+
+2/3
+-
+Remote detonator
+4
+2+
+5/6
+Heavy (Dash only), Limited 1, Piercing 1,
+Silent, Detonate*
+Bayonet
+3
+4+
+2/3
+-
+Mine Layer: This operative is carrying your Mine marker. It can perform the Pick Up Marker action on that marker, and whenever it
+performs the Place Marker action on that marker, it can immediately perform a free Dash action.
+*Detonate: Don’t select a valid target. Instead, shoot against each operative within 2" of your Mine marker, unless Heavy terrain is
+wholly intervening between that operative and that marker. Each of those operatives cannot be in cover or obscured. Roll each sequence
+separately in an order of your choice. This weapon cannot be selected if your Mine marker isn’t in the killzone. At the end of the action,
+remove your Mine marker from the killzone. In a killzone that uses the close quarters rules (e.g. Killzone: Tomb World), this weapon has
+the Lethal 5+ weapon rule.
+25
+DEATH KORPS , IMPERIUM, ASTRA MILITARUM, SAPPER

@@ -1,0 +1,28 @@
+APL
+WOUNDS
+SAVE
+MOVE
+FELLGOR VANDAL
+2
+6"
+5+
+10
+NAME
+ATK
+HIT DMG
+WR
+Mancrusher
+4
+4+
+5/5
+Brutal, Vicious Blows*
+*Vicious Blows: Whenever this operative is fighting, this weapon
+has the Ceaseless weapon rule.
+SWEEPING BLOW
+1AP
+Inflict D3+1 damage on each other operative visible to and
+within 2" of this operative.
+This operative cannot perform this action while it has a
+Conceal order.
+32
+FELLGOR RAVAGER , CHAOS, VANDAL

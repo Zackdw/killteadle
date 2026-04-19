@@ -1,0 +1,23 @@
+APL
+WOUNDS
+SAVE
+MOVE
+NAVIS C.A.T. UNIT
+2
+8"
+5+
+5
+Machine:
+•  This operative cannot be activated or perform actions if it’s within control range of an enemy operative, or if a friendly IMPERIAL
+NAVY BREACHER  SURVEYOR operative has been incapacitated. The turning point can end even if this operative is
+still ready.
+•  This operative cannot perform any actions other than Charge, Dash, Fall Back, Reposition and Spot.
+•  It cannot retaliate, assist in a fight, climb or jump.
+•  Whenever determining control of a marker, treat this operative’s APL stat as 1 lower. Note this isn’t a change to its APL stat, so any
+changes are cumulative with this.
+•  Whenever this operative has a Conceal order and is in cover, it cannot be selected as a valid target, taking precedence over all other
+rules (e.g. Seek, Vantage terrain) except being within 2".
+•  Whenever determining what's visible to this operative, draw the line from any part of the miniature.
+RULES CONTINUE ON OTHER SIDE
+25
+IMPERIAL NAVY BREACHER , IMPERIUM, C.A.T. UNIT

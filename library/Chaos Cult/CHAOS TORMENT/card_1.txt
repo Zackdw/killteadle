@@ -1,0 +1,30 @@
+APL
+WOUNDS
+SAVE
+MOVE
+CHAOS TORMENT
+2
+6"
+5+
+13
+NAME
+ATK
+HIT DMG
+WR
+Hideous mutations
+5
+4+
+4/5
+Ceaseless, Rending
+Accursed Torment: This operative cannot use any weapons that
+aren’t on its datacard, or perform the Pick Up Marker, unique
+or mission actions (excluding Operate Hatch).
+Unnatural Regeneration: Whenever an attack dice inflicts
+damage of 3 or more on this operative, roll one D6: on a 5+,
+subtract 1 from that inflicted damage.
+Brute: Whenever your opponent is selecting a valid target, if
+this operative has a Conceal order, it cannot use Light terrain
+for cover. While this can allow this operative to be targeted
+(assuming it’s visible), it doesn’t remove its cover save (if any).
+40
+CHAOS CULT , CHAOS, TORMENT

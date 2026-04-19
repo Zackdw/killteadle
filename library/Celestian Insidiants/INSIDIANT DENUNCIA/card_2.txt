@@ -1,0 +1,20 @@
+APL
+WOUNDS
+SAVE
+MOVE
+INSIDIANT DENUNCIA
+2
+6"
+3+
+9
+SPEAK OF HER DEEDS
+1AP
+SUPPORT. Select an INSPIRING friendly CELESTIAN
+INSIDIANT  operative visible to and within 6" of this
+operative. That operative is no longer INSPIRING. Then,
+select another friendly CELESTIAN INSIDIANT
+operative visible to and within 6" of this operative. Resolve
+one BENEDICTION from the Martyrdom faction rule on
+that operative (excluding Exigence).
+This operative cannot perform this action while within control
+range of an enemy operative.

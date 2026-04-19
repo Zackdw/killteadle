@@ -1,0 +1,31 @@
+APL
+WOUNDS
+SAVE
+MOVE
+VESPID STRAIN LEADER
+2
+6"
+5+
+10
+NAME
+ATK
+HIT DMG
+WR
+Neutron blaster
+4
+3+
+3/3
+Devastating 2
+Claws
+3
+4+
+3/4
+-
+Communion Helm: Once during each of this operative’s
+activations, you can spend 1 Communion point for free.
+Commune: When selecting your operatives for the battle, also
+select one VESPID STINGWING  strategy ploy. Whenever
+this operative is in the killzone and isn’t within control range of
+enemy operatives, that ploy costs you 0CP.
+28
+VESPID STINGWING , T’AU EMPIRE, STRAIN, LEADER

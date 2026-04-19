@@ -1,0 +1,34 @@
+APL
+WOUNDS
+SAVE
+MOVE
+GOREMONGER STALKER
+2
+7"
+5+
+10
+NAME
+A
+HIT
+D
+WR
+Autopistol
+4
+4+
+2/3
+Range 8"
+Pickrippers
+4
+3+
+4/5
+Rending
+Climbing Picks: Whenever this operative is climbing up, you
+can treat the vertical distance as 2" (regardless of how far the
+operative actually moves vertically).
+Rooftop Stalker: Whenever this operative is fighting during an
+activation in which it dropped from Vantage terrain, or whenever
+this operative is fighting against an enemy operative that’s
+on Vantage terrain, this operative’s melee weapons have the
+Relentless weapon rule.
+32
+GOREMONGER , CHAOS, STALKER

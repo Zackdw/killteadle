@@ -1,0 +1,28 @@
+APL
+WOUNDS
+SAVE
+MOVE
+MURDERWING CURSECLAW
+3
+6"
+3+
+14
+NAME
+ATK
+HIT DMG
+WR
+Bolt pistol
+4
+3+
+3/4
+Range 8"
+Mutated claws
+5
+3+
+4/5
+Rending
+Frenzied Attack: If this operative is incapacitated during the Fight action, you can strike the enemy operative in that sequence with
+one of your unresolved successes before this operative is removed from the killzone.
+RULES CONTINUE ON OTHER SIDE
+32
+MURDERWING , CHAOS, HERETIC ASTARTES, CURSECLAW

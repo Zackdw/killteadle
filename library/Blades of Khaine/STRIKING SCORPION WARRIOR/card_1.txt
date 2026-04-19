@@ -1,0 +1,29 @@
+APL
+WOUNDS
+SAVE
+MOVE
+STRIKING SCORPION WARRIOR
+3
+7"
+4+
+8
+NAME
+ATK
+HIT DMG
+WR
+Shuriken pistol
+4
+3+
+3/4
+Range 8", Rending
+Chainsword
+4
+3+
+4/5
+Rending
+Mandiblasters: Whenever this operative performs the Fight
+action, at the start of the Roll Attack Dice step, you can use
+this rule. If you do, inflict 2 damage on the enemy operative in
+that sequence.
+28
+BLADES OF KHAINE , AELDARI, ASURYANI, STRIKING SCORPION, WARRIOR

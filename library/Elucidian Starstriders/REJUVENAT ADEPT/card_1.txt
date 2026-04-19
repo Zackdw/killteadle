@@ -1,0 +1,43 @@
+APL
+WOUNDS
+SAVE
+MOVE
+REJUVENAT ADEPT
+2
+6"
+4+
+8
+NAME
+ATK
+HIT DMG
+WR
+Laspistol
+4
+4+
+2/3
+Range 8"
+Scalpel claw
+3
+4+
+3/4
+Rending
+Medic!: The first time during each turning point that another
+friendly ELUCIDIAN STARSTRIDER  operative would be
+incapacitated while visible to and within 3" of this operative,
+you can use this rule, providing neither this nor that operative
+is within control range of an enemy operative. If you do, that
+friendly operative isn’t incapacitated, has 3 wounds remaining
+and cannot be incapacitated for the remainder of the action.
+After that action, that friendly operative can immediately
+perform a free Dash action, but must end that move within
+this operative’s control range. If this rule was used during that
+friendly operative’s activation, that activation ends. You cannot
+use this rule if this operative is incapacitated, or if it’s a Shoot
+action and this operative would be a primary or secondary target.
+Normaliser Helm: Whenever a friendly ELUCIDIAN
+STARSTRIDER  operative is within 6" of this operative, you
+can ignore any changes to that operative’s stats from being
+injured (including its weapons’ stats).
+RULES CONTINUE ON OTHER SIDE
+25
+ELUCIDIAN STARSTRIDER , IMPERIUM, MEDIC, REJUVENAT ADEPT

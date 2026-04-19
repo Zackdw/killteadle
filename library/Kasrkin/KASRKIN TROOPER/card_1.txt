@@ -1,0 +1,30 @@
+APL
+WOUNDS
+SAVE
+MOVE
+KASRKIN TROOPER
+2
+6"
+4+
+8
+NAME
+ATK
+HIT DMG
+WR
+Hot-shot lasgun
+4
+3+
+3/4
+-
+Gun butt
+3
+4+
+2/3
+-
+Adaptive Equipment: You can do each of the following once per turning point:
+•  One friendly KASRKIN  TROOPER operative can perform the Smoke Grenade action.
+•  One friendly KASRKIN  TROOPER operative can perform the Stun Grenade action.
+The rules for these actions are found in universal equipment. Performing these actions using this rule doesn’t count towards their
+action limits (i.e. if you also select those grenades from equipment).
+28
+KASRKIN , IMPERIUM, ASTRA MILITARUM, TROOPER

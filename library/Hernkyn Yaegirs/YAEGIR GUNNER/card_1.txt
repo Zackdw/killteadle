@@ -1,0 +1,38 @@
+APL
+WOUNDS
+SAVE
+MOVE
+YAEGIR GUNNER
+2
+5"
+4+
+8
+NAME
+ATK
+HIT DMG
+WR
+APM launcher (armour piercing) 5
+4+
+4/5
+Heavy (Reposition only), Piercing 1,  Bipod*
+APM launcher (breaching)
+5
+4+
+3/5
+Blast 2", Heavy (Reposition only),  Bipod*
+APM launcher (high explosive)
+5
+4+
+2/4
+Blast 3", Heavy (Reposition only),  Bipod*
+Fists
+3
+4+
+2/3
+-
+*Bipod: Whenever this operative is shooting with this weapon, if
+it hasn’t moved during the activation, or if it’s a counteraction,
+this weapon has the Ceaseless weapon rule. Note this operative
+isn’t restricted from moving after shooting.
+28
+HERNKYN YAEGIR , LEAGUES OF VOTANN, GUNNER

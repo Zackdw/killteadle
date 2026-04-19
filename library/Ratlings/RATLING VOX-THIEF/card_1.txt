@@ -1,0 +1,37 @@
+APL
+WOUNDS
+SAVE
+MOVE
+RATLING VOX-THIEF
+2
+5"
+5+
+6
+NAME
+ATK
+HIT DMG
+WR
+Sniper rifle (mobile)
+4
+4+
+3/4
+-
+Sniper rifle (stationary)
+4
+3+
+3/3
+Devastating 3, Heavy
+Fists
+3
+5+
+1/2
+-
+INTERCEPT COMMUNICATIONS
+1AP
+SUPPORT. Select one other friendly RATLING
+operative visible to and within 6" of this operative. Until the
+end of its next activation, add 1 to that operative’s APL stat.
+This operative cannot perform this action while within control
+range of an enemy operative.
+25
+RATLING , IMPERIUM, ASTRA MILITARUM, VOX-THIEF

@@ -1,0 +1,15 @@
+APL
+WOUNDS
+SAVE
+MOVE
+BLOATSPAWN
+2
+5"
+5+
+20
+Tentacled Grasp: Whenever an enemy operative would perform
+the Fall Back action while within control range of this
+operative, you can use this rule. If you do, roll one D6, adding 1 to
+the result if that enemy operative has a Wounds stat of 8 or less:
+on a 4+, that enemy operative cannot perform that action during
+that activation/counteraction (the AP spent on it isn’t refunded).

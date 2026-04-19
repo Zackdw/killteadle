@@ -88,6 +88,7 @@
     "faction": "IMPERIUM",
     "base_size": "32",
     "weapon_rules": [
+      "Blast",
       "Heavy",
       "Lethal",
       "Piercing",
@@ -114,6 +115,7 @@
     "faction": "IMPERIUM",
     "base_size": "40",
     "weapon_rules": [
+      "Blast",
       "Devastating",
       "Heavy",
       "Piercing",
@@ -167,6 +169,7 @@
     "faction": "IMPERIUM",
     "base_size": "25",
     "weapon_rules": [
+      "Blast",
       "Devastating",
       "Piercing",
       "Range",
@@ -305,9 +308,13 @@
     "faction": "CHAOS",
     "base_size": "25",
     "weapon_rules": [
+      "Blast",
       "Devastating",
+      "Heavy",
       "Limited",
-      "Range"
+      "Piercing",
+      "Range",
+      "Saturate"
     ]
   },
   {
@@ -367,6 +374,7 @@
     "faction": "CHAOS",
     "base_size": "25",
     "weapon_rules": [
+      "Blast",
       "Devastating",
       "Hot",
       "Lethal",
@@ -458,6 +466,7 @@
     "faction": "TYRANID",
     "base_size": "25",
     "weapon_rules": [
+      "Blast",
       "Devastating",
       "Hot",
       "Lethal",
@@ -504,8 +513,12 @@
     "faction": "TYRANID",
     "base_size": "25",
     "weapon_rules": [
+      "Blast",
       "Heavy",
-      "Range"
+      "Limited",
+      "Piercing",
+      "Range",
+      "Saturate"
     ]
   },
   {
@@ -600,6 +613,7 @@
     "faction": "NECRON",
     "base_size": "50",
     "weapon_rules": [
+      "Blast",
       "Piercing",
       "Seek",
       "Severe",
@@ -638,6 +652,7 @@
     "faction": "NECRON",
     "base_size": "28",
     "weapon_rules": [
+      "Blast",
       "Piercing"
     ]
   },
@@ -1024,6 +1039,7 @@
     "faction": "IMPERIUM",
     "base_size": "25",
     "weapon_rules": [
+      "Blast",
       "Devastating",
       "Hot",
       "Lethal",
@@ -1050,7 +1066,8 @@
     "weapon_rules": [
       "Heavy",
       "Limited",
-      "Piercing"
+      "Piercing",
+      "Silent"
     ]
   },
   {
@@ -1072,6 +1089,7 @@
     "faction": "IMPERIUM",
     "base_size": "25",
     "weapon_rules": [
+      "Blast",
       "Heavy",
       "Silent"
     ]
@@ -1164,6 +1182,7 @@
     "faction": "IMPERIUM",
     "base_size": "40",
     "weapon_rules": [
+      "Blast",
       "Devastating",
       "Heavy",
       "Piercing",
@@ -1472,6 +1491,7 @@
     "faction": "T'AU EMPIRE",
     "base_size": "28",
     "weapon_rules": [
+      "Blast",
       "Piercing",
       "Silent"
     ]
@@ -1505,7 +1525,8 @@
       "Heavy",
       "Piercing",
       "Range",
-      "Rending"
+      "Rending",
+      "Torrent"
     ]
   },
   {
@@ -1749,6 +1770,7 @@
     "faction": "CHAOS",
     "base_size": "25",
     "weapon_rules": [
+      "Blast",
       "Brutal",
       "Ceaseless",
       "Limited",
@@ -2035,8 +2057,12 @@
     "base_size": "28",
     "weapon_rules": [
       "Accurate",
+      "Blast",
       "Heavy",
-      "Range"
+      "Limited",
+      "Piercing",
+      "Range",
+      "Saturate"
     ]
   },
   {
@@ -2046,12 +2072,14 @@
     "faction": "LEAGUES OF VOTANN",
     "base_size": "28",
     "weapon_rules": [
+      "Blast",
       "Ceaseless",
       "Devastating",
       "Heavy",
       "Piercing",
       "Rending",
-      "Saturate"
+      "Saturate",
+      "Torrent"
     ]
   },
   {
@@ -2165,6 +2193,7 @@
     "faction": "LEAGUES OF VOTANN",
     "base_size": "28",
     "weapon_rules": [
+      "Blast",
       "Heavy",
       "Piercing"
     ]
@@ -2223,6 +2252,7 @@
     "faction": "NECRON",
     "base_size": "40",
     "weapon_rules": [
+      "Blast",
       "Devastating",
       "Lethal",
       "Piercing",
@@ -2237,6 +2267,7 @@
     "faction": "NECRON",
     "base_size": "40",
     "weapon_rules": [
+      "Blast",
       "Devastating",
       "Piercing"
     ]
@@ -2291,7 +2322,9 @@
     "base_size": "32",
     "weapon_rules": [
       "Devastating",
-      "Heavy"
+      "Heavy",
+      "Piercing",
+      "Severe"
     ]
   },
   {
@@ -2350,6 +2383,7 @@
     "base_size": "25",
     "weapon_rules": [
       "Balanced",
+      "Blast",
       "Heavy",
       "Lethal",
       "Piercing",
@@ -2368,6 +2402,7 @@
     "base_size": "25",
     "weapon_rules": [
       "Balanced",
+      "Blast",
       "Lethal",
       "Piercing",
       "Range",
@@ -2419,7 +2454,7 @@
     "team": "Hunter Clade",
     "apl": 2,
     "faction": "IMPERIUM",
-    "base_size": "2",
+    "base_size": "25",
     "weapon_rules": [
       "Devastating",
       "Heavy",
@@ -2467,7 +2502,7 @@
     "team": "Hunter Clade",
     "apl": 2,
     "faction": "IMPERIUM",
-    "base_size": "2",
+    "base_size": "25",
     "weapon_rules": [
       "Devastating",
       "Heavy",
@@ -2565,8 +2600,12 @@
     "faction": "IMPERIUM",
     "base_size": "25",
     "weapon_rules": [
+      "Blast",
       "Heavy",
-      "Range"
+      "Limited",
+      "Piercing",
+      "Range",
+      "Saturate"
     ]
   },
   {
@@ -2615,10 +2654,12 @@
     "faction": "IMPERIUM",
     "base_size": "25",
     "weapon_rules": [
+      "Blast",
       "Lethal",
       "Limited",
       "Range",
-      "Silent"
+      "Silent",
+      "Stun"
     ]
   },
   {
@@ -2736,6 +2777,7 @@
     "faction": "IMPERIUM",
     "base_size": "32",
     "weapon_rules": [
+      "Blast",
       "Devastating",
       "Heavy",
       "Hot",
@@ -2781,6 +2823,7 @@
     "faction": "IMPERIUM",
     "base_size": "25",
     "weapon_rules": [
+      "Blast",
       "Devastating",
       "Hot",
       "Lethal",
@@ -2815,85 +2858,6 @@
     "weapon_rules": []
   },
   {
-    "name": "KASRKIN SERGEANT",
-    "team": "Kasrkin",
-    "apl": 3,
-    "faction": "IMPERIUM",
-    "base_size": "28",
-    "weapon_rules": [
-      "Hot",
-      "Lethal",
-      "Piercing",
-      "Range"
-    ]
-  },
-  {
-    "name": "KASRKIN COMBAT MEDIC",
-    "team": "Kasrkin",
-    "apl": 2,
-    "faction": "IMPERIUM",
-    "base_size": "28",
-    "weapon_rules": []
-  },
-  {
-    "name": "KASRKIN DEMO-TROOPER",
-    "team": "Kasrkin",
-    "apl": 2,
-    "faction": "IMPERIUM",
-    "base_size": "28",
-    "weapon_rules": [
-      "Range"
-    ]
-  },
-  {
-    "name": "KASRKIN GUNNER",
-    "team": "Kasrkin",
-    "apl": 2,
-    "faction": "IMPERIUM",
-    "base_size": "28",
-    "weapon_rules": [
-      "Devastating",
-      "Hot",
-      "Lethal",
-      "Piercing",
-      "Range",
-      "Saturate",
-      "Torrent"
-    ]
-  },
-  {
-    "name": "KASRKIN RECON-TROOPER",
-    "team": "Kasrkin",
-    "apl": 2,
-    "faction": "IMPERIUM",
-    "base_size": "28",
-    "weapon_rules": []
-  },
-  {
-    "name": "KASRKIN SHARPSHOOTER",
-    "team": "Kasrkin",
-    "apl": 2,
-    "faction": "IMPERIUM",
-    "base_size": "28",
-    "weapon_rules": []
-  },
-  {
-    "name": "KASRKIN TROOPER",
-    "team": "Kasrkin",
-    "apl": 2,
-    "faction": "IMPERIUM",
-    "base_size": "28",
-    "weapon_rules": []
-  },
-  {
-    "name": "KASRKIN VOX-TROOPER",
-    "team": "Kasrkin",
-    "apl": 2,
-    "faction": "IMPERIUM",
-    "base_size": "28",
-    "weapon_rules": []
-  },
-  {
     "name": "KOMMANDO BOSS NOB",
     "team": "Kommandos",
     "apl": 3,
@@ -2912,6 +2876,7 @@
     "faction": "ORK",
     "base_size": "25",
     "weapon_rules": [
+      "Blast",
       "Limited"
     ]
   },
@@ -2990,6 +2955,7 @@
     "faction": "ORK",
     "base_size": "32",
     "weapon_rules": [
+      "Blast",
       "Ceaseless",
       "Heavy"
     ]
@@ -3068,6 +3034,7 @@
     "faction": "CHAOS",
     "base_size": "32",
     "weapon_rules": [
+      "Blast",
       "Devastating",
       "Range",
       "Rending",
@@ -3108,11 +3075,13 @@
     "faction": "CHAOS",
     "base_size": "32",
     "weapon_rules": [
+      "Blast",
       "Ceaseless",
       "Heavy",
       "Piercing",
       "Punishing",
-      "Range"
+      "Range",
+      "Torrent"
     ]
   },
   {
@@ -3164,6 +3133,7 @@
     "faction": "AELDARI",
     "base_size": "28",
     "weapon_rules": [
+      "Blast",
       "Lethal"
     ]
   },
@@ -3188,7 +3158,8 @@
       "Devastating",
       "Lethal",
       "Range",
-      "Seek"
+      "Seek",
+      "Stun"
     ]
   },
   {
@@ -3350,10 +3321,12 @@
     "faction": "CHAOS",
     "base_size": "32",
     "weapon_rules": [
+      "Blast",
       "Devastating",
       "Lethal",
       "Limited",
-      "Range"
+      "Range",
+      "Saturate"
     ]
   },
   {
@@ -3379,9 +3352,11 @@
     "faction": "CHAOS",
     "base_size": "32",
     "weapon_rules": [
+      "Blast",
       "Heavy",
       "Piercing",
-      "Range"
+      "Range",
+      "Torrent"
     ]
   },
   {
@@ -3448,7 +3423,8 @@
     "weapon_rules": [
       "Devastating",
       "Piercing",
-      "Shock"
+      "Shock",
+      "Silent"
     ]
   },
   {
@@ -3580,7 +3556,8 @@
       "Devastating",
       "Limited",
       "Piercing",
-      "Range"
+      "Range",
+      "Saturate"
     ]
   },
   {
@@ -3668,7 +3645,8 @@
     "weapon_rules": [
       "Ceaseless",
       "Heavy",
-      "Punishing"
+      "Punishing",
+      "Torrent"
     ]
   },
   {
@@ -3752,7 +3730,9 @@
     "weapon_rules": [
       "Heavy",
       "Lethal",
-      "Limited"
+      "Limited",
+      "Piercing",
+      "Silent"
     ]
   },
   {
@@ -3957,6 +3937,7 @@
     "faction": "IMPERIUM",
     "base_size": "40",
     "weapon_rules": [
+      "Blast",
       "Shock"
     ]
   },
@@ -3991,9 +3972,13 @@
     "faction": "IMPERIUM",
     "base_size": "25",
     "weapon_rules": [
+      "Blast",
       "Devastating",
       "Heavy",
-      "Range"
+      "Limited",
+      "Piercing",
+      "Range",
+      "Saturate"
     ]
   },
   {
@@ -4118,6 +4103,7 @@
     "faction": "TYRANID",
     "base_size": "40",
     "weapon_rules": [
+      "Blast",
       "Piercing",
       "Range",
       "Silent"
@@ -4221,11 +4207,13 @@
     "faction": "IMPERIUM",
     "base_size": "25",
     "weapon_rules": [
+      "Blast",
       "Brutal",
       "Devastating",
       "Limited",
       "Piercing",
-      "Range"
+      "Range",
+      "Saturate"
     ]
   },
   {
@@ -4294,6 +4282,7 @@
     "faction": "IMPERIUM",
     "base_size": "28",
     "weapon_rules": [
+      "Blast",
       "Heavy",
       "Piercing",
       "Range",
@@ -4361,6 +4350,8 @@
     "weapon_rules": [
       "Devastating",
       "Heavy",
+      "Limited",
+      "Piercing",
       "Range"
     ]
   },
@@ -4421,6 +4412,7 @@
     "faction": "IMPERIUM",
     "base_size": "40",
     "weapon_rules": [
+      "Blast",
       "Piercing",
       "Range",
       "Saturate",
@@ -4472,9 +4464,11 @@
     "faction": "T'AU EMPIRE",
     "base_size": "28",
     "weapon_rules": [
+      "Blast",
       "Devastating",
       "Limited",
-      "Range"
+      "Range",
+      "Saturate"
     ]
   },
   {
@@ -4484,6 +4478,7 @@
     "faction": "T'AU EMPIRE",
     "base_size": "28",
     "weapon_rules": [
+      "Blast",
       "Devastating"
     ]
   },
@@ -4559,12 +4554,14 @@
     "faction": "AELDARI",
     "base_size": "25",
     "weapon_rules": [
+      "Blast",
       "Lethal",
       "Piercing",
       "Range",
       "Rending",
       "Seek",
       "Shock",
+      "Silent",
       "Stun"
     ]
   },
@@ -4590,6 +4587,7 @@
     "faction": "CHAOS",
     "base_size": "32",
     "weapon_rules": [
+      "Blast",
       "Lethal",
       "Piercing",
       "Range",
@@ -4754,12 +4752,14 @@
     "faction": "IMPERIUM",
     "base_size": "32",
     "weapon_rules": [
+      "Blast",
       "Range",
       "Saturate",
       "Seek",
       "Severe",
       "Shock",
-      "Stun"
+      "Stun",
+      "Torrent"
     ]
   },
   {
@@ -4792,6 +4792,7 @@
     "faction": "ORK",
     "base_size": "40",
     "weapon_rules": [
+      "Blast",
       "Brutal",
       "Ceaseless",
       "Range"
@@ -4804,6 +4805,7 @@
     "faction": "ORK",
     "base_size": "25",
     "weapon_rules": [
+      "Blast",
       "Limited"
     ]
   },
@@ -4843,6 +4845,7 @@
     "faction": "ORK",
     "base_size": "32",
     "weapon_rules": [
+      "Blast",
       "Heavy"
     ]
   },
@@ -4853,6 +4856,7 @@
     "faction": "ORK",
     "base_size": "32",
     "weapon_rules": [
+      "Blast",
       "Heavy",
       "Limited",
       "Relentless"
@@ -4906,6 +4910,7 @@
     "faction": "TYRANID",
     "base_size": "25",
     "weapon_rules": [
+      "Blast",
       "Piercing",
       "Range",
       "Saturate",
@@ -4921,6 +4926,7 @@
     "faction": "TYRANID",
     "base_size": "32",
     "weapon_rules": [
+      "Blast",
       "Heavy",
       "Piercing",
       "Range",
@@ -5021,6 +5027,7 @@
     "faction": "T'AU EMPIRE",
     "base_size": "32",
     "weapon_rules": [
+      "Blast",
       "Ceaseless",
       "Devastating",
       "Heavy",
@@ -5072,6 +5079,86 @@
     "team": "XV26 Stealth Battlesuits",
     "apl": 2,
     "faction": "T'AU EMPIRE",
+    "base_size": "28",
+    "weapon_rules": []
+  },
+  {
+    "name": "KASRKIN SERGEANT",
+    "team": "Kasrkin",
+    "apl": 3,
+    "faction": "IMPERIUM",
+    "base_size": "28",
+    "weapon_rules": [
+      "Hot",
+      "Lethal",
+      "Piercing",
+      "Range"
+    ]
+  },
+  {
+    "name": "KASRKIN COMBAT MEDIC",
+    "team": "Kasrkin",
+    "apl": 2,
+    "faction": "IMPERIUM",
+    "base_size": "28",
+    "weapon_rules": []
+  },
+  {
+    "name": "KASRKIN DEMO-TROOPER",
+    "team": "Kasrkin",
+    "apl": 2,
+    "faction": "IMPERIUM",
+    "base_size": "28",
+    "weapon_rules": [
+      "Range"
+    ]
+  },
+  {
+    "name": "KASRKIN GUNNER",
+    "team": "Kasrkin",
+    "apl": 2,
+    "faction": "IMPERIUM",
+    "base_size": "28",
+    "weapon_rules": [
+      "Blast",
+      "Devastating",
+      "Hot",
+      "Lethal",
+      "Piercing",
+      "Range",
+      "Saturate",
+      "Torrent"
+    ]
+  },
+  {
+    "name": "KASRKIN RECON-TROOPER",
+    "team": "Kasrkin",
+    "apl": 2,
+    "faction": "IMPERIUM",
+    "base_size": "28",
+    "weapon_rules": []
+  },
+  {
+    "name": "KASRKIN SHARPSHOOTER",
+    "team": "Kasrkin",
+    "apl": 2,
+    "faction": "IMPERIUM",
+    "base_size": "28",
+    "weapon_rules": []
+  },
+  {
+    "name": "KASRKIN TROOPER",
+    "team": "Kasrkin",
+    "apl": 2,
+    "faction": "IMPERIUM",
+    "base_size": "28",
+    "weapon_rules": []
+  },
+  {
+    "name": "KASRKIN VOX-TROOPER",
+    "team": "Kasrkin",
+    "apl": 2,
+    "faction": "IMPERIUM",
     "base_size": "28",
     "weapon_rules": []
   }

@@ -1,0 +1,47 @@
+APL
+WOUNDS
+SAVE
+MOVE
+NEOPHYTE HEAVY GUNNER
+2
+6"
+5+
+7
+NAME
+ATK
+HIT DMG
+WR
+Heavy stubber (focused)
+5
+4+
+4/5
+Heavy (Dash only)
+Heavy stubber (sweeping)
+4
+4+
+4/5
+Heavy (Dash only), Torrent 1"
+Mining laser
+5
+4+
+5/6
+Heavy (Dash only), Piercing 1
+Seismic cannon (long-wave)
+6
+4+
+2/2
+Blast 1", Heavy (Dash only), Stun
+Seismic cannon (short-wave)
+4
+3+
+4/4
+Range 6", Heavy (Dash only), Piercing Crits 1,
+Stun
+Gun butt
+3
+4+
+2/3
+-
+RULES CONTINUE ON OTHER SIDE
+32
+WYRMBLADE , TYRANID, GENESTEALER CULT, NEOPHYTE, HEAVY GUNNER

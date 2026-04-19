@@ -1,0 +1,38 @@
+APL
+WOUNDS
+SAVE
+MOVE
+SANCTIFIER RELIQUANT
+2
+6"
+5+
+7
+NAME
+A
+HIT
+D
+WR
+Hand flamer
+4
+2+
+3/3
+Range 6", Saturate, Torrent 1", Blaze*
+Gun butt
+3
+4+
+2/3
+-
+Cult Icon: Whenever determining control of a marker within 4" of
+this operative, treat the total APL stat of friendly
+SANCTIFIER  operatives that contest it as 1 higher if at least
+one friendly SANCTIFIER  operative contests that marker.
+Note this isn’t a change to the APL stat, so any changes are
+cumulative with this.
+Imperial Cult Devotion: Once per turning point, when a ready
+friendly SANCTIFIER  operative is incapacitated while visible
+to and within 6" of this operative, you can use this rule. If you do,
+before that operative is removed from the killzone, it can perform
+one free action (excluding Fight), and you can change its order
+to do so. It’s then removed from the killzone as normal.
+25
+SANCTIFIER , IMPERIUM, ADEPTUS MINISTORUM, RELIQUANT

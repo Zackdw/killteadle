@@ -1,0 +1,29 @@
+APL
+WOUNDS
+SAVE
+MOVE
+MURDERWING DEPREDATOR
+3
+6"
+3+
+14
+NAME
+ATK
+HIT DMG
+WR
+Bolt pistol
+4
+3+
+3/4
+Range 8"
+Great chainaxe
+5
+4+
+5/7
+Brutal
+Horrifying Dismemberment: Whenever this operative incapacitates an enemy operative while fighting or retaliating, select one other
+enemy operative visible to and within 3" of either this operative or the incapacitated enemy operative. Subtract 1 from that enemy
+operative’s APL stat until the end of its next activation.
+RULES CONTINUE ON OTHER SIDE
+32
+MURDERWING , CHAOS, HERETIC ASTARTES, DEPREDATOR

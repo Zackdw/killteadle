@@ -1,0 +1,35 @@
+APL
+WOUNDS
+SAVE
+MOVE
+NIGHT LORD SKINTHIEF
+3
+6"
+3+
+14
+NAME
+ATK
+HIT DMG
+WR
+Bolt pistol
+4
+3+
+3/4
+Range 8"
+Nostraman chainglaive
+5
+3+
+4/6
+Rending
+Flay Them Alive: Once per turning point, when this operative
+incapacitates an enemy operative within its control range, you
+can select one other enemy operative visible to and within 6" of
+either this operative or the incapacitated enemy operative. Until
+the start of the next turning point, that other enemy operative
+cannot control markers or perform the Pick Up Marker or
+mission actions.
+Tyrant of the Skinning Pits: Whenever this operative is fighting
+or retaliating, Normal and Critical Dmg of 3 or more inflicts 1 less
+damage on it.
+32
+NEMESIS CLAW , CHAOS, HERETIC ASTARTES, SKINTHIEF

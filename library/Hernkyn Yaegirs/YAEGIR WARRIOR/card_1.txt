@@ -1,0 +1,45 @@
+APL
+WOUNDS
+SAVE
+MOVE
+YAEGIR WARRIOR
+2
+5"
+4+
+8
+NAME
+ATK
+HIT DMG
+WR
+Bolt revolver
+4
+4+
+3/5
+Range 8"
+Bolt shotgun (short range)
+4
+3+
+4/4
+Range 6"
+Bolt shotgun (long range)
+4
+5+
+2/2
+-
+Fists
+3
+4+
+2/3
+-
+Plasma knife
+4
+4+
+3/5
+Lethal 5+
+Intrepid: Whenever you spend a Resourceful point for this
+operative, the following take precedence:
+•  If you add 1 to its APL stat, it lasts until the start of its next
+activation instead.
+•  If it regains lost wounds, it regains up to 4 instead.
+28
+HERNKYN YAEGIR , LEAGUES OF VOTANN, WARRIOR

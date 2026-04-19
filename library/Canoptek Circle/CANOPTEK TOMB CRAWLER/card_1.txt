@@ -1,0 +1,40 @@
+APL
+WOUNDS
+SAVE
+MOVE
+CANOPTEK TOMB CRAWLER
+2
+5"
+3+
+21
+NAME
+ATK
+HIT DMG
+WR
+Transdimensional isolator
+5
+4+
+5/6
+Dimensional Banishment*
+Twin gauss reapers (focused)
+5
+4+
+4/5
+Piercing 1, Severe
+Twin gauss reapers (sweeping)
+4
+4+
+4/5
+Piercing 1, Severe, Torrent 1"
+Claws
+4
+4+
+4/4
+-
+*Dimensional Banishment: After this operative uses this weapon, if you inflicted damage or retained any critical successes, if the
+target wasn’t incapacitated, roll 2D6: if the result is higher than the target’s remaining wounds, the target is incapacitated (taking
+precedence over rules that prevent incapacitation, e.g. Medic!, FELLGOR RAVAGER  Frenzy) and your opponent cannot place a
+Reanimation marker (HIEROTEK CIRCLE ) for that operative, if relevant.
+RULES CONTINUE ON OTHER SIDE
+50
+CANOPTEK CIRCLE , NECRON, CANOPTEK, TOMB CRAWLER

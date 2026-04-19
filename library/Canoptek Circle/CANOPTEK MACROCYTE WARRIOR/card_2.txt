@@ -1,0 +1,26 @@
+APL
+WOUNDS
+SAVE
+MOVE
+CANOPTEK MACROCYTE WARRIOR
+2
+7"
+4+
+7
+Aggressive Defence: If this operative is incapacitated by an
+enemy operative within 2" of it, before this operative is removed
+from the killzone, roll one D3: on a 2+, inflict 1 damage on that
+enemy operative.
+A Ceaseless Scuttling: As a STRATEGIC GAMBIT in
+each turning point after the first, if you have less than three
+non-incapacitated friendly CANOPTEK CIRCLE  WARRIOR
+operatives, you can set up another one ready and with a Conceal
+order wholly within your drop zone (you can select its weapon
+options as normal).
+Expendable Construct: This operative is ignored for your
+opponent’s kill/elimination op (when it’s incapacitated, and when
+determining your starting number of operatives). It’s also ignored
+for victory conditions and scoring VPs if either require operatives
+to ‘escape’, ‘survive’ or be incapacitated by enemy operatives
+(if it escapes/survives/is incapacitated, determining how many
+operatives must escape/survive/be incapacitated, etc.).

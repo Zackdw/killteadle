@@ -1,0 +1,31 @@
+APL
+WOUNDS
+SAVE
+MOVE
+SORCERER OF WARPFIRE
+3
+6"
+3+
+15
+*Mindburn: In the Resolve Attack Dice step, if you inflict damage
+with any critical successes, the operative this weapon is being
+used against gains one of your Mindburn tokens (if it doesn't
+already have one) until the end of its next activation, until it’s
+incapacitated or until a friendly operative uses this weapon again
+(whichever comes first). Whenever an operative has one of your
+Mindburn tokens, worsen the Hit stat of its weapons by 1 (this
+isn’t cumulative with being injured).
+ALIGHT
+1AP
+PSYCHIC. Select one enemy operative visible to this
+operative. Until the start of this operative’s next activation,
+until it's incapacitated or until this action is performed
+again by a friendly operative (whichever comes first), that
+enemy operative gains one of your Alight tokens (if it doesn’t
+already have one). Whenever a friendly WARPCOVEN
+operative is shooting against, fighting against or retaliating
+against an enemy operative that has one of your Alight
+tokens, that friendly operative’s weapons have the Ceaseless
+weapon rule.
+This operative cannot perform this action while within control
+range of an enemy operative.

@@ -1,0 +1,35 @@
+APL
+WOUNDS
+SAVE
+MOVE
+VOIDSCARRED GUNNER
+2
+7"
+4+
+8
+NAME
+ATK
+HIT DMG
+WR
+Blaster
+4
+3+
+4/5
+Piercing 2
+Shredder
+4
+3+
+4/5
+Rending, Torrent 2"
+Shuriken pistol
+4
+3+
+3/4
+Range 8", Rending
+Fists
+3
+3+
+2/3
+-
+28
+CORSAIR VOIDSCARRED , AELDARI, ANHRATHE, GUNNER

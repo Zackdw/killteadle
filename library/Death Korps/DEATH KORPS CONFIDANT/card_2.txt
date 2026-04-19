@@ -1,0 +1,16 @@
+APL
+WOUNDS
+SAVE
+MOVE
+DEATH KORPS CONFIDANT
+2
+6"
+5+
+7
+Directive: Whenever this operative is activated, if you haven’t
+used the Second in Command rule during the battle, you can
+select one other ready friendly DEATH KORPS  operative
+visible to and within 6" of it. When this operative is expended,
+activate that other friendly operative before your opponent
+activates (if that operative is a TROOPER, ignore its Group
+Activation rule).

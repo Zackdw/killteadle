@@ -1,0 +1,32 @@
+APL
+WOUNDS
+SAVE
+MOVE
+LECTRO-MAESTER
+2
+6"
+4+
+8
+NAME
+ATK
+HIT DMG
+WR
+Voltaic pistol
+4
+3+
+4/4
+Range 8", 1" Devastating 1, Rending
+Gun butt
+3
+4+
+2/3
+-
+Missionary of the Martian Creed: Once during each of this
+operative’s activations, it can perform the Pick Up Marker,
+Place Marker or a mission action for 1 less AP.
+Voltaghiest Array: Whenever an operative is shooting a friendly
+ELUCIDIAN STARSTRIDER  operative that’s within 4" of
+this operative, you can re-roll one of your defence dice.
+RULES CONTINUE ON OTHER SIDE
+25
+ELUCIDIAN STARSTRIDER , IMPERIUM, LECTRO-MAESTER

@@ -1,0 +1,42 @@
+APL
+WOUNDS
+SAVE
+MOVE
+DEATHWATCH HORDE-SLAYER VETERAN
+3
+5"
+3+
+18
+NAME
+ATK
+HIT DMG
+WR
+Bolt pistol
+4
+3+
+3/4
+Range 8"
+Infernus heavy bolter (flame)
+5
+2+
+3/3
+Range 8", Saturate, Torrent 2"
+Infernus heavy bolter
+5
+3+
+4/5
+Piercing Crits 1
+(focused bolt)
+Infernus heavy bolter
+4
+3+
+4/5
+Piercing Crits 1, Torrent 1"
+(sweeping bolt)
+Fists
+4
+3+
+3/4
+-
+40
+DEATHWATCH , IMPERIUM, ADEPTUS ASTARTES, GRAVIS, HORDE-SLAYER

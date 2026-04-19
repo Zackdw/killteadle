@@ -1,0 +1,41 @@
+APL
+WOUNDS
+SAVE
+MOVE
+NIGHT LORD VENTRILOKAR
+3
+6"
+3+
+14
+NAME
+ATK
+HIT DMG
+WR
+Bolt pistol
+4
+3+
+3/4
+Range 8"
+Chainsword
+5
+3+
+4/5
+-
+Icon Bearer: Whenever
+determining control of a
+marker, treat this operative’s
+APL stat as 1 higher. Note this
+isn’t a change to its APL stat,
+so any changes are cumulative
+with this.
+DISCONCERTING MIMICRY
+1AP
+PSYCHIC. Select one enemy operative within 6" of this operative, then select one of the
+following for that enemy operative (you can only select each option once per battle):
+•  Until the end of its next activation, subtract 1 from its APL stat.
+•  Change its order.
+•  Perform a free Dash action with it (specify the location for
+your opponent to move it to).
+This operative cannot perform this action while within control range of an enemy operative.
+32
+NEMESIS CLAW , CHAOS, HERETIC ASTARTES, PSYKER, VENTRILOKAR

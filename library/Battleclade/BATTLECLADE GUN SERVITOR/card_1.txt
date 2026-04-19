@@ -1,0 +1,35 @@
+APL
+WOUNDS
+SAVE
+MOVE
+BATTLECLADE GUN SERVITOR
+2
+5"
+4+
+11
+NAME
+ATK
+HIT DMG
+WR
+Heavy arc rifle
+5
+4+
+4/6
+Heavy (Dash only), Piercing 1, Stun
+Heavy bolter (focused)
+5
+4+
+4/5
+Heavy (Dash only), Piercing Crits 1
+Heavy bolter (sweeping)
+4
+4+
+4/5
+Heavy (Dash only), Piercing Crits 1, Torrent 1"
+Augmetic claw
+3
+4+
+4/5
+Brutal
+32
+BATTLECLADE , IMPERIUM, ADEPTUS MECHANICUS, GUN, SERVITOR

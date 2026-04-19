@@ -1,0 +1,29 @@
+APL
+WOUNDS
+SAVE
+MOVE
+MAGUS
+3
+6"
+4+
+9
+TELEPATHIC OVERLOAD
+1AP
+MENTAL ONSLAUGHT
+1AP
+PSYCHIC. Select one enemy operative visible to this
+operative. Until the end of that operative’s next activation,
+subtract 1 from its APL stat.
+PSYCHIC. Select one enemy operative that’s a valid target
+for this operative. Inflict 2 damage on it, or 4 damage instead
+if it’s within 6" of this operative. Then roll one D6: if the
+result is higher than that enemy operative’s APL stat, inflict
+an additional 2 damage on it, or 4 damage instead if it’s
+within 6" of this operative. Keep rolling one D6 in this manner
+until you roll equal to or less than that enemy operative’s APL
+stat, until it’s incapacitated, or until you inflict 8 damage on
+it during this action (whichever comes first).
+This operative cannot perform this action while within control
+range of an enemy operative.
+This operative cannot perform this action while within control
+range of an enemy operative.

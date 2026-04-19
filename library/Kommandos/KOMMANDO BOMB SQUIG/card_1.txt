@@ -1,0 +1,34 @@
+APL
+WOUNDS
+SAVE
+MOVE
+KOMMANDO BOMB SQUIG
+2
+6"
+5+
+5
+NAME
+ATK
+HIT DMG
+WR
+Explosives
+6
+4+
+4/5
+Blast 1", Limited 1, Explosive*
+Bite
+3
+4+
+4/5
+-
+*Explosive: This operative can perform the Shoot action with
+this weapon while within control range of an enemy operative.
+Don’t select a valid target. Instead, this operative is always the
+primary target and cannot be in cover or obscured.
+Boom!: If this operative is incapacitated during a battle in which
+it hasn’t used its explosives, roll one D6, or two D6 if you wish. If
+any result is a 4+, this operative performs a free Shoot action
+with its explosives before it’s removed from the killzone.
+RULES CONTINUE ON OTHER SIDE
+25
+KOMMANDO , ORK, BOMB SQUIG

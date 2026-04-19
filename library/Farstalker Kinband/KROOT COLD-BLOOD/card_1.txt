@@ -1,0 +1,33 @@
+APL
+WOUNDS
+SAVE
+MOVE
+KROOT COLD-BLOOD
+2
+6"
+5+
+9
+NAME
+ATK
+HIT DMG
+WR
+Kroot rifle
+4
+3+
+3/4
+-
+Blade
+3
+3+
+3/5
+-
+Hardy: Whenever an attack dice would inflict Critical Dmg on this
+operative, you can choose for that attack dice to inflict Normal
+Dmg instead.
+Cold-blooded: Whenever this operative is shooting against,
+fighting against or retaliating against a wounded enemy
+operative, this operative’s weapons have the Lethal 5+ weapon
+rule; if that enemy operative is also injured, this operative’s
+weapons also have the Rending weapon rule.
+28
+FARSTALKER KINBAND , T’AU EMPIRE, KROOT, COLD-BLOOD

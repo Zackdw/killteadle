@@ -1,0 +1,44 @@
+APL
+WOUNDS
+SAVE
+MOVE
+MINDWITCH
+2
+6"
+5+
+8
+NAME
+ATK
+HIT DMG
+WR
+Infernal gaze
+5
+3+
+0/0
+PSYCHIC, Range 6", Devastating 2, Lethal 3+
+Fists
+3
+5+
+1/2
+-
+HEINOUS DELUGE
+1AP
+MALEFIC VORTEX
+1AP
+PSYCHIC. Select one enemy
+operative that's a valid target for
+this operative. Until the end of that
+operative’s next activation, subtract 1
+from its APL stat.
+This operative cannot perform this
+action while within control range of an
+enemy operative.
+PSYCHIC. Remove your Malefic Vortex marker from the killzone (if any). Then
+place your Malefic Vortex marker visible to this operative, or on Vantage terrain of
+a terrain feature that’s visible to this operative. Inflict 1 damage on each enemy
+operative within 2" of that marker. In addition, in the Ready step of each Strategy
+phase, inflict 1 damage on each enemy operative within 2" of that marker.
+This operative cannot perform this action while within control range of an
+enemy operative.
+32
+CHAOS CULT , CHAOS, DARK COMMUNE, PSYKER, MINDWITCH

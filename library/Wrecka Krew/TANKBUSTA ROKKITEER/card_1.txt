@@ -1,0 +1,48 @@
+APL
+WOUNDS
+SAVE
+MOVE
+TANKBUSTA ROKKITEER
+2
+6"
+4+
+12
+NAME
+ATK HIT DMG
+WR
+Pulsa rokkit
+6
+5+
+-
+Heavy (Reposition only), Limited 1, Pulsa*
+Rokkit launcha
+6
+5+
+4/5
+Blast 1"
+Rokkit rack
+6
+5+
+4/5
+Blast 2", Heavy (Reposition only), Limited 1, Relentless
+Fists
+3
+3+
+3/4
+-
+*Pulsa: Don’t select a valid target. Instead, place your Pulsa
+marker visible to this operative, or on Vantage terrain of a
+terrain feature that’s visible to this operative. That marker gains
+1 Pulsa point, then roll attack dice: it gains 1 additional Pulsa
+point for each success (to a maximum of 3 additional points).
+Separately inflict D3 damage on each operative wholly within x"
+of that marker, where x is that marker’s Pulsa points. Then the
+action ends.
+Shokkwave: Whenever an operative is within x" of your Pulsa
+marker (see left), subtract 2" from its Move stat and worsen
+the Hit stat of its weapons by 1. This is cumulative with being
+injured. X is that marker’s Pulsa points. In the Ready step of each
+Strategy phase, subtract 1 from your Pulsa marker’s points. If a
+Pulsa marker ever has 0 points, remove it.
+32
+WRECKA KREW , ORK, TANKBUSTA, ROKKITEER

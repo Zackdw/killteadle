@@ -1,0 +1,35 @@
+APL
+WOUNDS
+SAVE
+MOVE
+WEAPONS EXPERT PATHFINDER
+2
+6"
+5+
+7
+NAME
+ATK
+HIT DMG
+WR
+Ion rifle (standard)
+5
+4+
+4/5
+Piercing Crits 1
+Ion rifle (overcharge)
+5
+4+
+4/5
+Hot, Lethal 5+, Piercing 1
+Rail rifle
+4
+4+
+4/4
+Devastating 2, Lethal 5+, Piercing 1
+Gun butt
+3
+5+
+2/3
+-
+25
+PATHFINDER , T'AU EMPIRE, WEAPONS EXPERT

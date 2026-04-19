@@ -1,0 +1,29 @@
+APL
+WOUNDS
+SAVE
+MOVE
+KABALITE DISCIPLE OF YAELINDRA
+2
+7"
+4+
+8
+NAME
+ATK
+HIT DMG
+WR
+Stinger pistol
+4
+3+
+3/5
+Range 8", Lethal 5+, Stinger*
+Array of blades
+3
+3+
+3/4
+-
+*Stinger: Whenever an enemy operative is incapacitated by this weapon, before it’s removed from the killzone, inflict D3 damage on
+each other operative visible to and within 2" of it (roll separately for each). Each operative subsequently incapacitated as a result of
+this weapon rule will cause this to happen again.
+RULES CONTINUE ON OTHER SIDE
+25
+HAND OF THE ARCHON , AELDARI, DRUKHARI, DISCIPLE OF YAELINDRA

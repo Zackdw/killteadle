@@ -1,0 +1,49 @@
+APL
+WOUNDS
+SAVE
+MOVE
+DEATH KORPS CONFIDANT
+2
+6"
+5+
+7
+NAME
+ATK
+HIT DMG
+WR
+Bolt pistol
+4
+4+
+3/4
+Range 8"
+Boltgun
+4
+4+
+3/4
+-
+Lasgun
+4
+4+
+2/3
+-
+Relic laspistol
+4
+4+
+2/4
+Range 8", Lethal 5+
+Bayonet
+3
+4+
+2/3
+-
+Chainsword
+4
+4+
+4/5
+-
+Second in Command: If a friendly WATCHMASTER operative is incapacitated and removed from the killzone, you can use this rule.
+If you do, until the end of the battle, this operative can issue a GUARDSMAN ORDER as a STRATEGIC GAMBIT (even though
+it's not a WATCHMASTER operative).
+RULES CONTINUE ON OTHER SIDE
+25
+DEATH KORPS , IMPERIUM, ASTRA MILITARUM, CONFIDANT

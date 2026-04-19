@@ -1,0 +1,25 @@
+APL
+WOUNDS
+SAVE
+MOVE
+MURDERWING CURSECLAW
+3
+6"
+3+
+14
+SNATCH
+1AP
+BOOST action. Select one enemy operative within this
+operative’s BOOST ZONE. Both players roll one D6 and
+add their respective operative’s Wounds stat to their result.
+If your result is higher, remove that enemy operative from the
+killzone and set it back up within this operative’s BOOST
+ZONE or control range. It must be set up in a location it
+can be placed and cannot be set up further away from this
+operative than where it began. If that enemy operative is set
+up within this operative’s control range, the Fall Back or
+Reposition action ends (allowing this operative to end that
+action within control range of enemy operatives).
+This operative cannot perform this action normally. Instead,
+it performs this action during the Fall Back or Reposition
+action after setting up from a BOOST.

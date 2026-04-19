@@ -1,0 +1,37 @@
+APL
+WOUNDS
+SAVE
+MOVE
+VESPID LONGSTING
+2
+6"
+5+
+9
+NAME
+ATK
+HIT DMG
+WR
+Neutron rail rifle (standard)
+4
+4+
+4/4
+Devastating 2, Neutron Fragment*
+Neutron rail rifle (aimed)
+4
+3+
+4/4
+Devastating 2, Heavy (Dash only), Lethal 5+,
+Neutron Fragment*
+Claws
+3
+4+
+3/4
+-
+*Neutron Fragment: If the target of this weapon isn’t
+incapacitated but you resolve any attack dice, the target gains
+one of your Neutron Fragment tokens. Whenever an operative
+that has one of your Neutron Fragment tokens is activated, inflict
+D3 damage on it for each Neutron Fragment token it has (roll
+separately for each).
+28
+VESPID STINGWING , T’AU EMPIRE, LONGSTING

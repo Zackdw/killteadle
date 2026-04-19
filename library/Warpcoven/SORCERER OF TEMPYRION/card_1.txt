@@ -1,0 +1,41 @@
+APL
+WOUNDS
+SAVE
+MOVE
+SORCERER OF TEMPYRION
+3
+6"
+3+
+15
+NAME
+ATK
+HIT DMG
+WR
+Fluxblast
+4
+3+
+3/4
+PSYCHIC, Blast 2", Rending
+Inferno bolt pistol
+4
+3+
+3/4
+Range 8", Piercing 1
+Warpflame pistol
+4
+2+
+3/3
+Range 6", Piercing 1, Torrent 1"
+Force stave
+4
+3+
+4/6
+PSYCHIC, Shock
+Prosperine khopesh
+5
+3+
+4/6
+Lethal 5+
+RULES CONTINUE ON OTHER SIDE
+32
+WARPCOVEN , CHAOS, HERETIC ASTARTES, PSYKER, SORCERER, TEMPYRION

@@ -1,0 +1,36 @@
+APL
+WOUNDS
+SAVE
+MOVE
+GEOMANCER
+3
+6"
+3+
+14
+NAME
+ATK
+HIT DMG
+WR
+Tremorglaive (part matter)
+4
+3+
+4/5
+Piercing 1, Piercing Crits 2
+Tremorglaive (quake)
+5
+3+
+1/2
+Blast 2", Seek Light, Stun
+Tremorglaive (sweep)
+4
+4+
+4/5
+Severe, Shock, Stun
+Obelisk Node Control: Whenever this operative would perform a mission action (excluding Retrieve, Approved Ops 2025), if it
+requires this operative to control an objective marker, you can instead determine control from one of your OBELISK NODE markers
+(see Obelisk Node Matrix faction rule). Whenever this operative would perform the Operate Hatch action, you can open or close a
+hatchway thats access point is within 1" of one of your OBELISK NODE markers instead. Note that you must still fulfil the Operate
+Hatch action’s conditions.
+GEOMANCER ACTIONS ARE PRESENTED ON THEIR OWN CARDS
+50
+CANOPTEK CIRCLE , NECRON, LEADER, CRYPTEK, GEOMANCER

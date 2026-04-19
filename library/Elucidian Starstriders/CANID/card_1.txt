@@ -1,0 +1,42 @@
+APL
+WOUNDS
+SAVE
+MOVE
+CANID
+2
+8"
+5+
+7
+NAME
+ATK
+HIT DMG
+WR
+Vicious bite
+4
+3+
+3/4
+Rending
+operative can immediately perform a free Charge action (you
+can change its order to Engage to do so), but must end that move
+within control range of that enemy operative.
+Beast: This operative cannot perform any actions other than
+Charge, Dash, Fall Back, Fight, Gather, Guard,
+Reposition, Pick Up Marker and Place Marker. It
+cannot use any weapons that aren’t on its datacard.
+GATHER
+1AP
+Loyal Companion: Whenever an enemy operative performs
+the Fight action, if this operative is a valid operative to fight
+against, you can force them to select this operative to fight
+against instead. Whenever an enemy operative ends the Charge
+action within control range of another friendly ELUCIDIAN
+STARSTRIDER  operative within 3" of this operative, if this
+operative isn’t within control range of enemy operatives, this
+Perform a free Dash or Reposition action with this
+operative. During that move, it can perform a free Pick
+Up Marker or Place Marker action (you can determine
+control during that action to do so), and any remaining move
+distance it had from the Dash or Reposition action can be
+used after it does so.
+25
+ELUCIDIAN STARSTRIDER , IMPERIUM, CANID

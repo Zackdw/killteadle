@@ -1,0 +1,13 @@
+APL
+WOUNDS
+SAVE
+MOVE
+NEOPHYTE LEADER
+2
+6"
+5+
+8
+Shadow Vector: Once per turning point, you can use the Slink
+Into Darkness or Coiled Serpent firefight ploy for 0CP if the
+specified friendly WYRMBLADE  operative is a NEOPHYTE
+visible to this operative.

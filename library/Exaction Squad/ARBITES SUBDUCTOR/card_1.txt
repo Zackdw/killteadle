@@ -1,0 +1,27 @@
+APL
+WOUNDS
+SAVE
+MOVE
+ARBITES SUBDUCTOR
+2
+6"
+3+
+8
+NAME
+ATK
+HIT DMG
+WR
+Shotpistol
+4
+4+
+3/3
+Range 8"
+Shock maul & assault shield
+4
+4+
+4/4
+Shock, Repress*
+Stubborn Subjugator: You can ignore any changes to the Hit stat
+of this operative’s melee weapons.
+28
+EXACTION SQUAD , IMPERIUM, ADEPTUS ARBITES, SUBDUCTOR

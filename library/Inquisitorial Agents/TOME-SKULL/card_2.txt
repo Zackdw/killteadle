@@ -1,0 +1,22 @@
+APL
+WOUNDS
+SAVE
+MOVE
+TOME-SKULL
+2
+6"
+5+
+5
+Expendable: This operative is ignored for your opponent’s kill/
+elimination op (when it’s incapacitated, and when determining
+your starting number of operatives). It’s also ignored for victory
+conditions and scoring VPs if either require operatives to
+‘escape’, ‘survive’ or be incapacitated by enemy operatives (if
+it escapes/survives/is incapacitated, determining how many
+operatives must escape/survive/be incapacitated, etc.).
+Group Activation: Whenever this operative is expended, you
+must then activate a ready friendly INQUISITORIAL AGENT
+INTERROGATOR operative (if able) before your opponent
+activates. The same is true in reverse (INTERROGATOR
+followed by TOME-SKULL). When that other operative is
+expended, your opponent then activates as normal.

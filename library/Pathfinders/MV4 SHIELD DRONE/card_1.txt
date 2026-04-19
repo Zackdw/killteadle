@@ -1,0 +1,35 @@
+APL
+WOUNDS
+SAVE
+MOVE
+MV4 SHIELD DRONE
+2
+6"
+4+
+7
+NAME
+ATK
+HIT DMG
+WR
+Ram
+3
+5+
+2/3
+-
+Drone:
+Shield Generator:
+•  This operative cannot perform any actions other than
+Charge, Dash, Fall Back, Fight and Reposition. It
+cannot use any weapons that aren’t on its datacard.
+•  Whenever determining control of an objective marker, treat
+this operative’s APL stat as 1 lower. Note this isn’t a change to
+its APL stat, so any changes are cumulative with this.
+•  Whenever determining what’s visible to this operative, the
+round disc at the top of the miniature is its head.
+•  This operative ignores the Piercing weapon rule.
+•  Once per turning point, when an attack dice inflicts Normal
+Dmg on this operative, you can ignore that inflicted damage.
+•  You can use the Saviour Protocols firefight ploy for 0CP if this
+is the specified DRONE operative.
+32
+PATHFINDER , T'AU EMPIRE, MV4 SHIELD, DRONE

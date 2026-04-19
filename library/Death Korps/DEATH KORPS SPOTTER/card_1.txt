@@ -1,0 +1,40 @@
+APL
+WOUNDS
+SAVE
+MOVE
+DEATH KORPS SPOTTER
+2
+6"
+5+
+7
+NAME
+ATK
+HIT DMG
+WR
+Lasgun
+4
+4+
+2/3
+-
+Mortar barrage
+4
+4+
+3/5
+Blast 2", Heavy (Dash only), Silent
+Bayonet
+3
+4+
+2/3
+-
+SPOT
+1AP
+SUPPORT. Select one enemy operative visible to this operative. Once during
+this turning point, when a friendly DEATH KORPS  operative within 3" of this
+operative is shooting that enemy operative, you can use this effect. If you do:
+This operative cannot perform this
+action while within control range of an
+enemy operative.
+•  That friendly operative’s ranged weapons have the Seek Light weapon rule.
+•  That enemy operative cannot be obscured.
+25
+DEATH KORPS , IMPERIUM, ASTRA MILITARUM, SPOTTER

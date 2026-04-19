@@ -1,0 +1,17 @@
+APL
+WOUNDS
+SAVE
+MOVE
+REJUVENAT ADEPT
+2
+6"
+4+
+8
+HEALING SERUM
+1AP
+Select one friendly ELUCIDIAN STARSTRIDER
+operative within this operative’s control range to regain up to
+D3+3 lost wounds. It cannot be an operative that the Medic!
+rule was used on during this turning point.
+This operative cannot perform this action while within control
+range of an enemy operative.

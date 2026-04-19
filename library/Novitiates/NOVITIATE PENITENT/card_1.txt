@@ -1,0 +1,35 @@
+APL
+WOUNDS
+SAVE
+MOVE
+NOVITIATE PENITENT
+2
+6"
+4+
+7
+NAME
+ATK
+HIT DMG
+WR
+Autopistol
+4
+4+
+2/3
+Range 8"
+Penitent eviscerator
+4
+4+
+5/6
+Brutal, Zealous Rage*
+*Zealous Rage: Whenever this operative is fighting with this
+weapon, it has the Ceaseless weapon rule.
+Absolution Through Destruction: Whenever this operative
+performs the Fight action, if it isn’t incapacitated, it can
+immediately perform a free Fight action afterwards. This takes
+precedence over action restrictions, and you cannot perform
+more than two Fight actions in succession as a result of this
+rule. If this operative is benefitting from the effects of the Whip
+Into Frenzy action (see EXACTOR), this applies to each of
+the Fight actions from those effects.
+28
+NOVITIATE , IMPERIUM, ADEPTA SORORITAS, PENITENT

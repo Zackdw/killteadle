@@ -1,0 +1,45 @@
+APL
+WOUNDS
+SAVE
+MOVE
+STRIKING SCORPION EXARCH
+3
+7"
+3+
+9
+NAME
+ATK
+HIT DMG
+WR
+Shuriken pistol
+4
+3+
+3/4
+Range 8", Rending
+Twin shuriken pistols
+4
+4+
+3/4
+Range 8", Ceaseless, Rending
+Biting blade
+5
+3+
+5/6
+Rending
+Scorpion’s claw and chainsword 5
+3+
+4/6
+Brutal, Lethal 5+
+Twin chainswords
+5
+3+
+4/5
+Ceaseless, Rending
+Mandiblasters: Whenever this operative performs the Fight
+action, at the start of the Roll Attack Dice step, you can use
+this rule. If you do, inflict 2 damage on the enemy operative in
+that sequence.
+Exarch: This operative can perform two Shoot or two Fight
+actions during its activation.
+28
+BLADES OF KHAINE , AELDARI, ASURYANI, LEADER, STRIKING SCORPION, EXARCH

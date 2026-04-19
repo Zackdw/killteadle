@@ -1,0 +1,37 @@
+APL
+WOUNDS
+SAVE
+MOVE
+NEOPHYTE ICON BEARER
+2
+6"
+5+
+7
+NAME
+ATK
+HIT DMG
+WR
+Autogun
+4
+4+
+2/3
+-
+Shotgun
+4
+3+
+3/3
+Range 6"
+Gun butt
+3
+4+
+2/3
+-
+Icon Bearer: Whenever determining control of a marker, treat this operative’s APL stat as 1 higher. Note this isn't a change to its APL
+stat, so any changes are cumulative with this.
+Overthrow the Oppressors: Once per turning point, when a ready friendly WYRMBLADE  NEOPHYTE operative is incapacitated
+while visible to and within 6" of this operative, you can use this rule. If you do, before that operative is removed from the killzone, it
+can either perform one free Shoot action (you can change its order to do so), or you can use the A Plan Generations in the Making
+firefight ploy for 0CP if that incapacitated operative is the specified friendly WYRMBLADE  NEOPHYTE operative. It's then
+removed from the killzone as normal.
+25
+WYRMBLADE , TYRANID, GENESTEALER CULT, NEOPHYTE, ICON BEARER

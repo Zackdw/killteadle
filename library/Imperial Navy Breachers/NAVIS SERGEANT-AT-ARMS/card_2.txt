@@ -1,0 +1,15 @@
+APL
+WOUNDS
+SAVE
+MOVE
+NAVIS SERGEANT-AT-ARMS
+2
+6"
+4+
+9
+Command Breach: Whenever you would use the Attack Order or Defence Order strategy ploy, if this operative is in the killzone, it
+costs you 0CP. Once during each of this operative’s activations, before or after it performs an action, if your Attack Order or Defence
+Order marker is in the killzone (see relevant strategy ploy), you can either:
+• Remove that marker and place it again.
+•  Change the selected ploy to the other (e.g. your Attack Order becomes a Defence Order).
+You cannot do both, and you don’t need to spend any CP to change the ploy.

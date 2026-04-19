@@ -1,0 +1,31 @@
+APL
+WOUNDS
+SAVE
+MOVE
+MARKSMAN PATHFINDER
+2
+6"
+5+
+7
+NAME
+ATK
+HIT DMG
+WR
+Marksman rail rifle (standard)
+4
+3+
+4/4
+Devastating 2, Lethal 5+, Piercing 1
+Marksman rail rifle (dart round) 4
+3+
+3/4
+Piercing 1, Silent
+Gun butt
+3
+5+
+2/3
+-
+Inertial Dampener: You can ignore any changes to the Hit stat of
+this operative’s marksman rail rifle.
+25
+PATHFINDER , T'AU EMPIRE, MARKSMAN

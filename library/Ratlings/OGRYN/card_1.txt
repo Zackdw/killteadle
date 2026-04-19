@@ -1,0 +1,35 @@
+APL
+WOUNDS
+SAVE
+MOVE
+OGRYN
+2
+6"
+5+
+16
+NAME
+ATK
+HIT DMG
+WR
+Ripper gun
+4
+3+
+4/5
+Range 8", Punishing
+Bayonet
+4
+3+
+4/5
+-
+Bayonet Charge: Whenever this operative finishes moving during
+the Charge action, you can inflict D3+1 damage on one enemy
+operative within its control range.
+Slow-witted: You must spend 1 additional AP for this operative to
+perform the Pick Up Marker and mission actions (excluding
+Operate Hatch).
+Brute: Whenever your opponent is selecting a valid target, if
+this operative has a Conceal order, it cannot use Light terrain
+for cover. While this can allow this operative to be targeted
+(assuming it’s visible), it doesn’t remove its cover save (if any).
+40
+RATLING , IMPERIUM, ASTRA MILITARUM, OGRYN

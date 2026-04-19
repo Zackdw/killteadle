@@ -1,0 +1,20 @@
+APL
+WOUNDS
+SAVE
+MOVE
+PLASMACYTE REANIMATOR
+2
+7"
+5+
+5
+REANIMATE
+1/2AP
+Select one of your Reanimation markers visible to and within
+6" of this operative. Roll one D6: on a 3+, a friendly operative
+is REANIMATED; if you spent 1 additional AP, a friendly
+operative is automatically REANIMATED (you don’t need
+to roll one D6). An operative that’s REANIMATED from this
+unique action is set up expended if it was already expended
+during this turning point.
+This operative cannot perform this action while within control
+range of an enemy operative.

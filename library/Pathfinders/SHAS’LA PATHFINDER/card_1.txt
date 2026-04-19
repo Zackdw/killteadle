@@ -1,0 +1,39 @@
+APL
+WOUNDS
+SAVE
+MOVE
+SHAS’LA PATHFINDER
+2
+6"
+5+
+7
+NAME
+ATK
+HIT DMG
+WR
+Pulse carbine
+4
+4+
+4/5
+-
+Gun butt
+3
+5+
+2/3
+-
+Group Activation: Whenever this operative is expended, you
+must then activate one other ready friendly PATHFINDER
+SHAS’LA operative (if able) before your opponent activates.
+When that other operative is expended, your opponent then
+activates as normal (in other words, you cannot activate more
+than two operatives in succession with this rule).
+Fearless on the Frontline: This operative can perform the
+Markerlight action while within control range of an enemy
+operative (this takes precedence over the Markerlight action’s
+normal conditions). In addition, this operative can perform the
+Fall Back action for 1 less AP.
+MARKERLIGHT
+1AP
+See the Markerlights faction rule.
+25
+PATHFINDER , T'AU EMPIRE, SHAS’LA

@@ -1,0 +1,39 @@
+APL
+WOUNDS
+SAVE
+MOVE
+LEGIONARY BALEFIRE ACOLYTE
+3
+6"
+3+
+14
+NAME
+ATK
+HIT DMG
+WR
+Bolt pistol
+4
+3+
+3/4
+Range 8"
+Fireblast
+4
+3+
+3/4
+PSYCHIC , Blast 2", 1" Devastating 1, Saturate
+Life siphon
+5
+3+
+3/3
+PSYCHIC ,  Saturate, Siphon Life*
+Fell dagger
+5
+3+
+3/4
+PSYCHIC , Rending, Siphon Life*
+*Siphon Life: When you select this weapon, you can use this rule. If you do, at the start of the Resolve Attack Dice step, select one
+friendly LEGIONARY  operative visible to and within 6" of this operative. For each attack dice you resolve during that step that
+inflicts damage, that friendly operative regains 1 lost wound, or D3 lost wounds if it was a critical success. You cannot use this weapon
+rule more than once per turning point.
+32
+LEGIONARY , CHAOS, HERETIC ASTARTES, PSYKER, BALEFIRE ACOLYTE

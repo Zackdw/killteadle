@@ -1,0 +1,37 @@
+APL
+WOUNDS
+SAVE
+MOVE
+BREAKA BOY DEMOLISHA
+2
+6"
+4+
+12
+NAME
+ATK
+HIT DMG
+WR
+Tankhammer (bash)
+4
+3+
+4/5
+-
+Tankhammer (detonate)
+4
+3+
+*
+Lethal 5+, Limited 1, Detonate*
+Reckless Temperament: Normal Dmg of 4 or more inflicts 1
+less damage on this operative; if this operative has an Engage
+order, Critical Dmg of 4 or more also inflicts 1 less damage on
+this operative.
+*Detonate: The first time you would inflict damage on an enemy
+operative with this weapon profile during the battle, inflict D6+6
+damage on that enemy operative and each other operative within
+its control range if it’s a normal success, or 2D6+6 damage if it’s
+a critical success (roll separately for each). Then the action ends
+and you gain 1 Wrecka point, plus 1 for each operative that was
+incapacitated during that action. Damage from this weapon rule
+cannot be ignored or reduced.
+32
+WRECKA KREW , ORK, BREAKA BOY, DEMOLISHA

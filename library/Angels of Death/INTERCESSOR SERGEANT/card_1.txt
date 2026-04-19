@@ -1,0 +1,61 @@
+APL
+WOUNDS
+SAVE
+MOVE
+INTERCESSOR SERGEANT
+3
+6"
+3+
+15
+NAME
+ATK
+HIT DMG
+WR
+Auto bolt rifle
+4
+3+
+3/4
+Torrent 1"
+Bolt rifle
+4
+3+
+3/4
+Piercing Crits 1
+Stalker bolt rifle (heavy)
+4
+3+
+3/5
+Heavy (Dash only), Lethal 5+, Piercing Crits 1
+Stalker bolt rifle (mobile)
+4
+3+
+3/4
+-
+Chainsword
+4
+3+
+4/5
+-
+Fists
+4
+3+
+3/4
+-
+Power fist
+4
+4+
+5/7
+Brutal
+Power weapon
+4
+3+
+4/6
+Lethal 5+
+Thunder hammer
+4
+4+
+5/6
+Shock, Stun
+RULES CONTINUE ON OTHER SIDE
+32
+ANGEL OF DEATH , IMPERIUM, APEPTUS ASTARTES, LEADER, INTERCESSOR, SERGEANT

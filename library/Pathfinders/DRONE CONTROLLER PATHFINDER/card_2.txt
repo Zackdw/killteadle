@@ -1,0 +1,21 @@
+APL
+WOUNDS
+SAVE
+MOVE
+DRONE CONTROLLER PATHFINDER
+2
+6"
+5+
+7
+REMOTE PILOT
+1AP
+One friendly PATHFINDER  DRONE operative can
+immediately perform one free action, but it cannot move
+more than 2" during that action. That action can be one
+that’s normally restricted by its Drone rule (this takes
+precedence over that rule).
+This operative cannot perform this action while within control
+range of an enemy operative. This operative can perform this
+action more than once during its activation, but if it does,
+the same DRONE operative cannot perform the same free
+action more than once per activation.

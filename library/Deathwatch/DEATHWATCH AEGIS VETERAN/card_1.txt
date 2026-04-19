@@ -1,0 +1,31 @@
+APL
+WOUNDS
+SAVE
+MOVE
+DEATHWATCH AEGIS VETERAN
+3
+6"
+2+
+15
+NAME
+ATK
+HIT DMG
+WR
+Bolt pistol
+4
+3+
+3/4
+Range 8"
+Power maul & storm shield
+5
+3+
+4/6
+Shock, Shield*
+*Shield: Whenever this operative is fighting or retaliating with
+this weapon, each of your blocks can be allocated to block two
+unresolved successes (instead of one).
+Storm Shield: Whenever an operative is shooting this operative,
+worsen the x of the Piercing weapon rule by 1 (if any). Note that
+Piercing 1 would therefore be ignored.
+32
+DEATHWATCH , IMPERIUM, ADEPTUS ASTARTES, AEGIS

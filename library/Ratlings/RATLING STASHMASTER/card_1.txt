@@ -1,0 +1,35 @@
+APL
+WOUNDS
+SAVE
+MOVE
+RATLING STASHMASTER
+2
+5"
+5+
+6
+NAME
+ATK
+HIT DMG
+WR
+Sniper rifle (mobile)
+4
+4+
+3/4
+-
+Sniper rifle (stationary)
+4
+3+
+3/3
+Devastating 3, Heavy
+Fists
+3
+5+
+1/2
+-
+Light-fingered: Once during each of this operative’s activations,
+it can perform the Pick Up Marker, Place Marker or a
+mission action for 1 less AP.
+Well Stocked: If you select an Ammo Cache from universal
+equipment, you can set up an additional Ammo Cache marker.
+25
+RATLING , IMPERIUM, ASTRA MILITARUM, STASHMASTER

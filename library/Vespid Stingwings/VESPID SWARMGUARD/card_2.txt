@@ -1,0 +1,18 @@
+APL
+WOUNDS
+SAVE
+MOVE
+VESPID SWARMGUARD
+2
+6"
+5+
+9
+SKYTORCH ASSAULT
+2AP
+Perform a free Reposition action with this operative.
+During that action, it must FLY and can move an additional
+2". Then perform a free Shoot action. You can only select a
+flamer (skytorch) for that Shoot action.
+This operative cannot perform this action while it has
+a Conceal order, or while within control range of an
+enemy operative.

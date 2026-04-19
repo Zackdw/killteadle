@@ -1,0 +1,43 @@
+APL
+WOUNDS
+SAVE
+MOVE
+SANCTIFIER CONFLAGRATOR
+2
+6"
+5+
+7
+NAME
+A
+HIT
+D
+WR
+Twin hand flamers (focused)
+4
+2+
+3/3
+Range 6", Saturate, Torrent 2", Blaze*
+Twin hand flamers (twin torrent)
+4
+2+
+3/3
+Range 6", Saturate, Torrent 0",
+Twin Torrent¹, Blaze*
+Gun butts
+4
+4+
+2/3
+-
+¹Twin Torrent: Select up to two different valid targets that
+aren’t within control range of friendly operatives. Shoot with
+this weapon against both of them in an order of your choice (roll
+each sequence separately). Torrent 0" means you cannot select
+secondary targets, but this weapon still has the Torrent weapon
+rule for all other rules purposes, e.g. the Condensed Stronghold
+rule (see Killzone: Volkus, Kill Team Core Book).
+Sanctification Rack: This operative can perform the
+Sanctification Orb action (see faction equipment). Doing so
+in this manner doesn’t count towards the once per turning point
+limit (i.e. if you also select that equipment for other operatives).
+25
+SANCTIFIER , IMPERIUM, ADEPTUS MINISTORUM, CONFLAGRATOR

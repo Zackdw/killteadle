@@ -1,0 +1,22 @@
+APL
+WOUNDS
+SAVE
+MOVE
+KABALITE DISCIPLE OF YAELINDRA
+2
+7"
+4+
+8
+TORMENT GRENADE
+1AP
+Select one enemy operative visible to and within 6" of this
+operative. That operative and each other operative within 1"
+of it takes a poison test.
+For an operative to take a poison test, roll one D6, adding 1
+to the result if that operative has a Save stat of 4+ or worse:
+on a 3+, inflict D3 damage on that operative and it gains
+one of your Poison tokens (if it doesn’t already have one).
+Whenever an operative that has one of your Poison tokens is
+activated, inflict D3 damage on it.
+This operative cannot perform this action while within control
+range of an enemy operative.

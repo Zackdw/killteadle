@@ -1,0 +1,39 @@
+APL
+WOUNDS
+SAVE
+MOVE
+INSIDIANT CREMATOR
+2
+6"
+3+
+9
+NAME
+ATK
+HIT DMG
+WR
+Hand flamer (standard)
+4
+2+
+3/3
+Range 6”, Saturate, Torrent 1”
+Hand flamer (deluge)
+4
+2+
+3/3
+Range 4", Saturate, Seek Light, Torrent 0"1
+Null mace
+4
+3+
+4/4
+Shock, Anti-PSYKER*
+Inspirational Pyre: Once per turning point, when this operative
+inflicts damage on an enemy operative with either profile of its
+hand flamer but doesn’t incapacitate it, you can use this rule. If
+you do, you can select one friendly CELESTIAN INSIDIANT
+operative within 6" of this operative to become INSPIRING.
+1 Note that Torrent 0" means you cannot select secondary
+targets, but this weapon still has the Torrent weapon rule for all
+other rules purposes, e.g. the Condensed Stronghold rule (see
+Killzone: Volkus, Kill Team Core Book).
+32
+CELESTIAN INSIDIANT , IMPERIUM, ADEPTA SORORITAS, CREMATOR

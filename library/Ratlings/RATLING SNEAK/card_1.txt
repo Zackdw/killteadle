@@ -1,0 +1,43 @@
+APL
+WOUNDS
+SAVE
+MOVE
+RATLING SNEAK
+2
+5"
+5+
+6
+NAME
+ATK
+HIT
+DMG
+WR
+Suppressed sniper rifle (mobile)
+4
+4+
+3/4
+Silent
+Suppressed sniper rifle (stationary)
+4
+3+
+3/3
+Devastating 2, Heavy, Silent
+Fists
+3
+5+
+1/2
+-
+Evade: Once per turning point, after an enemy operative
+performs an action, you can interrupt and perform a free Dash
+action with this operative. Note this operative cannot use the
+Scarper faction rule (it has this rule instead).
+OPTICS
+1AP
+Until the start of this operative’s next activation, whenever
+it’s shooting, enemy operatives cannot be obscured and the
+stationary profile of this operative’s suppressed sniper rifle
+has the Lethal 5+ weapon rule.
+This operative cannot perform this action while within control
+range of an enemy operative.
+25
+RATLING , IMPERIUM, ASTRA MILITARUM, SNEAK

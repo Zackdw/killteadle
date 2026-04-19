@@ -1,0 +1,37 @@
+APL
+WOUNDS
+SAVE
+MOVE
+SANCTIFIER PERSECUTOR
+2
+6"
+5+
+7
+NAME
+A
+HIT
+D
+WR
+Hand flamer
+4
+3+
+3/3
+Range 6", Saturate, Torrent 1", Blaze*
+Eviscerator
+4
+4+
+5/6
+Brutal
+Merciless Castigation: The first time this operative performs the
+Fight action during each of its activations, if neither it nor the
+enemy operative in that sequence is incapacitated, this operative
+can immediately perform a free Fight action afterwards, but you
+cannot select any other enemy operative to fight against during
+that action (and only if it’s still valid to fight against). This takes
+precedence over action restrictions.
+Fanatical Retribution: If this operative is incapacitated during
+the Fight action, you can strike the enemy operative in that
+sequence with one of your unresolved successes before this
+operative is removed from the killzone.
+25
+SANCTIFIER , IMPERIUM, ADEPTUS MINISTORUM, PERSECUTOR

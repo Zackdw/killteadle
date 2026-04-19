@@ -1,0 +1,32 @@
+APL
+WOUNDS
+SAVE
+MOVE
+GOREMONGER SKULLCLAIMER
+2
+7"
+5+
+10
+NAME
+A
+HIT
+D
+WR
+Autopistol
+4
+4+
+2/3
+Range 8"
+Great chainaxe
+4
+3+
+5/6
+Brutal
+Brutish: Whenever an attack dice would inflict Critical Dmg
+on this operative, you can choose for that attack dice to inflict
+Normal Dmg instead.
+Claim Skull: Once per turning point, if this operative
+incapacitates an enemy operative with its great chainaxe, you
+gain 1CP.
+32
+GOREMONGER , CHAOS, SKULLCLAIMER

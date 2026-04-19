@@ -1,0 +1,46 @@
+APL
+WOUNDS
+SAVE
+MOVE
+PATRIARCH
+4
+6"
+4+
+21
+NAME
+ATK
+HIT DMG
+WR
+Claws
+5
+3+
+5/6
+Relentless, Rending
+Alpha Predator: Whenever an operative
+is shooting this operative, ignore the
+Piercing weapon rule. You can activate
+this operative twice during the turning
+point as long as it has AP to spend (it
+stays ready while it can still be activated a
+second time). Per turning point, it cannot
+move more than 9" and you cannot spend
+more than 4AP in total for it.
+Monster: This operative cannot use any
+weapons that aren’t on its datacard,
+or perform unique actions (excluding
+Into Shadow and Mind Control).
+Whenever your opponent is selecting a
+valid target, if this operative has a Conceal
+order, it cannot use Light terrain for cover.
+While this can allow this operative to be
+targeted (assuming it’s visible), it doesn’t
+remove its cover save (if any).
+INTO SHADOW
+1AP
+Change this operative’s order.
+This operative cannot perform this
+action while within control range of an
+enemy operative.
+RULES CONTINUE ON OTHER SIDE
+50
+BROOD BROTHER , TYRANID, GENESTEALER CULT, BROODCOVEN, PSYKER, LEADER, PATRIARCH

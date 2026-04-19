@@ -1,0 +1,29 @@
+APL
+WOUNDS
+SAVE
+MOVE
+NAVIS AXEJACK
+2
+6"
+4+
+8
+NAME
+ATK
+HIT DMG
+WR
+Autopistol
+4
+4+
+2/3
+Range 8"
+Power weapon
+4
+3+
+4/6
+Lethal 5+
+Emboldened: Whenever an attack dice inflicts damage of 3
+or more on this operative during a turning point in which it
+performed the Charge action, roll one D6: on a 5+, subtract 1
+from that inflicted damage.
+25
+IMPERIAL NAVY BREACHER , IMPERIUM, AXEJACK

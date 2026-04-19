@@ -1,0 +1,28 @@
+APL
+WOUNDS
+SAVE
+MOVE
+INFILTRATOR WARRIOR
+3
+7"
+3+
+12
+NAME
+ATK
+HIT DMG
+WR
+Marksman bolt carbine
+4
+3+
+3/4
+Lethal 5+
+Fists
+4
+3+
+3/4
+-
+Vanguard: Once per turning point, one friendly PHOBOS
+STRIKE TEAM  operative with this rule can perform the Pick
+Up Marker or a mission action for 1 less AP.
+32
+PHOBOS STRIKE TEAM , IMPERIUM, ADEPTUS ASTARTES, INFILTRATOR, WARRIOR

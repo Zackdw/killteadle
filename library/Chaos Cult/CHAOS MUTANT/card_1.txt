@@ -1,0 +1,27 @@
+APL
+WOUNDS
+SAVE
+MOVE
+CHAOS MUTANT
+2
+6"
+5+
+7
+NAME
+ATK
+HIT DMG
+WR
+Blasphemous appendages
+4
+4+
+3/4
+Ceaseless, Rending
+Accursed Mutant: This operative cannot perform unique
+actions. You must spend 1 additional AP for this operative to
+perform the Pick Up Marker and mission actions (excluding
+Operate Hatch).
+Unnatural Regeneration: Whenever an attack dice inflicts
+damage of 3 or more on this operative, roll one D6: on a 5+,
+subtract 1 from that inflicted damage.
+25
+CHAOS CULT , CHAOS, MUTANT

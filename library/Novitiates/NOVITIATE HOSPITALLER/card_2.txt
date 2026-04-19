@@ -1,0 +1,17 @@
+APL
+WOUNDS
+SAVE
+MOVE
+NOVITIATE HOSPITALLER
+2
+6"
+4+
+7
+CHIRURGEON’S TOOLS
+1AP
+Select one friendly NOVITIATE  operative within this
+operative’s control range to regain up to 2D3 lost wounds.
+It cannot be an operative that the Medic! rule was used on
+during this turning point.
+This operative cannot perform this action while within control
+range of an enemy operative.

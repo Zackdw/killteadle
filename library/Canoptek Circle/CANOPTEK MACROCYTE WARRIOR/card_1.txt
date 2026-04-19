@@ -1,0 +1,36 @@
+APL
+WOUNDS
+SAVE
+MOVE
+CANOPTEK MACROCYTE WARRIOR
+2
+7"
+4+
+7
+NAME
+ATK
+HIT DMG
+WR
+Gauss scalpel
+4
+4+
+2/3
+Piercing 1
+Tesla caster (focused)
+4
+4+
+2/3
+-
+Tesla caster (living lightning)
+4
+4+
+2/3
+Blast 2"
+Claws & tail
+3
+4+
+3/4
+-
+RULES CONTINUE ON OTHER SIDE
+28
+CANOPTEK CIRCLE , NECRON, CANOPTEK, MACROCYTE, WARRIOR

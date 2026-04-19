@@ -1,0 +1,36 @@
+APL
+WOUNDS
+SAVE
+MOVE
+KOMMANDO GROT
+2
+6"
+5+
+5
+NAME
+ATK
+HIT DMG
+WR
+Grot choppa
+3
+5+
+1/4
+-
+Sneaky Zogger: This operative cannot
+have an Engage order. Whenever this
+operative is in cover, it cannot be selected
+as a valid target, taking precedence over
+all other rules (e.g. Seek, Vantage terrain)
+except being within 2".
+GRAPPLING HOOK
+1AP
+Select a visible point on a terrain feature for this operative. Remove this operative
+from the killzone and set it back up within 1" horizontally of that point in a location
+it can be placed, not within control range of enemy operatives, and with that point
+visible to it. This operative cannot perform the Operate Hatch action during
+this action.
+This action is treated as a Reposition action. This operative cannot perform this
+action while within control range of an enemy operative, or during an activation in
+which it performed the Charge or Fall Back action (or vice versa).
+25
+KOMMANDO , ORK, GROT

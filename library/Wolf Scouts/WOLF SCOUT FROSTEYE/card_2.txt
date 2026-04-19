@@ -1,0 +1,19 @@
+APL
+WOUNDS
+SAVE
+MOVE
+WOLF SCOUT FROSTEYE
+3
+7"
+3+
+13
+HUNTER’S SENSES
+1AP
+Select one of the following rules for all profiles of this
+operative’s instigator bolt carbine to have until the start of its
+next activation:
+•  Severe.
+•  Saturate, and whenever this operative is shooting with that
+weapon, enemy operatives cannot be obscured.
+This operative cannot perform this action while within control
+range of an enemy operative.

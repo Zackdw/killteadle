@@ -1,0 +1,17 @@
+APL
+WOUNDS
+SAVE
+MOVE
+KASRKIN COMBAT MEDIC
+2
+6"
+4+
+8
+MEDIKIT
+0AP
+Select one friendly KASRKIN  operative within this
+operative’s control range to regain up to 2D3 lost wounds.
+It cannot be an operative that the Medic! rule was used on
+during this turning point.
+This operative cannot perform this action while within control
+range of an enemy operative.

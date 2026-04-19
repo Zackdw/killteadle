@@ -1,0 +1,33 @@
+APL
+WOUNDS
+SAVE
+MOVE
+HEARTHKYN JUMP PACK WARRIOR
+2
+7"
+3+
+8
+NAME
+ATK
+HIT DMG
+WR
+Autoch-pattern bolt pistol
+4
+4+
+3/4
+Range 8", Accurate 1
+Plasma weapon
+4
+3+
+4/6
+Lethal 5+,  Force Impact*
+Jump Pack: Whenever this operative performs an action in which it moves, it can FLY. If it does, don’t move it. Instead, remove it
+from the killzone and set it back up wholly within a distance equal to its Move stat (or 3" if it was a Dash) horizontally of its original
+location (in a killzone that uses the close quarters rules, e.g. Killzone: Gallowdark, this distance cannot be measured over or through
+Wall terrain, and that operative cannot be set up on the other side of an access point – in other words it cannot FLY through an open
+hatchway). Note that it gains no additional distance when performing the Charge action. It must be set up in a location it can be
+placed, and unless it’s the Charge action, it cannot be set up within control range of an enemy operative.
+*Force Impact: Whenever this operative is fighting with this weapon, if it’s performed the Charge action during the activation, this
+weapon has the Brutal weapon rule.
+28
+HEARTHKYN SALVAGER , LEAGUES OF VOTANN, JUMP PACK WARRIOR

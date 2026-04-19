@@ -1,0 +1,36 @@
+APL
+WOUNDS
+SAVE
+MOVE
+R-VR CYBER-MASTIFF
+2
+6"
+4+
+8
+NAME
+ATK
+HIT DMG
+WR
+Mechanical bite
+4
+4+
+3/5
+Lethal 5+
+Beast: This operative cannot perform
+any actions other than Apprehend,
+Charge, Dash, Fall Back, Fight,
+Guard, Reposition, Pick Up
+Marker and Place Marker. It
+cannot use any weapons that aren’t on
+its datacard.
+APPREHEND
+0AP
+Select one enemy operative within this operative’s control range. Until that enemy
+operative is no longer within this operative’s control range, or until this operative
+performs this action again (whichever comes first), worsen the Hit stat of that
+enemy operative’s weapons by 1 (this isn’t cumulative with being injured); in
+addition, that enemy operative cannot perform the Fall Back action.
+This operative cannot perform this action unless an enemy operative is within its
+control range.
+25
+EXACTION SQUAD , IMPERIUM, ADEPTUS ARBITES, R-VR CYBER-MASTIFF

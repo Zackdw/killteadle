@@ -1,0 +1,40 @@
+APL
+WOUNDS
+SAVE
+MOVE
+NEOPHYTE GUNNER
+2
+6"
+5+
+7
+NAME
+ATK
+HIT DMG
+WR
+Flamer
+4
+2+
+3/3
+Range 8", Saturate, Torrent 2"
+Grenade launcher (frag)
+4
+4+
+2/4
+Blast 2"
+Grenade launcher (krak)
+4
+4+
+4/5
+Piercing 1
+Webber
+4
+3+
+3/4
+Range 12", Severe, Stun
+Gun butt
+3
+4+
+2/3
+-
+25
+WYRMBLADE , TYRANID, GENESTEALER CULT, NEOPHYTE, GUNNER

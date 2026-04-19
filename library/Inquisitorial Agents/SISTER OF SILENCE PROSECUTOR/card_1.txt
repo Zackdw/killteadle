@@ -1,0 +1,31 @@
+APL
+WOUNDS
+SAVE
+MOVE
+SISTER OF SILENCE PROSECUTOR
+2
+6"
+3+
+8
+NAME
+ATK
+HIT DMG
+WR
+Boltgun
+4
+3+
+3/4
+-
+Gun butt
+4
+4+
+2/3
+-
+Psychic Null: PSYCHIC ranged weapons cannot inflict damage on this operative. For the effects of PSYCHIC actions, this
+operative cannot be selected and is never treated as being within those actions’ required distances. Whenever an operative is within
+6" of this operative:
+•  That operative cannot perform PSYCHIC actions or use PSYCHIC additional rules.
+•  That operative cannot use PSYCHIC ranged weapons.
+•  PSYCHIC melee weapons have no weapon rules and cannot have Dmg stats higher than 3/4.
+32
+INQUISITORIAL AGENT , IMPERIUM, ANATHEMA PSYKANA, SISTER OF SILENCE, PROSECUTOR

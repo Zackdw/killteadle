@@ -1,0 +1,44 @@
+APL
+WOUNDS
+SAVE
+MOVE
+RAVENER FELLTALON
+3
+7"
+5+
+20
+NAME
+ATK
+HIT DMG
+WR
+Pincer tail
+4
+3+
+3/4
+Range 3", Silent
+Toxic glands
+4
+3+
+3/4
+Range 6", Silent, Poison*
+Toxic scythes
+5
+3+
+4/5
+Lethal 5+, Shock, Poison*
+*Poison: In the Resolve Attack Dice step, if you
+inflict damage with any critical successes, the
+operative this weapon is being used against gains
+one of your Poison tokens (if it doesn’t already have
+one). Whenever an operative that has one of your
+Poison tokens is activated, inflict D3 damage on it.
+TOXIC LUNGE
+1AP
+Select one enemy operative within 2" of this operative. Alternatively, if this
+operative is underground, select one enemy operative on your TUNNEL.
+Inflict D3+2 damage on that enemy operative and it gains one of your
+Poison tokens (if it doesn’t already have one).
+This operative can perform this action while underground (this takes
+precedence over the normal Burrow rules).
+40
+RAVENER , GREAT DEVOURER, TYRANID, FELLTALON

@@ -1,0 +1,30 @@
+APL
+WOUNDS
+SAVE
+MOVE
+INSIDIANT ABJUROR
+2
+6"
+2+
+11
+NAME
+ATK
+HIT DMG
+WR
+Blessed sword & praesidium
+4
+3+
+4/6
+Shield*
+protectiva (defensive)
+Blessed sword & praesidium
+4
+3+
+4/6
+Lethal 5+
+protectiva (offensive)
+*Shield: Whenever this operative is fighting or retaliating with this weapon profile, each of your blocks can be allocated to block two
+unresolved successes (instead of one).
+RULES CONTINUE ON OTHER SIDE
+32
+CELESTIAN INSIDIANT , IMPERIUM, ADEPTA SORORITAS, ABJUROR

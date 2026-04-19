@@ -1,0 +1,48 @@
+APL
+WOUNDS
+SAVE
+MOVE
+ARBITES LEASHMASTER
+2
+6"
+4+
+8
+NAME
+ATK
+HIT DMG
+WR
+Combat shotgun (close range)
+4
+3+
+4/4
+Range 6"
+Combat shotgun (long range)
+4
+5+
+2/2
+-
+Shotpistol
+4
+4+
+3/3
+Range 8”
+Repression baton
+3
+4+
+2/3
+-
+Handler: Whenever this operative is
+activated, you can activate a ready
+friendly EXACTION SQUAD  R-VR
+CYBER-MASTIFF operative at the
+same time. Complete their activations
+action by action in any order.
+Attack Pattern: STRATEGIC GAMBIT in the first turning point. Select two
+of the following attack patterns for a friendly EXACTION SQUAD  R-VR
+CYBER-MASTIFF operative to have for the battle:
+•  Aggressive: Its melee weapons have the Relentless weapon rule.
+•  Swift: Add 2" to its Move stat.
+•  Defensive: Improve its Save stat by 1.
+RULES CONTINUE ON OTHER SIDE
+28
+EXACTION SQUAD , IMPERIUM, ADEPTUS ARBITES, LEASHMASTER

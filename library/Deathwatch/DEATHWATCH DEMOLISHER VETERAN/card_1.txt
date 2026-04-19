@@ -1,0 +1,34 @@
+APL
+WOUNDS
+SAVE
+MOVE
+DEATHWATCH DEMOLISHER VETERAN
+3
+6"
+3+
+15
+NAME
+ATK
+HIT DMG
+WR
+Bolt pistol
+4
+3+
+3/4
+Range 8"
+Heavy thunder hammer
+5
+4+
+6/7
+Shock, Stun
+Brutal Assault: Whenever this operative is fighting, its heavy
+thunder hammer has the Brutal weapon rule. Whenever this
+operative performs the Charge action, its heavy thunder
+hammer has the Ceaseless weapon rule until the end of
+the activation/counteraction.
+Aggressive Force: Whenever this operative is fighting or
+retaliating, Normal and Critical Dmg of 3 or more inflicts 1 less
+damage on it. This isn’t cumulative with the Shield that Slays
+strategy ploy.
+32
+DEATHWATCH , IMPERIUM, ADEPTUS ASTARTES, DEMOLISHER

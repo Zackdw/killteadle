@@ -1,0 +1,37 @@
+APL
+WOUNDS
+SAVE
+MOVE
+ARBITES VOX-SIGNIFIER
+2
+6"
+4+
+8
+NAME
+ATK
+HIT DMG
+WR
+Combat shotgun (close range)
+4
+3+
+4/4
+Range 6"
+Combat shotgun (long range)
+4
+5+
+2/2
+-
+Repression baton
+3
+4+
+2/3
+-
+SIGNAL
+1AP
+SUPPORT. Select one other friendly EXACTION
+SQUAD  operative visible to this operative. Until the end of
+that operative’s next activation, add 1 to its APL stat.
+This operative cannot perform this action while within control
+range of an enemy operative.
+28
+EXACTION SQUAD , IMPERIUM, ADEPTUS ARBITES, VOX-SIGNIFIER

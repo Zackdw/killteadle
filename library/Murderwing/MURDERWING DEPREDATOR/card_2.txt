@@ -1,0 +1,20 @@
+APL
+WOUNDS
+SAVE
+MOVE
+MURDERWING DEPREDATOR
+3
+6"
+3+
+14
+CARVING BLOW
+1AP
+Inflict 2D3 damage on each other operative visible to and
+within 2" of this operative in an order of your choice (roll
+separately for each).
+This operative cannot perform this action while it has a
+Conceal order, or during the same activation in which it
+performed the Slice from Above action (see Bladefins
+faction equipment), the Clawed Charge action (see
+Clawed Armour faction equipment) or two Fight actions
+(and vice versa).

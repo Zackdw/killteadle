@@ -1,0 +1,31 @@
+APL
+WOUNDS
+SAVE
+MOVE
+KABALITE CRIMSON DUELLIST
+2
+7"
+4+
+8
+NAME
+ATK
+HIT DMG
+WR
+Splinter pistol
+4
+3+
+2/4
+Range 8", Lethal 5+
+Razorflail
+4
+2+
+4/5
+Brutal, Tangle*
+Brutal Display: Once per turning point, when this operative incapacitates an enemy operative within its control range, you can select
+one other enemy operative visible to and within 6" of either this operative or the incapacitated enemy operative. Until the start of the
+next turning point, that other enemy operative cannot control markers or perform the Pick Up Marker or mission actions.
+Crimson Duellist: This operative can perform two Fight actions during its activation.
+*Tangle: Whenever this operative is fighting or retaliating with this weapon, each of your blocks can be allocated to block two
+unresolved successes (instead of one).
+25
+HAND OF THE ARCHON , AELDARI, DRUKHARI, CRIMSON DUELLIST

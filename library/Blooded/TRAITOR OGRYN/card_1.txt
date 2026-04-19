@@ -1,0 +1,33 @@
+APL
+WOUNDS
+SAVE
+MOVE
+TRAITOR OGRYN
+2
+6"
+5+
+16
+NAME
+ATK
+HIT DMG
+WR
+Power maul & mutant claw
+4
+3+
+5/6
+Rending, Shock
+Avalanche of Muscle: Whenever this operative ends its move
+during the Charge action, you can inflict D3 damage on one
+enemy operative within its control range.
+Brute: Whenever your opponent is selecting a valid target, if
+this operative has a Conceal order, it cannot use Light terrain
+for cover. While this can allow this operative to be targeted
+(assuming it’s visible), it doesn’t remove its cover save (if any).
+Chem-enhanced: You can ignore any changes to this operative’s
+APL stat and it’s not affected by enemy operatives’ Shock and
+Stun weapon rules.
+Slow-witted: You must spend 1 additional AP for this operative to
+perform the Pick Up Marker and mission actions (excluding
+Operate Hatch).
+40
+BLOODED , CHAOS, OGRYN

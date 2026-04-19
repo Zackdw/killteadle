@@ -1,0 +1,36 @@
+APL
+WOUNDS
+SAVE
+MOVE
+KROOT STALKER
+2
+6"
+5+
+8
+NAME
+ATK
+HIT DMG
+WR
+Kroot scattergun
+4
+3+
+3/3
+Range 6"
+Stalker's blade
+4
+3+
+3/5
+Balanced, Rending
+Stalker: This operative can
+perform the Charge action
+while it has a Conceal order.
+STEALTH ATTACK
+2AP
+Perform a free Charge action with this operative, but don’t exceed its Move stat (i.e. don’t add
+2"). Then immediately perform a free Fight action with this operative. The first time you strike
+during that action, you can immediately resolve another of your successes as a strike (before
+your opponent).
+This operative cannot perform this action while it has an Engage order, while within control
+range of an enemy operative, or if it isn’t within 1" of Light or Heavy terrain.
+28
+FARSTALKER KINBAND , T’AU EMPIRE, KROOT, STALKER

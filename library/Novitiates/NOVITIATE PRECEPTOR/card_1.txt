@@ -1,0 +1,27 @@
+APL
+WOUNDS
+SAVE
+MOVE
+NOVITIATE PRECEPTOR
+2
+6"
+4+
+7
+NAME
+ATK
+HIT DMG
+WR
+Mace of the Righteous
+4
+4+
+5/5
+Brutal, Severe
+Unflinching Example: Whenever this operative incapacitates a
+ready enemy operative within its control range, you gain 1 Faith
+point, or 2 Faith points if that enemy operative had a Wounds stat
+of 12 or more.
+Glorious Hymnal: SUPPORT. Whenever a friendly
+NOVITIATE  operative is within 3" of this operative, that
+friendly operative’s weapons have the Severe weapon rule.
+28
+NOVITIATE , IMPERIUM, ADEPTA SORORITAS, PRECEPTOR

@@ -1,0 +1,28 @@
+APL
+WOUNDS
+SAVE
+MOVE
+SANCTIFIER CHERUB
+2
+7"
+5+
+5
+INCENTIVISE
+1AP
+Fly: Whenever this operative is performing the Charge, Fall
+Back or Reposition action, it can FLY. If it does, don’t move
+it. Instead, remove it from the killzone and set it back up wholly
+within a distance equal to its Move stat horizontally of its original
+location (in a killzone that uses the close quarters rules, e.g.
+Killzone: Tomb World, this distance cannot be measured over or
+through Wall terrain). Note that it gains no additional distance
+when performing the Charge action. It must be set up in a
+location it can be placed, and unless it’s the Charge action, it
+cannot be set up within control range of an enemy operative.
+SUPPORT. Select one other friendly SANCTIFIER
+operative (excluding CONFESSOR, DEATH CULT
+ASSASSIN, MIRACULIST and ORATOR) visible to and
+within 2" of this operative. Until the end of that operative’s
+next activation, add 1 to its APL stat.
+This operative cannot perform this action while within control
+range of an enemy operative.

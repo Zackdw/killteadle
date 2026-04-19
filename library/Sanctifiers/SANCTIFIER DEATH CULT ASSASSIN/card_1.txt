@@ -1,0 +1,34 @@
+APL
+WOUNDS
+SAVE
+MOVE
+SANCTIFIER DEATH CULT ASSASSIN
+3
+6"
+5+
+8
+NAME
+A
+HIT
+D
+WR
+Throwing knives
+4
+3+
+2/5
+Range 6", Silent
+Ritual blades
+4
+2+
+4/6
+-
+Bladed Stance: Whenever this operative is fighting or retaliating,
+you can resolve one of your successes before the normal order. If
+you do, that success must be used to block.
+TRAINED ASSASSIN
+1AP
+Change this operative’s order.
+This operative cannot perform this action while within control
+range of an enemy operative.
+25
+SANCTIFIER , IMPERIUM, ADEPTUS MINISTORUM, DEATH CULT ASSASSIN

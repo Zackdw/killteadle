@@ -1,0 +1,46 @@
+APL
+WOUNDS
+SAVE
+MOVE
+AQUILON SERVO‑SENTRY
+2
+4"
+3+
+10
+NAME
+ATK
+HIT DMG
+WR
+Flamer
+4
+2+
+3/3
+Range 8", Saturate, Torrent 2"
+Grenade launcher (frag)
+4
+4+
+2/4
+Blast 2"
+Grenade launcher (krak)
+4
+4+
+4/5
+Piercing 1
+Hot‑shot volley gun (focused)
+5
+4+
+3/4
+Piercing Crits 1
+Hot‑shot volley gun (sweeping)
+4
+4+
+3/4
+Piercing Crits 1, Torrent 1"
+Turret: This operative can perform two Shoot actions during
+its activation.
+Machine: This operative cannot perform any actions other
+than Dash, Fall Back, Reposition and Shoot. It cannot
+retaliate, assist in a fight or use any weapons that aren’t on
+its datacard.
+40
+TEMPESTUS AQUILON , IMPERIUM, SERVO‑SENTRY

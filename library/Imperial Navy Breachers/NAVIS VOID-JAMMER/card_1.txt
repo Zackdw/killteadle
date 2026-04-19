@@ -1,0 +1,39 @@
+APL
+WOUNDS
+SAVE
+MOVE
+NAVIS VOID-JAMMER
+2
+6"
+4+
+8
+NAME
+ATK
+HIT DMG
+WR
+Gheistskull detonator
+4
+3+
+3/4
+Blast 1", Lethal 4+, Limited 1, Silent,
+Stun, Detonate*
+Navis shotgun (close range)
+4
+3+
+3/3
+Range 6"
+Navis shotgun (long range)
+4
+5+
+1/2
+-
+Navis hatchet
+3
+4+
+3/4
+-
+*Detonate: Don’t select a valid target. Instead, a friendly IMPERIAL NAVY BREACHER  GHEISTSKULL operative is always
+the primary target and cannot be in cover or obscured. If that operative isn’t in the killzone, you cannot select this weapon.
+RULES CONTINUE ON OTHER SIDE
+25
+IMPERIAL NAVY BREACHER , IMPERIUM, VOID-JAMMER

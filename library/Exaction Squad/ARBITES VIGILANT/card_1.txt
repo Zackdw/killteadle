@@ -1,0 +1,36 @@
+APL
+WOUNDS
+SAVE
+MOVE
+ARBITES VIGILANT
+2
+6"
+4+
+8
+NAME
+ATK
+HIT DMG
+WR
+Combat shotgun (close range)
+4
+3+
+4/4
+Range 6"
+Combat shotgun (long range)
+4
+5+
+2/2
+-
+Repression baton
+3
+4+
+2/3
+-
+Close Quarters Vigilance: This operative can perform the
+Shoot action (excluding Guard) while within control range of
+an enemy operative, but only if it hasn’t performed the Charge
+action during the activation, or if it’s a counteraction. Note this
+operative isn’t restricted from performing the Charge action
+after performing the Shoot action.
+28
+EXACTION SQUAD , IMPERIUM, ADEPTUS ARBITES, VIGILANT

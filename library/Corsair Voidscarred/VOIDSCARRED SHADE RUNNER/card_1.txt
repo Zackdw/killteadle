@@ -1,0 +1,35 @@
+APL
+WOUNDS
+SAVE
+MOVE
+VOIDSCARRED SHADE RUNNER
+2
+7"
+4+
+8
+NAME
+ATK
+HIT DMG
+WR
+Shuriken pistol
+4
+3+
+3/4
+Range 8", Rending
+Throwing blades
+4
+3+
+2/4
+Range 6", Silent
+Hekatarii blades
+4
+3+
+3/5
+Ceaseless, Lethal 5+
+Blink Pack: Whenever this operative performs the Charge, Fall Back or Reposition action, it can warp jump. If it does, don’t
+move it. Instead, remove it from the killzone and set it back up wholly within 7" horizontally of its original location (in a killzone that
+uses the close quarters rules, e.g. Killzone: Tomb World, this distance can be measured through Wall terrain). It must be set up in a
+location it can be placed, and unless it’s the Charge action, it cannot be set up within control range of an enemy operative.
+RULES CONTINUE ON OTHER SIDE
+28
+CORSAIR VOIDSCARRED , AELDARI, ANHRATHE, SHADE RUNNER

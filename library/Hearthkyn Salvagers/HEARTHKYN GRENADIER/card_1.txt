@@ -1,0 +1,35 @@
+APL
+WOUNDS
+SAVE
+MOVE
+HEARTHKYN GRENADIER
+2
+5"
+3+
+8
+NAME
+ATK
+HIT DMG
+WR
+Autoch-pattern bolt pistol
+4
+4+
+3/4
+Range 8", Accurate 1
+C8 HX charge
+4
+3+
+4/6
+Range 4", Blast 1", Heavy (Reposition only),
+Limited 1, Piercing 1, Saturate
+Fists
+3
+4+
+2/3
+-
+Grenadier: This operative can use frag, krak, smoke and stun grenades (see universal equipment). Doing so doesn’t count towards any
+limited uses you have (i.e. if you also select those grenades from equipment for other operatives). Whenever this operative is using a
+frag or krak grenade, improve the Hit stat of that weapon by 1.
+RULES CONTINUE ON OTHER SIDE
+28
+HEARTHKYN SALVAGER , LEAGUES OF VOTANN, GRENADIER

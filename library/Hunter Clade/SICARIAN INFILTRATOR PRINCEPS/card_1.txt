@@ -1,0 +1,44 @@
+APL
+WOUNDS
+SAVE
+MOVE
+SICARIAN INFILTRATOR PRINCEPS
+2
+6"
+4+
+11
+NAME
+ATK
+HIT DMG
+WR
+Flechette blaster
+5
+3+
+2/2
+Range 8", Saturate, Silent
+Stubcarbine
+4
+3+
+3/4
+Ceaseless
+Power weapon
+4
+3+
+4/6
+Lethal 5+
+Taser goad
+4
+3+
+3/4
+Lethal 5+, Shock
+Canticle of Shroudpsalm: Whenever a friendly HUNTER
+CLADE  INFILTRATOR operative is within 3" of this
+operative, has a Conceal order and is in cover, that friendly
+operative cannot be selected as a valid target, taking precedence
+over all other rules (e.g. Seek, Vantage terrain) except being
+within 2".
+Control Protocol: You can use the Command Override firefight
+ploy for 0CP if the specified friendly HUNTER CLADE
+operative is visible to this operative.
+40
+HUNTER CLADE , IMPERIUM, ADEPTUS MECHANICUS, LEADER, SICARIAN, INFILTRATOR, PRINCEPS

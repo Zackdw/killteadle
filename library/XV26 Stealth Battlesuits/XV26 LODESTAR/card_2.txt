@@ -1,0 +1,31 @@
+APL
+WOUNDS
+SAVE
+MOVE
+XV26 LODESTAR
+3
+6"
+3+
+12
+Electrochaff Launcher: Once per turning point, when an enemy
+operative is performing the Shoot action and your opponent
+selects a valid target (excluding DRONE), you can use this
+rule, providing this operative isn’t within control range of enemy
+operatives. If you do, until the end of that action, whenever
+an enemy operative is shooting a friendly XV26 STEALTH
+BATTLESUIT  operative that’s both visible to and within 3" of
+this operative and more than 2" from that enemy operative:
+Homing Beacon: This operative is carrying your Homing Beacon
+marker. Operatives (excluding DRONE) can perform the Pick
+Up Marker action on that marker. The first time an enemy
+operative performs the Pick Up Marker action on your
+Homing Beacon marker, discard that marker (remove it from
+the battle).
+In the Ready step of each Strategy phase, when you gain CP,
+if your Homing Beacon marker is in the killzone, roll one D6 if
+it's more than 6" from your drop zone; roll two D6 instead if
+it's within your opponent’s territory; roll three D6 instead if it's
+within 6" of your opponent’s drop zone. If any result is a 4+, you
+gain one additional CP.
+•  Ignore the Piercing weapon rule.
+•  That friendly operative is obscured.

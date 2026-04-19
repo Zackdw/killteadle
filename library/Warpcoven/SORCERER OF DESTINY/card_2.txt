@@ -1,0 +1,33 @@
+APL
+WOUNDS
+SAVE
+MOVE
+SORCERER OF DESTINY
+3
+6"
+3+
+15
+PROTECTED BY FATE
+1AP
+RAVAGE DESTINY
+1AP
+PSYCHIC. Select one friendly WARPCOVEN  operative
+visible to this operative. Until the start of this operative’s
+next activation, until it’s incapacitated or until this action is
+performed again by a friendly operative (whichever comes
+first), whenever an operative is shooting that selected
+operative, you can re-roll any of your defence dice.
+PSYCHIC. Select one enemy operative visible to and
+within 9" of this operative. Until the start of this operative’s
+next activation, until it's incapacitated or until this action is
+performed again by a friendly operative (whichever comes
+first), whenever that enemy operative is shooting, fighting
+or retaliating, your opponent must re-roll their attack dice
+results of 6, and whenever determining control of a marker,
+treat that enemy operative’s APL stat as 1 lower. Note this
+isn't a change to its APL stat, so any changes are cumulative
+with this.
+This operative cannot perform this action while within control
+range of an enemy operative.
+This operative cannot perform this action while within control
+range of an enemy operative.

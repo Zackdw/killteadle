@@ -1,0 +1,30 @@
+APL
+WOUNDS
+SAVE
+MOVE
+KROOT CUT-SKIN
+2
+6"
+5+
+8
+NAME
+ATK
+HIT DMG
+WR
+Cut-skin's blades
+4
+3+
+3/5
+Ceaseless, Lethal 5+
+Savage Assault: The first time this operative performs the Fight
+action during each of its activations, if neither it nor the enemy
+operative in that sequence is incapacitated, this operative can
+immediately perform a free Fight action afterwards, but you
+cannot select any other enemy operative to fight against during
+that action (and only if it’s still valid to fight against). This takes
+precedence over action restrictions.
+Vicious Duellist: Whenever this operative is fighting or
+retaliating, for each attack dice your opponent discards as a fail,
+inflict 1 damage on the enemy operative in that sequence.
+28
+FARSTALKER KINBAND , T’AU EMPIRE, KROOT, CUT-SKIN

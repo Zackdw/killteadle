@@ -1,0 +1,39 @@
+APL
+WOUNDS
+SAVE
+MOVE
+NOVITIATE CONDEMNOR
+2
+6"
+4+
+7
+NAME
+ATK
+HIT DMG
+WR
+Condemnor stakethrower
+4
+3+
+3/3
+Anti-PSYKER*, Devastating 2, Piercing Crits 1,
+Silent
+Null rod
+4
+4+
+3/3
+Anti-PSYKER*, Shock
+Null Rod: PSYCHIC ranged weapons cannot inflict damage on this operative. For the
+effects of PSYCHIC actions, this operative cannot be selected and is never treated as
+being within those actions’ required distances. Whenever an operative is within 6" of
+this operative:
+*Anti-PSYKER: Whenever this weapon is
+being used against an operative that has
+the PSYKER keyword, add 1 to both
+Dmg stats of this weapon and it has the
+Lethal 5+ weapon rule.
+•  That operative cannot perform PSYCHIC actions or use PSYCHIC additional rules.
+•  That operative cannot use PSYCHIC ranged weapons.
+•  PSYCHIC melee weapons have no weapon rules and cannot have Dmg stats higher
+than 3/4.
+28
+NOVITIATE , IMPERIUM, ADEPTA SORORITAS, CONDEMNOR

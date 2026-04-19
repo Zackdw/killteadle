@@ -1,0 +1,21 @@
+APL
+WOUNDS
+SAVE
+MOVE
+BROOD BROTHER SAPPER
+2
+6"
+5+
+7
+EXPLOSIVES
+1AP
+The first time this operative performs this action during the
+battle, place your Explosives marker within its control range.
+The second time this operative performs this action during
+the battle, inflict 2D6 damage on each operative within 2" of
+that marker (roll separately for each) unless Heavy terrain is
+wholly intervening between that operative and that marker.
+This operative cannot perform this action more than twice
+per battle, while within control range of an enemy operative,
+or during an activation in which it performed the Charge,
+Dash or Fall Back action (or vice versa).

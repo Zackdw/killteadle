@@ -1,0 +1,30 @@
+APL
+WOUNDS
+SAVE
+MOVE
+INFILTRATOR COMMSMAN
+3
+7"
+3+
+12
+NAME
+ATK
+HIT DMG
+WR
+Marksman bolt carbine
+4
+3+
+3/4
+Lethal 5+
+Fists
+4
+3+
+3/4
+-
+Strategic Oversight: In the Ready step of each Strategy phase, when you gain CP, if this operative is in the killzone and isn’t within
+control range of enemy operatives, you can use this rule. If you do, roll one D6: on a 4+, you gain one additional CP.
+Comms Array: Once per turning point, during a friendly PHOBOS STRIKE TEAM  operative’s activation or counteraction, before
+or after it performs an action, if this operative is in the killzone, you can change one strategy ploy you’ve used this turning point (it
+doesn’t cost you any CP to do so).
+32
+PHOBOS STRIKE TEAM , IMPERIUM, ADEPTUS ASTARTES, INFILTRATOR, COMMSMAN

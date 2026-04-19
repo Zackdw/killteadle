@@ -1,0 +1,34 @@
+APL
+WOUNDS
+SAVE
+MOVE
+ENLIGHTENER AGENT
+2
+6"
+5+
+7
+NAME
+ATK
+HIT DMG
+WR
+Autopistol
+4
+4+
+2/3
+Range 8"
+Paired blades
+4
+3+
+3/5
+Balanced, Rending
+No Escape: Whenever an enemy operative would perform the
+Fall Back action while within control range of this operative,
+you can use this rule. If you do, roll one D6, subtracting 1 from
+the result if that enemy operative has a higher Wounds stat than
+this operative, and adding 1 if that enemy operative is wounded:
+on a 4+, that enemy operative cannot perform that action during
+that activation/counteraction (the AP spent on it isn’t refunded).
+Extract Information: Whenever an enemy operative is
+incapacitated within this operative’s control range, you gain 1CP.
+25
+INQUISITORIAL AGENT , IMPERIUM, INQUISITION, ENLIGHTENER

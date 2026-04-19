@@ -1,0 +1,29 @@
+APL
+WOUNDS
+SAVE
+MOVE
+SKITARII RANGER WARRIOR
+2
+6"
+4+
+7
+NAME
+ATK
+HIT DMG
+WR
+Galvanic rifle
+4
+3+
+3/4
+Heavy (Reposition only), Piercing Crits 1
+Gun butt
+3
+4+
+2/3
+-
+Targeting Protocol: Whenever this operative is shooting, if it
+hasn’t moved during the activation, or if it’s a counteraction,
+ranged weapons on its datacard have the Lethal 5+ weapon rule.
+Note this operative isn’t restricted from moving after shooting.
+25
+HUNTER CLADE , IMPERIUM, ADEPTUS MECHANICUS, SKITARII, RANGER, WARRIOR

@@ -1,0 +1,45 @@
+APL
+WOUNDS
+SAVE
+MOVE
+SCOUT HEAVY GUNNER
+2
+6"
+4+
+10
+NAME
+ATK
+HIT DMG
+WR
+Bolt pistol
+4
+3+
+3/4
+Range 8"
+Heavy bolter (focused)
+5
+3+
+4/5
+Heavy (Dash only), Piercing Crits 1
+Heavy bolter (sweeping)
+4
+3+
+4/5
+Heavy (Dash only), Piercing Crits 1, Torrent 1"
+Missile launcher (frag)
+4
+3+
+3/5
+Blast 2", Heavy (Dash only)
+Missile launcher (krak)
+4
+3+
+5/7
+Heavy (Dash only), Piercing 1
+Fists
+3
+3+
+3/4
+-
+28
+SCOUT SQUAD , IMPERIUM, ADEPTUS ASTARTES, HEAVY GUNNER

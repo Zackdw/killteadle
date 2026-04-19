@@ -1,0 +1,41 @@
+APL
+WOUNDS
+SAVE
+MOVE
+AQUILON MARKSMAN
+2
+6"
+4+
+8
+NAME
+ATK
+HIT DMG
+WR
+Hot‑shot long‑las (concealed)
+4
+2+
+3/3
+Devastating 3, Heavy, Silent, Concealed Position*
+Hot‑shot long‑las (mobile)
+4
+3+
+3/4
+‑
+Hot‑shot long‑las (stationary)
+4
+2+
+3/3
+Devastating 3, Heavy
+Fists
+3
+4+
+2/3
+‑
+Sniper’s Vantage: Whenever this operative is on Vantage terrain
+and is shooting an operative that has an Engage order and is at
+least 2" lower than it, all profiles of its hot‑shot long‑las have the
+Severe weapon rule.
+*Concealed Position: This operative can only use this weapon
+the first time it’s performing the Shoot action during the battle.
+28
+TEMPESTUS AQUILON , IMPERIUM, MARKSMAN

@@ -1,0 +1,35 @@
+APL
+WOUNDS
+SAVE
+MOVE
+KOMMANDO DAKKA BOY
+2
+6"
+5+
+10
+NAME
+ATK
+HIT DMG
+WR
+Dakka shoota (short range)
+5
+4+
+3/4
+Range 9", Ceaseless
+Dakka shoota (long range)
+5
+4+
+3/4
+-
+Fists
+3
+3+
+3/4
+-
+DAKKA DASH
+1AP
+Perform a free Dash action and a free Shoot action with this operative in any order. You can only select a dakka shoota for that
+Shoot action.
+This operative cannot perform this action while it has a Conceal order, or while within control range of an enemy operative.
+32
+KOMMANDO , ORK, DAKKA BOY

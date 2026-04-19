@@ -1,0 +1,44 @@
+APL
+WOUNDS
+SAVE
+MOVE
+PISTOLIER AGENT
+2
+6"
+5+
+7
+NAME
+ATK HIT DMG
+WR
+Scoped plasma pistol (standard)
+4
+3+
+3/5
+Range 12", Piercing 1
+Scoped plasma pistol (supercharge)
+4
+3+
+4/5
+Range 12", Hot, Lethal 5+, Piercing 1
+Suppressed autopistol
+4
+3+
+2/3
+Range 8", Silent
+Fists
+3
+4+
+2/3
+-
+Pistolier: You can ignore any changes
+to the Hit stat of this operative’s
+ranged weapons.
+PISTOL BARRAGE
+1AP
+Perform two free Shoot actions with this operative (this takes precedence over
+action restrictions). You must select a profile of its scoped plasma pistol for one
+action and its suppressed autopistol for the other (in any order).
+This operative cannot perform this action while it has a Conceal order, or during an
+activation in which it performed the Shoot action (or vice versa).
+25
+INQUISITORIAL AGENT , IMPERIUM, INQUISITION, PISTOLIER

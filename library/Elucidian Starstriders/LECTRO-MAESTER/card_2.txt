@@ -1,0 +1,22 @@
+APL
+WOUNDS
+SAVE
+MOVE
+LECTRO-MAESTER
+2
+6"
+4+
+8
+CALIBRATE VOLTAGHEIST
+0AP
+Select one of the following effects to last until the start of
+this operative’s next activation, until it’s incapacitated or
+until it performs this action again (whichever comes first):
+•  Charge: This operative’s voltaic pistol has the Lethal 4+
+weapon rule.
+•  Field: Whenever an enemy operative ends the Charge,
+Dash, Fall Back or Reposition action visible to and
+within 4" of this operative, inflict D6 damage on that
+enemy operative.
+This operative cannot perform this action while within control
+range of an enemy operative.

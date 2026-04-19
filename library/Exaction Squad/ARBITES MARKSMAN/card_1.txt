@@ -1,0 +1,40 @@
+APL
+WOUNDS
+SAVE
+MOVE
+ARBITES MARKSMAN
+2
+6"
+4+
+8
+NAME
+ATK
+HIT DMG
+WR
+Executioner shotgun (concealed) 4
+2+
+4/0
+Devastating 4, Heavy, Silent, Concealed Position*
+Executioner shotgun (mobile)
+4
+3+
+4/4
+-
+Executioner shotgun (stationary) 4
+2+
+4/0
+Devastating 4, Heavy
+Repression baton
+3
+4+
+2/3
+-
+*Concealed Position: This operative can only use this weapon the first time it’s performing the Shoot action during the battle.
+OPTICS
+1AP
+Until the start of this operative’s next activation:
+•  The concealed and stationary profiles of its executioner shotgun have the Lethal 5+ weapon rule.
+•  Whenever it’s shooting with its executioner shotgun, enemy operatives cannot be obscured.
+This operative cannot perform this action while within control range of an enemy operative.
+28
+EXACTION SQUAD , IMPERIUM, ADEPTUS ARBITES, MARKSMAN

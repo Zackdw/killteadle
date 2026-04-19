@@ -1,0 +1,43 @@
+APL
+WOUNDS
+SAVE
+MOVE
+DEATHWATCH DISRUPTOR VETERAN
+3
+7"
+3+
+13
+NAME
+ATK
+HIT DMG
+WR
+Marksman bolt carbine
+4
+3+
+3/4
+Lethal 5+
+Fists
+4
+3+
+3/4
+-
+Advanced Omni-Scrambler: STRATEGIC GAMBIT. Select
+one enemy operative visible to or within 6" of this operative,
+then roll one D6. In the Firefight phase of this turning point, that
+enemy operative cannot be activated or perform actions until one
+of the following is true:
+Auspex Triangulation: The Advanced Auspex Scan firefight ploy
+costs you 0CP when both of the following are true:
+•  This operative isn’t within control range of enemy operatives.
+•  The target of that Shoot action (primary target, if relevant) is
+visible to this operative.
+•  Your opponent has activated a number of enemy operatives
+equal to the result of the D6.
+•  It’s the last enemy operative to be activated.
+Note that it doesn’t have to be this operative performing
+the Shoot action, and that any subsequent Shoot actions
+during that activation/counteraction must meet these same
+requirements (or that ploy has no effect on those subsequent
+Shoot actions).
+32
+DEATHWATCH , IMPERIUM, ADEPTUS ASTARTES, DISRUPTOR

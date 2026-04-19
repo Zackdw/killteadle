@@ -1,0 +1,46 @@
+APL
+WOUNDS
+SAVE
+MOVE
+VULGRAR THRICE-CURSED
+2
+5"
+5+
+21
+NAME
+ATK
+HIT DMG
+WR
+Pyregut (standard)
+5
+2+
+3/3
+Range 6”, Saturate, Torrent 2”
+Pyregut (deluge)
+5
+2+
+3/3
+Range 4”, Saturate, Seek Light
+Fleshmelded weapons
+5
+3+
+4/5
+Engineered*
+Spread the Glorious Gifts: Once per battle STRATEGIC
+GAMBIT. Select one objective marker this operative controls
+to gain one of your Techno-curse tokens. It cannot be an
+objective marker within control range of an enemy operative.
+Whenever that objective marker is within control range of an
+enemy operative, that operative is affected by your selected
+TECHNO-CURSE rule and an additional rule determined by
+your TECHNO-CURSE, as shown opposite. You cannot use this
+STRATEGIC GAMBIT while this operative is within control
+range of an enemy operative.
+•  Barrelwarp: No additional effect.
+•  Screaming Rustspikes: This TECHNO-CURSE inflicts 2
+damage on that enemy operative (instead of 1).
+•  Viral Vox-static: Whenever that enemy operative is activated,
+subtract 1 from its APL stat until the end of its activation.
+RULES CONTINUE ON OTHER SIDE
+40
+GELLERPOX INFECTED , CHAOS, NIGHTMARE HULK, LEADER, VULGRAR THRICE-CURSED

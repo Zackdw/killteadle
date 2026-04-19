@@ -1,0 +1,32 @@
+APL
+WOUNDS
+SAVE
+MOVE
+NOVITIATE PRONATUS
+2
+6"
+4+
+7
+NAME
+ATK
+HIT DMG
+WR
+Autopistol
+4
+4+
+2/3
+Range 8"
+Gun butt
+3
+4+
+2/3
+-
+Relic Seeker: Once during each of this operative’s activations,
+it can perform the Pick Up Marker, Place Marker or a
+mission action for 1 less AP.
+Divine Acquisition: Once per turning point, when this operative
+performs a mission action that requires it to control an objective
+or mission marker, you gain a number of Faith points equal to the
+turning point number.
+28
+NOVITIATE , IMPERIUM, ADEPTA SORORITAS, PRONATUS

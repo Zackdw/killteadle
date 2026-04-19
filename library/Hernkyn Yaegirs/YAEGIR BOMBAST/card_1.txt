@@ -1,0 +1,34 @@
+APL
+WOUNDS
+SAVE
+MOVE
+YAEGIR BOMBAST
+2
+5"
+4+
+8
+NAME
+ATK
+HIT DMG
+WR
+Wroughtlock revolvers
+4
+3+
+3/5
+Range 9", Ceaseless, Lethal 5+
+Fists
+3
+4+
+2/3
+-
+Wroughtlock Negotiation: STRATEGIC GAMBIT. This
+operative can immediately perform a free Shoot action (you can
+change its order to Engage to do so).
+Brazen Killer: Whenever this operative incapacitates an enemy
+operative with its wroughtlock revolvers, roll one D6 separately
+for each other enemy operative visible to and within 2" of that
+enemy operative: if the result is higher than that other enemy
+operative’s APL stat, subtract 1 from its APL stat until the end of
+its next activation.
+28
+HERNKYN YAEGIR , LEAGUES OF VOTANN, BOMBAST

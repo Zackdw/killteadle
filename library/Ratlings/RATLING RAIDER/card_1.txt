@@ -1,0 +1,32 @@
+APL
+WOUNDS
+SAVE
+MOVE
+RATLING RAIDER
+2
+5"
+5+
+6
+NAME
+ATK
+HIT
+DMG
+WR
+Suppressed sniper rifle (mobile)
+4
+4+
+3/4
+Silent
+Suppressed sniper rifle (stationary)
+4
+3+
+3/3
+Devastating 2, Heavy, Silent
+Dagger
+3
+4+
+2/3
+-
+RULES CONTINUE ON OTHER SIDE
+25
+RATLING , IMPERIUM, ASTRA MILITARUM, RAIDER

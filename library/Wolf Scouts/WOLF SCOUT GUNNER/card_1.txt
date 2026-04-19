@@ -1,0 +1,33 @@
+APL
+WOUNDS
+SAVE
+MOVE
+WOLF SCOUT GUNNER
+3
+7"
+3+
+13
+NAME
+ATK
+HIT DMG
+WR
+Plasma gun (standard)
+4
+3+
+4/6
+Piercing 1
+Plasma gun (supercharge)
+4
+3+
+5/6
+Hot, Lethal 5+, Piercing 1
+Combat blade
+4
+3+
+4/5
+-
+Tempest’s Fury: Whenever this operative is within your STORM:
+•  All profiles of its plasma gun have the Punishing weapon rule.
+•  Its plasma gun (supercharge) doesn’t have the Hot weapon rule.
+32
+WOLF SCOUT , IMPERIUM, ADEPTUS ASTARTES, SPACE WOLVES, GUNNER

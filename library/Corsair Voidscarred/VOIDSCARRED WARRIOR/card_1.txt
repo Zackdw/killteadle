@@ -1,0 +1,39 @@
+APL
+WOUNDS
+SAVE
+MOVE
+VOIDSCARRED WARRIOR
+2
+7"
+4+
+8
+NAME
+ATK
+HIT DMG
+WR
+Shuriken pistol
+4
+3+
+3/4
+Range 8", Rending
+Shuriken rifle
+4
+3+
+3/4
+Rending
+Power weapon
+4
+3+
+4/6
+Lethal 5+
+Fists
+3
+3+
+2/3
+-
+Prowling Raiders: You can use the Capricious Flight and
+Light Fingers firefight ploys for 0CP each if a friendly
+WARRIOR operative is the specified CORSAIR
+VOIDSCARRED  operative.
+28
+CORSAIR VOIDSCARRED , AELDARI, ANHRATHE, WARRIOR

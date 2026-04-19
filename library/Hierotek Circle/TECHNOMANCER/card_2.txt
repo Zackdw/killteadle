@@ -1,0 +1,23 @@
+TECHNOMANCER ACTIONS
+INTERSTITIAL COMMAND
+1AP
+CANOPTEK REPAIR
+1AP
+SUPPORT. Select one other friendly HIEROTEK
+CIRCLE  operative (excluding APPRENTEK and
+CRYPTEK) visible to and within 6" of this operative, or
+visible to and within 6" of a friendly DESPOTEK operative
+that’s visible to this operative. That selected operative can
+immediately perform a 1AP action for free; it cannot move
+more than or be removed and set up more than 2" during
+that action, perform an action it’s already performed during
+this turning point, or perform that action again during this
+turning point.
+SUPPORT. Select one friendly HIEROTEK CIRCLE
+operative visible to and within 6" of this operative to regain
+up to 2D3 lost wounds.
+This operative cannot perform this action while within control
+range of an enemy operative, or if a friendly operative has
+already performed this action during this turning point.
+This operative cannot perform this action while within control
+range of an enemy operative, or while counteracting.

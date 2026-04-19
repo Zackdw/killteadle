@@ -1,0 +1,26 @@
+APL
+WOUNDS
+SAVE
+MOVE
+PSYCHOMANCER
+3
+6"
+3+
+14
+NAME
+ATK
+HIT DMG
+WR
+Abyssal lance (ranged)
+5
+3+
+2/2
+Blast 2", 2" Devastating 1, Piercing 2, Magnify*
+Abyssal lance (melee)
+4
+4+
+4/4
+Devastating 1
+PSYCHOMANCER ACTIONS ARE PRESENTED ON THEIR OWN CARDS
+40
+HIEROTEK CIRCLE , NECRON, LEADER, CRYPTEK, PSYCHOMANCER

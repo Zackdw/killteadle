@@ -1,0 +1,35 @@
+APL
+WOUNDS
+SAVE
+MOVE
+BROOD BROTHER VETERAN
+2
+6"
+5+
+7
+NAME
+ATK
+HIT DMG
+WR
+Combat shotgun (close range)
+4
+3+
+4/4
+Range 6"
+Combat shotgun (long range)
+4
+5+
+2/2
+-
+Bayonet & claw
+3
+4+
+2/3
+Balanced
+Resilient: Normal Dmg of 3 or more inflicts 1 less damage on
+this operative.
+Bodyguard: You can use the Unquestioning Loyalty
+firefight ploy for 0CP if this is the specified friendly
+BROODGUARD operative.
+25
+BROOD BROTHER , TYRANID, GENESTEALER CULT, BROODGUARD, VETERAN

@@ -1,0 +1,28 @@
+CHRONOMANCER ACTIONS
+INTERSTITIAL COMMAND
+1AP
+TIMESPLINTER
+1AP
+SUPPORT. Select one other friendly HIEROTEK
+CIRCLE  operative (excluding APPRENTEK and
+CRYPTEK) visible to and within 6" of this operative, or
+visible to and within 6" of a friendly DESPOTEK operative
+that’s visible to this operative. That selected operative can
+immediately perform a 1AP action for free; it cannot move
+more than or be removed and set up more than 2" during
+that action, perform an action it’s already performed during
+this turning point, or perform that action again during this
+turning point.
+SUPPORT. Select one other expended friendly
+HIEROTEK CIRCLE  operative visible to and within 5"
+of this operative. Remove it from the killzone and set it back
+up visible to and within 5" horizontally of this operative,
+in a location it can be placed. Note that a Comms Device
+from universal equipment only affects the first distance of
+this rule.
+This operative cannot perform this action while within control
+range of an enemy operative, during the first turning point,
+or if a friendly operative has already performed this action
+during this turning point.
+This operative cannot perform this action while within control
+range of an enemy operative, or while counteracting.

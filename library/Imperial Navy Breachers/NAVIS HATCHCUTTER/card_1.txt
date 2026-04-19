@@ -1,0 +1,36 @@
+APL
+WOUNDS
+SAVE
+MOVE
+NAVIS HATCHCUTTER
+2
+6"
+4+
+8
+NAME
+ATK
+HIT DMG
+WR
+Autopistol
+4
+4+
+2/3
+Range 8"
+Chainfist
+4
+4+
+5/6
+Brutal, Rending
+WELD SHUT
+1AP
+Select a closed hatchway (e.g. Killzone: Tomb World) within
+this operative’s control range. 1 additional AP must be spent
+for other operatives to perform the Operate Hatch action
+to open that hatchway. This effect ends when that hatchway
+is opened. Note this operative isn’t affected by this effect.
+This operative cannot perform this action while within control
+range of an enemy operative, or if it isn’t within 1" of a
+closed hatchway.
+RULES CONTINUE ON OTHER SIDE
+25
+IMPERIAL NAVY BREACHER , IMPERIUM, HATCHCUTTER

@@ -1,0 +1,31 @@
+APL
+WOUNDS
+SAVE
+MOVE
+PLAGUE MARINE FIGHTER
+3
+5"
+3+
+14
+NAME
+ATK
+HIT DMG
+WR
+Flail of Corruption
+5
+3+
+4/5
+Brutal, Severe, Shock, Poison*
+FLAIL
+1AP
+Inflict D3+2 damage on each other operative that’s both
+visible to and within 2" of this operative. Roll separately for
+each: if it’s an enemy operative, if the D3 result is a 3, that
+enemy operative also gains one of your Poison tokens (if it
+doesn’t already have one).
+For the purposes of action restrictions and the Astartes
+faction rule, this action is treated as a Fight action.
+This operative cannot perform this action while it has a
+Conceal order.
+32
+PLAGUE MARINE , CHAOS, HERETIC ASTARTES, FIGHTER

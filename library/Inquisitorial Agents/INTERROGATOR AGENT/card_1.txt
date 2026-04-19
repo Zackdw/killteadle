@@ -1,0 +1,49 @@
+APL
+WOUNDS
+SAVE
+MOVE
+INTERROGATOR AGENT
+2
+6"
+5+
+8
+NAME
+ATK
+HIT DMG
+WR
+Extended stock relic autopistol
+4
+3+
+2/4
+Range 12", Lethal 5+
+Fists
+3
+4+
+2/3
+-
+Inquisitorial Tomes: STRATEGIC
+GAMBIT if this operative is in the
+killzone and/or when this operative is
+activated. Select one of the following
+INQUISITORIAL TOME rules for
+this operative to have, and one for a
+friendly INQUISITORIAL AGENT
+TOME-SKULL operative to have (they
+can be the same, and ignore the rule you
+didn’t select for each operative):
+•  Denunciation: Whenever a friendly
+INQUISITORIAL AGENT  operative
+is shooting against, fighting against or
+retaliating against an enemy operative
+within 2" of friendly operatives with
+this rule, add 1 to the Atk stat of that
+friendly operative’s weapons.
+•  Sanctification: Whenever an enemy
+operative is shooting against, fighting
+against or retaliating against a friendly
+INQUISITORIAL AGENT  operative
+within 2" of friendly operatives with this
+rule, subtract 1 from the Atk stat of that
+enemy operative’s weapons.
+25
+INQUISITORIAL AGENT , IMPERIUM, INQUISITION, LEADER, INTERROGATOR

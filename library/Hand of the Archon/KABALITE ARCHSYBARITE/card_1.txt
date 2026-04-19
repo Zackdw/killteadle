@@ -1,0 +1,53 @@
+APL
+WOUNDS
+SAVE
+MOVE
+KABALITE ARCHSYBARITE
+2
+7"
+4+
+9
+NAME
+ATK
+HIT DMG
+WR
+Blast pistol
+4
+3+
+3/4
+Range 8", Piercing 2
+Splinter pistol
+4
+3+
+2/4
+Range 8", Lethal 5+
+Splinter rifle
+4
+3+
+2/4
+Lethal 5+
+Agoniser
+4
+3+
+3/5
+Brutal, Lethal 5+, Shock
+Array of blades
+3
+3+
+3/4
+-
+Power weapon
+4
+3+
+4/6
+Lethal 5+
+Venom blade
+4
+3+
+4/5
+Lethal 4+
+Cunning: In the Gambit step of each Strategy phase, if this operative is in the killzone and you pass at the first opportunity, you gain
+1CP. Ignore each STRATEGIC GAMBIT from the mission pack (if any) when determining this.
+RULES CONTINUE ON OTHER SIDE
+25
+HAND OF THE ARCHON , AELDARI, DRUKHARI, LEADER, ARCHSYBARITE

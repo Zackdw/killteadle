@@ -1,0 +1,31 @@
+APL
+WOUNDS
+SAVE
+MOVE
+MALIGNANT PLAGUECASTER
+3
+5"
+3+
+14
+NAME
+ATK
+HIT DMG
+WR
+Entropy
+4
+3+
+3/7
+PSYCHIC, Range 7", Saturate, Severe, Poison*
+Plague wind
+6
+3+
+2/3
+PSYCHIC, Saturate, Severe, Torrent 1", Poison*
+Corrupted staff
+4
+3+
+3/4
+PSYCHIC, Severe, Shock, Stun, Poison*
+RULES CONTINUE ON OTHER SIDE
+32
+PLAGUE MARINE , CHAOS, HERETIC ASTARTES, PSYKER, MALIGNANT PLAGUECASTER

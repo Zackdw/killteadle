@@ -1,0 +1,43 @@
+APL
+WOUNDS
+SAVE
+MOVE
+YAEGIR THEYN
+2
+5"
+4+
+9
+NAME
+ATK
+HIT DMG
+WR
+Bolt revolver
+4
+3+
+3/5
+Range 8"
+Bolt shotgun (short range)
+4
+3+
+4/4
+Range 6"
+Bolt shotgun (long range)
+4
+5+
+2/2
+-
+Plasma knife
+4
+3+
+3/5
+Lethal 5+
+Veteran Adventurer: In the Ready step of each Strategy phase
+after the first, if this operative is in the killzone and isn’t within
+control range of enemy operatives, you gain 1 Resourceful point.
+Outright Conviction: The first time this operative would be
+incapacitated during the battle, it’s not incapacitated, has 1
+wound remaining and cannot be incapacitated for the remainder
+of the action. All remaining attack dice are discarded (including
+yours if this operative is fighting or retaliating).
+28
+HERNKYN YAEGIR , LEAGUES OF VOTANN, LEADER, THEYN

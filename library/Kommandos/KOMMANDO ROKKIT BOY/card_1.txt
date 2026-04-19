@@ -1,0 +1,30 @@
+APL
+WOUNDS
+SAVE
+MOVE
+KOMMANDO ROKKIT BOY
+2
+6"
+5+
+10
+NAME
+ATK
+HIT DMG
+WR
+Rokkit launcha (aimed)
+6
+4+
+4/5
+Blast 1", Ceaseless, Heavy (Dash only)
+Rokkit launcha (mobile)
+6
+4+
+4/5
+Blast 1"
+Fists
+3
+3+
+3/4
+-
+32
+KOMMANDO , ORK, ROKKIT BOY

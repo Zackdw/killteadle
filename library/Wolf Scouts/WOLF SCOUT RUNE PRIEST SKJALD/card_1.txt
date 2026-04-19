@@ -1,0 +1,40 @@
+APL
+WOUNDS
+SAVE
+MOVE
+WOLF SCOUT RUNE PRIEST SKJALD
+3
+7"
+3+
+13
+NAME
+ATK
+HIT DMG
+WR
+Bolt pistol
+4
+3+
+3/4
+Range 8"
+Jaws of the World Wolf
+5
+3+
+3/5
+PSYCHIC, Blast 2", Severe
+Thunderclap
+5
+2+
+2/2
+PSYCHIC, Range 6", Saturate, Seek Light, Stun,
+Torrent 2"
+Runic stave
+5
+3+
+4/6
+PSYCHIC, Shock
+Cast the Runes: After selecting this operative, before the battle, roll three D6 and put them to one side. For each result of 1-4, you can
+use the Command Re-roll firefight ploy for OCP once during the turning point that matches the result. For each result of 5-6, you gain
+1CP. For example, if you roll 2, 2 and 5, you gain 1CP and twice during the second turning point you can use Command Re-roll for 0CP.
+RULES CONTINUE ON OTHER SIDE
+32
+WOLF SCOUT , IMPERIUM, ADEPTUS ASTARTES, SPACE WOLVES, PSYKER, RUNE PRIEST SKJALD
