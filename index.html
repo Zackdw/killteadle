@@ -407,8 +407,34 @@
     text-overflow: unset;
     font-size: 11px;
     line-height: 1.3;
-    padding: 6px 5px;
-    word-break: break-word;
+    padding: 7px 6px;
+    word-break: normal;
+    overflow-wrap: anywhere;
+  }
+
+  .wr-chip-stack {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .wr-chip {
+    padding: 4px 7px;
+    border-radius: 3px;
+    font-size: 10px;
+    line-height: 1.1;
+    background: rgba(92, 68, 14, 0.95);
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    color: #fff;
+    white-space: nowrap;
+  }
+
+  .wr-chip.match {
+    background: var(--kt-green);
+    color: #eefbf3;
   }
 
   /* Animation: cells start hidden, pop in from left */
@@ -654,8 +680,24 @@
       grid-template-columns: 1fr 0.5fr 1fr 0.7fr 1.3fr 1.4fr;
       gap: 3px;
     }
-    .cell { font-size: 11px; padding: 8px 4px; }
-    .cell.wr-cell { font-size: 9px; padding: 4px 3px; }
+    .cell {
+      font-size: 11px;
+      padding: 8px 4px;
+      min-height: 84px;
+      white-space: normal;
+      overflow: visible;
+      text-overflow: unset;
+      overflow-wrap: anywhere;
+      word-break: normal;
+    }
+    .cell.wr-cell {
+      font-size: 10px;
+      padding: 6px 4px;
+    }
+    .wr-chip {
+      font-size: 9px;
+      padding: 4px 6px;
+    }
     .popup-box { padding: 16px 18px; }
     .popup-val { font-size: 11px; padding: 4px 8px; }
   }
@@ -6161,15 +6203,15 @@ function renderGuessRow(op) {
   const someMatch = !allMatch && [...guessSet].some(r => targetSet.has(r));
   const wrStatus = allMatch ? 'correct' : someMatch ? 'partial' : 'wrong';
 
-  // Build display: show guessed operative's rules, highlight matches in green
+  // Build display: show guessed operative's rules as readable chips, highlight matches in green.
   let wrDisplay = '';
   if (guessRules.length === 0) {
-    wrDisplay = 'None';
+    wrDisplay = '<div class="wr-chip-stack"><span class="wr-chip">None</span></div>';
   } else {
-    wrDisplay = guessRules.map(r => {
+    wrDisplay = `<div class="wr-chip-stack">${guessRules.map(r => {
       const matched = targetSet.has(r.toLowerCase());
-      return matched ? `<span style="color:#4ade80;font-weight:700">${r}</span>` : r;
-    }).join(', ');
+      return `<span class="wr-chip${matched ? ' match' : ''}">${escapeHtml(r)}</span>`;
+    }).join('')}</div>`;
   }
 
   const fields = [
@@ -6211,6 +6253,15 @@ function renderGuessRow(op) {
 
   // Return total animation time for sequencing status/buttons
   return cells.length * 120 + 500;
+}
+
+function escapeHtml(value) {
+  return String(value)
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&#39;');
 }
 
 document.getElementById('playAgain').addEventListener('click', () => {
