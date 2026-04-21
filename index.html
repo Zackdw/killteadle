@@ -680,6 +680,32 @@
       grid-template-columns: 1fr 0.5fr 1fr 0.7fr 1.3fr 1.4fr;
       gap: 3px;
     }
+    .guess-header {
+      margin-bottom: 8px;
+    }
+    .guess-header .cell {
+      min-height: 40px;
+      padding: 6px 4px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: clip;
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 0.8px;
+      color: var(--kt-orange);
+      background: linear-gradient(180deg, rgba(255,255,255,0.04), transparent), rgba(35,31,32,0.96);
+      background-image: none;
+      border: 1px solid rgba(241,92,34,0.22);
+      border-bottom: 2px solid var(--kt-orange);
+      border-radius: 4px;
+    }
+    .guess-header .cell.has-popup::after {
+      width: 12px;
+      height: 12px;
+      font-size: 8px;
+      margin-left: 3px;
+      background: rgba(241,92,34,0.22);
+    }
     .cell {
       font-size: 11px;
       padding: 8px 4px;
