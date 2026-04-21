@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>KillTeadle Reactivity Review</title>
+<style>
+  :root {
+    --kt-orange: #f15c22;
+    --kt-orange-dark: #c44a1a;
+    --kt-dark: #231f20;
+    --kt-darker: #171413;
+    --kt-light: #ebeeed;
+    --kt-muted: #98a39d;
+    --kt-red: #8b1a1a;
+    --kt-red-bright: #d94848;
+    --kt-green: #2d6a4f;
+    --kt-green-bright: #6bf0a7;
+    --kt-gold: #b8860b;
+    --font-heading: Oswald, Impact, Arial Narrow, sans-serif;
+    --font-body: "Segoe UI", Arial, sans-serif;
+    --font-condensed: "Arial Narrow", Arial, sans-serif;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    min-height: 100vh;
+    font-family: var(--font-body);
+    color: var(--kt-light);
+    background:
+      radial-gradient(circle at top, rgba(241, 92, 34, 0.16), transparent 26%),
+      linear-gradient(180deg, #241f1d 0%, #171413 60%, #130f0e 100%);
+  }
+
+  .shell {
+    width: min(1180px, calc(100% - 24px));
+    margin: 0 auto;
+    padding: 22px 0 40px;
+  }
+
+  .intro {
+    margin-bottom: 18px;
+    padding: 18px 20px;
+    border-radius: 16px;
+    border: 1px solid rgba(241, 92, 34, 0.26);
+    background: rgba(26, 23, 21, 0.84);
+  }
+
+  .intro h1 {
+    margin: 0;
+    font-family: var(--font-heading);
+    font-size: 32px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+
+  .intro p {
+    margin: 10px 0 0;
+    color: var(--kt-muted);
+    line-height: 1.5;
+    max-width: 860px;
+  }
+
+  .gallery {
+    display: grid;
+    gap: 16px;
+  }
+
+  .option {
+    overflow: hidden;
+    border-radius: 18px;
+    background: rgba(35, 31, 32, 0.9);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    box-shadow: 0 14px 32px rgba(0, 0, 0, 0.24);
+  }
+
+  .option-head {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    align-items: start;
+    padding: 18px 20px 12px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+    background: linear-gradient(180deg, rgba(241, 92, 34, 0.08), transparent);
+  }
+
+  .option-head h2 {
+    margin: 0;
+    font-family: var(--font-heading);
+    font-size: 28px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+
+  .option-head p {
+    margin: 8px 0 0;
+    color: var(--kt-muted);
+    line-height: 1.45;
+    max-width: 760px;
+  }
+
+  .badge {
+    padding: 9px 12px;
+    border-radius: 999px;
+    background: rgba(241, 92, 34, 0.12);
+    border: 1px solid rgba(241, 92, 34, 0.24);
+    color: var(--kt-orange);
+    font-family: var(--font-condensed);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 13px;
+    white-space: nowrap;
+  }
+
+  .body {
+    padding: 18px;
+  }
+
+  .label {
+    margin-bottom: 10px;
+    color: var(--kt-muted);
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+  }
+
+  .stage {
+    padding: 18px;
+    border-radius: 16px;
+    background: rgba(18, 15, 14, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+  }
+
+  .controls {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 18px;
+  }
+
+  .guess-btn {
+    position: relative;
+    padding: 12px 22px;
+    border: none;
+    border-radius: 6px;
+    background: var(--kt-orange);
+    color: #fff;
+    font-family: var(--font-heading);
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    overflow: hidden;
+  }
+
+  .input-mock {
+    flex: 1 1 280px;
+    padding: 12px 14px;
+    border-radius: 6px;
+    background: rgba(35, 31, 32, 0.9);
+    border: 2px solid #444;
+    color: #cfd4d1;
+    font-family: var(--font-condensed);
+  }
+
+  .guess-grid {
+    display: grid;
+    grid-template-columns: 1.1fr 1.1fr;
+    gap: 14px;
+  }
+
+  .guess-card {
+    position: relative;
+    padding: 16px;
+    border-radius: 16px;
+    overflow: hidden;
+    min-height: 170px;
+  }
+
+  .guess-card h3 {
+    margin: 0 0 12px;
+    font-family: var(--font-heading);
+    font-size: 22px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+
+  .guess-card p {
+    margin: 0;
+    color: rgba(255, 255, 255, 0.86);
+    line-height: 1.45;
+  }
+
+  .wrong {
+    background: linear-gradient(135deg, #7a1a1a, #4c0f0f);
+    border: 1px solid rgba(122, 26, 26, 0.68);
+  }
+
+  .correct {
+    background: linear-gradient(135deg, #2d6a4f, #174b34);
+    border: 1px solid rgba(45, 106, 79, 0.68);
+  }
+
+  .fx-title {
+    color: rgba(255, 255, 255, 0.72);
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 1.4px;
+    margin-bottom: 8px;
+  }
+
+  .fx-list {
+    margin-top: 14px;
+    display: grid;
+    gap: 8px;
+  }
+
+  .fx-pill {
+    display: inline-flex;
+    width: fit-content;
+    padding: 6px 9px;
+    border-radius: 999px;
+    background: rgba(0, 0, 0, 0.18);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+
+  .notes {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 10px;
+    margin-top: 14px;
+  }
+
+  .note {
+    padding: 12px;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.035);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+  }
+
+  .note strong {
+    display: block;
+    margin-bottom: 6px;
+    font-family: var(--font-heading);
+    font-size: 17px;
+    text-transform: uppercase;
+  }
+
+  .note span {
+    color: var(--kt-muted);
+    line-height: 1.4;
+    font-size: 14px;
+  }
+
+  .style-1 .guess-btn {
+    box-shadow: 0 0 0 0 rgba(241, 92, 34, 0.45);
+    animation: btnKick 0.55s ease-out infinite paused;
+  }
+
+  .style-1 .guess-btn.preview {
+    animation: btnKick 0.9s ease-out infinite;
+  }
+
+  .style-1 .guess-btn::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.28), transparent);
+    transform: translateX(-120%);
+    animation: btnSweep 0.9s ease-out infinite paused;
+  }
+
+  .style-1 .guess-btn.preview::after {
+    animation: btnSweep 1.15s ease-out infinite;
+  }
+
+  .style-1 .wrong {
+    box-shadow: 0 0 0 0 rgba(217, 72, 72, 0.65);
+    animation: slamIn 0.45s cubic-bezier(0.2, 0.9, 0.2, 1) both, redShock 0.8s 0.2s ease-out infinite paused;
+  }
+
+  .style-1 .wrong.preview {
+    animation: slamIn 1.7s cubic-bezier(0.2, 0.9, 0.2, 1) infinite, redShock 1.1s 0.15s ease-out infinite;
+  }
+
+  .style-1 .correct {
+    box-shadow: 0 0 0 0 rgba(107, 240, 167, 0.6);
+    animation: riseIn 0.55s cubic-bezier(0.2, 0.9, 0.2, 1) both, greenBloom 1.1s 0.2s ease-out infinite paused;
+  }
+
+  .style-1 .correct.preview {
+    animation: riseIn 1.9s cubic-bezier(0.2, 0.9, 0.2, 1) infinite, greenBloom 1.2s 0.15s ease-out infinite;
+  }
+
+  .style-2 .guess-btn {
+    background: linear-gradient(135deg, #ff7a3d, var(--kt-orange-dark));
+    transform-origin: center;
+    animation: chargeBtn 0.9s ease-in-out infinite paused;
+  }
+
+  .style-2 .guess-btn.preview {
+    animation: chargeBtn 1s ease-in-out infinite;
+  }
+
+  .style-2 .guess-btn::before {
+    content: "";
+    position: absolute;
+    inset: -12px;
+    border-radius: inherit;
+    border: 2px solid rgba(241, 92, 34, 0.24);
+    animation: ringExpand 0.9s ease-out infinite paused;
+  }
+
+  .style-2 .guess-btn.preview::before {
+    animation: ringExpand 1s ease-out infinite;
+  }
+
+  .style-2 .wrong {
+    animation: glitchEnter 0.55s steps(2, end) both, emberDrop 1s 0.15s linear infinite paused;
+  }
+
+  .style-2 .wrong.preview {
+    animation: glitchEnter 1.55s steps(2, end) infinite, emberDrop 1.15s 0.12s linear infinite;
+  }
+
+  .style-2 .wrong::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: repeating-linear-gradient(180deg, rgba(255,255,255,0.05) 0 2px, transparent 2px 6px);
+    mix-blend-mode: screen;
+    opacity: 0;
+    animation: glitchLines 0.5s ease-out infinite paused;
+  }
+
+  .style-2 .wrong.preview::after {
+    animation: glitchLines 0.65s ease-out infinite;
+  }
+
+  .style-2 .correct {
+    background: linear-gradient(135deg, #2d6a4f, #103e2b);
+    animation: crestReveal 0.55s cubic-bezier(0.2, 0.9, 0.2, 1) both, crestPulse 1.1s 0.2s ease-out infinite paused;
+  }
+
+  .style-2 .correct.preview {
+    animation: crestReveal 1.7s cubic-bezier(0.2, 0.9, 0.2, 1) infinite, crestPulse 1.15s 0.1s ease-out infinite;
+  }
+
+  .style-2 .correct.preview::after {
+    animation: crestWave 1.7s ease-out infinite;
+  }
+
+  .style-2 .correct::after {
+    content: "";
+    position: absolute;
+    inset: auto -10% -45% -10%;
+    height: 85%;
+    background: radial-gradient(circle, rgba(107,240,167,0.34) 0%, transparent 65%);
+  }
+
+  .style-3 .guess-btn {
+    background: #f15c22;
+    border-radius: 999px;
+    box-shadow: 0 10px 24px rgba(241, 92, 34, 0.18);
+    animation: playfulPress 0.7s ease-in-out infinite paused;
+  }
+
+  .style-3 .guess-btn.preview {
+    animation: playfulPress 0.85s ease-in-out infinite;
+  }
+
+  .style-3 .guess-btn::after {
+    content: "+";
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 18px;
+    opacity: 0.65;
+    animation: plusBob 0.7s ease-in-out infinite paused;
+  }
+
+  .style-3 .guess-btn.preview::after {
+    animation: plusBob 0.85s ease-in-out infinite;
+  }
+
+  .style-3 .wrong {
+    animation: wobbleCard 0.75s ease-out infinite paused;
+  }
+
+  .style-3 .wrong.preview {
+    animation: wobbleCard 1s ease-out infinite;
+  }
+
+  .style-3 .wrong::before {
+    content: "";
+    position: absolute;
+    inset: auto 0 0 0;
+    height: 6px;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.22), transparent);
+    animation: scrape 0.75s ease-out infinite paused;
+  }
+
+  .style-3 .wrong.preview::before {
+    animation: scrape 1s ease-out infinite;
+  }
+
+  .style-3 .correct {
+    animation: springCard 0.8s cubic-bezier(0.2, 1.2, 0.2, 1) infinite paused;
+  }
+
+  .style-3 .correct.preview {
+    animation: springCard 1.15s cubic-bezier(0.2, 1.2, 0.2, 1) infinite;
+  }
+
+  .style-3 .correct::after {
+    content: "";
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    top: 18px;
+    right: 18px;
+    background: var(--kt-green-bright);
+    box-shadow: 0 0 0 0 rgba(107, 240, 167, 0.55);
+    animation: orbPulse 0.8s ease-out infinite paused;
+  }
+
+  .style-3 .correct.preview::after {
+    animation: orbPulse 1.15s ease-out infinite;
+  }
+
+  @keyframes btnKick {
+    0%, 100% { transform: translateY(0) scale(1); box-shadow: 0 0 0 0 rgba(241, 92, 34, 0.35); }
+    40% { transform: translateY(-2px) scale(1.03); box-shadow: 0 8px 20px 0 rgba(241, 92, 34, 0.28); }
+  }
+
+  @keyframes btnSweep {
+    0% { transform: translateX(-120%); }
+    100% { transform: translateX(120%); }
+  }
+
+  @keyframes slamIn {
+    0% { transform: translateY(22px) scale(0.92); opacity: 0; }
+    70% { transform: translateY(-4px) scale(1.02); opacity: 1; }
+    100% { transform: translateY(0) scale(1); opacity: 1; }
+  }
+
+  @keyframes redShock {
+    0%, 100% { box-shadow: 0 0 0 0 rgba(217, 72, 72, 0); filter: saturate(1); }
+    35% { box-shadow: 0 0 18px 2px rgba(217, 72, 72, 0.45); filter: saturate(1.15); }
+  }
+
+  @keyframes riseIn {
+    0% { transform: translateY(18px) scale(0.9); opacity: 0; }
+    65% { transform: translateY(-4px) scale(1.04); opacity: 1; }
+    100% { transform: translateY(0) scale(1); opacity: 1; }
+  }
+
+  @keyframes greenBloom {
+    0%, 100% { box-shadow: 0 0 0 0 rgba(107, 240, 167, 0); }
+    40% { box-shadow: 0 0 24px 4px rgba(107, 240, 167, 0.38); }
+  }
+
+  @keyframes chargeBtn {
+    0%, 100% { transform: scale(1); filter: saturate(1); }
+    50% { transform: scale(1.04); filter: saturate(1.12); }
+  }
+
+  @keyframes ringExpand {
+    0% { opacity: 0.6; transform: scale(0.92); }
+    100% { opacity: 0; transform: scale(1.12); }
+  }
+
+  @keyframes glitchEnter {
+    0% { opacity: 0; transform: translateX(-18px) scale(0.96); }
+    35% { opacity: 1; transform: translateX(8px) skewX(-6deg); }
+    60% { transform: translateX(-4px) skewX(4deg); }
+    100% { transform: translateX(0) skewX(0); }
+  }
+
+  @keyframes emberDrop {
+    0% { box-shadow: inset 0 -20px 0 rgba(255,255,255,0); }
+    50% { box-shadow: inset 0 -12px 18px rgba(255,120,120,0.12); }
+    100% { box-shadow: inset 0 -20px 0 rgba(255,255,255,0); }
+  }
+
+  @keyframes glitchLines {
+    0%, 100% { opacity: 0; }
+    35% { opacity: 0.35; }
+  }
+
+  @keyframes crestReveal {
+    0% { opacity: 0; transform: scale(0.88) rotate(-2deg); }
+    70% { opacity: 1; transform: scale(1.03) rotate(0.5deg); }
+    100% { transform: scale(1) rotate(0); }
+  }
+
+  @keyframes crestPulse {
+    0%, 100% { box-shadow: 0 0 0 0 rgba(107,240,167,0); }
+    45% { box-shadow: 0 0 22px 5px rgba(107,240,167,0.24); }
+  }
+
+  @keyframes crestWave {
+    0%, 100% { opacity: 0.18; transform: translateY(4px) scale(0.92); }
+    50% { opacity: 0.42; transform: translateY(0) scale(1.04); }
+  }
+
+  @keyframes playfulPress {
+    0%, 100% { transform: translateY(0) scale(1); }
+    35% { transform: translateY(1px) scale(0.97); }
+    65% { transform: translateY(-1px) scale(1.02); }
+  }
+
+  @keyframes plusBob {
+    0%, 100% { transform: translateY(-50%) rotate(0deg); }
+    50% { transform: translateY(-58%) rotate(10deg); }
+  }
+
+  @keyframes wobbleCard {
+    0%, 100% { transform: rotate(0deg) translateY(0); }
+    18% { transform: rotate(-1.2deg) translateY(2px); }
+    36% { transform: rotate(1deg) translateY(-1px); }
+    54% { transform: rotate(-0.7deg) translateY(1px); }
+  }
+
+  @keyframes scrape {
+    0% { transform: translateX(-100%); opacity: 0; }
+    40% { opacity: 0.6; }
+    100% { transform: translateX(120%); opacity: 0; }
+  }
+
+  @keyframes springCard {
+    0% { transform: scale(0.92) translateY(16px); opacity: 0; }
+    55% { transform: scale(1.05) translateY(-3px); opacity: 1; }
+    75% { transform: scale(0.99) translateY(1px); }
+    100% { transform: scale(1) translateY(0); opacity: 1; }
+  }
+
+  @keyframes orbPulse {
+    0%, 100% { box-shadow: 0 0 0 0 rgba(107, 240, 167, 0); }
+    45% { box-shadow: 0 0 0 10px rgba(107, 240, 167, 0.08); }
+  }
+
+  @media (max-width: 920px) {
+    .guess-grid, .notes { grid-template-columns: 1fr; }
+    .option-head { flex-direction: column; }
+  }
+
+  @media (max-width: 520px) {
+    .shell { width: min(100% - 16px, 100%); }
+    .intro h1 { font-size: 28px; }
+  }
+  </style>
+</head>
+<body>
+  <div class="shell">
+    <section class="intro">
+      <h1>Guess Reactivity Review</h1>
+      <p>These are three visual directions for making the game feel more reactive. Each option includes a Guess button press treatment, a wrong guess reveal treatment, and a correct guess reveal treatment so you can choose a stronger interaction language before it goes into the app.</p>
+    </section>
+
+    <div class="gallery">
+      <section class="option">
+        <div class="option-head">
+          <div>
+            <h2>Option 1: Impact and Bloom</h2>
+            <p>Wrong guesses hit hard with a red slam and recoil. Correct guesses feel uplifting with a soft green bloom. The button gets a confident kick and light sweep when pressed.</p>
+          </div>
+          <div class="badge">Most Balanced</div>
+        </div>
+        <div class="body style-1">
+          <div class="label">Preview</div>
+          <div class="stage">
+            <div class="controls">
+              <div class="input-mock">ASSAULT INTERCESSOR SERGEANT</div>
+              <button class="guess-btn preview">Guess</button>
+            </div>
+            <div class="guess-grid">
+              <article class="guess-card wrong preview">
+                <div class="fx-title">Wrong Guess Feel</div>
+                <h3>Hard Fail</h3>
+                <p>The card lands with weight, shudders, and flashes a hot red emphasis so it clearly feels different from a win.</p>
+                <div class="fx-list">
+                  <span class="fx-pill">Slam In</span>
+                  <span class="fx-pill">Red Shockwave</span>
+                  <span class="fx-pill">Short Recoil</span>
+                </div>
+              </article>
+              <article class="guess-card correct preview">
+                <div class="fx-title">Correct Guess Feel</div>
+                <h3>Clean Victory</h3>
+                <p>The card lifts into place and blooms with a bright green halo. It reads as success, not just the absence of failure.</p>
+                <div class="fx-list">
+                  <span class="fx-pill">Rise In</span>
+                  <span class="fx-pill">Green Bloom</span>
+                  <span class="fx-pill">Calm Finish</span>
+                </div>
+              </article>
+            </div>
+            <div class="notes">
+              <div class="note"><strong>Wrong</strong><span>Distinctly heavier and more aggressive than a correct reveal.</span></div>
+              <div class="note"><strong>Correct</strong><span>Satisfying without becoming noisy or celebratory in a cartoonish way.</span></div>
+              <div class="note"><strong>Button</strong><span>Feels like a trigger event rather than a plain form submit.</span></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="option">
+        <div class="option-head">
+          <div>
+            <h2>Option 2: Combat Feedback</h2>
+            <p>Wrong guesses feel unstable and glitched, like a bad target lock. Correct guesses resolve into a clean crest-like reveal. The button charges before release.</p>
+          </div>
+          <div class="badge">Most Dramatic</div>
+        </div>
+        <div class="body style-2">
+          <div class="label">Preview</div>
+          <div class="stage">
+            <div class="controls">
+              <div class="input-mock">ASSAULT INTERCESSOR SERGEANT</div>
+              <button class="guess-btn preview">Guess</button>
+            </div>
+            <div class="guess-grid">
+              <article class="guess-card wrong preview">
+                <div class="fx-title">Wrong Guess Feel</div>
+                <h3>Bad Lock</h3>
+                <p>The card jitters in with interference lines and heat. It feels like the game rejected the read, not just colored it red.</p>
+                <div class="fx-list">
+                  <span class="fx-pill">Glitch Enter</span>
+                  <span class="fx-pill">Interference Scan</span>
+                  <span class="fx-pill">Heat Drop</span>
+                </div>
+              </article>
+              <article class="guess-card correct preview">
+                <div class="fx-title">Correct Guess Feel</div>
+                <h3>Target Confirmed</h3>
+                <p>The card resolves sharply and emits a clean crest pulse. It feels more ceremonial and high-value than the wrong state.</p>
+                <div class="fx-list">
+                  <span class="fx-pill">Crest Reveal</span>
+                  <span class="fx-pill">Aura Pulse</span>
+                  <span class="fx-pill">Confirmed Finish</span>
+                </div>
+              </article>
+            </div>
+            <div class="notes">
+              <div class="note"><strong>Wrong</strong><span>Very different from success and easy to read even if you are moving fast.</span></div>
+              <div class="note"><strong>Correct</strong><span>Feels premium and important, especially for the final hit.</span></div>
+              <div class="note"><strong>Button</strong><span>The charge-ring effect makes submitting feel more deliberate and game-like.</span></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="option">
+        <div class="option-head">
+          <div>
+            <h2>Option 3: Playful Snap</h2>
+            <p>This direction is lighter and more energetic. Wrong guesses wobble and scrape, correct guesses spring into place, and the button gets a bouncy arcade-style press.</p>
+          </div>
+          <div class="badge">Most Playful</div>
+        </div>
+        <div class="body style-3">
+          <div class="label">Preview</div>
+          <div class="stage">
+            <div class="controls">
+              <div class="input-mock">ASSAULT INTERCESSOR SERGEANT</div>
+              <button class="guess-btn preview">Guess</button>
+            </div>
+            <div class="guess-grid">
+              <article class="guess-card wrong preview">
+                <div class="fx-title">Wrong Guess Feel</div>
+                <h3>Wobble Miss</h3>
+                <p>The card scrapes and wobbles in a way that still reads as failure, but with a more playful personality than the heavier options.</p>
+                <div class="fx-list">
+                  <span class="fx-pill">Wobble Entry</span>
+                  <span class="fx-pill">Scrape Line</span>
+                  <span class="fx-pill">Loose Energy</span>
+                </div>
+              </article>
+              <article class="guess-card correct preview">
+                <div class="fx-title">Correct Guess Feel</div>
+                <h3>Spring Success</h3>
+                <p>The card bounces into place with a bright success orb. It feels optimistic and immediate rather than stately.</p>
+                <div class="fx-list">
+                  <span class="fx-pill">Spring In</span>
+                  <span class="fx-pill">Success Orb</span>
+                  <span class="fx-pill">Quick Pop</span>
+                </div>
+              </article>
+            </div>
+            <div class="notes">
+              <div class="note"><strong>Wrong</strong><span>Still distinct, but less punishing and more gamey.</span></div>
+              <div class="note"><strong>Correct</strong><span>Feels fast and cheerful, especially good if you want more arcade energy.</span></div>
+              <div class="note"><strong>Button</strong><span>The rounded bouncing button makes the act of guessing feel playful.</span></div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+</body>
+</html>
