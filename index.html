@@ -858,6 +858,7 @@
 <div class="end-buttons" id="endButtons">
   <button class="play-again" id="playAgain" style="display:inline-block">Play Again</button>
   <button class="share-btn" id="shareBtn">Share</button>
+  <button class="share-btn" id="emojiShareBtn" style="font-size:12px;padding:10px 16px;letter-spacing:1px">Emoji Share</button>
   <button class="share-btn" id="copyLinkBtn" style="font-size:12px;padding:10px 16px;letter-spacing:1px">Copy Link</button>
 </div>
 <div class="share-toast" id="shareToast">Copied to clipboard!</div>
@@ -6424,6 +6425,44 @@ document.getElementById('popupDismiss').addEventListener('click', (e) => {
 document.querySelector('.popup-box').addEventListener('click', (e) => e.stopPropagation());
 
 // Share functionality
+function getGuessStatus(op) {
+  const guessRules = op.weapon_rules || [];
+  const targetRules = target.weapon_rules || [];
+  const guessSet = new Set(guessRules.map(r => r.toLowerCase()));
+  const targetSet = new Set(targetRules.map(r => r.toLowerCase()));
+  const allWrMatch = guessSet.size === targetSet.size && [...guessSet].every(r => targetSet.has(r));
+  const someWrMatch = !allWrMatch && [...guessSet].some(r => targetSet.has(r));
+
+  return {
+    values: [op.team, String(op.apl), op.faction, op.base_size, guessRules.join(', ') || 'None', op.name],
+    states: [
+      op.team === target.team ? 'correct' : 'wrong',
+      op.apl === target.apl ? 'correct' : 'wrong',
+      op.faction === target.faction ? 'correct' : 'wrong',
+      op.base_size === target.base_size ? 'correct' : 'wrong',
+      allWrMatch ? 'correct' : someWrMatch ? 'partial' : 'wrong',
+      op.name === target.name ? 'correct' : 'wrong'
+    ]
+  };
+}
+
+function buildEmojiShareText() {
+  const won = guesses.length > 0 && guesses[guesses.length - 1].name === target.name;
+  const score = won ? guesses.length : 'X';
+  const mode = isDaily ? 'Daily' : 'Random';
+  const emojiMap = { correct: '🟩', partial: '🟨', wrong: '🟥' };
+  const rows = guesses.map(g => getGuessStatus(g).states.map(state => emojiMap[state]).join(''));
+  const title = isDaily
+    ? `KillTeadle ${mode} ${score}/${maxGuesses}`
+    : 'This is my latest KillTeadle';
+  return [
+    title,
+    `Guesses: ${guesses.length}`,
+    ...rows,
+    'https://killteadle.disregardingdice.com/'
+  ].join('\n');
+}
+
 function buildShareCanvas() {
   const won = guesses.length > 0 && guesses[guesses.length - 1].name === target.name;
   const canvas = document.createElement('canvas');
@@ -6475,29 +6514,15 @@ function buildShareCanvas() {
     // Guess rows
     ctx.font = '600 11px Barlow Condensed, Arial Narrow, sans-serif';
     for (const g of guesses) {
-      const guessRules = g.weapon_rules || [];
-      const targetRules = target.weapon_rules || [];
-      const guessSet = new Set(guessRules.map(r => r.toLowerCase()));
-      const targetSet = new Set(targetRules.map(r => r.toLowerCase()));
-      const allWrMatch = guessSet.size === targetSet.size && [...guessSet].every(r => targetSet.has(r));
-      const someWrMatch = !allWrMatch && [...guessSet].some(r => targetSet.has(r));
-
-      const vals = [g.team, String(g.apl), g.faction, g.base_size, (g.weapon_rules || []).join(', ') || 'None', g.name];
-      const matches = [
-        g.team === target.team,
-        g.apl === target.apl,
-        g.faction === target.faction,
-        g.base_size === target.base_size,
-        allWrMatch,
-        g.name === target.name
-      ];
+      const status = getGuessStatus(g);
+      const vals = status.values;
       const colors = [
-        matches[0] ? '#2d6a4f' : '#7a1a1a',
-        matches[1] ? '#2d6a4f' : '#7a1a1a',
-        matches[2] ? '#2d6a4f' : '#7a1a1a',
-        matches[3] ? '#2d6a4f' : '#7a1a1a',
-        allWrMatch ? '#2d6a4f' : someWrMatch ? '#b8860b' : '#7a1a1a',
-        matches[5] ? '#2d6a4f' : '#7a1a1a',
+        status.states[0] === 'correct' ? '#2d6a4f' : '#7a1a1a',
+        status.states[1] === 'correct' ? '#2d6a4f' : '#7a1a1a',
+        status.states[2] === 'correct' ? '#2d6a4f' : '#7a1a1a',
+        status.states[3] === 'correct' ? '#2d6a4f' : '#7a1a1a',
+        status.states[4] === 'correct' ? '#2d6a4f' : status.states[4] === 'partial' ? '#b8860b' : '#7a1a1a',
+        status.states[5] === 'correct' ? '#2d6a4f' : '#7a1a1a',
       ];
       x = pad;
       for (let i = 0; i < vals.length; i++) {
@@ -6591,6 +6616,28 @@ document.getElementById('shareBtn').addEventListener('click', async () => {
     } catch (e2) {
       console.error('Share failed:', e2);
     }
+  }
+});
+
+document.getElementById('emojiShareBtn').addEventListener('click', async () => {
+  const shareText = buildEmojiShareText();
+
+  try {
+    const isMobile = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
+    if (isMobile && navigator.share) {
+      await navigator.share({
+        title: 'KillTeadle',
+        text: shareText,
+        url: 'https://killteadle.disregardingdice.com/'
+      });
+      showToast('Emoji results shared!');
+      return;
+    }
+
+    await navigator.clipboard.writeText(shareText);
+    showToast('Emoji results copied!');
+  } catch (err) {
+    console.error('Emoji share failed:', err);
   }
 });
 
