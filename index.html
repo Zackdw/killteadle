@@ -6045,6 +6045,10 @@ let guesses = [];
 let maxGuesses = 8;
 let gameOver = false;
 let isDaily = true;
+let dailySchedule = [];
+
+const DAILY_SCHEDULE_SEED = 20260424;
+const DAILY_SCHEDULE_START = new Date(2026, 3, 24);
 
 // Deterministic hash for daily operative
 function hashDate(dateStr) {
@@ -6055,11 +6059,81 @@ function hashDate(dateStr) {
   return Math.abs(h);
 }
 
-function getDailyTarget() {
-  const now = new Date();
-  const dateStr = `${now.getFullYear()}-${String(now.getMonth()+1).padStart(2,'0')}-${String(now.getDate()).padStart(2,'0')}`;
+function formatDateKey(date) {
+  return `${date.getFullYear()}-${String(date.getMonth()+1).padStart(2,'0')}-${String(date.getDate()).padStart(2,'0')}`;
+}
+
+function legacyDailyTargetForDate(date) {
+  const dateStr = formatDateKey(date);
   const idx = hashDate(dateStr) % operatives.length;
   return operatives[idx];
+}
+
+function dayNumber(date) {
+  return Math.floor(Date.UTC(date.getFullYear(), date.getMonth(), date.getDate()) / 86400000);
+}
+
+function seededRandom(seed) {
+  let state = seed >>> 0;
+  return () => {
+    state += 0x6D2B79F5;
+    let t = state;
+    t = Math.imul(t ^ (t >>> 15), t | 1);
+    t ^= t + Math.imul(t ^ (t >>> 7), t | 61);
+    return ((t ^ (t >>> 14)) >>> 0) / 4294967296;
+  };
+}
+
+function shuffleWithRng(items, rng) {
+  const shuffled = [...items];
+  for (let i = shuffled.length - 1; i > 0; i--) {
+    const j = Math.floor(rng() * (i + 1));
+    [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+  }
+  return shuffled;
+}
+
+function buildDailySchedule() {
+  const rng = seededRandom(DAILY_SCHEDULE_SEED);
+  const teamBuckets = new Map();
+
+  operatives.forEach(op => {
+    if (!teamBuckets.has(op.team)) {
+      teamBuckets.set(op.team, []);
+    }
+    teamBuckets.get(op.team).push(op);
+  });
+
+  for (const [team, ops] of teamBuckets.entries()) {
+    teamBuckets.set(team, shuffleWithRng(ops, rng));
+  }
+
+  const schedule = [];
+  let lastTeam = null;
+
+  while (schedule.length < operatives.length) {
+    const availableTeams = [...teamBuckets.keys()].filter(team => teamBuckets.get(team).length > 0);
+    const eligibleTeams = availableTeams.filter(team => team !== lastTeam);
+    const candidates = eligibleTeams.length > 0 ? eligibleTeams : availableTeams;
+    const selectedTeam = candidates[Math.floor(rng() * candidates.length)];
+    schedule.push(teamBuckets.get(selectedTeam).shift());
+    lastTeam = selectedTeam;
+  }
+
+  return schedule;
+}
+
+function getDailyTargetForDate(date) {
+  if (date < DAILY_SCHEDULE_START || dailySchedule.length === 0) {
+    return legacyDailyTargetForDate(date);
+  }
+
+  const offset = dayNumber(date) - dayNumber(DAILY_SCHEDULE_START);
+  return dailySchedule[offset % dailySchedule.length];
+}
+
+function getDailyTarget() {
+  return getDailyTargetForDate(new Date());
 }
 
 function getRandomTarget() {
@@ -6081,6 +6155,7 @@ async function loadData() {
       console.error('Failed to load data:', e);
     }
   }
+  dailySchedule = buildDailySchedule();
   pickTarget();
 }
 
