@@ -5144,7 +5144,11 @@
     "apl": 2,
     "faction": "IMPERIUM",
     "base_size": "28",
-    "weapon_rules": []
+    "weapon_rules": [
+      "Devastating",
+      "Heavy",
+      "Silent"
+    ]
   },
   {
     "name": "KASRKIN TROOPER",

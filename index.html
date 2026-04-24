@@ -7229,6 +7229,18 @@ document.getElementById('shareBtn').addEventListener('click', async () => {
   }
 });
 
+function copyTextFallback(text) {
+  const ta = document.createElement('textarea');
+  ta.value = text;
+  ta.style.cssText = 'position:fixed;top:0;left:0;opacity:0;pointer-events:none';
+  document.body.appendChild(ta);
+  ta.focus();
+  ta.select();
+  const ok = document.execCommand('copy');
+  document.body.removeChild(ta);
+  return ok;
+}
+
 document.getElementById('emojiShareBtn').addEventListener('click', async () => {
   const shareText = buildEmojiShareText();
 
@@ -7244,7 +7256,11 @@ document.getElementById('emojiShareBtn').addEventListener('click', async () => {
       return;
     }
 
-    await navigator.clipboard.writeText(shareText);
+    try {
+      await navigator.clipboard.writeText(shareText);
+    } catch {
+      if (!copyTextFallback(shareText)) throw new Error('execCommand copy failed');
+    }
     showToast('Emoji results copied!');
   } catch (err) {
     console.error('Emoji share failed:', err);
@@ -7253,8 +7269,13 @@ document.getElementById('emojiShareBtn').addEventListener('click', async () => {
 
 // Copy Link: quick copy the URL
 document.getElementById('copyLinkBtn').addEventListener('click', async () => {
+  const url = 'https://killteadle.disregardingdice.com/';
   try {
-    await navigator.clipboard.writeText('https://killteadle.disregardingdice.com/');
+    try {
+      await navigator.clipboard.writeText(url);
+    } catch {
+      if (!copyTextFallback(url)) throw new Error('execCommand copy failed');
+    }
     showToast('Link copied!');
   } catch (err) {
     console.error('Copy link failed:', err);
