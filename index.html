@@ -81,10 +81,17 @@
   }
 
   /* Mode toggle */
+  .mode-controls {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 12px;
+    flex-wrap: wrap;
+  }
+
   .mode-toggle {
     display: flex;
     gap: 0;
-    margin-bottom: 12px;
     border-radius: 4px;
     overflow: hidden;
     border: 1px solid rgba(241,92,34,0.3);
@@ -112,6 +119,30 @@
   .mode-btn:hover:not(.active) {
     background: rgba(241,92,34,0.15);
     color: #bbb;
+  }
+
+  .filter-teams-btn {
+    padding: 7px 12px;
+    font-family: var(--font-condensed);
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+    border: 1px solid rgba(241,92,34,0.4);
+    border-radius: 4px;
+    background: rgba(35,31,32,0.8);
+    color: var(--kt-light);
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+
+  .filter-teams-btn:hover {
+    background: rgba(241,92,34,0.14);
+    border-color: rgba(241,92,34,0.7);
+  }
+
+  .filter-teams-btn.hidden {
+    display: none;
   }
 
   /* Guess counter */
@@ -413,6 +444,162 @@
   .popup-dismiss:hover {
     background: var(--kt-orange);
     color: #fff;
+  }
+
+  .team-filter-box {
+    max-width: 520px;
+  }
+
+  .team-filter-summary {
+    font-family: var(--font-condensed);
+    font-size: 14px;
+    color: #bdb6b2;
+    letter-spacing: 0.4px;
+    margin-bottom: 14px;
+  }
+
+  .team-filter-actions {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 14px;
+    flex-wrap: wrap;
+  }
+
+  .team-filter-categories {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 14px;
+    flex-wrap: wrap;
+  }
+
+  .team-filter-category {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 10px;
+    border-radius: 4px;
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(255,255,255,0.08);
+    cursor: pointer;
+  }
+
+  .team-filter-category input {
+    accent-color: var(--kt-orange);
+    width: 16px;
+    height: 16px;
+    margin: 0;
+  }
+
+  .team-filter-category-label {
+    font-family: var(--font-condensed);
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--kt-light);
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+  }
+
+  .team-filter-category-note {
+    font-family: var(--font-condensed);
+    font-size: 11px;
+    color: #9d948f;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+  }
+
+  .team-filter-action {
+    padding: 7px 10px;
+    background: rgba(241,92,34,0.1);
+    border: 1px solid rgba(241,92,34,0.28);
+    border-radius: 4px;
+    color: var(--kt-light);
+    font-family: var(--font-condensed);
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+  }
+
+  .team-filter-list {
+    max-height: 340px;
+    overflow-y: auto;
+    padding-right: 4px;
+    margin-bottom: 16px;
+  }
+
+  .team-filter-group {
+    margin-bottom: 14px;
+  }
+
+  .team-filter-group:last-child {
+    margin-bottom: 0;
+  }
+
+  .team-filter-group-title {
+    font-family: var(--font-heading);
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+    color: var(--kt-orange);
+    margin-bottom: 8px;
+    padding-bottom: 6px;
+    border-bottom: 1px solid rgba(241,92,34,0.2);
+  }
+
+  .team-filter-group-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 8px;
+  }
+
+  .team-filter-option {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 9px 10px;
+    border-radius: 4px;
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(255,255,255,0.06);
+    cursor: pointer;
+  }
+
+  .team-filter-option input {
+    accent-color: var(--kt-orange);
+    width: 16px;
+    height: 16px;
+    margin: 0;
+    flex: 0 0 auto;
+  }
+
+  .team-filter-label {
+    font-family: var(--font-condensed);
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--kt-light);
+    letter-spacing: 0.4px;
+    line-height: 1.1;
+  }
+
+  .team-filter-footer {
+    display: flex;
+    gap: 10px;
+  }
+
+  .team-filter-footer .popup-dismiss {
+    margin: 0;
+  }
+
+  .team-filter-footer .popup-dismiss.primary {
+    background: var(--kt-orange);
+    color: #fff;
+    border-color: var(--kt-orange);
+  }
+
+  .team-filter-footer .popup-dismiss.primary:disabled {
+    opacity: 0.45;
+    cursor: not-allowed;
   }
 
   /* Guess cells */
@@ -827,9 +1014,12 @@
   <p class="subtitle">Guess the operative in 8 tries</p>
 </div>
 
-<div class="mode-toggle">
-  <button class="mode-btn active" id="dailyBtn">Daily</button>
-  <button class="mode-btn" id="randomBtn">Random</button>
+<div class="mode-controls">
+  <div class="mode-toggle">
+    <button class="mode-btn active" id="dailyBtn">Daily</button>
+    <button class="mode-btn" id="randomBtn">Random</button>
+  </div>
+  <button class="filter-teams-btn hidden" id="filterTeamsBtn" type="button">Filter Teams</button>
 </div>
 
 <p class="guess-count">Guesses: <span id="guessCount">0</span> / 8</p>
@@ -868,6 +1058,38 @@
     <div class="popup-title" id="popupTitle"></div>
     <div class="popup-values" id="popupValues"></div>
     <button class="popup-dismiss" id="popupDismiss">Got it</button>
+  </div>
+</div>
+
+<div class="popup-backdrop" id="teamFilterBackdrop">
+  <div class="popup-box team-filter-box">
+    <div class="popup-title">Random Team Filter</div>
+    <div class="team-filter-summary" id="teamFilterSummary"></div>
+    <div class="team-filter-categories">
+      <label class="team-filter-category">
+        <input type="checkbox" id="classifiedTeamsToggle">
+        <span>
+          <span class="team-filter-category-label">Classified</span>
+          <span class="team-filter-category-note" id="classifiedTeamsCount"></span>
+        </span>
+      </label>
+      <label class="team-filter-category">
+        <input type="checkbox" id="declassifiedTeamsToggle">
+        <span>
+          <span class="team-filter-category-label">Declassified</span>
+          <span class="team-filter-category-note" id="declassifiedTeamsCount"></span>
+        </span>
+      </label>
+    </div>
+    <div class="team-filter-actions">
+      <button class="team-filter-action" id="selectAllTeamsBtn" type="button">Select All</button>
+      <button class="team-filter-action" id="clearAllTeamsBtn" type="button">Clear All</button>
+    </div>
+    <div class="team-filter-list" id="teamFilterList"></div>
+    <div class="team-filter-footer">
+      <button class="popup-dismiss" id="teamFilterCancelBtn" type="button">Cancel</button>
+      <button class="popup-dismiss primary" id="teamFilterApplyBtn" type="button">Apply Filter</button>
+    </div>
   </div>
 </div>
 
@@ -6046,6 +6268,49 @@ let maxGuesses = 8;
 let gameOver = false;
 let isDaily = true;
 let dailySchedule = [];
+let allTeams = [];
+let randomSelectedTeams = new Set();
+let pendingRandomSelectedTeams = new Set();
+let randomAllowedTeams = new Set();
+const gameStates = {
+  daily: { target: null, guesses: [], gameOver: false },
+  random: { target: null, guesses: [], gameOver: false }
+};
+
+const CLASSIFIED_TEAMS = new Set([
+  'IMPERIAL NAVY BREACHERS',
+  'KASRKIN',
+  'FARSTALKER KINBAND',
+  'HIEROTEK CIRCLE',
+  'FELLGOR RAVAGERS',
+  'EXACTION SQUAD',
+  'HEARTHKYN SALVAGERS',
+  'HAND OF THE ARCHON',
+  'CHAOS CULT',
+  'BLADES OF KHAINE',
+  'INQUISITORIAL AGENTS',
+  'SCOUT SQUAD',
+  'BROOD BROTHERS',
+  'NEMESIS CLAW',
+  'HERNKYN YAEGIRS',
+  'MANDRAKES',
+  'TEMPESTUS AQUILONS',
+  'ANGELS OF DEATH',
+  'VESPID STINGWINGS',
+  'RATLINGS',
+  'PLAGUE MARINES',
+  'WRECKA KREW',
+  'GOREMONGERS',
+  'BATTLECLADE',
+  'SANCTIFIERS',
+  'RAVENERS',
+  'DEATHWATCH',
+  'CANOPTEK CIRCLE',
+  'WOLF SCOUTS',
+  'XV26 STEALTH BATTLESUITS',
+  'CELESTIAN INSIDIANTS',
+  'MURDERWING'
+]);
 
 const DAILY_SCHEDULE_SEED = 20260424;
 const DAILY_SCHEDULE_START = new Date(2026, 3, 24);
@@ -6136,12 +6401,68 @@ function getDailyTarget() {
   return getDailyTargetForDate(new Date());
 }
 
-function getRandomTarget() {
-  return operatives[Math.floor(Math.random() * operatives.length)];
+function isClassifiedTeam(team) {
+  return CLASSIFIED_TEAMS.has(String(team).toUpperCase());
 }
 
-function pickTarget() {
-  target = isDaily ? getDailyTarget() : getRandomTarget();
+function getTeamsForCategory(category) {
+  return allTeams.filter(team => category === 'classified' ? isClassifiedTeam(team) : !isClassifiedTeam(team));
+}
+
+function areAllCategoryTeamsSelected(category, selectedTeams = pendingRandomSelectedTeams) {
+  const categoryTeams = getTeamsForCategory(category);
+  return categoryTeams.length > 0 && categoryTeams.every(team => selectedTeams.has(team));
+}
+
+function syncRandomAllowedTeams() {
+  randomAllowedTeams = new Set(randomSelectedTeams);
+}
+
+function getRandomOperativePool() {
+  return operatives.filter(op => randomAllowedTeams.has(op.team));
+}
+
+function getCurrentOperativePool() {
+  return isDaily ? operatives : getRandomOperativePool();
+}
+
+function getRandomTarget() {
+  const pool = getRandomOperativePool();
+  return pool[Math.floor(Math.random() * pool.length)];
+}
+
+function getStateForMode(modeDaily = isDaily) {
+  return modeDaily ? gameStates.daily : gameStates.random;
+}
+
+function syncActiveState() {
+  const state = getStateForMode();
+  target = state.target;
+  guesses = state.guesses;
+  gameOver = state.gameOver;
+}
+
+function ensureModeState(modeDaily = isDaily, { forceReset = false } = {}) {
+  const state = getStateForMode(modeDaily);
+
+  if (modeDaily) {
+    const dailyTarget = getDailyTarget();
+    const dailyTargetChanged = !state.target || state.target.name !== dailyTarget.name;
+    if (forceReset || dailyTargetChanged) {
+      state.target = dailyTarget;
+      state.guesses = [];
+      state.gameOver = false;
+    }
+    return state;
+  }
+
+  if (forceReset || !state.target) {
+    state.target = getRandomTarget();
+    state.guesses = [];
+    state.gameOver = false;
+  }
+
+  return state;
 }
 
 async function loadData() {
@@ -6156,45 +6477,77 @@ async function loadData() {
     }
   }
   dailySchedule = buildDailySchedule();
-  pickTarget();
+  allTeams = [...new Set(operatives.map(op => op.team))].sort((left, right) => left.localeCompare(right));
+  randomSelectedTeams = new Set(allTeams);
+  pendingRandomSelectedTeams = new Set(allTeams);
+  syncRandomAllowedTeams();
+  ensureModeState(true, { forceReset: true });
+  ensureModeState(false, { forceReset: true });
+  refreshGameView();
 }
 
-function resetGame() {
-  guesses = [];
-  gameOver = false;
-  if (!isDaily) {
-    target = getRandomTarget();
-  } else {
-    target = getDailyTarget();
-  }
+function refreshGameView() {
+  ensureModeState();
+  syncActiveState();
+  updateFilterTeamsButton();
   document.getElementById('guessRows').innerHTML = '';
-  document.getElementById('status').textContent = '';
-  document.getElementById('status').className = 'status';
-  document.getElementById('guessCount').textContent = '0';
-  document.getElementById('endButtons').classList.remove('visible');
-  document.getElementById('endButtons').classList.remove('anim-in');
+  guesses.forEach(op => renderGuessRow(op, { animate: false }));
+
+  const status = document.getElementById('status');
+  const endButtons = document.getElementById('endButtons');
+  status.textContent = '';
+  status.className = 'status';
+  endButtons.classList.remove('visible');
+  endButtons.classList.remove('anim-in');
+  document.getElementById('guessCount').textContent = String(guesses.length);
+
   const input = document.getElementById('guessInput');
-  input.disabled = false;
-  document.getElementById('guessBtn').disabled = false;
+  const guessButton = document.getElementById('guessBtn');
+  input.disabled = gameOver;
+  guessButton.disabled = gameOver;
   input.value = '';
-  input.focus();
+  dropdown.classList.remove('visible');
+  filteredOps = [];
+  selectedIdx = -1;
+
+  if (gameOver) {
+    const won = guesses.length > 0 && guesses[guesses.length - 1].name === target.name;
+    status.textContent = won
+      ? `You got it in ${guesses.length} guess${guesses.length > 1 ? 'es' : ''}!`
+      : `Game over! It was ${target.name} (${target.team})`;
+    status.className = `status ${won ? 'win' : 'lose'}`;
+    endButtons.classList.add('visible');
+  } else {
+    input.focus();
+  }
+}
+
+function resetCurrentModeGame() {
+  ensureModeState(isDaily, { forceReset: true });
+  refreshGameView();
+}
+
+function setMode(modeDaily) {
+  if (isDaily === modeDaily) return;
+  isDaily = modeDaily;
+  document.getElementById('dailyBtn').classList.toggle('active', isDaily);
+  document.getElementById('randomBtn').classList.toggle('active', !isDaily);
+  refreshGameView();
+}
+
+function updateFilterTeamsButton() {
+  const filterButton = document.getElementById('filterTeamsBtn');
+  filterButton.classList.toggle('hidden', isDaily || allTeams.length === 0);
+  filterButton.textContent = `Filter Teams (${randomAllowedTeams.size}/${allTeams.length})`;
 }
 
 // Mode toggle
 document.getElementById('dailyBtn').addEventListener('click', () => {
-  if (isDaily) return;
-  isDaily = true;
-  document.getElementById('dailyBtn').classList.add('active');
-  document.getElementById('randomBtn').classList.remove('active');
-  resetGame();
+  setMode(true);
 });
 
 document.getElementById('randomBtn').addEventListener('click', () => {
-  if (!isDaily) return;
-  isDaily = false;
-  document.getElementById('randomBtn').classList.add('active');
-  document.getElementById('dailyBtn').classList.remove('active');
-  resetGame();
+  setMode(false);
 });
 
 // Autocomplete
@@ -6212,7 +6565,7 @@ input.addEventListener('input', () => {
   }
 
   const guessedNames = new Set(guesses.map(g => g.name));
-  filteredOps = operatives
+  filteredOps = getCurrentOperativePool()
     .filter(o => !guessedNames.has(o.name) && o.name.toUpperCase().includes(val))
     .slice(0, 15);
 
@@ -6256,7 +6609,7 @@ input.addEventListener('keydown', (e) => {
 
 function trySubmit(val) {
   const upper = val.toUpperCase();
-  const match = operatives.find(o => o.name.toUpperCase() === upper);
+  const match = getCurrentOperativePool().find(o => o.name.toUpperCase() === upper);
   if (match) {
     submitGuess(match);
   }
@@ -6372,7 +6725,7 @@ function spawnParticles(cell, isCorrect) {
   setTimeout(() => container.remove(), 1000);
 }
 
-function renderGuessRow(op) {
+function renderGuessRow(op, { animate = true } = {}) {
   const row = document.createElement('div');
   row.className = 'guess-row';
 
@@ -6409,7 +6762,7 @@ function renderGuessRow(op) {
   fields.forEach(f => {
     const cell = document.createElement('div');
     const cellClass = f.cls || (f.correct ? 'correct' : 'wrong');
-    cell.className = `cell ${cellClass} anim-pending${f.isWr ? ' wr-cell' : ''}`;
+    cell.className = `cell ${cellClass}${animate ? ' anim-pending' : ''}${f.isWr ? ' wr-cell' : ''}`;
     if (f.isHtml) {
       cell.innerHTML = f.val;
     } else {
@@ -6423,6 +6776,10 @@ function renderGuessRow(op) {
   });
 
   document.getElementById('guessRows').appendChild(row);
+
+  if (!animate) {
+    return 0;
+  }
 
   // Stagger reveal left to right
   cells.forEach((cell, i) => {
@@ -6451,7 +6808,7 @@ document.getElementById('playAgain').addEventListener('click', () => {
   isDaily = false;
   document.getElementById('randomBtn').classList.add('active');
   document.getElementById('dailyBtn').classList.remove('active');
-  resetGame();
+  resetCurrentModeGame();
 });
 
 document.getElementById('guessBtn').addEventListener('click', () => {
@@ -6498,6 +6855,146 @@ document.getElementById('popupDismiss').addEventListener('click', (e) => {
 });
 // Stop clicks inside the box from closing it
 document.querySelector('.popup-box').addEventListener('click', (e) => e.stopPropagation());
+
+const teamFilterBackdrop = document.getElementById('teamFilterBackdrop');
+const teamFilterList = document.getElementById('teamFilterList');
+const teamFilterSummary = document.getElementById('teamFilterSummary');
+const teamFilterApplyBtn = document.getElementById('teamFilterApplyBtn');
+const classifiedTeamsToggle = document.getElementById('classifiedTeamsToggle');
+const declassifiedTeamsToggle = document.getElementById('declassifiedTeamsToggle');
+const classifiedTeamsCount = document.getElementById('classifiedTeamsCount');
+const declassifiedTeamsCount = document.getElementById('declassifiedTeamsCount');
+
+function syncTeamFilterCategoryControls() {
+  const classifiedCount = allTeams.filter(team => isClassifiedTeam(team)).length;
+  const declassifiedCount = allTeams.length - classifiedCount;
+  classifiedTeamsCount.textContent = `${classifiedCount} teams`;
+  declassifiedTeamsCount.textContent = `${declassifiedCount} teams`;
+
+  const classifiedTeams = getTeamsForCategory('classified');
+  const selectedClassified = classifiedTeams.filter(team => pendingRandomSelectedTeams.has(team)).length;
+  const declassifiedTeams = getTeamsForCategory('declassified');
+  const selectedDeclassified = declassifiedTeams.filter(team => pendingRandomSelectedTeams.has(team)).length;
+
+  classifiedTeamsToggle.checked = selectedClassified === classifiedTeams.length && classifiedTeams.length > 0;
+  classifiedTeamsToggle.indeterminate = selectedClassified > 0 && selectedClassified < classifiedTeams.length;
+  declassifiedTeamsToggle.checked = selectedDeclassified === declassifiedTeams.length && declassifiedTeams.length > 0;
+  declassifiedTeamsToggle.indeterminate = selectedDeclassified > 0 && selectedDeclassified < declassifiedTeams.length;
+}
+
+function updateTeamFilterSummary() {
+  const selectedCount = pendingRandomSelectedTeams.size;
+  teamFilterSummary.textContent = `${selectedCount} of ${allTeams.length} teams enabled for random mode.`;
+  teamFilterApplyBtn.disabled = selectedCount === 0;
+  syncTeamFilterCategoryControls();
+}
+
+function renderTeamFilterList() {
+  const renderGroup = (title, teams) => `
+    <div class="team-filter-group">
+      <div class="team-filter-group-title">${title}</div>
+      <div class="team-filter-group-grid">
+        ${teams.map(team => `
+          <label class="team-filter-option">
+            <input type="checkbox" data-team="${escapeHtml(team)}" ${pendingRandomSelectedTeams.has(team) ? 'checked' : ''}>
+            <span class="team-filter-label">${escapeHtml(team)}</span>
+          </label>
+        `).join('')}
+      </div>
+    </div>
+  `;
+
+  teamFilterList.innerHTML = [
+    renderGroup('Classified', getTeamsForCategory('classified')),
+    renderGroup('Declassified', getTeamsForCategory('declassified'))
+  ].join('');
+
+  teamFilterList.querySelectorAll('input[type="checkbox"]').forEach(inputEl => {
+    inputEl.addEventListener('change', () => {
+      const team = inputEl.dataset.team;
+      if (inputEl.checked) {
+        pendingRandomSelectedTeams.add(team);
+      } else {
+        pendingRandomSelectedTeams.delete(team);
+      }
+      updateTeamFilterSummary();
+    });
+  });
+}
+
+function openTeamFilter() {
+  if (isDaily || allTeams.length === 0) return;
+  pendingRandomSelectedTeams = new Set(randomSelectedTeams);
+  renderTeamFilterList();
+  updateTeamFilterSummary();
+  teamFilterBackdrop.classList.add('visible');
+}
+
+function closeTeamFilter() {
+  teamFilterBackdrop.classList.remove('visible');
+}
+
+function applyRandomTeamFilter() {
+  if (pendingRandomSelectedTeams.size === 0) {
+    return;
+  }
+
+  randomSelectedTeams = new Set(pendingRandomSelectedTeams);
+  randomAllowedTeams = new Set(pendingRandomSelectedTeams);
+
+  const randomState = gameStates.random;
+  const targetRemoved = randomState.target && !randomAllowedTeams.has(randomState.target.team);
+  const removedGuesses = randomState.guesses.some(guess => !randomAllowedTeams.has(guess.team));
+
+  if (targetRemoved || removedGuesses) {
+    ensureModeState(false, { forceReset: true });
+  }
+
+  closeTeamFilter();
+  if (!isDaily) {
+    refreshGameView();
+  } else {
+    updateFilterTeamsButton();
+  }
+}
+
+document.getElementById('filterTeamsBtn').addEventListener('click', openTeamFilter);
+document.getElementById('selectAllTeamsBtn').addEventListener('click', () => {
+  pendingRandomSelectedTeams = new Set(allTeams);
+  renderTeamFilterList();
+  updateTeamFilterSummary();
+});
+document.getElementById('clearAllTeamsBtn').addEventListener('click', () => {
+  pendingRandomSelectedTeams = new Set();
+  renderTeamFilterList();
+  updateTeamFilterSummary();
+});
+classifiedTeamsToggle.addEventListener('change', () => {
+  getTeamsForCategory('classified').forEach(team => {
+    if (classifiedTeamsToggle.checked) {
+      pendingRandomSelectedTeams.add(team);
+    } else {
+      pendingRandomSelectedTeams.delete(team);
+    }
+  });
+  renderTeamFilterList();
+  updateTeamFilterSummary();
+});
+declassifiedTeamsToggle.addEventListener('change', () => {
+  getTeamsForCategory('declassified').forEach(team => {
+    if (declassifiedTeamsToggle.checked) {
+      pendingRandomSelectedTeams.add(team);
+    } else {
+      pendingRandomSelectedTeams.delete(team);
+    }
+  });
+  renderTeamFilterList();
+  updateTeamFilterSummary();
+});
+document.getElementById('teamFilterCancelBtn').addEventListener('click', closeTeamFilter);
+document.getElementById('teamFilterApplyBtn').addEventListener('click', applyRandomTeamFilter);
+teamFilterBackdrop.addEventListener('click', closeTeamFilter);
+document.querySelector('.team-filter-box').addEventListener('click', (e) => e.stopPropagation());
 
 // Share functionality
 function getGuessStatus(op) {
