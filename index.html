@@ -448,6 +448,9 @@
 
   .team-filter-box {
     max-width: 520px;
+    max-height: min(78vh, 760px);
+    display: flex;
+    flex-direction: column;
   }
 
   .team-filter-summary {
@@ -463,6 +466,36 @@
     gap: 8px;
     margin-bottom: 14px;
     flex-wrap: wrap;
+    flex: 0 0 auto;
+  }
+
+  .team-filter-scroll {
+    overflow-y: auto;
+    min-height: 0;
+    margin-bottom: 16px;
+    padding-right: 6px;
+    flex: 1 1 auto;
+    scrollbar-width: thin;
+    scrollbar-color: rgba(241,92,34,0.85) rgba(255,255,255,0.06);
+  }
+
+  .team-filter-scroll::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  .team-filter-scroll::-webkit-scrollbar-track {
+    background: rgba(255,255,255,0.05);
+    border-radius: 999px;
+  }
+
+  .team-filter-scroll::-webkit-scrollbar-thumb {
+    background: linear-gradient(180deg, rgba(241,92,34,0.92), rgba(196,74,26,0.9));
+    border-radius: 999px;
+    border: 1px solid rgba(26,23,21,0.35);
+  }
+
+  .team-filter-scroll::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(180deg, rgba(241,92,34,1), rgba(196,74,26,0.98));
   }
 
   .team-filter-categories {
@@ -522,29 +555,31 @@
   }
 
   .team-filter-list {
-    max-height: 340px;
-    overflow-y: auto;
-    padding-right: 4px;
-    margin-bottom: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
   }
 
   .team-filter-group {
-    margin-bottom: 14px;
-  }
-
-  .team-filter-group:last-child {
-    margin-bottom: 0;
+    border: 1px solid rgba(241,92,34,0.22);
+    border-radius: 6px;
+    background: linear-gradient(180deg, rgba(255,255,255,0.04), rgba(255,255,255,0.02));
+    overflow: hidden;
+    box-shadow: inset 0 1px 0 rgba(255,255,255,0.03);
   }
 
   .team-filter-group-title {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background: rgba(35,31,32,0.96);
     font-family: var(--font-heading);
     font-size: 13px;
     font-weight: 700;
     letter-spacing: 1.2px;
     text-transform: uppercase;
     color: var(--kt-orange);
-    margin-bottom: 8px;
-    padding-bottom: 6px;
+    padding: 10px 12px 8px;
     border-bottom: 1px solid rgba(241,92,34,0.2);
   }
 
@@ -552,6 +587,7 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
     gap: 8px;
+    padding: 10px;
   }
 
   .team-filter-option {
@@ -1065,27 +1101,29 @@
   <div class="popup-box team-filter-box">
     <div class="popup-title">Random Team Filter</div>
     <div class="team-filter-summary" id="teamFilterSummary"></div>
-    <div class="team-filter-categories">
-      <label class="team-filter-category">
-        <input type="checkbox" id="classifiedTeamsToggle">
-        <span>
-          <span class="team-filter-category-label">Classified</span>
-          <span class="team-filter-category-note" id="classifiedTeamsCount"></span>
-        </span>
-      </label>
-      <label class="team-filter-category">
-        <input type="checkbox" id="declassifiedTeamsToggle">
-        <span>
-          <span class="team-filter-category-label">Declassified</span>
-          <span class="team-filter-category-note" id="declassifiedTeamsCount"></span>
-        </span>
-      </label>
-    </div>
     <div class="team-filter-actions">
       <button class="team-filter-action" id="selectAllTeamsBtn" type="button">Select All</button>
       <button class="team-filter-action" id="clearAllTeamsBtn" type="button">Clear All</button>
     </div>
-    <div class="team-filter-list" id="teamFilterList"></div>
+    <div class="team-filter-scroll">
+      <div class="team-filter-categories">
+        <label class="team-filter-category">
+          <input type="checkbox" id="classifiedTeamsToggle">
+          <span>
+            <span class="team-filter-category-label">Classified</span>
+            <span class="team-filter-category-note" id="classifiedTeamsCount"></span>
+          </span>
+        </label>
+        <label class="team-filter-category">
+          <input type="checkbox" id="declassifiedTeamsToggle">
+          <span>
+            <span class="team-filter-category-label">Declassified</span>
+            <span class="team-filter-category-note" id="declassifiedTeamsCount"></span>
+          </span>
+        </label>
+      </div>
+      <div class="team-filter-list" id="teamFilterList"></div>
+    </div>
     <div class="team-filter-footer">
       <button class="popup-dismiss" id="teamFilterCancelBtn" type="button">Cancel</button>
       <button class="popup-dismiss primary" id="teamFilterApplyBtn" type="button">Apply Filter</button>
