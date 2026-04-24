@@ -4815,7 +4815,10 @@
     "apl": 2,
     "faction": "ORK",
     "base_size": "32",
-    "weapon_rules": []
+    "weapon_rules": [
+      "Lethal",
+      "Limited"
+    ]
   },
   {
     "name": "BREAKA BOY FIGHTER",
